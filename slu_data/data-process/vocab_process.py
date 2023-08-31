@@ -46,5 +46,5 @@ def vocab_process(data_dir):
 
 
 if __name__ == "__main__":
-    vocab_process("data")
+    vocab_process("syllable-level")
     # vocab_process("snips")

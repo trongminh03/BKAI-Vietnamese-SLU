@@ -11,7 +11,7 @@ echo "${MODEL_DIR}"
 python3 main.py --token_level syllable-level \
                   --model_type xlmr \
                   --model_dir $MODEL_DIR \
-                  --data_dir PhoATIS \
+                  --data_dir slu_data \
                   --seed $s \
                   --do_train \
                   --do_eval \

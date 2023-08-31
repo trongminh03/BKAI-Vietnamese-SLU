@@ -64,14 +64,14 @@ O B-command O B-device I-device O O O
 O O B-command O O O B-location I-location O 
 O O B-command O O O B-device I-device I-device I-device O B-location O 
 O O O B-command I-command O O O B-device I-device O 
-O O O O O B-command O O O B-device I-device 
+O O O O B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O O O 
 B-command O O B-device I-device I-device O 
 O O B-command O O O B-device O O B-location I-location I-location I-location I-location O 
 O O O O B-command O O O B-device I-device I-device O O 
 O O B-command O O O B-device I-device O 
 O B-command O O O O O O B-device I-device I-device O B-target_number O 
-B-command O B-device I-device I-device O B-changing_value I-changing_value I-changing_value I-changing_value 
+B-command O B-device I-device I-device O B-changing_value O O O 
 O O O O B-command O B-device I-device O O 
 O B-command O O O B-device O 
 O O B-command I-command O O O B-device I-device O 
@@ -84,7 +84,7 @@ O O O O O B-command O O O B-device I-device O O
 O B-device I-device O O O O O O O O B-command I-command O O O 
 B-command B-device I-device I-device O B-location I-location I-location I-location O 
 O O B-command O O O B-device I-device I-device I-device O 
-O O B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at 
+O O B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O O 
 O O O O B-command O O O B-device I-device O 
 O O O B-device I-device I-device O O O B-command I-command O O O O 
 O O B-command O O O B-device O 
@@ -171,7 +171,7 @@ O O O O O O O O O O B-command I-command O O O B-device I-device I-device O
 O O B-command O O O B-device I-device O O 
 O B-command B-device I-device O B-location I-location I-location I-location 
 O O O O O O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location B-changing_value O B-duration I-duration I-duration I-duration O 
+O O B-command O O O B-device I-device O B-location I-location I-location B-command B-changing_value O B-duration I-duration I-duration I-duration O 
 O O B-command I-command O O O B-device I-device O 
 B-command O O O B-device I-device O 
 O O O B-command B-device I-device I-device 
@@ -311,7 +311,7 @@ O O O O O O O O O B-command B-device I-device O O
 B-command B-device I-device I-device O O B-target_number O O O 
 B-command O O B-device 
 O O B-command I-command O O O B-device I-device O 
-O O O B-command O O O B-device O 
+O O B-command O O O B-device O 
 B-command O O B-device I-device I-device O B-location I-location O B-time_at I-time_at I-time_at I-time_at O B-command O B-duration I-duration I-duration I-duration 
 O O B-command O O O B-device I-device O 
 B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at 
@@ -331,7 +331,7 @@ O O O O O O O O O B-command O O O B-device I-device O O
 O O O B-location I-location B-command O O O O 
 O B-command O O O B-device I-device I-device O O 
 O O B-command O O O B-device I-device I-device I-device 
-B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location 
+B-command O O O B-device I-device O B-location I-location I-location I-location I-location O O 
 O O B-command B-device I-device O B-location I-location O O O 
 O O B-command O O O B-device I-device O B-location I-location 
 O O B-command B-device O O 
@@ -339,9 +339,9 @@ B-command O O O B-device O B-location I-location O
 B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O B-command O O O B-device I-device O B-location I-location I-location I-location O O 
 B-command O O O B-device I-device I-device O B-changing_value O O 
-O O O O B-command O O O B-device I-device O 
+O O O B-command O O O B-device I-device O 
 B-command O O O B-device 
-O O B-command I-command B-device I-device O B-location I-location I-location I-location 
+O O B-command I-command B-device I-device O B-location I-location O O 
 B-command O O B-device O B-location I-location 
 O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O O O 
@@ -380,7 +380,7 @@ B-command O B-location I-location O O B-time_at I-time_at I-time_at I-time_at
 O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O O O O 
 O O B-command O O O B-device I-device I-device I-device O O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+O B-command O O O B-device I-device O B-changing_value O 
 B-command O O O B-device B-location O O 
 O O O O O O B-command B-device I-device O 
 O O B-command I-command O O O B-device I-device O O O O O O 
@@ -422,7 +422,7 @@ B-command I-command O O O B-device O B-location I-location I-location
 O O B-command O B-device I-device I-device O B-changing_value O 
 O O O B-command O O O B-device I-device I-device O 
 O B-command B-device I-device O O B-changing_value O O O 
-O O B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O B-duration I-duration I-duration I-duration 
+O O B-command B-device I-device O B-location I-location I-location I-location O O O B-duration I-duration I-duration I-duration 
 B-command O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O O B-location I-location I-location I-location O 
 B-command I-command O O O B-device I-device O B-location I-location O 
@@ -433,13 +433,13 @@ O O B-command O O O B-device I-device O
 O O B-command O O B-device I-device O B-location I-location I-location O 
 O O B-command O O O B-device I-device O 
 B-command O B-device O O 
-O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device O 
+O O O O O B-location I-location I-location I-location I-location O O B-command O O O B-device I-device O 
 O O O O O B-command B-device I-device I-device 
 O O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 B-command O B-location O 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location 
 B-command B-device I-device I-device O B-location I-location I-location I-location O B-target_number 
-O O O O B-command O O O B-device I-device I-device I-device I-device I-device 
+O O O O B-command O O O B-device I-device O O O 
 B-command B-device O O O 
 O O B-command O O O B-device I-device O 
 O O O B-command O O O B-device I-device O O 
@@ -494,7 +494,7 @@ O O O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device
 O O O O O B-command O O O B-device I-device 
 O O O B-command B-device I-device O B-location I-location I-location I-location I-location O 
 O O O B-command O O B-device I-device O O 
-O O B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command B-device I-device B-location I-location I-location I-location I-location 
 O O B-command O O O O B-device I-device I-device O O 
 B-command O O O B-device I-device O O O 
 O O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
@@ -510,7 +510,7 @@ O O B-command O O O O B-device I-device I-device O B-target_number O B-time_at I
 O O O O O B-command B-device I-device O 
 O B-command O O O B-device I-device 
 B-command O B-device I-device O B-target_number O O 
-O O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device I-device O B-target_number O 
+O O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O B-target_number O 
 O O B-command O O O B-device O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command B-device I-device I-device O B-location I-location I-location I-location I-location 
@@ -556,24 +556,24 @@ O O O O B-command O O O B-device I-device
 O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-changing_value I-changing_value I-changing_value O 
 O O O O O B-command B-device O O 
-B-command O O O B-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O O O 
 B-command O O O B-location O O B-time_at I-time_at I-time_at I-time_at 
 B-command I-command O B-device I-device O O 
 B-command O O O B-device I-device O O B-location I-location O 
-B-command I-command I-command I-command I-command I-command O B-location O O 
+B-command B-device I-device O B-location O O 
 O O O O B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O 
 O B-device I-device I-device O O O O O B-command I-command O O O 
-O O B-command O B-device I-device O B-location I-location I-location I-location I-location I-location 
+O O B-command O B-device I-device O B-location I-location I-location I-location I-location O 
 O O O O O O O O O B-command O O O B-device I-device 
-B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+B-device I-device O O O O O B-command O O 
 O O O O B-command O O O B-device I-device I-device O O 
 O O O B-command O O O B-device O O B-changing_value 
 O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O 
 B-command O O O B-device O 
 O B-location I-location I-location I-location I-location O B-command B-device O O O O B-changing_value O 
-O O B-command I-command B-device I-device I-device I-device 
+O O B-command I-command B-device O O O 
 O O B-command I-command B-device I-device I-device O B-location I-location O B-time_at I-time_at I-time_at I-time_at O O 
 O O B-command O O O B-device I-device 
 O O B-command O O O B-device I-device O O 
@@ -607,8 +607,8 @@ O O B-command O O O B-device I-device I-device O B-command O B-target_number O
 O O O B-command O O B-device I-device O B-location I-location I-location I-location O 
 O O B-command I-command O O B-device I-device I-device O B-location I-location O 
 B-command O O O B-device I-device 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
+O O B-command O O O B-device I-device O O B-location I-location O 
 O O B-command O O B-device I-device O 
 O O O O O B-command O B-device O B-location I-location 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
@@ -635,7 +635,7 @@ O O O B-command O O O B-device I-device O B-location O
 O O O O B-command O O O B-device I-device 
 O O O O B-command B-device I-device O B-location I-location I-location I-location O O B-changing_value 
 O B-command B-device I-device O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device O B-location O 
 B-command O B-device I-device O O O 
 O B-location I-location I-location O O B-command I-command O B-device I-device I-device O O O O O O 
 O O O B-command O O O B-device I-device O 
@@ -648,12 +648,12 @@ O O B-command O O O B-device O
 O O B-command O O O B-device I-device I-device 
 O O B-command B-device I-device I-device I-device O O 
 O O O O O B-command O B-device O O 
-O B-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device I-device O 
+O B-location I-location O B-command O O O B-device I-device I-device O 
 B-command B-device I-device I-device O B-changing_value O O 
 O O B-command O B-device I-device O B-location I-location I-location I-location O O O 
 B-command I-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device O O B-location 
 O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device I-device O O B-changing_value O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device O B-location I-location I-location I-location I-location O 
@@ -669,7 +669,7 @@ O O B-command B-device I-device O O O
 O O B-command I-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device 
 B-command O O O B-device O B-location I-location I-location 
-O B-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device O O 
+O B-location I-location O B-command I-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device I-device O O 
 O O O B-location I-location B-command O B-device I-device I-device O O 
 O O B-time_at I-time_at I-time_at I-time_at B-command B-device O O O 
@@ -678,7 +678,7 @@ O O B-command O O O B-device I-device O B-location I-location O
 B-command O O O B-device I-device O 
 O O B-time_at I-time_at I-time_at I-time_at O B-command O B-device I-device O 
 B-command O O O B-device I-device O B-duration I-duration I-duration I-duration O 
-O B-command O O O B-device I-device I-device I-device 
+O B-command O O O B-device I-device I-device 
 O O O B-command O O O B-device I-device O O 
 O O O O B-command O O O B-device I-device O B-location I-location I-location I-location O O O B-command B-duration I-duration I-duration I-duration 
 B-command O O O B-device O O O O O 
@@ -715,9 +715,9 @@ O O B-command O O O B-device I-device O
 B-command O O O B-device I-device O 
 O O B-command O O O B-device O B-location O B-duration I-duration I-duration I-duration O 
 O O B-command O O O B-device 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command I-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 B-command B-device B-location I-location O B-target_number 
-O B-command I-command O O O B-device I-device I-device I-device 
+O B-command I-command O O O B-device I-device I-device 
 O O O O O B-command O O O B-device I-device O 
 O O O O B-command O B-device I-device B-location I-location I-location I-location O 
 O O B-command O B-device O O O B-location I-location O 
@@ -736,8 +736,8 @@ B-command O B-device I-device O O O O O O
 O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O O O O O O O B-command O O O B-device I-device O B-changing_value O O 
 O O O O O O B-command I-command O O O B-device I-device O O 
-B-command O O O O B-location I-location I-location 
-B-command O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O 
+B-command O O O O B-location I-location O 
+B-command O O B-location I-location I-location O O B-duration I-duration I-duration I-duration O 
 O O B-command I-command O O O B-device I-device I-device O O O O O O 
 B-command I-command O O O O O B-device I-device 
 O O B-command O O O B-device I-device O 
@@ -775,9 +775,9 @@ O O B-command O O O B-device I-device O O O O B-location I-location O
 O O B-command B-device O O 
 O B-command O O O B-device I-device B-changing_value O 
 O O B-command B-device I-device B-location I-location O O O 
-O O O O O O O B-device I-device I-device I-device I-device I-device I-device I-device O O B-device O B-location O 
+O O O O O O O B-device O B-command I-command O O B-device O B-location O 
 O O B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device O B-location I-location O 
 O O B-command O O B-device I-device O 
 O O B-command B-device I-device I-device O O B-target_number O O 
 B-command I-command O O O B-device I-device I-device O B-location I-location O 
@@ -835,12 +835,12 @@ O O O O O O O O B-command O O O B-device I-device O
 B-command O O O B-device I-device O 
 O O B-command B-device I-device I-device O O 
 B-command I-command O O O B-device I-device O B-location I-location O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O B-location I-location I-location I-location 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O O B-location I-location I-location I-location 
 B-command O O B-device I-device I-device O 
 O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device O O O O 
-B-command I-command O O B-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+B-command I-command O O B-device O B-location I-location I-location O O O O O O O O 
 B-command O O O B-device I-device I-device 
 B-command B-device I-device I-device O O B-location I-location I-location I-location I-location O 
 O O O B-device I-device I-device O O O O O B-command I-command O O O O 
@@ -859,7 +859,7 @@ O O O O B-command O O O B-device I-device O B-location I-location O O
 O O O O B-command O O O B-device I-device I-device O O 
 B-command O O O B-device I-device O O B-location I-location O O 
 O O O O O O O O B-command O B-device I-device O O 
-B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O B-device I-device I-device O O O O O O 
 O O B-command O O O B-device I-device O O B-location O 
 O O B-command B-device O 
 B-command O O O B-device I-device O O B-location I-location 
@@ -919,11 +919,11 @@ O O B-command I-command O O O B-device I-device O
 O O B-command O O O B-device I-device 
 B-command I-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O 
-O O O O B-command O O O B-device I-device I-device O O O 
+O O O O B-command O O O B-device I-device I-device O O 
 O O B-command O O O B-device I-device O 
 O O O B-command B-device O O O O O O O O 
 O O O O O B-command O O O B-device I-device I-device O B-target_number O O 
-B-command O O O B-device I-device I-device 
+B-command O O O B-device I-device O 
 B-command B-device I-device O O O 
 O O B-command O O O B-device I-device I-device O 
 O O O O B-command O O O B-device I-device 
@@ -940,7 +940,7 @@ O O B-command O O O B-device I-device O
 O O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O O 
 B-command B-device O B-location I-location O 
-O O O O B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O O B-device I-device I-device I-device O 
+O O O O B-command O B-device I-device I-device I-device B-command O O O B-device I-device I-device I-device O 
 O O B-command O O O B-device I-device 
 O O O O B-device I-device O O B-command O B-changing_value O O O 
 B-command O B-device I-device I-device O B-location I-location O O 
@@ -1000,7 +1000,7 @@ O O B-command B-device I-device O
 B-command B-device I-device I-device O O 
 B-command O O O B-device I-device O 
 B-command B-device I-device O O 
-O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O O B-location I-location I-location I-location I-location I-location I-location O O O O B-duration I-duration I-duration I-duration 
+O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O O B-location I-location B-command O O O O B-duration I-duration I-duration I-duration 
 O O O B-command I-command O O O B-device I-device I-device O B-location I-location O O O O O O 
 O O O O O O B-command I-command O B-device I-device O B-location I-location O O O 
 O O B-command B-device I-device O B-location I-location I-location O 
@@ -1100,7 +1100,7 @@ O B-command O O O B-device I-device O B-location I-location I-location I-locatio
 B-location I-location O O O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device O O 
 O O B-command O O O B-device I-device I-device O B-location I-location O 
-O B-command O O O B-device I-device O O B-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-time_at I-time_at I-time_at I-time_at O 
+O B-command O O O B-device I-device O O B-location I-location O B-changing_value O O O B-time_at I-time_at I-time_at I-time_at O 
 O B-command B-device I-device O B-location I-location I-location I-location O B-target_number 
 B-command O O O B-device I-device O O O O 
 O O O B-location I-location I-location I-location O O O B-command I-command O O O B-device I-device O 
@@ -1183,7 +1183,7 @@ O B-command O O O B-device I-device O
 O O B-command O B-device I-device I-device O O O 
 O O O O O O B-command O O O B-device I-device I-device O O 
 O O O O B-command I-command O B-device I-device I-device O O O O O 
-O B-command O O B-device I-device O B-location I-location I-location I-location I-location I-location 
+O B-command O O B-device I-device O B-location I-location I-location I-location I-location 
 O O B-command O B-device I-device O O O O O O O 
 B-command O O O B-device I-device I-device O B-changing_value O O 
 O O O O O B-command O O O B-device I-device I-device O 
@@ -1276,7 +1276,7 @@ B-command B-device I-device O O O
 O O O B-command O O O B-device I-device I-device O 
 B-command O O O B-device O B-location I-location O 
 B-command O O O B-device I-device O O O O O 
-O O B-command O O O B-device I-device I-device 
+O O B-command O O O B-device I-device O 
 O O B-command O O B-device I-device O B-location I-location O 
 B-command B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device I-device I-device O O 
@@ -1292,7 +1292,7 @@ O O O O B-location I-location O B-command O O O B-device I-device O O
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O 
 B-command I-command O B-device I-device I-device O O O 
-B-command I-command O O O B-device I-device I-device I-device 
+B-command I-command O O O B-device I-device I-device 
 O B-command O O O B-device I-device O O 
 O O B-command O O O B-device O O 
 B-command I-command B-device I-device O O 
@@ -1336,7 +1336,7 @@ B-command O O O B-device O B-location I-location O
 O O B-command O O O B-device I-device I-device I-device O O B-location O 
 O O O O O O B-command O O O B-device I-device O 
 B-command I-command O B-device I-device O O O 
-B-command I-command I-command I-command I-command I-command O B-location I-location 
+B-command B-device I-device O B-location I-location 
 O O B-command B-device I-device O B-location I-location I-location O O 
 B-command O O O B-device I-device I-device 
 O O O B-command O O O B-device O O B-location I-location I-location I-location O 
@@ -1346,7 +1346,7 @@ B-command I-command O O O B-device I-device I-device O B-time_at I-time_at I-tim
 O O B-command I-command O O O B-device I-device 
 O O B-command O O O B-device I-device I-device O O 
 B-command I-command O B-location I-location O 
-O O B-command O O B-device I-device O B-location I-location I-location I-location 
+O O B-command O O B-device I-device O B-location I-location O O 
 O O B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O 
 B-command O B-device I-device O B-location 
@@ -1355,7 +1355,7 @@ O O O B-command O O O B-device I-device O O B-changing_value O O B-time_at I-tim
 O B-command O O O B-device I-device O O B-changing_value O B-duration I-duration I-duration I-duration 
 O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device 
-B-command B-device I-device I-device O O B-target_number O O O O O O O O O O 
+B-command B-device I-device I-device O O B-target_number O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device O B-location I-location O B-changing_value O 
 B-command B-device 
 O O B-command O O O O B-device I-device O O O 
@@ -1442,8 +1442,8 @@ B-command B-device I-device O B-location I-location I-location
 O O B-command O O O O B-changing_value O B-device I-device O 
 B-command O B-location I-location I-location O O 
 O O O B-command O O O B-device O B-location I-location O O B-target_number O 
-B-command O O O B-device I-device O B-changing_value I-changing_value 
-B-command I-command O O O B-device I-device I-device 
+B-command O O O B-device I-device O B-changing_value 
+B-command I-command O O O B-device I-device 
 O O O B-command O O O B-device I-device I-device O O 
 O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O O O 
@@ -1463,7 +1463,7 @@ B-command O O O B-device O O
 O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O O B-location I-location O 
-B-command O O O B-device I-device I-device O O B-target_number O O O O O O O O O O O O 
+B-command O O O B-device I-device I-device O O B-target_number O O B-time_at I-time_at I-time_at I-time_at O 
 O O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O O B-command O O O B-device I-device 
 O O O B-command O O B-device I-device O O O O 
@@ -1489,7 +1489,7 @@ O O B-command I-command O O O B-device I-device I-device O B-time_at I-time_at I
 B-command O O B-target_number O O O O B-device I-device I-device O B-location I-location O 
 O O B-command I-command O O O O O B-device I-device O O O O O O O O 
 O O B-command I-command O O O B-device I-device 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location B-device I-device O O O 
+O O O O B-location I-location I-location I-location B-command B-device I-device O O O 
 B-device I-device O O B-command I-command O O O 
 O O O B-command O O O B-device 
 B-command I-command O O O B-device I-device I-device O 
@@ -1564,13 +1564,13 @@ O O O O B-command B-device I-device I-device O B-location I-location I-location 
 O O B-command O O O B-device I-device O 
 O O B-command O O O O O B-device I-device O B-changing_value 
 O O O B-command O O O B-device I-device O 
-O O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location 
+O O O B-command O O O B-device I-device I-device O B-location I-location O O 
 O O B-command O O B-device O O O O O 
 B-command O O O B-device I-device O O 
 O O O O O O O O O B-command O B-device I-device I-device O O O O 
 B-command O B-device I-device I-device O B-changing_value O O B-duration I-duration I-duration I-duration O 
-O O O O B-location I-location B-command I-command O O O B-device I-device I-device 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O O O B-location I-location B-command I-command O O O B-device I-device O 
+B-command I-command O O O B-device I-device O B-location I-location I-location O 
 O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device I-device O O 
 O O O O B-command I-command O O O B-device I-device O 
@@ -1591,7 +1591,7 @@ O O B-command O O O B-device I-device I-device
 O O B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
 B-command O B-device O O O 
 B-command B-device I-device O O 
-O O B-command O B-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location 
+O O B-command O B-device I-device O B-location I-location I-location I-location I-location O O O 
 B-command O O O B-device I-device B-changing_value 
 O O B-command O B-device I-device O O O 
 O O O B-command O O O B-device I-device O 
@@ -1602,7 +1602,7 @@ O O B-command O O O O B-device I-device O O
 O O B-command O O O B-device I-device O B-target_number O 
 O O B-command O O O B-device I-device O 
 B-command O O O B-device O B-location O O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O O O 
+O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device O O O 
 B-device I-device O B-location O O B-command O O O O 
 B-command O O O B-device I-device O O 
 B-command O O B-device I-device I-device O B-target_number O O O 
@@ -1630,12 +1630,12 @@ B-command O B-device I-device O B-location I-location I-location I-location I-lo
 O O B-command I-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-location O 
 B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
-B-command I-command I-command I-command I-command I-command I-command O B-location I-location I-location I-location O B-duration I-duration I-duration I-duration 
+B-command B-device I-device I-device O B-location I-location I-location I-location O B-duration I-duration I-duration I-duration 
 O O B-command O O O B-device I-device O O O O 
 O O B-command O O O B-device I-device 
 O O O B-command B-device I-device I-device O O O 
 O O B-command O O O B-device I-device O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device O 
+O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device O 
 O O O O B-command O O O B-device I-device O 
 O O B-command B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device 
@@ -1646,7 +1646,7 @@ B-command B-device I-device I-device O
 O O B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O O 
 B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device I-device O B-location O 
 B-command I-command B-device I-device O O 
 B-command B-device I-device O B-time_at I-time_at I-time_at I-time_at O O 
 B-command B-device I-device O O O O O O O O 
@@ -1670,23 +1670,23 @@ B-command B-device I-device I-device O B-location I-location
 O B-command I-command O O B-device I-device O B-location I-location I-location I-location O 
 O B-command B-device I-device O B-location O O 
 O O B-command O O O B-device I-device O B-location I-location O 
-O O B-command I-command O O O B-device I-device O O O O O O 
+O O B-command I-command O O O B-device I-device O O O O O 
 O O B-command O O O B-device I-device O 
 B-command I-command O O O B-device I-device O 
 B-command B-device I-device B-changing_value O O B-duration I-duration I-duration I-duration 
 O O B-command I-command O O O B-device I-device I-device O 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location B-device I-device O B-duration I-duration I-duration I-duration 
-O O B-command B-device I-device I-device I-device 
+O O O B-location I-location I-location O B-command B-device I-device O B-duration I-duration I-duration I-duration 
+O O B-command B-device I-device O O 
 B-command O O O B-device I-device O 
 O O B-command O O O B-device O 
 O O O B-location I-location B-command O O O B-device I-device O 
 B-command O O B-location I-location O 
 B-command O O O B-device I-device O B-changing_value 
 O O B-command B-device I-device I-device O O 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command I-command O O O B-device I-device O O O O O O O O O 
 B-command O B-device I-device O B-changing_value O O O 
 O O B-command O O O B-device I-device O 
-O O O O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O O O O B-command I-command O O O B-device I-device O B-location I-location O B-location I-location O 
 B-command O B-device I-device O B-changing_value O O O 
 O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device O B-command O O O O 
@@ -1732,22 +1732,22 @@ O O B-command O O O B-device I-device I-device O B-location I-location O
 O O O B-command O O O B-device I-device I-device O O 
 B-command O O O B-device O O 
 O O O O O O B-command O O O B-device I-device O B-location I-location O 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
-O O B-location I-location O O O O O B-command O O O B-device I-device I-device 
+O O B-command I-command O O O B-device O O O O O O O O O O O O O O 
+O O B-location I-location O O O O O B-command O O O B-device I-device O 
 B-command I-command O O O B-device O 
 B-command O B-device O O O 
 O O B-command O O O B-device I-device O 
 B-location I-location O O O B-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location 
+O O B-command O O O B-device I-device O B-location I-location O O O 
 B-command O O O B-device I-device O O O O O 
 O O B-command B-device I-device I-device O B-location I-location I-location I-location I-location O O O 
 B-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device I-device O B-location I-location O 
 B-command O O O B-device I-device O 
-O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O O O B-device I-device O O O O O B-command I-command O O O 
 O O B-command O O O B-device I-device O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O O B-target_number O 
+B-command O O O B-device I-device O B-location I-location O O B-target_number O 
 B-command B-device I-device O O 
 O O B-command O O O B-device I-device I-device O B-location I-location O 
 B-command I-command O B-device I-device I-device O O O 
@@ -1787,7 +1787,7 @@ O O B-command O O O B-device I-device O O
 O O B-command I-command O O O B-device I-device O 
 B-command O O O B-device 
 B-command B-device I-device I-device I-device O B-location I-location 
-O O O O O B-command O O O B-device I-device O B-location I-location I-location 
+O O O O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device O B-changing_value O O O O O 
 O O O O O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O O O B-command O B-device O O 
@@ -1800,7 +1800,7 @@ O O B-command O O O B-device O B-location I-location O
 B-command O O O B-device O B-location I-location O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O O O B-command O O O B-device I-device O 
-O O B-command I-command I-command I-command I-command I-command O O 
+O O B-command B-device I-device O O 
 B-command O O O B-device I-device I-device O 
 B-command O B-location I-location O O 
 B-command B-device I-device O B-location I-location I-location I-location I-location O B-time_at I-time_at I-time_at I-time_at 
@@ -1822,7 +1822,7 @@ O O O B-command O O O B-device I-device O
 O O O O O B-command O O O B-device I-device I-device 
 O O B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device I-device O O O O O 
 O O O O O B-command O O O B-device O B-location O 
 O O B-command O O O B-device I-device 
 O O B-command I-command O B-device I-device O O 
@@ -1830,12 +1830,12 @@ O O O B-command B-device O B-target_number O O O O
 O O B-command B-device I-device O O O O 
 O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 O O O B-command O O B-device I-device O 
-B-command B-device I-device I-device O B-target_number O O O O O O O O O O 
+B-command B-device I-device I-device O B-target_number O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device I-device O 
 O O O O O B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
-O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
+O O B-command O O O B-device I-device I-device O O O O 
 O O B-command O O O B-device I-device 
 O O O O O B-command O O O B-device I-device I-device O 
 O O B-command I-command O O O B-device I-device O 
@@ -1849,7 +1849,7 @@ O B-command O O O B-device I-device O O
 O O O O O O O O O O O O O B-command I-command O O O B-device I-device O O O 
 B-device I-device I-device O O O B-command O O O O O O 
 O O B-command B-device B-location I-location O O O 
-O O O O O O O O B-device I-device I-device O O O 
+O O B-command O O B-device I-device I-device O O O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device O O O 
 O O B-command B-device I-device I-device O O 
@@ -1901,14 +1901,14 @@ B-location I-location O O O B-command O O O B-device I-device O O
 B-command O B-device I-device O B-location I-location I-location O O O O O O O B-command 
 O O O O B-command O O O B-device I-device O 
 B-device I-device O O O B-command O O 
-B-command O O O B-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O O O 
 B-command O O O B-device I-device O B-location O O 
 B-command O B-device I-device I-device O O O O 
 O B-command O O B-device I-device I-device O O O 
 B-command O O O B-device I-device O 
 O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O O O 
-B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O B-time_at I-time_at I-time_at I-time_at 
+B-command B-device I-device I-device O B-location I-location I-location I-location I-location O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device I-device O O O 
 O O O B-command O O O B-device I-device O O B-target_number O 
 O O O O B-command O O O B-device I-device I-device I-device O O B-location 
@@ -1981,7 +1981,7 @@ B-command B-device I-device I-device
 B-command O B-device I-device O O O O O 
 O O B-command O O O B-device I-device O 
 B-command B-device I-device I-device O 
-O O B-command I-command I-command I-command I-command I-command O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at 
+O O B-command B-device I-device O O B-time_at I-time_at I-time_at I-time_at O O 
 O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O O B-target_number O 
 B-command O O O O B-device I-device I-device O B-duration I-duration I-duration I-duration O O 
@@ -1990,14 +1990,14 @@ O O B-location I-location I-location O O O O B-command O O O B-device I-device O
 B-command O B-device I-device O B-location I-location I-location O O O 
 O O O O O O O O B-command O O O B-device O O 
 O O O O B-device I-device I-device O B-location O O O B-command O O O O 
-O O O O B-command O O O B-device I-device I-device 
+O O O O B-command O O O B-device I-device O 
 O B-device I-device I-device O O B-command O O O B-changing_value O 
 B-command O O O B-device O B-location I-location O 
 O O O O B-time_at I-time_at I-time_at I-time_at O B-command I-command O O O B-device I-device O 
 B-command I-command O O O B-device I-device I-device 
 O O B-command B-device I-device O B-location I-location O O 
 O O O O O B-location I-location B-command O O O B-device I-device O 
-O O O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device 
+O O O O O B-command O O O B-device I-device O B-changing_value 
 B-command O B-device I-device 
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O 
@@ -2014,7 +2014,7 @@ B-command O O O B-device I-device I-device O O O
 O O B-command I-command B-device O O O 
 B-command B-device I-device O B-changing_value O O O 
 B-command B-device I-device I-device O O B-time_at I-time_at I-time_at I-time_at 
-O O O O B-location I-location I-location I-location I-location I-location I-location O B-target_number O O O 
+O O O O B-location O B-command O B-target_number O O O 
 B-command I-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device O O 
 O O O B-command O B-device I-device O O 
@@ -2060,7 +2060,7 @@ O O B-command I-command O O B-device I-device I-device O O O O O O
 B-command B-device I-device O B-location I-location I-location I-location 
 O O B-command B-device I-device O B-location I-location I-location O O 
 B-command O O O B-device O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O O 
+O O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device O O 
 B-command B-device I-device O O O 
 B-command O O O B-device I-device I-device B-target_number 
 B-command O B-device I-device O O O 
@@ -2130,7 +2130,7 @@ O O O B-command I-command O B-device I-device O B-location I-location O O O O
 O O B-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device I-device I-device O O 
 O O B-command O O O B-device I-device O 
-O O O O O B-command I-command O O O B-device I-device O 
+O O O O B-command I-command O O O B-device I-device O 
 O O O O O B-command O O O B-device I-device O 
 O O B-command O O B-device I-device I-device O B-changing_value O 
 B-command B-device O B-location I-location I-location O O O 
@@ -2147,7 +2147,7 @@ O O B-command O O O B-device O B-location I-location I-location I-location I-loc
 B-command I-command O B-device I-device I-device O O B-location I-location O O O 
 B-command B-device I-device O B-time_at I-time_at I-time_at I-time_at O O O 
 O O O B-command O O O B-device I-device O 
-O B-device I-device I-device O O B-location I-location I-location I-location I-location I-location I-location I-location I-location O O O O O 
+O B-device I-device I-device O O B-location I-location I-location I-location B-command O O O O O 
 O O B-command O O O B-device I-device O 
 O O O B-command O O O B-device I-device I-device O O 
 B-command O O O B-device I-device I-device O O B-location I-location I-location I-location I-location O 
@@ -2155,7 +2155,7 @@ B-command O O O B-device I-device I-device O O O B-target_number O
 O O O O B-command O B-device I-device 
 B-command O O O B-device I-device O 
 B-command O B-device I-device I-device O O O B-time_at I-time_at I-time_at I-time_at 
-O O B-command O O O B-device I-device O O O O O O O 
+O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device O O B-target_number O 
 O O B-command O O O B-device I-device O 
 B-command B-device I-device I-device O B-target_number 
@@ -2193,7 +2193,7 @@ O O B-command O O O B-device I-device O
 O O O B-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device O O O 
 B-command O O O B-device I-device O O 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O B-device I-device O O O 
+O O O O B-location I-location O O O B-command O B-device I-device O O O 
 B-command O B-device I-device O O O O B-command O B-changing_value O O 
 O O O O B-command O B-device I-device I-device 
 B-command O O O B-device I-device I-device O O B-location I-location O 
@@ -2242,7 +2242,7 @@ B-command O O O B-device I-device I-device O
 O O B-command O O O B-device I-device O B-location I-location O 
 O O O O O B-command O O O B-device O 
 O O B-command O O O B-device I-device I-device O O O O O 
-O O O O O O B-device I-device O O O 
+O O B-command B-device I-device O O O 
 O B-command I-command O O O B-device I-device I-device O 
 B-command I-command O O O B-device I-device O 
 O O O O O O B-command O O O B-device O B-location I-location O O 
@@ -2288,7 +2288,7 @@ O O B-command O O O B-device O B-target_number O O
 O O B-command O O O B-device I-device I-device O B-location I-location I-location O 
 O O B-command O O O B-device I-device O O O O O O O O O O O O O 
 B-command I-command O B-device I-device 
-O O O B-command B-device I-device I-device I-device I-device I-device I-device O O O B-device I-device O O O O O O O O O 
+O O O B-command B-device I-device B-command O O O B-device I-device O B-location I-location I-location I-location O 
 B-command B-device I-device B-changing_value 
 O B-command O O O B-device I-device I-device 
 B-command B-device I-device B-changing_value 
@@ -2333,7 +2333,7 @@ O B-command I-command O O O B-device I-device O B-time_at I-time_at I-time_at I-
 O O B-command I-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-target_number O 
 O O B-command O O O B-device I-device O 
-O O O B-command I-command I-command I-command I-command I-command O B-location O 
+O O O B-command B-device I-device O B-location O 
 O O O O O B-command B-device I-device O O O O 
 O O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-changing_value 
@@ -2392,12 +2392,12 @@ O O B-command B-device O O
 O O B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command B-device O O O 
-O O B-location I-location I-location I-location I-location I-location I-location O O B-duration I-duration I-duration I-duration O O 
+O O B-location O B-command O O B-duration I-duration I-duration I-duration O O 
 O O B-command O O O B-device I-device O B-target_number O 
 O O B-command I-command O O O B-device I-device O O O O O O 
 B-command I-command O B-device I-device O O O O O O 
 B-command B-device I-device O B-location I-location I-location I-location 
-B-command B-device I-device O O O O O O 
+B-command B-device I-device O B-location I-location 
 O O B-command O O O B-device I-device I-device O O B-location I-location O 
 O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O 
@@ -2449,7 +2449,7 @@ B-command I-command O O O B-device I-device O B-location I-location
 O O B-command I-command O O O B-device I-device O 
 B-command O O O B-device I-device B-location I-location O 
 O O B-command O O O B-device I-device O O 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location B-device O 
+O O O O B-location I-location O O B-command B-device O 
 B-command B-device I-device O B-target_number 
 B-command B-device I-device 
 B-command I-command O O O B-device I-device O 
@@ -2464,12 +2464,12 @@ O O O B-command O B-device I-device O O
 B-command O O O B-device I-device I-device O O 
 O O O O O O B-command O O O B-device I-device 
 O O O B-command O O O B-device I-device O B-location I-location O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device O B-location O B-changing_value O 
+O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O B-location O B-changing_value O 
 O O B-command O O O B-device I-device O O B-location I-location 
 B-command I-command O O O B-device I-device O B-location I-location I-location 
 O O B-command O O O B-device I-device I-device O B-changing_value O O 
 O O O O B-command O O B-device I-device I-device O B-location I-location O 
-O B-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O B-device I-device B-command I-command O O O 
 O O B-command O O O B-device I-device I-device O O O O O B-command 
 B-command B-device I-device O B-location I-location I-location I-location 
 O O B-location I-location O O B-device I-device O B-command O O O O O 
@@ -2505,7 +2505,7 @@ O O B-command O O O B-device I-device I-device
 O B-device I-device O B-location O B-command O O O O 
 O O B-command I-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device O O O O 
 B-command O O O B-device O O 
 B-command I-command O O O B-device I-device O 
 B-command B-device I-device 
@@ -2545,7 +2545,7 @@ O B-command I-command O B-device I-device O B-location I-location I-location
 O O B-command I-command O O O B-device I-device O 
 O B-command O O O B-device I-device I-device I-device 
 O O O O B-command O O O B-device I-device O O 
-B-command I-command O B-device I-device I-device 
+B-command I-command O B-device I-device O 
 B-command O O O B-device I-device 
 O O O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device 
@@ -2554,7 +2554,7 @@ B-command O O O B-device I-device O
 B-command I-command O O O B-device I-device 
 O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O O O 
 O O O O O B-command O O O B-device O 
-O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+B-command O B-target_number O O B-duration I-duration I-duration I-duration O O B-location O 
 B-command O O O B-device O B-location O O 
 O O B-command B-device I-device O B-location O O 
 B-command O O O B-device I-device O 
@@ -2617,7 +2617,7 @@ B-command O O O B-device O
 O O B-device I-device O B-location I-location O B-command O O 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 O O B-command O O O B-device I-device O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O O 
+O B-time_at I-time_at I-time_at I-time_at B-command B-device I-device O O 
 O B-command O B-device I-device O O O 
 B-command O O B-device B-location 
 B-command O O O B-device I-device O 
@@ -2646,7 +2646,7 @@ O O O B-command O O O B-device O
 O O O B-command B-device I-device O 
 B-command O O O B-device I-device 
 O O B-command O O O B-device I-device O 
-O B-device I-device I-device O O O O O O B-command I-command O O O 
+O B-device I-device I-device O O O O O B-command I-command O O O 
 B-command O O O B-device I-device 
 B-command I-command O O O B-device I-device O O B-time_at I-time_at O 
 O O O B-command O O O B-device I-device I-device O 
@@ -2683,7 +2683,7 @@ O O O O B-command O O O B-device I-device I-device O
 O O B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O B-changing_value O 
 B-command I-command B-device I-device O B-location I-location I-location I-location I-location 
-O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O O B-device I-device O O O O O O B-command I-command O O O 
 O B-device I-device O B-location I-location I-location I-location I-location O B-command O O O 
 B-command O O O B-device I-device B-changing_value O 
 B-command O O O B-device I-device O B-target_number O 
@@ -2767,7 +2767,7 @@ O O B-command I-command O O O B-device I-device O
 B-command O O O B-device I-device O O O O 
 O O O B-command O O O B-device I-device O B-location I-location O 
 B-command O B-device I-device O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O B-duration I-duration I-duration I-duration O 
+B-command O O O B-device I-device I-device O O O O B-location O O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device O O O O O O 
@@ -2779,7 +2779,7 @@ O O B-command O O O B-device I-device O
 O O O O B-command O O O B-device I-device I-device O O 
 O O O B-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device I-device O 
-O O O O B-command B-device I-device I-device I-device 
+O O O O B-command B-device I-device O O 
 B-command B-device O B-location I-location 
 O O B-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device O B-changing_value O O O O O 
@@ -2804,7 +2804,7 @@ B-command I-command O O O B-device I-device I-device O O
 O O O O O B-command B-device I-device O O O 
 O O B-command O O O B-device I-device I-device O B-duration I-duration I-duration I-duration O 
 O O B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device O O O O O O O B-duration I-duration I-duration I-duration O 
+O O B-command O O O B-device I-device O B-location I-location O B-duration I-duration I-duration I-duration O 
 O B-device I-device O O O O O B-command O O O O 
 O O O O B-command O O O B-device I-device O 
 B-command O O O B-device O B-location O O 
@@ -2853,7 +2853,7 @@ O O B-command B-device I-device I-device O O
 O O O O B-command O O O B-device I-device I-device O 
 B-command O O B-device I-device I-device O B-location I-location 
 O O B-command I-command O O B-device I-device O B-location I-location I-location I-location I-location O O O O O O O O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O 
+O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O B-location I-location 
 B-command O O O B-device I-device I-device O B-location I-location O 
 O O O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
@@ -2882,7 +2882,7 @@ O O B-command O O O B-device I-device I-device O O
 B-command O O B-device I-device O 
 B-command O O O B-device I-device O 
 O O O O B-command O O O B-device I-device O 
-B-command I-command B-device I-device I-device I-device I-device I-device I-device I-device 
+B-command I-command B-device I-device O B-location I-location 
 B-command O O O O O O B-device I-device O O 
 B-command O O O B-device O B-location I-location O O O 
 O O B-command O O O B-device I-device O B-location I-location I-location O 
@@ -2914,7 +2914,7 @@ O O B-command O O O B-device O O B-time_at I-time_at I-time_at I-time_at
 O O O B-location O O O B-command O O O B-target_number O 
 O O B-command O O O B-device I-device O B-changing_value O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location 
-O O B-command B-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O O B-command B-device I-device O B-location I-location O O O 
 O B-command O O O B-device I-device O O 
 O O B-command O B-device I-device I-device O O 
 O O B-command O O O B-device I-device I-device O 
@@ -2931,7 +2931,7 @@ B-command B-device I-device O B-target_number O O O O O
 O O B-command O O O B-device I-device I-device O B-location I-location I-location O 
 O O B-command O B-device I-device O O O B-duration I-duration I-duration I-duration O 
 O O O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O O O O O O O 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O O O O O O O O O 
 B-command O O B-device I-device O B-location I-location I-location 
 O O O O B-command O O O B-device I-device O O 
 B-command B-device I-device O B-location I-location I-location I-location I-location O B-target_number 
@@ -2944,7 +2944,7 @@ O O B-command O O O B-device I-device I-device O
 O B-command O B-device I-device O O O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device 
-O O B-command O O O B-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location O 
+O O B-command O O O B-device O B-location I-location O B-target_number O 
 O O O O O O O O B-command O O O B-device O O 
 O O B-command O O O B-device I-device O B-location I-location O 
 O B-command O O O B-device I-device I-device O B-location O B-duration I-duration I-duration I-duration 
@@ -2959,7 +2959,7 @@ O O O O B-command O B-device I-device O O O O B-changing_value O
 O O B-command O O O B-device I-device O B-changing_value O 
 O O O O B-command O O O B-device I-device I-device O 
 B-command O O B-device I-device I-device O B-location I-location I-location I-location B-duration I-duration I-duration I-duration 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location O O B-device I-device I-device O O O 
+O O O O B-location I-location O O B-command O O B-device I-device I-device O O O 
 O B-device I-device I-device O B-location I-location O O O O B-command I-command O 
 B-command O O O B-device I-device O B-changing_value O O 
 O O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O B-time_at I-time_at I-time_at I-time_at O 
@@ -2974,9 +2974,9 @@ B-command B-device I-device B-changing_value
 B-command O O O O B-device I-device I-device O O O O O 
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location 
 B-command O B-device O B-location O O O 
-O O B-command O O O B-device I-device I-device I-device 
+O O B-command O O O B-device I-device O O 
 O O B-command I-command O O O B-device I-device O B-location I-location I-location O 
-O O B-command B-device I-device I-device I-device I-device 
+O O B-command B-device I-device O O O 
 O O B-command O O O B-device I-device O O B-location I-location I-location I-location I-location O 
 O O B-command O O O B-device O 
 O O B-command B-device O B-location I-location I-location I-location I-location O O O 
@@ -2987,13 +2987,13 @@ O O O O O O B-command O O O B-device I-device I-device O
 O O B-command I-command O O O B-device I-device O 
 B-command B-device O B-location I-location O O O 
 B-command O O O B-device I-device I-device O O B-target_number O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device O B-location I-location O 
 B-command B-device B-location I-location I-location I-location I-location O B-target_number O 
 B-command O O O B-device I-device O O B-location I-location I-location I-location I-location O 
 O O O O O B-command O O O B-device I-device 
 O O O O O O B-command O O O B-device I-device O 
 B-command O O O B-device B-location I-location 
-O O B-command O O O B-device O B-location I-location I-location I-location I-location I-location 
+O O B-command O O O B-device O B-location I-location I-location I-location I-location O 
 B-command O O O B-device I-device I-device O 
 O O O O B-duration I-duration I-duration I-duration O O B-command O B-device I-device I-device O O O 
 O O O B-location I-location O O O B-command O O O B-time_at I-time_at I-time_at I-time_at O 
@@ -3002,7 +3002,7 @@ O O B-command O O O B-device I-device O O
 O O B-command O O O B-device I-device O B-location I-location I-location O O O B-target_number O 
 O O B-command O O O B-device I-device O 
 O B-command O O B-location I-location I-location I-location O B-command O O B-duration I-duration I-duration I-duration O O 
-O B-location I-location I-location I-location I-location I-location I-location I-location I-location O O B-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number 
+O B-location I-location I-location I-location B-command O O B-target_number O B-duration I-duration I-duration I-duration 
 B-command O O O B-device I-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O O O O B-command B-device I-device I-device O O O O O B-target_number I-target_number I-target_number O 
@@ -3081,7 +3081,7 @@ O O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device
 B-command B-device I-device O O O O O O O O O O O O 
 B-command O O O B-device I-device O O O 
 B-command I-command O O O B-device I-device O B-location I-location O O 
-O O B-command I-command O O O B-device O O O B-location I-location I-location I-location 
+O O B-command I-command O O O B-device O O O B-location I-location I-location O 
 O O B-command O B-device O O O B-target_number O O 
 O B-device I-device O O O O O O B-command I-command O O O 
 B-command B-device I-device O O B-changing_value O O 
@@ -3129,7 +3129,7 @@ O O B-device I-device O O O O O O B-command I-command O O O
 B-command O O O B-device I-device O B-command B-changing_value O O B-time_at I-time_at I-time_at I-time_at 
 O O O O O O O O O O O B-command O O O B-device I-device I-device O O 
 B-location I-location O O O O O O B-command O O O B-device I-device O 
-O O O O B-command O O O B-device I-device I-device I-device 
+O O O O B-command O O O B-device I-device O O 
 O O B-command O B-device I-device O B-changing_value O O O 
 B-device O O O O B-command I-command O O 
 B-command O B-device I-device O B-target_number O O O 
@@ -3146,12 +3146,12 @@ B-command B-device I-device O B-changing_value I-changing_value I-changing_value
 O O O O O B-command O O O B-device O 
 O O B-command O O O B-device I-device O O O O 
 B-command O O O B-device I-device O 
-B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location 
+B-command O O O B-device I-device O B-location I-location O O O O 
 B-command O O O O O B-device I-device O O O 
 O O B-command B-device I-device O B-time_at I-time_at I-time_at I-time_at O B-duration I-duration I-duration I-duration O O 
 O O O O B-command O O O B-device O B-location I-location O 
 B-command O O O B-device I-device O O O O 
-B-command O B-device I-device O O O B-time_at I-time_at I-time_at I-time_at I-time_at 
+B-command O B-device I-device O O O B-time_at I-time_at I-time_at I-time_at O 
 O B-command B-device I-device O B-location O O 
 B-command O B-device O B-location O O O B-duration I-duration I-duration I-duration O O O 
 O O B-command O O B-device I-device O O B-location I-location O 
@@ -3178,7 +3178,7 @@ O B-device I-device O O O O B-command I-command O O O O O
 B-command B-device I-device B-target_number O O O O O 
 B-command O B-device O 
 O O B-device I-device O O O O O B-command O O O 
-B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location O B-changing_value 
+B-command O O O B-device I-device O B-location I-location B-command O B-changing_value 
 B-command I-command O O B-device I-device 
 B-command I-command O B-device I-device I-device O B-location I-location I-location O 
 B-command B-device O B-time_at I-time_at I-time_at I-time_at O 
@@ -3190,7 +3190,7 @@ B-command I-command O O O B-device I-device O B-location I-location O
 O O B-command B-device I-device I-device O O 
 O O O O B-command B-device I-device I-device O O 
 B-location I-location O O O B-command O O B-device I-device I-device O 
-B-command I-command I-command I-command I-command I-command I-command I-command I-command I-command I-command O 
+B-command B-device I-device B-location I-location O 
 O O O B-command O O O B-device I-device I-device O O 
 O O O B-command I-command O O O B-device I-device I-device O 
 O O O O O B-command O O O B-device O 
@@ -3206,13 +3206,13 @@ O O O O O B-command O B-device O O
 B-command I-command B-device O O O O B-time_at I-time_at I-time_at I-time_at 
 O O B-command B-device I-device O B-location I-location I-location I-location I-location O O 
 O O O B-command O O O B-device I-device I-device O 
-B-command O O O B-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O O O 
 O O B-command O O O B-device I-device O O 
 B-command I-command O O O B-device I-device O B-location I-location I-location O 
 O O O O B-command O O O B-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O 
-O O B-command I-command B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at I-time_at 
+O O B-command I-command B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command I-command O O O B-device I-device O B-location I-location I-location I-location I-location O B-time_at I-time_at I-time_at I-time_at O O O O O O O 
 O O B-command O O O B-device 
 O O B-command O O O B-device I-device O O O 
@@ -3227,7 +3227,7 @@ B-command O O O B-device I-device I-device B-target_number O O
 O O B-command O O O B-device O O B-location I-location I-location I-location O 
 B-command B-device I-device O 
 B-command O O O B-device I-device O B-changing_value O B-duration I-duration I-duration I-duration O 
-B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location O B-duration I-duration I-duration I-duration O 
+B-command O O O B-device I-device I-device O B-location I-location O B-command O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device I-device O B-changing_value 
 O O O B-command B-device I-device I-device O O 
 B-command I-command O B-device I-device O B-location I-location I-location I-location I-location O O B-time_at I-time_at I-time_at I-time_at 
@@ -3240,7 +3240,7 @@ B-command O O O B-device O
 O O O O O O B-command O B-device I-device O O O O O 
 O O O B-command B-device O B-location I-location O O 
 B-command B-device I-device I-device O O O 
-O O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+O O O B-command I-command O O O B-device I-device I-device O B-location I-location O O 
 O O O O O O O O B-command O B-device I-device O O O O 
 O O B-command O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-location I-location O 
@@ -3309,7 +3309,7 @@ B-command O O O B-device I-device I-device O O B-changing_value
 O O B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O O O B-command B-device I-device I-device O B-changing_value O 
-O O B-command I-command O O B-device O O B-time_at I-time_at I-time_at I-time_at 
+O O B-command I-command O O B-device O O O B-time_at I-time_at I-time_at I-time_at 
 B-command O O B-device I-device O O O O 
 O O B-command O O O B-device I-device O O O O O 
 O O O B-command O O O B-device I-device I-device O 
@@ -3322,7 +3322,7 @@ O O B-command O O O B-device I-device O O
 B-command B-device I-device I-device O B-location I-location O O O 
 O O B-command O O O B-device I-device O O 
 O O O O O O O B-command O O O B-device I-device O 
-O O B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command B-device I-device O O O O O O O O O 
 O O B-command O O O B-device I-device O 
 B-command I-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location 
@@ -3349,9 +3349,9 @@ B-command B-device I-device I-device B-changing_value O O O O
 B-command O O O B-device I-device I-device O B-changing_value O O 
 B-command I-command O O O B-device I-device O 
 B-command B-device I-device O B-location I-location O O 
-O O O O B-location I-location I-location I-location O O B-device I-device I-device I-device I-device I-device I-device I-device O O O B-target_number O 
+O O O O B-location I-location I-location I-location O O B-device I-device O B-command O O O B-target_number O 
 O O B-command O O B-device I-device O B-location I-location I-location I-location I-location O O O O O O 
-B-command O B-device I-device I-device O O B-target_number O O O O O O O O O O O 
+B-command O B-device I-device I-device O O B-target_number O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O B-device I-device O O B-location I-location O O B-target_number O 
 O O O O B-command B-device I-device I-device O O 
 B-command O O O B-device I-device O 
@@ -3378,7 +3378,7 @@ O O O O O O O B-command O O O B-device I-device O B-changing_value O O O O
 B-command B-device I-device I-device O B-location I-location I-location I-location O O 
 O O B-command O O O B-device I-device O B-location I-location 
 O O B-command B-device I-device O O O 
-O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device I-device I-device 
+O O B-location I-location I-location I-location I-location I-location O B-command O O O B-device I-device O O 
 O B-device I-device O O O O B-command O O B-changing_value O B-time_at I-time_at I-time_at I-time_at 
 O O B-command B-device I-device O B-duration I-duration I-duration I-duration O O 
 O O B-command I-command O O O B-device I-device I-device O 
@@ -3389,7 +3389,7 @@ O O O B-command I-command B-device I-device I-device O O O O
 O O O B-command O O O B-device I-device O O O O B-location O 
 O O O B-device I-device O B-location I-location I-location I-location O O O O B-command I-command O O O 
 O O O B-command O O O B-device I-device I-device O 
-O O O B-command B-device I-device O B-duration I-duration I-duration I-duration I-duration 
+O O O B-command B-device I-device O B-duration I-duration I-duration I-duration O 
 O O B-command O O O B-device I-device I-device O B-target_number I-target_number I-target_number O O O O 
 O O O B-command O O O B-device I-device O 
 O O O B-device I-device O O O B-command I-command O O O 
@@ -3407,7 +3407,7 @@ O B-command O O O B-device I-device I-device O
 O O O O B-command O O O B-device I-device I-device O 
 O O O B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device I-device O O O O O O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O 
+O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 O O B-command B-device I-device O O O 
 B-command O O O B-device O B-location I-location O B-target_number O O 
 B-command O O O B-device I-device O 
@@ -3417,17 +3417,17 @@ O B-location I-location B-command B-device I-device O O O
 O O B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O 
 O B-command I-command O O O B-device I-device O O O O O O O O O O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O O O B-duration I-duration I-duration I-duration O 
+O B-command O O O B-device I-device O B-location I-location O O O B-duration I-duration I-duration I-duration O 
 O O O B-command O O B-device I-device O O O O 
 B-command O O O B-device I-device 
-O O O O O O B-command B-device I-device O O 
+O O O O O B-command B-device I-device O O 
 O O O B-command B-device I-device I-device O O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O O O 
+O B-time_at I-time_at I-time_at I-time_at O O O O B-command I-command B-device I-device O O O 
 O O O O O O O O B-command I-command O O B-device I-device O 
-O O B-command I-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location 
+O O B-command I-command O O O B-device I-device O B-location I-location O O O O O 
 O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device B-target_number O O 
 O O O O O B-command B-device I-device I-device O O O O O O O 
-O B-command I-command O O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O B-command I-command O O O O B-device I-device I-device O O O O O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O B-location O 
 O O B-command O O O B-device I-device 
 O O O B-time_at I-time_at I-time_at I-time_at O O O O O B-command O O B-device I-device I-device O 
@@ -3443,9 +3443,9 @@ O B-device I-device O O O O O O B-command I-command O O
 O B-command O O O O B-device I-device O O O O 
 O O B-command O O O B-device O 
 O B-location I-location I-location I-location I-location B-command B-device O O O 
-O O B-command O O B-device I-device I-device 
+O O B-command O O B-device I-device O 
 O O O B-command B-device I-device O O 
-O O B-command O O O B-device I-device O O O 
+O O B-command O O O B-device I-device O O 
 O O O B-command O O O B-device I-device O 
 O O O B-command B-device I-device O O O 
 O O B-command O O O B-device I-device I-device 
@@ -3461,14 +3461,14 @@ O O B-command O O O B-device I-device O
 B-command O B-device O O O O O O O O O 
 B-command O O O B-device I-device O B-location I-location O O O O 
 B-command O O O B-device I-device I-device O B-location I-location 
-O O O O O O O O O B-command O O O B-device I-device O B-location I-location I-location 
+O O O O O O O O O B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O O O O B-device I-device I-device O O 
 O O B-command I-command O O O B-device I-device I-device O O O O O O O 
 O O O O O O B-command O O B-device I-device I-device O O 
 O O B-command B-device I-device O B-location I-location O O O O 
-O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
-O O O O O B-command O O O B-device I-device I-device 
+O O B-device I-device O O O O O B-command I-command O O O 
+O O O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O 
 O O B-command O O O O B-device I-device I-device O 
 O O B-command I-command O O O B-device I-device O O O O O O O 
@@ -3492,7 +3492,7 @@ O B-device I-device O O O O O O B-command I-command O O O
 O O B-command O O O B-device O B-location I-location O 
 O O B-command I-command O O O B-device I-device O 
 O O O B-command O O B-device I-device O O O O 
-O O B-location I-location I-location I-location I-location O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O O O 
+O O B-location I-location I-location I-location I-location O O B-device I-device I-device I-device B-command O O O O 
 O O O O B-location I-location O O O O O O B-command O B-device I-device O O O 
 O O O B-command O O B-device I-device I-device O B-location O 
 O O O O B-command O O O B-device I-device O 
@@ -3512,16 +3512,16 @@ O O O B-command O B-device I-device I-device O O O O O B-target_number
 B-command B-device I-device I-device O B-location I-location O O O 
 B-command O O O B-device I-device I-device O B-location I-location O 
 O O B-command B-device I-device I-device O O O O O O O O O 
-O O O O B-device I-device I-device I-device I-device I-device I-device I-device B-device O O O O 
+O O O O B-device O O B-command B-device O O O O 
 O B-command O O O B-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O 
 B-command O O O B-device I-device I-device 
 O O O O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-location I-location O 
 O O O O O B-command B-device I-device O B-target_number 
-B-command I-command O O O B-device I-device I-device I-device 
+B-command I-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device I-device O 
-O O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O B-device I-device I-device O O 
+O O O O B-time_at I-time_at I-time_at I-time_at O B-command O B-device I-device I-device O O 
 O O B-command I-command O O O B-device I-device O 
 O O O B-command O B-device B-location I-location O O O 
 O B-command O O O B-device I-device O B-location I-location I-location I-location O B-target_number O O O O O 
@@ -3531,7 +3531,7 @@ O O O O B-command O O O B-device I-device O B-location I-location O
 B-device I-device O O O O O O B-command I-command O O 
 B-command I-command O O O B-device I-device I-device O O O 
 O O O O O B-command O O O B-device I-device O O 
-O B-command O O O O O O O O 
+O B-command O O B-location O 
 O O O B-time_at I-time_at I-time_at I-time_at O O B-command I-command O O O B-device I-device O O 
 O O O B-device I-device O O O O O O B-command I-command O O O 
 O B-command O O O B-device I-device I-device O 
@@ -3579,11 +3579,11 @@ B-command I-command O O O B-device I-device I-device O O O O O O O
 O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O O O B-device I-device I-device B-command I-command O O O O O O O 
 B-command O O O B-device I-device I-device O O B-target_number O 
-B-command O B-device I-device I-device I-device 
+B-command O B-device I-device O O 
 O O B-command I-command B-device I-device O O 
 B-command O O O B-device I-device I-device O B-location I-location O 
 B-command O O O B-device O B-location O 
-O O B-command B-device I-device I-device 
+O O B-command B-device O O 
 O O B-command I-command O O O B-device I-device O B-location I-location I-location I-location I-location O O O O O O 
 O B-command I-command O O O B-device I-device O O O O O O O O O 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
@@ -3649,7 +3649,7 @@ O O B-command O O O B-device I-device O B-location I-location I-location I-locat
 B-command I-command O O O B-device I-device 
 B-device I-device O B-location I-location O O O B-command I-command O O 
 O O B-command O O O B-device I-device O O 
-B-command O O O O O O O O 
+B-command O B-location I-location O 
 O O O B-duration I-duration I-duration I-duration O B-command B-device I-device I-device O B-location O 
 B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device O B-location I-location I-location I-location O 
@@ -3665,7 +3665,7 @@ O O O O B-command O O O B-device I-device O O
 O O O O B-command O O O B-device I-device 
 O O O O O B-command O O O B-device I-device I-device O 
 O O B-command I-command O O O B-device I-device O O O O O O 
-B-command O B-device I-device O O O O O O O O O B-target_number 
+B-command O B-device I-device O B-location I-location I-location I-location O B-target_number 
 O B-command O O O B-device I-device O B-location I-location O O 
 O O B-command O O O B-device 
 B-command O O O B-device I-device O O B-location I-location O 
@@ -3681,8 +3681,8 @@ B-command O O O B-device O
 O O B-command O O O B-device I-device I-device O B-changing_value O 
 O O B-command O O O B-device O O B-target_number O 
 O B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device O 
+B-command I-command O O O B-device I-device I-device O B-location I-location O 
 O O O O O O O O O B-device I-device O O B-command O O O 
 O O O O O B-command O O O B-device O B-location I-location O 
 B-command O B-device I-device I-device O B-location I-location O O O 
@@ -3757,12 +3757,12 @@ O O O B-device I-device I-device O O O O O O O B-command I-command O O O
 O O O B-command B-device I-device O O 
 O B-command O O O B-device I-device O 
 O O O O O B-command O O B-device I-device I-device O O O O O O B-location I-location O 
-O O O B-command B-device I-device O O O O O O O 
+O O B-command B-device I-device O O O O O O O 
 O O B-command O O O B-device O 
 B-command B-device 
 O O B-command O O O B-device I-device O B-location I-location O O O O 
-B-command O O O B-device I-device I-device I-device I-device 
-O O O B-command O B-device I-device 
+B-command O O O B-device I-device O O O 
+O O O B-command O B-device O 
 B-command O O O B-device I-device O O B-location I-location I-location 
 O O O O O B-time_at I-time_at I-time_at I-time_at O B-command B-device I-device O O O 
 O B-location I-location O O O O B-command O O O B-device I-device O 
@@ -3778,7 +3778,7 @@ O O B-command O O O B-device O B-location I-location O
 O O O O O B-command O B-device I-device O O O O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device O 
-B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O B-device O O O O O B-command I-command O O O 
 O O O O O O O B-command I-command O O O O B-device I-device I-device O O O O O 
 O O O O O O B-command O O O B-device I-device O O O O B-location I-location I-location O 
@@ -3814,7 +3814,7 @@ O O B-command B-device I-device O B-location I-location I-location I-location O 
 B-command O O O B-device I-device 
 O O B-command O O O O B-device I-device O O B-location I-location O 
 O O O O O B-command B-device B-location I-location O O O 
-O O B-command I-command O O O B-device I-device I-device I-device 
+O O B-command I-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O 
 O O B-time_at I-time_at I-time_at I-time_at O B-command O B-device I-device I-device O O B-location I-location O O B-target_number O O O 
 O O B-command B-device I-device O O 
@@ -3825,7 +3825,7 @@ O O B-command O O O B-device I-device O B-location I-location O
 O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O B-command O O O B-device I-device O B-location I-location O O 
 O O O B-command O B-device I-device O B-changing_value O O 
-O O O O B-command O O O B-device I-device 
+O O O O B-command O O O B-device O 
 O O O B-command O O O B-device I-device I-device O 
 B-time_at I-time_at I-time_at I-time_at O O O O B-command I-command B-device I-device I-device O 
 O O O O B-command O B-device I-device I-device O B-changing_value O 
@@ -3835,7 +3835,7 @@ B-device I-device O O B-command O O O
 O O O B-device I-device I-device O B-location I-location O O O B-command I-command O O O 
 O O O O O O B-command O O O B-device I-device O 
 O O O O B-command O O O B-device I-device I-device I-device O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O B-command O O O B-device I-device I-device I-device O B-location I-location O 
 B-command I-command B-device I-device O O O 
 O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device O 
@@ -3848,7 +3848,7 @@ B-command O O O B-device I-device O
 O O B-command B-device I-device O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command B-device I-device I-device O O O 
-O O B-command O O O B-device I-device I-device 
+O O B-command O O O B-device I-device O 
 O O O B-command O O B-device I-device I-device O O 
 B-command O O O B-device O O O 
 B-command O O O B-device I-device O O B-location I-location I-location I-location I-location O O 
@@ -3863,7 +3863,7 @@ B-command O O O B-device I-device I-device O O O O
 O O O O O B-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
 O O B-command O O O B-device I-device I-device O B-location O 
 O O O O O O B-command O O O B-device I-device I-device I-device O 
 O O B-command I-command O O O B-device I-device 
@@ -3878,7 +3878,7 @@ O O B-command O O O B-device I-device I-device I-device O
 O O B-time_at I-time_at I-time_at I-time_at O O O B-command I-command O B-device I-device 
 O B-command O O O B-device I-device I-device I-device O O 
 B-command I-command B-device O O O 
-O O O O O O B-command O O O B-device I-device 
+O O O O O O B-command O O O B-device O 
 B-command O O O B-device I-device I-device O B-changing_value O O O O O 
 B-command I-command O O O B-device I-device I-device O B-location O 
 O O B-command B-device I-device O B-target_number O O 
@@ -3901,7 +3901,7 @@ O O O O O O B-location I-location O B-command O O O B-device I-device O
 B-command O B-device I-device O B-location I-location I-location I-location I-location O B-changing_value O O 
 O O O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device I-device O 
 B-device I-device O B-location I-location O O O O O B-command I-command O O O 
-O O B-command O O O B-device I-device I-device 
+O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O O 
 O O O O O B-command O O O B-device O O 
 B-command O O O B-device O O 
@@ -3953,7 +3953,7 @@ O O B-command O O O B-device I-device
 O B-command O O O B-device O O B-location I-location O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O O B-command O O O B-device I-device 
-B-command I-command O O O B-location I-location I-location 
+B-command I-command O O O B-location I-location O 
 O B-device I-device O B-location I-location O O O O O B-command I-command O O O 
 B-command B-device I-device O B-location I-location I-location I-location I-location O O 
 B-command O O O B-device O B-location I-location O 
@@ -3976,7 +3976,7 @@ B-command O B-device I-device O O O
 O O B-command B-device I-device O B-location I-location O B-target_number O O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 B-command B-device I-device I-device O B-location I-location O O 
-B-command I-command I-command I-command I-command I-command O B-location I-location O O 
+B-command B-device I-device O B-location I-location O O 
 O O O B-device I-device O O O O O O O B-command I-command O O O B-command I-command O O B-time_at I-time_at I-time_at I-time_at O O 
 O O B-command I-command O O O B-device I-device O B-location I-location 
 O O B-command O O O B-device O B-location I-location O O 
@@ -4004,10 +4004,10 @@ O O B-command O O O B-device I-device O B-location I-location O
 O O O O O B-command O O O B-device I-device I-device B-changing_value O O O 
 B-command O B-device I-device O B-location O O 
 O O B-command O O O B-device I-device I-device O O B-location I-location O O O O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device I-device O O 
 O O B-command I-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O 
-O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O O O O O O 
+O B-device I-device O O O B-command O O O O O O O 
 O O B-command O O B-device I-device O B-location I-location I-location O 
 O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device O O B-location I-location O O B-target_number O 
@@ -4022,7 +4022,7 @@ B-command O O O B-device I-device O
 O O O O O B-command O O O B-device I-device I-device O B-location O O 
 O O B-command B-device I-device 
 O O B-command O O O B-device O B-location O 
-B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location 
+B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
 B-command O O O B-device I-device I-device O B-changing_value O 
 O O B-command I-command O O O B-device I-device I-device O O 
 O O O B-command O O O B-device I-device I-device O 
@@ -4065,7 +4065,7 @@ O O B-command O O O B-device O
 O O B-command O O O B-device I-device I-device I-device O O B-location I-location O O 
 B-command I-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O B-location I-location O 
-O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+O B-location I-location O O O O B-command O O O B-device I-device I-device O 
 O B-command O O O B-device I-device O B-location O O B-target_number O O 
 O O B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device I-device O O O O 
@@ -4097,7 +4097,7 @@ O O B-device I-device O O O B-command I-command O O O
 O O O O O B-command B-device I-device I-device O B-location I-location I-location I-location I-location O O 
 O O O O B-time_at I-time_at I-time_at I-time_at B-command B-device I-device O O 
 O O B-location I-location O O O B-command O O O B-device I-device O 
-O O O B-command B-device I-device O B-location I-location I-location I-location I-location I-location I-location O O O 
+O O O B-command B-device I-device O B-location I-location B-command O O O 
 B-command B-device I-device I-device O O 
 O O O B-command O O O B-device I-device O B-location I-location O O 
 O O O O O O B-command O O O B-device I-device O 
@@ -4124,7 +4124,7 @@ O O O O O O B-command O O O B-device I-device I-device O O
 O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O B-command O B-device I-device O O O O B-changing_value O O 
 O O O O O B-command I-command O B-device I-device O O 
-O O O B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O B-duration I-duration I-duration I-duration O O 
+O O O B-command O B-device I-device I-device O B-target_number O O B-duration I-duration I-duration I-duration O O 
 O O B-command O O O B-device I-device O 
 O O O O O B-command I-command O B-device I-device O B-location I-location O 
 B-command B-device I-device I-device O B-location I-location I-location I-location O B-changing_value O 
@@ -4200,7 +4200,7 @@ B-command I-command O O O B-device I-device I-device O O O O O O O O O
 B-command O O O B-device I-device I-device O O B-location 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location 
 B-command I-command O O B-device I-device O 
-O O O B-command O O O B-device I-device O B-location I-location O 
+O O B-command O O O B-device I-device O B-location I-location O 
 O O O O O O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
 O B-device I-device I-device O O O O B-command I-command O O O O B-time_at I-time_at I-time_at I-time_at O 
@@ -4209,12 +4209,12 @@ B-command O O O B-device I-device I-device O O B-location
 O O O B-command B-device I-device O O O O 
 O O O B-command O O O B-device I-device O 
 O O O B-command O B-device I-device O B-location I-location 
-B-location I-location I-location I-location O O O O B-device I-device I-device I-device I-device I-device I-device O O O 
+B-location I-location I-location I-location O O O O B-device I-device B-command O O O 
 O O B-command O O O B-device O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command I-command O B-device I-device I-device 
 O O B-command O O O B-device I-device 
-O O O B-command O O O B-device I-device O B-duration I-duration I-duration I-duration I-duration I-duration I-duration I-duration I-duration O O B-changing_value O 
+O O O B-command O O O B-device I-device O B-duration I-duration I-duration I-duration B-command O O B-changing_value O 
 B-device O O O O O O O B-command O O O O 
 O O B-command O B-device I-device I-device O O 
 O O B-command B-device I-device I-device O B-location O 
@@ -4224,7 +4224,7 @@ B-command B-device I-device I-device I-device O O
 O O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device O O B-location O 
 O O B-command B-device O B-command O O O B-device O B-location I-location O 
-O O O O O O O O B-command O O O B-device I-device O B-location I-location O 
+O O O O O O O B-command O O O B-device I-device O B-location I-location O 
 B-command I-command B-device I-device I-device O O O 
 O B-command O O O B-device I-device I-device O 
 O B-device I-device O B-location I-location O O O O O O B-command I-command O O 
@@ -4264,7 +4264,7 @@ O O O B-device I-device O O O B-command I-command O O
 O O B-command O O O B-device I-device O 
 O O O O B-command B-device O O O 
 B-command O O O B-device I-device I-device O 
-B-command O O O B-device I-device 
+B-command O O O B-device O 
 O O B-command O O O B-device I-device O B-location I-location O 
 B-command O B-device I-device I-device O B-location I-location I-location I-location O 
 O B-location I-location B-command B-device I-device I-device O O O 
@@ -4288,7 +4288,7 @@ B-command I-command O O O B-device I-device I-device O O O O O O O
 O O O B-command O O O B-device I-device O 
 O O B-command B-device I-device I-device O B-changing_value O O O 
 B-device I-device O O O B-command I-command O O O 
-O O O O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location B-device I-device I-device O O O O 
+O O O O O O O O B-location I-location I-location O O O B-command I-command B-device I-device I-device O O O O 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device O 
 O O O B-command O O O B-device I-device O B-location O O 
@@ -4313,7 +4313,7 @@ O O B-command I-command O O O B-device I-device
 O O B-command I-command O O O B-device I-device O 
 B-command O B-device I-device O O O 
 B-command O B-device I-device I-device O O B-location I-location O O 
-O B-command O O O B-device I-device I-device O O B-target_number O O O O O O O O O O O O 
+O B-command O O O B-device I-device I-device O O B-target_number O O B-time_at I-time_at I-time_at I-time_at O 
 O O O B-command O O O B-device I-device I-device O B-target_number O O 
 O B-time_at I-time_at I-time_at I-time_at O B-command B-device I-device O O 
 B-command B-device O B-location I-location 
@@ -4324,10 +4324,10 @@ B-command O B-device O B-location O O O
 O O B-command O O O B-device I-device O B-location I-location I-location I-location 
 O O B-command I-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O O B-target_number O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-time_at I-time_at I-time_at I-time_at O B-command I-command O O O B-device I-device O 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location O 
 B-command O B-device I-device O B-location O 
-O B-location I-location O O O O O O B-command I-command B-device I-device I-device O O O 
+O B-location I-location O O O O O B-command I-command B-device I-device I-device O O O 
 B-command B-device I-device O B-location I-location O O O 
 B-command O O O B-device I-device O O O 
 O O B-command O O O B-device I-device O 
@@ -4349,7 +4349,7 @@ O B-device I-device O B-location I-location O O O O O B-command O O O O
 O O B-command O O O B-device I-device I-device O B-location I-location O O 
 O O B-command O O O B-device O B-location O 
 B-command O O O B-device I-device O B-location I-location O 
-O O O O O O O B-command O O O B-device I-device I-device 
+O O O O O O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O O B-location I-location I-location I-location I-location O 
 B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
@@ -4423,7 +4423,7 @@ O O B-command O O O B-device I-device I-device O B-location I-location
 B-command O O O B-device I-device O 
 O O O O B-command O O O B-device I-device I-device O O 
 O O B-command O O O B-device I-device O O 
-O O O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device I-device I-device I-device 
+O O O O O O O B-location I-location I-location I-location O O O B-command O O O B-device I-device O O O 
 O O B-command O O O B-device I-device O O O O 
 O B-command O O O B-device I-device O B-location I-location O 
 O O O O O O O O O O B-command I-command O B-device I-device O 
@@ -4431,7 +4431,7 @@ O O B-command O B-device I-device I-device O O O
 O O O B-command O O O O B-device O 
 B-command O O O B-device I-device O B-location I-location I-location O 
 O O O O O O B-command B-device I-device O 
-O B-command I-command O O O B-device I-device I-device I-device 
+O B-command I-command O O O B-device I-device I-device O 
 O O O B-device I-device O O O O O O O B-command I-command O O O B-device I-device O 
 O O O O B-command O O O B-device I-device O O 
 O O O O B-command O O B-device I-device O O 
@@ -4482,7 +4482,7 @@ O B-device I-device O O B-command O O O B-changing_value O
 B-command O O O B-device I-device B-target_number 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location 
 O O B-command O O O B-device I-device I-device 
-O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O O O B-device I-device O O O B-command I-command O O O 
 O O B-command O O O B-device I-device O O B-location I-location O O 
 O O O O O O B-command O B-device I-device I-device O O 
 O O O O O B-command B-device O O O 
@@ -4552,10 +4552,10 @@ B-command O O O B-device I-device I-device O
 O O O B-location O B-command O O O B-device I-device 
 O O O O O B-command O O O B-device I-device O 
 O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
-O O B-command O O O B-device I-device O B-changing_value O B-time_at I-time_at I-time_at I-time_at I-time_at 
+O O B-command O O O B-device I-device O B-changing_value O B-time_at I-time_at I-time_at I-time_at O 
 O B-command O O O B-device O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O B-target_number I-target_number I-target_number 
-O O O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device I-device O O B-location I-location I-location I-location I-location O O B-target_number I-target_number I-target_number 
+O O O O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O B-command I-command O O O O B-device I-device I-device O O B-location O O O O O 
 O O B-command O O O B-device I-device O 
 B-command B-device I-device O O O 
@@ -4614,7 +4614,7 @@ O O B-command O O O B-device I-device O B-duration I-duration I-duration I-durat
 O B-device I-device O B-location I-location O O O O O B-command I-command O O O O 
 O O O O O O O B-command O B-device I-device O O B-location I-location O O O 
 O O O B-command O O O B-device I-device O 
-O O O O O O B-command B-device I-device I-device I-device I-device I-device I-device I-device O O O B-location I-location I-location I-location O O O O 
+O O O O O O B-command B-device I-device O B-command O O O B-location I-location I-location I-location O O O O 
 B-command O O O B-device I-device O B-location O O 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 B-command O O O B-device I-device I-device 
@@ -4664,15 +4664,15 @@ B-command O O O B-device I-device O B-location I-location O B-target_number O O 
 O O O O O B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O 
 B-command O O O B-device I-device O O B-changing_value O 
-O O O O O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O O O O O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O O B-location I-location I-location I-location I-location O 
 O B-location I-location O O O B-device I-device O O O B-command I-command O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O O B-location I-location I-location I-location I-location I-location 
 O O O O B-command O O O B-device I-device 
 O O B-command O O B-device I-device O O 
-O O B-command O O O B-device I-device I-device I-device 
+O O B-command O O O B-device I-device O O 
 O O B-command O O O B-device O O 
-O O B-command O O O B-device I-device I-device 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device O 
+O O B-command O O O B-device I-device O B-target_number O 
 O O B-command O O O B-device I-device I-device O 
 O O O O B-command O B-device I-device O B-location I-location O O 
 O O O B-command B-device I-device O B-location I-location O O O 
@@ -4686,14 +4686,14 @@ O O O B-command O O O B-device O
 O O B-command O B-device I-device O O B-location O O 
 O O O O O O O B-command O O B-device I-device O 
 O O B-command B-device I-device O 
-B-command O B-device I-device I-device I-device 
+B-command O B-device I-device O O 
 O O O O O O O O O B-command I-command O O O B-device I-device I-device 
 O O B-command O O O B-device I-device 
 O B-command O O O B-device I-device O O O 
 O O O O B-command I-command O B-device I-device O B-location I-location I-location I-location O O O O O O 
 O B-command I-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device 
-B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+B-command O B-device I-device I-device O B-location I-location O O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O B-location I-location 
 O O B-time_at I-time_at I-time_at I-time_at O B-command O B-device I-device I-device O O O O 
 O B-device I-device O B-location I-location O O O O B-command O O 
@@ -4772,7 +4772,7 @@ B-command I-command O O O B-device I-device I-device O O B-location I-location
 B-command B-device I-device O B-location I-location O O O 
 B-command I-command O O O B-device I-device O 
 O O B-command B-device I-device O O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device O 
+O B-command O O O B-device O B-location I-location O 
 O O O O O B-command O B-device I-device I-device O 
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-location I-location O 
@@ -4828,11 +4828,11 @@ O O O O B-command O B-device I-device O O O
 O O B-command O B-device I-device O O 
 O O O O O O B-command I-command O B-device I-device I-device O O O 
 B-command B-device I-device O O O 
-B-command O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O 
+B-command O B-location I-location O B-duration I-duration I-duration I-duration O 
 O O B-command O O O B-device I-device O O B-changing_value O 
 B-command I-command O O O B-device I-device O O O O O O O 
 O O B-command O O O B-device I-device I-device O O O O 
-O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O O O B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
 O O O O B-device I-device O O O O B-command O O B-command O O O 
 B-command B-device I-device O B-location I-location O 
@@ -4855,7 +4855,7 @@ O O B-command O O O B-device I-device I-device
 O O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device O 
 B-command I-command O O O B-device I-device O 
 O B-command O O O B-device O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O B-changing_value I-changing_value I-changing_value 
 O O B-command B-device I-device I-device O O O O O O O 
 B-command O O O B-device I-device O O O 
 O O B-command O O O B-device I-device I-device I-device O 
@@ -4885,7 +4885,7 @@ B-command O O O O B-device I-device O O B-target_number O O
 O O B-command O O O B-device I-device I-device O O B-changing_value O 
 O O B-command O O O B-device I-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at O B-command I-command O O O B-device I-device I-device 
-B-command O O O B-location I-location I-location 
+B-command O O O B-location I-location O 
 B-command I-command O O O B-location I-location O 
 O O B-command O O O B-device I-device I-device O B-changing_value O 
 O O B-command O O B-device I-device I-device O 
@@ -4898,7 +4898,7 @@ O O B-command O O B-device I-device O B-changing_value
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O B-command O O O B-device I-device I-device O 
-O O B-command O O O B-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device I-device O O 
 O O O O O B-command O O O B-device I-device I-device O 
 O B-location I-location O O B-command O O O B-device I-device O 
 O O B-time_at I-time_at I-time_at I-time_at O B-command I-command O O O B-device I-device O 
@@ -4923,7 +4923,7 @@ O O B-command O O O B-device I-device O B-location I-location O
 O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-command O B-changing_value O 
 O B-command O O O B-device O B-location I-location I-location I-location I-location O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O O 
+O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O O 
 B-command O O O B-device I-device O O B-location I-location 
 O O O O O O B-command O O O B-device O 
 B-command O O O B-device O B-location O O B-duration I-duration I-duration I-duration O 
@@ -4960,7 +4960,7 @@ O O B-device O O O B-command O O O
 B-command O O O B-device I-device I-device 
 B-command O O O B-device O B-location I-location I-location I-location I-location O O B-target_number 
 O O O B-command O O B-device I-device I-device O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O O O O 
+O O O B-time_at I-time_at I-time_at I-time_at O B-command B-device I-device O O O O 
 B-command O O O B-device I-device I-device O 
 O O O O O O O B-command O O O B-device I-device O B-target_number O 
 B-command O O O B-device O B-location I-location I-location I-location I-location O 
@@ -4971,7 +4971,7 @@ O B-command O O O B-device I-device O O O O O O
 O O B-command O O O B-device I-device O B-location I-location O O O 
 O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O O O B-command O O O B-device I-device O 
-O O B-command O O O B-device I-device I-device 
+O O B-command O O O B-device I-device O 
 O O O O B-location O O B-command I-command O O O B-device O 
 B-command O O O B-device I-device O 
 O O O O O O B-command I-command O O O B-device I-device O 
@@ -4990,7 +4990,7 @@ O B-location O O O B-command O O O B-device I-device O
 O O B-command O O O B-device I-device I-device O B-changing_value 
 O O O O O O O O B-command I-command O B-device I-device O B-time_at I-time_at I-time_at I-time_at O O O O O B-location I-location I-location I-location I-location O 
 O O B-command O O O B-device I-device O O B-location I-location O 
-O O O O O B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O O O O O B-command O B-device I-device I-device I-device O B-command O O O 
 O O B-command O O O B-device I-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device 
@@ -5047,17 +5047,17 @@ B-command O O O B-device I-device O B-changing_value O O O O O O O O
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location O B-changing_value O O O O O O O 
 B-command O O O B-device I-device O B-location O O O O O O O 
 B-command O O O B-device I-device O O O O 
-B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device I-device O 
+B-location I-location I-location I-location O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O B-device I-device O O O O B-command I-command O O O 
 O O O O B-command O O O B-device I-device O 
 O O O O O B-command O B-device I-device O B-location I-location I-location I-location O O 
 O O B-command O O O B-device I-device 
-O B-location I-location O O O B-device I-device I-device I-device I-device I-device I-device I-device O O O O 
+O B-location I-location O O O B-device I-device O B-command O O O O 
 B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O B-location I-location O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O O O O O O 
+B-command O O O B-device I-device O B-location I-location I-location I-location O O O O O O O O 
 O O B-command O O B-device I-device O O 
 O O B-command O O O B-device O B-location I-location O 
 O O O B-command B-device O O O O O O 
@@ -5067,10 +5067,10 @@ O O B-command O O O B-device O
 O O B-command O O O B-device I-device 
 B-command O O O B-device I-device 
 O O O O O O O O B-command O O O B-device I-device O 
-O B-location I-location I-location I-location O O B-device I-device I-device I-device I-device I-device I-device I-device O O O B-target_number O 
+O B-location I-location I-location I-location O O B-device I-device O B-command O O O B-target_number O 
 O O B-command O O O B-device I-device I-device O O O 
 O B-command O O O B-device I-device O 
-B-command O O O B-device O O B-location I-location I-location 
+B-command O O O B-device O O B-location I-location O 
 O B-command O O O B-device O B-location I-location O O 
 O O O O O B-command O O O B-device I-device I-device O O 
 O B-location O O B-command O O O B-device I-device O 
@@ -5095,7 +5095,7 @@ O O O O O O B-command O O O B-device I-device I-device O
 B-command O O O B-device I-device O 
 O O O B-command B-device I-device O O O O O O 
 O O O O O O O B-command O O B-device O 
-O O O B-device I-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O 
+O O O B-device I-device I-device O B-location I-location I-location O O O O O O O O B-command I-command O O O 
 O O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-changing_value O O O O 
 B-command O O B-device I-device I-device O O O O O O O O 
@@ -5111,10 +5111,10 @@ O O B-command O O O B-device I-device O O O
 O B-device I-device I-device O B-location I-location I-location I-location I-location O O O O O B-command O O O 
 B-command O O O B-device I-device O O 
 O B-location I-location I-location I-location I-location O O B-device I-device B-command O O O B-target_number O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device O O B-time_at I-time_at I-time_at I-time_at 
+O O B-command O O O B-device I-device O B-command O O B-time_at I-time_at I-time_at I-time_at 
 O O O O O O O O O O O B-command O O O B-device O 
 B-command O O O B-device I-device O 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command I-command O O O B-device I-device I-device O B-location I-location I-location 
 B-command O O O B-device I-device O O B-location I-location O 
 O O O B-device I-device O B-command O O O 
 O O O O B-command O B-device I-device I-device O O O O O O 
@@ -5132,7 +5132,7 @@ O B-command O O O B-device I-device O O B-location I-location O
 B-command O O O B-device I-device I-device O O O 
 B-command O O O B-device I-device O O B-location I-location O O O O 
 O O O B-command O O O O B-device I-device I-device O O O B-location I-location I-location I-location O 
-B-command O O O B-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O 
 O O B-command O B-device I-device O O B-location I-location O 
 O O B-command O O O B-device I-device 
 O O B-command O O O B-device I-device I-device I-device O B-location I-location O 
@@ -5143,7 +5143,7 @@ O B-command B-device I-device I-device O O B-location I-location I-location I-lo
 O O B-command I-command O O O B-device O O B-location I-location I-location O O 
 O O O B-command O O O O B-device O B-location O 
 O O B-command O B-device I-device I-device O O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device I-device O 
+O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device O B-target_number O 
 B-command I-command O O O B-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O O B-location I-location I-location 
@@ -5174,7 +5174,7 @@ O O O B-command O O O B-device O
 O B-command O O O B-device O B-location I-location O B-command B-device O B-location I-location O 
 O O O B-command O O O B-device I-device I-device O B-location I-location O O O B-time_at I-time_at I-time_at I-time_at O 
 B-command O O B-device I-device I-device O B-changing_value 
-O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O O B-command O O O B-device I-device I-device O O O B-location I-location O 
 B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device I-device O O B-location I-location 
 O O B-time_at I-time_at I-time_at I-time_at O O O O O O B-command O B-device I-device O 
@@ -5183,7 +5183,7 @@ O O O B-command I-command O B-device I-device I-device O O B-location O O O O O
 B-command O O O B-device O B-location I-location I-location I-location I-location O B-changing_value O 
 B-command O O O B-device I-device I-device O O 
 O O O B-location I-location I-location I-location O O B-device I-device O O B-command O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device O B-location I-location O O O O O O O 
+O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O B-location I-location O O O O O O O 
 O O B-command O O O B-device I-device I-device O O B-changing_value O 
 O O B-command O O O B-device I-device O B-target_number 
 O B-device O B-location I-location O B-command O O O 
@@ -5194,14 +5194,14 @@ O O B-command O O O B-device O B-location I-location O O
 B-command O O O B-device I-device O O O O 
 O O O B-command O O B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device I-device O 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command I-command O O O B-device I-device O O B-time_at I-time_at 
 O O B-command O O O B-device I-device O O 
 O O B-command O O O B-device I-device O O 
 B-command I-command O O O B-device I-device O 
 O O B-command O B-device I-device I-device O B-location I-location I-location I-location I-location 
 B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O B-location 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device O O B-location I-location O O O O O O 
+O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O O B-location I-location O O O O O O 
 O O O O O B-command O O O O B-device I-device 
 O O B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device O O B-location O 
@@ -5245,11 +5245,11 @@ B-command O O O B-device I-device I-device O B-location I-location I-location I-
 O O O B-command O O O B-device I-device I-device 
 O O O O B-command O O O B-device I-device 
 B-command O O O O B-device I-device I-device O O O 
-B-command I-command O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at 
+B-command I-command O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at O O 
 O O B-command O O O B-device I-device O O 
-O O B-command O O O B-device I-device I-device O O B-location I-location I-location 
+O O B-command O O O B-device I-device I-device O O B-location I-location O 
 B-command I-command O O O B-device O 
-B-command O O O B-device I-device O B-location I-location I-location I-location I-location 
+B-command O O O B-device I-device O B-location I-location I-location O O 
 B-command I-command O O B-device I-device O B-location I-location O 
 O O B-command O O O O B-device O O O O O O B-location I-location O 
 O O O O B-command O O O B-device I-device I-device O O 
@@ -5282,8 +5282,8 @@ B-command O O O B-device I-device I-device O B-target_number O B-duration I-dura
 B-command I-command B-device I-device O O B-location I-location O O 
 B-command I-command O O O B-device I-device O 
 B-command O B-device O B-changing_value O O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O 
-O O O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
+O O O O O B-command O O O B-device I-device O O B-location I-location O 
 O B-location O O B-device I-device I-device B-command I-command O O 
 O O B-command O O O B-device I-device I-device O O B-target_number O 
 O O B-command O O O B-device O O 
@@ -5311,7 +5311,7 @@ B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at
 O O B-command O B-device I-device I-device O O 
 B-command O O O B-device I-device I-device O O 
 O O B-command I-command O O O B-device I-device I-device O O 
-B-command I-command O O O B-device I-device I-device 
+B-command I-command O O O B-device I-device O 
 O O O O O B-command O O O B-device O B-location I-location O 
 B-command I-command O O O B-device I-device 
 B-command O O B-device I-device O B-location I-location O 
@@ -5390,7 +5390,7 @@ O O B-command O O O B-device O B-location I-location O O O O O
 O B-command O O O B-device I-device O B-changing_value O 
 B-device O O O O O O O B-command I-command O O O O 
 O O B-command O O O B-device I-device O B-changing_value 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O O B-command B-device O B-target_number O 
 O B-command O O O B-device I-device O O B-location I-location I-location I-location I-location O O 
 O O B-command I-command O O O B-device I-device I-device 
@@ -5418,7 +5418,7 @@ O O B-command O O O B-device I-device O O
 O B-command B-device I-device O O O 
 O B-device I-device O B-location I-location O O O B-command O O O O 
 B-command B-device I-device O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device O O O O O 
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location O 
 B-command O O O B-device O B-location 
 B-command O O O B-device I-device O B-location O O O O O 
@@ -5454,7 +5454,7 @@ O B-command B-device I-device O B-location I-location O
 O O B-command O O O B-device I-device O O B-location I-location O 
 O O O O B-command O O O B-device I-device O O 
 O B-command O O O B-device O B-location I-location O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+B-command O O O B-device O O B-location I-location I-location I-location O O 
 O O O O O O B-command O O O B-device I-device I-device O O 
 B-command I-command B-device I-device I-device O O O O O O 
 B-command I-command O O O B-device I-device I-device B-location I-location 
@@ -5488,7 +5488,7 @@ B-command O O O B-device O B-location I-location
 O O B-command I-command O O O B-device I-device O B-time_at I-time_at O 
 O O B-command O O O B-device I-device O 
 O O O B-command B-device I-device O 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command I-command O O O B-device I-device O O B-time_at I-time_at O 
 O O O B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
 O O O B-command O O O B-device I-device O B-location O O O O O 
 O O O B-command O O O B-device I-device O O 
@@ -5518,7 +5518,7 @@ B-command O O O B-device I-device I-device O B-location I-location I-location I-
 B-command O O O B-device I-device I-device O O B-target_number 
 B-command O O B-device I-device B-changing_value 
 O O B-command O O O B-device I-device I-device O O B-location I-location I-location I-location I-location O 
-O O O O O O O O O B-command B-device I-device I-device I-device I-device 
+O O O O O O O O O B-command B-device I-device O O O 
 B-command B-device O O O 
 O O O B-command B-device I-device O B-target_number O O 
 B-command O O O B-device O B-location I-location 
@@ -5531,10 +5531,10 @@ O O B-command O O O B-device I-device O O B-location I-location O
 O O O B-command I-command O B-device O O 
 O O O B-command B-device O B-location I-location O O O 
 O O O B-command O O O B-device I-device I-device O 
-B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location I-location 
+B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O 
 O O B-command O O O B-device I-device O O B-location O B-target_number O 
 O O B-command I-command O O O B-device I-device O O B-time_at I-time_at O O 
-B-command O O B-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+B-command O O B-device O B-location I-location I-location I-location I-location O O O O O 
 O O O B-command I-command B-device I-device I-device O O O 
 O B-device I-device O O O O O B-command I-command O O O 
 O O B-command O O O B-device O B-location I-location O 
@@ -5563,7 +5563,7 @@ B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at
 O O O B-command B-device I-device 
 B-command I-command O O O B-device I-device I-device I-device O 
 B-command O O B-device I-device O B-target_number 
-B-command O O O B-device O B-location I-location I-location I-location I-location I-location I-location I-location 
+B-command O O O B-device O B-location B-duration I-duration I-duration I-duration 
 O O B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device I-device O O 
 B-command O O B-device I-device I-device O B-changing_value 
@@ -5578,7 +5578,7 @@ B-command O O B-location I-location O
 B-command O O O B-device I-device I-device 
 B-command B-device I-device O O O O O O O O 
 B-command O O O B-device 
-B-device I-device I-device O O B-command O O O B-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number I-target_number O 
+B-device I-device I-device O O B-command O O O B-target_number O O O O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device I-device O B-location I-location I-location O 
 O B-device I-device O O O O O B-command I-command O O O 
 B-command O B-device I-device O O B-changing_value 
@@ -5587,8 +5587,8 @@ O O O B-command B-device I-device O O
 O O B-command O O O B-device O 
 O O B-command O O O B-device I-device O B-location O 
 B-command O O B-device I-device I-device 
-B-command B-device I-device I-device I-device 
-O O B-command O O O B-device I-device O O O O O O O 
+B-command B-device I-device O O 
+O O B-command O O O B-device I-device O B-location I-location O 
 O O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O O 
 B-command O O O B-device I-device O B-location I-location 
 O O O O B-command O O O B-device O 
@@ -5606,7 +5606,7 @@ B-command B-device I-device O
 B-command O O O B-device I-device O O B-target_number I-target_number I-target_number 
 B-command O O O B-device O B-location I-location O O O O O 
 O O B-command B-device O O O O O 
-O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O B-duration I-duration I-duration I-duration O 
+O O B-command O O O B-device I-device O B-location I-location I-location O O B-command O B-duration I-duration I-duration I-duration O 
 O B-command B-device O B-location I-location O 
 B-command O O O B-device I-device O B-location I-location 
 O O B-command O O O B-device I-device O 
@@ -5630,22 +5630,22 @@ O B-command B-device I-device I-device O B-target_number O O O
 B-command O O O B-device I-device O B-location I-location O 
 B-command I-command O O O B-device I-device I-device O B-location 
 O O O O O B-command O O O B-device I-device O B-changing_value O 
-O B-command B-device I-device I-device I-device I-device I-device I-device I-device O B-duration I-duration I-duration I-duration O 
+O B-command B-device I-device O B-changing_value O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device O B-location I-location O 
-B-command O O O B-device I-device O O B-location I-location I-location I-location I-location I-location I-location 
+B-command O O O B-device I-device O O B-location I-location O O O O O 
 B-command O O O B-device I-device I-device 
-B-command O O O B-device I-device I-device O O O O O O O O 
+B-command O O O B-device I-device I-device O B-location I-location O O 
 O O B-command I-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device O 
 O O B-command O O O B-device I-device O B-target_number O O O O O O 
-B-command I-command O O O B-device I-device I-device I-device 
+B-command I-command O O O B-device I-device I-device O 
 O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device O O 
 B-command O O O B-device I-device 
 O O B-command O O O B-device O B-location I-location I-location I-location I-location O O 
 O O B-command O O O B-device I-device O O O O O O 
 B-command B-device I-device O B-location I-location O O O O O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O B-location I-location O 
 O O O O B-command O O O B-device I-device I-device O B-location I-location O O 
 O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
@@ -5658,22 +5658,22 @@ O O B-command O O O B-device I-device I-device O O
 O O O O O B-command B-device I-device I-device O O O 
 O O B-command O O O B-device I-device I-device O 
 B-command B-device I-device O B-location I-location I-location I-location I-location O O O O O O 
-O O O O O B-command O O O B-device I-device I-device I-device I-device 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O O 
+O O O O O B-command O O O B-device I-device I-device O O 
+B-command O O O B-device I-device O B-target_number O O 
 O O O B-command O O B-device I-device 
 O O O O O O O B-command B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
 B-command O B-device O B-changing_value O B-duration I-duration I-duration I-duration O O O 
 O O O O O O B-command B-device I-device O B-location O O B-time_at I-time_at I-time_at I-time_at O O 
 O O B-location O O O B-command B-device I-device I-device I-device O 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command I-command O O O B-device I-device O O B-location I-location I-location O 
 O O B-command I-command O O O B-device I-device O 
-B-command O O O B-device I-device I-device O O B-location I-location 
+B-command O O O B-device I-device I-device O O B-location O 
 B-command I-command O O O B-device I-device O 
 O B-command O O O B-device I-device O O 
 B-command O O O B-device I-device 
 B-command O O O B-device I-device I-device 
 O O O B-command I-command O O O B-device I-device I-device O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O O 
 B-command O O O B-device I-device O B-changing_value 
 O O O O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location O O 
 O B-device I-device O O O B-command O O O B-target_number O 
@@ -5686,10 +5686,10 @@ O O B-command O O O B-device I-device O
 B-command I-command O O O B-device O O 
 B-command I-command O O O B-device I-device I-device O 
 B-command B-device I-device I-device O B-target_number O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device I-device O O B-duration I-duration I-duration I-duration O 
 B-command O O O B-device I-device I-device 
 O B-command I-command B-device O O O O B-time_at I-time_at I-time_at I-time_at O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device O O B-location I-location I-location O 
 O O O O B-command O O O B-device O B-target_number O O 
 B-command O O O B-device I-device O B-location I-location O 
 O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device O 
@@ -5697,7 +5697,7 @@ B-command B-device O O O O
 B-command I-command O O B-device I-device O B-location I-location I-location I-location I-location 
 O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device O B-changing_value O O O 
-B-command I-command I-command I-command I-command O O O 
+B-command B-device O O O 
 B-command O O B-device I-device I-device O B-target_number O B-time_at I-time_at I-time_at I-time_at 
 B-command B-device I-device O O B-time_at I-time_at I-time_at I-time_at O O B-duration I-duration I-duration I-duration O O 
 O O B-device O O O O B-command O O O 
@@ -5710,7 +5710,7 @@ O O B-command O O O B-device I-device O O B-location O
 O O B-command O O O B-device I-device O O 
 O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device I-device O 
 B-command O O O B-device O 
-B-command I-command B-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location 
+B-command I-command B-device I-device O B-location I-location O O O O O O 
 O O O O B-command O O O B-device I-device O O 
 B-location I-location O O B-command B-device I-device O O O O 
 B-command O B-device I-device I-device O O B-target_number 
@@ -5757,7 +5757,7 @@ O O O B-command O O O B-device I-device O B-location I-location I-location O O
 O O B-command O O O B-device I-device I-device 
 O O O O O O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device 
-B-command O O O B-device I-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+B-command O O O B-device I-device I-device O B-location I-location I-location I-location O O B-duration I-duration I-duration I-duration 
 B-command O O O B-device I-device O O 
 B-command B-device O B-location I-location O O 
 B-command I-command B-device I-device I-device O O 
@@ -5796,7 +5796,7 @@ O B-time_at I-time_at I-time_at I-time_at O O O O O B-command B-device I-device 
 O O B-command O O O B-device I-device O 
 O O B-command O B-device I-device I-device O O B-changing_value O O O 
 O B-device I-device O O O O O O B-command I-command O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O O B-device I-device O O O 
+O O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device O O O 
 O O O B-command B-device O B-location I-location O 
 O B-time_at I-time_at I-time_at I-time_at B-command I-command O O B-device O 
 O O B-command O O O B-device I-device O 
@@ -5806,7 +5806,7 @@ O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device 
 B-command O O O B-device I-device O 
 O O O B-command B-device I-device O B-duration I-duration I-duration I-duration 
 O O B-command O O O B-device I-device O O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O O B-device I-device I-device O B-location I-location O B-changing_value O 
+O O B-time_at I-time_at I-time_at I-time_at B-command O O B-device I-device I-device O B-location I-location O B-changing_value O 
 O O O B-command B-device I-device O B-changing_value 
 B-command I-command O O O B-device I-device O B-location I-location 
 B-command O O O B-device I-device O B-changing_value O 
@@ -5826,9 +5826,9 @@ O O B-command O B-device I-device O B-location O O O
 O O B-command O O O B-device I-device O B-location I-location I-location 
 B-command O O O B-device I-device I-device O 
 O O O O O B-command O O B-device I-device O 
-O O B-command I-command I-command I-command I-command I-command O O O O O O O O O O 
+O O B-command B-device I-device O B-location I-location I-location I-location O O 
 O B-command O O O B-device I-device I-device O O O 
-B-command O B-device O B-location I-location I-location I-location 
+B-command O B-device O B-location I-location O O 
 O B-command O O O O B-location O O O B-command O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device O B-location I-location O 
@@ -5860,10 +5860,10 @@ O O B-command O O O B-device I-device O B-location I-location I-location I-locat
 O O B-location I-location I-location I-location O O B-device I-device O B-command O O O O 
 O B-device I-device O B-location I-location O B-command O O O 
 O O O O B-command O B-device I-device O O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device I-device O B-location I-location O 
 O O O O O B-command O O O B-device I-device I-device O O O 
 O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device I-device 
-O O O B-device O B-location I-location I-location I-location I-location I-location I-location O O O 
+O O O B-device O B-location I-location B-command O O O 
 O B-device I-device I-device O O O O B-command I-command O O O 
 B-command O O O B-device I-device I-device O O O B-location I-location I-location I-location I-location O O 
 B-command O O O B-device O 
@@ -5877,7 +5877,7 @@ O O O B-device I-device I-device O O O O B-command O B-target_number O O
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 B-command I-command B-device I-device O O O 
 B-command O O O B-device I-device I-device O B-location I-location O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O B-command O O O B-device O B-time_at I-time_at I-time_at I-time_at O 
 O B-location I-location O O B-device I-device O O B-command O O O 
 B-command O O O B-device I-device I-device O B-location I-location I-location I-location 
 O O B-command I-command O O O B-device I-device I-device O 
@@ -5903,7 +5903,7 @@ B-command I-command B-device O O O B-location O
 B-command O O O B-device I-device I-device O O B-location O 
 O O O B-command B-device I-device I-device O O B-location I-location I-location I-location 
 O O B-command B-device I-device O B-location I-location I-location I-location O O O 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device 
+B-command I-command O O O B-device I-device I-device O O O O O 
 B-command I-command O B-device I-device O O 
 O O B-command O O O B-device O B-target_number O O O 
 O O B-command O O O B-device O O O 
@@ -5919,7 +5919,7 @@ B-command O O O B-device I-device I-device O O
 O O B-command B-device I-device I-device O O O 
 B-command O O O B-device I-device I-device O B-location I-location 
 B-command O B-device I-device O B-location I-location O O O 
-O B-command I-command I-command I-command I-command I-command I-command 
+O B-command B-device O O 
 B-command O O O B-device I-device O B-location O 
 O O B-command B-device I-device O O O 
 O O O O O O O B-command B-device O B-location I-location O O O 
@@ -5932,7 +5932,7 @@ B-command O O O B-device I-device O
 O O B-command O O O B-device I-device I-device O 
 O O O O O O O B-command O O O B-device O 
 O O B-location I-location O B-command O O B-target_number O 
-O O O O O B-location I-location I-location I-location I-location I-location O O O B-device I-device O O 
+O O O O O B-location B-command O O O B-device I-device O O 
 O O O B-location I-location O B-command O O O B-device I-device I-device 
 O O B-command O O O B-device I-device O B-location I-location O O 
 O O B-command O O O B-device I-device O O 
@@ -5986,7 +5986,7 @@ O O O B-time_at I-time_at I-time_at I-time_at B-command B-device I-device I-devi
 B-command I-command O O O B-device I-device O 
 O O O O O B-command O O O B-device I-device O 
 O O O B-command B-device O B-location O 
-O O O O O B-command I-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O O O O B-command I-command O B-device I-device I-device O O B-location I-location O 
 B-command O O O B-device I-device O B-location I-location I-location 
 B-command O O O B-device I-device O O B-location O O O 
 B-command B-device I-device O B-location I-location I-location I-location O O O 
@@ -5994,11 +5994,11 @@ O O O O O O O O O O O O B-command I-command O O O B-device O O B-location O
 O O B-command O B-device I-device O B-target_number O O 
 B-command I-command O O O B-device I-device O O O O O 
 B-command I-command B-device I-device O B-location I-location O O 
-B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O O 
+B-command B-device I-device I-device O B-duration I-duration I-duration I-duration O O O O 
 O O B-command O O O B-device I-device I-device I-device O O B-location I-location I-location O 
 B-command O O O B-device I-device I-device O O B-location I-location O O O 
 B-command I-command O O O B-device I-device O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O O O O 
 B-command O O O B-device I-device O B-location I-location I-location O 
 O O B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
 B-command O O O B-device I-device O O 
@@ -6020,7 +6020,7 @@ B-command O O O B-device O
 O O B-command O B-location I-location 
 O B-device I-device O O O O O B-command I-command O O O 
 O O O O O O O B-command O B-device I-device O B-location I-location O O 
-O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O O 
+O B-device I-device O O O O O B-command I-command O O O 
 O O O O O O B-command I-command O O O B-device I-device O 
 B-command O O O B-device I-device O 
 O O O O B-location I-location I-location I-location B-command I-command O O O B-device I-device O 
@@ -6029,7 +6029,7 @@ B-command O O B-device O B-location I-location O O O O
 B-command O O O B-device I-device O 
 O O B-command I-command B-device I-device O B-location I-location O O O O O O O O O 
 B-command I-command O B-device I-device O O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device O B-location I-location O 
 B-command I-command O O O B-device I-device O 
 O O O O B-command O O O B-device I-device O O B-target_number O 
 O O O B-command O O O B-device I-device O B-target_number I-target_number I-target_number O O O B-time_at I-time_at I-time_at I-time_at O O O O 
@@ -6048,10 +6048,10 @@ O O O B-command B-device I-device I-device O B-location I-location
 B-command I-command O O O B-device I-device I-device 
 O O B-command B-device I-device I-device I-device O B-location I-location I-location O O O O 
 O O B-command I-command B-device I-device I-device O B-location I-location O O O 
-O O B-command B-device I-device I-device I-device 
+O O B-command B-device I-device O O 
 B-command O O O B-device I-device O O O O 
 B-command O O O B-device I-device O O B-location I-location O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device O B-location I-location O 
 O O B-command B-device I-device O 
 B-command B-device I-device I-device O O O 
 O O B-command B-device I-device O O 
@@ -6069,31 +6069,31 @@ O O B-command O O O B-device I-device I-device O
 O O B-command I-command B-device I-device I-device 
 B-command O O O B-device I-device O O B-changing_value O 
 O O O O O B-command O O O B-device I-device I-device O O B-location I-location I-location I-location O 
-O B-device I-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O 
+O B-device I-device I-device O B-location I-location O O O B-command I-command O O O 
 O O O B-command O O O B-device O B-location I-location O 
 B-command I-command O B-device O B-location O O O O O O O 
 O O B-command O O O B-device I-device O 
 O O O B-command B-device O 
 O O O O O O B-command O O O B-device I-device I-device I-device O B-location I-location 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O B-changing_value 
 B-command I-command O O O B-device I-device O B-location I-location O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O O 
 O O O B-command B-device I-device O 
 B-command O O O B-device I-device O B-location I-location 
 O O B-device O O B-location O O O O O O O B-command I-command O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device O B-changing_value O 
 B-command O O O B-device I-device I-device O O O 
 O O O B-command B-device I-device O B-location I-location 
 O O O O B-command O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
 B-command O O O B-device I-device O B-location I-location O O 
-O B-device I-device O O O O O O O O O O O O B-command I-command O O O 
+O B-device I-device O B-location I-location I-location I-location O O O O O B-command I-command O O O 
 O O B-command O O O B-device 
 O O B-command O O O B-device I-device O O B-command O O O B-changing_value I-changing_value I-changing_value O 
 B-command I-command O O O B-device I-device O O B-location I-location I-location O 
 O B-command I-command O O O B-device I-device I-device O B-location 
 O B-device I-device O B-location I-location I-location I-location O O O O B-command O O O 
 B-command O O O B-device I-device O 
-O O B-command I-command O B-device I-device O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at 
+O O B-command I-command O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O O 
 B-command I-command O O O B-device I-device 
 B-command O O O B-device O B-location O 
 O O B-command O B-device I-device I-device O O O 
@@ -6111,22 +6111,22 @@ O O B-command I-command O O O B-device I-device I-device
 O O O B-command B-device I-device I-device O O B-target_number 
 O O O B-device I-device I-device I-device O O O O B-command I-command O O O 
 B-command B-device I-device I-device O B-changing_value O 
-B-command O B-device I-device I-device I-device I-device I-device I-device I-device O O O 
+B-command O B-device I-device O B-location I-location O O O 
 O O O B-command B-device I-device I-device O B-target_number 
 B-command O O O B-device I-device O B-command O B-target_number 
 B-command O O O B-device I-device I-device O B-location I-location O 
 B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at 
-O O B-command O O O B-device I-device I-device O O O O O O O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device I-device O B-location I-location I-location I-location O 
+B-command O O O B-device I-device I-device O O O O O O O 
 O B-command O O O B-device I-device I-device O 
 O O O B-command B-device I-device I-device O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O O B-target_number 
 B-command O O O B-device I-device I-device O B-location I-location 
 O O B-command O O O B-device I-device I-device 
 B-command O O O B-device I-device O 
 O O B-command B-device I-device O B-location I-location O O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O B-location I-location O O O 
-B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at I-time_at 
+O B-time_at I-time_at I-time_at I-time_at B-command I-command B-device I-device O B-location I-location O O O 
+B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O B-command O O O B-device O 
 B-command I-command O O B-device I-device I-device O 
 B-command O O O B-device 
@@ -6147,12 +6147,12 @@ O B-command O O O B-device I-device O B-location I-location I-location I-locatio
 O O B-command B-device I-device O B-changing_value O O O 
 O O B-command B-device I-device I-device O B-target_number I-target_number I-target_number O 
 O B-device I-device O O O O B-command I-command O O O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O O 
+B-command O O O B-device I-device O B-changing_value O O 
 B-command O O O B-device I-device O B-location I-location O 
 O O B-command O O O B-device I-device O 
 O O B-command I-command O O O B-device I-device 
 B-command O O B-device O O B-location I-location I-location O 
-O O B-command O O O B-device I-device I-device 
+O O B-command O O O B-device I-device O 
 O O B-command B-device I-device I-device O B-changing_value O B-time_at I-time_at I-time_at I-time_at 
 B-command O O O B-device I-device O O O O 
 B-command O O O B-device I-device O 
@@ -6184,8 +6184,8 @@ O O B-command O O O B-device I-device O
 B-command O O O B-device I-device 
 O O O B-command I-command O B-device I-device O B-location I-location I-location I-location 
 O O O B-command O O O B-device I-device O 
-B-command O O O B-device I-device I-device 
-B-command I-command O O O B-device I-device O O O O O O O 
+B-command O O O B-device I-device O 
+B-command I-command O O O B-device I-device O O O O O O 
 O B-location O O B-device I-device I-device B-command I-command O O O O O O 
 B-command O O O B-device I-device O O O B-changing_value O 
 O O B-command I-command B-device I-device O O O O O O O O O 
@@ -6236,9 +6236,9 @@ O B-command O B-device O O O
 O B-command O O O B-device I-device O B-location I-location O 
 B-command I-command O O O B-device I-device I-device O 
 O B-device I-device I-device O B-location I-location O O O O B-command O O O O 
-O O B-command B-device I-device I-device I-device I-device I-device I-device 
+O O B-command B-device I-device I-device O O O O 
 B-command O O O B-device I-device O 
-O O O B-command I-command B-device I-device O O O O B-location I-location I-location I-location I-location 
+O O O B-command I-command B-device I-device O O O B-location I-location I-location I-location I-location 
 O B-command I-command O O O B-device I-device O 
 B-command O O O B-device I-device O B-location I-location O B-time_at I-time_at I-time_at I-time_at 
 O O O B-command O B-device I-device O O O 
@@ -6247,11 +6247,11 @@ O B-command I-command O O O O B-device I-device O B-location I-location O O O O 
 B-command O O O B-device I-device 
 O O O B-command B-device I-device I-device I-device O O B-location I-location I-location 
 O O B-command O O O B-device I-device O B-location I-location I-location O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device O B-location I-location O O O O O O O 
-O B-location I-location I-location I-location I-location I-location I-location I-location I-location O B-device O O O O 
+O B-time_at I-time_at I-time_at I-time_at B-command B-device O B-location I-location O O O O O O O 
+O B-location I-location I-location I-location B-command O B-device O O O O 
 B-command O B-device I-device I-device O B-location I-location O O 
 O B-command O B-device I-device I-device O B-location I-location O O O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device I-device O O O 
+O O O B-time_at I-time_at I-time_at I-time_at B-command I-command B-device I-device I-device O O O 
 B-command I-command O O O B-device I-device I-device O 
 B-command B-device I-device O B-location I-location I-location O O 
 B-command I-command O O O B-device I-device I-device O 
@@ -6283,8 +6283,8 @@ B-command O O B-device I-device O B-changing_value O
 O O B-command O B-device I-device O O O 
 O O B-command O O O B-device I-device I-device O B-changing_value O 
 B-command O O O B-device I-device I-device O O 
-O O O B-command B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O B-changing_value 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O O O O 
+O O O B-command B-device I-device I-device O B-location I-location I-location O B-changing_value 
+O O O B-time_at I-time_at I-time_at I-time_at B-command B-device I-device O O O O 
 B-command B-device I-device O O O O 
 B-command O B-device I-device O O B-location I-location O O O O 
 O O B-command B-device O O 
@@ -6293,9 +6293,9 @@ O O O B-command B-device I-device I-device O O B-time_at I-time_at I-time_at I-t
 B-command B-device I-device O O B-location I-location O 
 B-command I-command O O O B-device I-device 
 B-command O O O B-device I-device O 
-O O B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device O O O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device I-device O B-location I-location I-location I-location I-location 
+O O B-time_at I-time_at I-time_at I-time_at B-command B-device I-device O B-location I-location O O O 
 O O O O O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device O 
 B-command O O O B-device O O B-location O 
 B-command O B-device I-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
@@ -6305,7 +6305,7 @@ O O B-command O O O B-device I-device I-device O
 O O B-command O O O B-device I-device O 
 O O O B-command B-device I-device I-device O B-changing_value 
 O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device 
-O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device 
+O O B-command I-command O O O B-device I-device O O O O 
 B-command O O O B-device I-device O B-location I-location I-location O B-time_at I-time_at I-time_at I-time_at 
 O O O O O O O B-command O O B-device I-device O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device O B-changing_value O 
@@ -6315,7 +6315,7 @@ O O O O B-command O O O B-device O
 O O O B-device I-device O O B-command I-command O O O O 
 O O O O B-command B-device I-device O B-location I-location O O 
 O O O B-command B-device O B-location I-location 
-O O O B-command B-device I-device I-device O 
+O O B-command B-device I-device I-device O 
 O B-command O O O B-device I-device I-device O 
 O B-command B-device I-device I-device O 
 O O O O B-location I-location B-command O O O B-device I-device I-device I-device 
@@ -6336,35 +6336,35 @@ O O O B-command O B-device I-device O B-location I-location O O O
 O B-command O O O B-device I-device O O O O O 
 O O O O O O O O O O O O B-command I-command O B-device I-device I-device 
 O O B-command B-device I-device I-device O 
-O O O B-command I-command I-command I-command I-command I-command O O B-time_at I-time_at I-time_at I-time_at 
+O O O B-command B-device I-device O O B-time_at I-time_at I-time_at I-time_at 
 O O O B-command I-command B-device I-device I-device O O O 
 B-command O O O B-device O O 
 B-command O O O B-device O B-location I-location I-location I-location I-location 
 O B-location I-location I-location I-location O B-command O B-changing_value O 
 O O O O O B-command B-device I-device I-device O 
 O O B-command O B-device I-device I-device O O 
-O O O O O O O O O O O O O O O O O O B-command I-command O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O B-device I-device O O 
+O O O O O O O O O O O O O O O O O O B-command I-command O O B-time_at I-time_at I-time_at I-time_at B-command I-command O B-device I-device O O 
 B-command I-command O O O B-device I-device I-device O 
 O O O O O O B-command I-command O O O B-device I-device I-device O B-location O 
 O O B-command O O O B-device O B-location O O 
 B-command B-device O O 
 O O O O B-command O B-device I-device I-device O 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O O B-device I-device O B-location I-location 
 O O B-command O O O B-device I-device O B-location I-location I-location O 
-O O O O O O B-command B-device I-device O O B-changing_value O O 
+O O O O O B-command B-device I-device O O B-changing_value O O 
 B-command I-command O O O B-device 
 O O O B-command O O B-device I-device O O B-location I-location 
 O O B-command I-command O B-device I-device I-device O O O 
 O B-command O O O B-device I-device O 
-O O O O O O O O O O O O O O O O B-command B-device O O O O 
+O O O O O O O O O O O O O O O B-command B-device O O O O 
 B-command I-command O O O B-device I-device O B-location I-location 
 B-command O O O B-device I-device 
 O O B-command O B-device I-device I-device O O O 
-O O O O O O O O O O B-command O O O B-device I-device 
+O O O O O O O O O B-command O O O B-device I-device 
 B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at 
 B-command O O O B-device I-device O 
-O O O B-command O O O B-device I-device O B-changing_value I-changing_value 
-B-command I-command I-command I-command I-command I-command I-command O O B-target_number O O O 
+O O O B-command O O O B-device I-device O B-changing_value O 
+B-command B-device I-device I-device O O B-target_number O O O 
 O O B-command O O O B-device I-device O B-changing_value 
 O O O O O O O B-command O O O B-device I-device 
 B-command I-command O O O B-device I-device 
@@ -6393,7 +6393,7 @@ O O O O O O O O B-command B-device I-device O O B-time_at I-time_at I-time_at I-
 B-command O O O B-device I-device 
 B-command O O B-location I-location O 
 B-command O O O B-device I-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
-B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at 
 O O B-command O O O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device O O 
 O O O B-command B-device I-device O O O 
@@ -6410,7 +6410,7 @@ B-command O O O B-device I-device O B-changing_value O B-time_at I-time_at I-tim
 O O B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device O 
 O B-location I-location O O O B-command O O O B-device I-device O O 
-B-command O O O B-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device O O B-location I-location 
 O O O O O B-command O B-device I-device 
 B-command O O O B-device I-device I-device O 
@@ -6458,7 +6458,7 @@ B-command O O O B-device O B-location I-location O
 O O O O O O O B-command O O O B-device I-device 
 B-command B-device I-device O B-location I-location O O 
 B-command O O O B-device I-device O B-changing_value O 
-O O O O O O O B-command O O O B-device O B-location O O 
+O O O O O O B-command O O O B-device O B-location O O 
 O B-command O O O B-device O B-location O 
 B-command O O O B-device I-device 
 O O B-command O O O B-device I-device I-device O B-location I-location O 
@@ -6483,7 +6483,7 @@ O O B-command O B-device I-device O B-location I-location I-location I-location 
 B-command O O O B-device I-device I-device 
 O O O B-command O O B-device I-device O 
 O O B-command O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at O B-command O B-duration I-duration I-duration I-duration O 
-O O O O O O O O O B-command O O O B-device I-device B-location I-location O 
+O O O O O O O O B-command O O O B-device I-device B-location I-location O 
 B-command O O O B-device I-device 
 O O B-command O B-device I-device I-device 
 B-command O O O B-device I-device O 
@@ -6504,13 +6504,13 @@ O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-devic
 O O O O O B-command I-command O O O B-device I-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O O 
-O O O O O O B-location I-location B-command O O O B-device O 
+O O O O O B-location I-location B-command O O O B-device O 
 O O B-command O O O B-device I-device I-device O O O O O 
 B-command I-command O O O B-device I-device O B-location I-location I-location I-location I-location 
 B-command I-command O O O B-device I-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
-O O O O O B-command O B-device I-device O B-location O O 
+O O O O B-command O B-device I-device O B-location O O 
 B-command I-command O O O B-device I-device I-device O O 
-O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device O O 
+O B-command O O O B-device I-device O B-location I-location O O 
 B-command O O O B-device O 
 B-command O O O B-device I-device O B-location I-location I-location 
 O O B-command O O O B-device I-device I-device I-device 
@@ -6544,7 +6544,7 @@ O B-command O O O B-device I-device I-device
 O O O O B-command O O O B-device I-device O O B-location I-location I-location I-location O 
 B-command O B-device I-device I-device O O O O O O 
 B-command O O O B-device 
-O O O O B-location I-location I-location I-location I-location I-location I-location B-device O O 
+O O O O B-location B-command I-command B-device O O 
 O O O O O O O B-command B-device O B-location I-location I-location O O 
 O B-device O O O B-command O O O B-changing_value O 
 O O O B-command B-device O B-location O O O O 
@@ -6555,15 +6555,15 @@ O B-command O O O B-device I-device I-device O B-target_number O O
 O B-device I-device O O B-location I-location I-location I-location O B-command O O O O O 
 O O B-command O O O B-device O O B-location I-location I-location I-location O 
 B-command O O O B-device O B-location I-location O O 
-O O O O O B-device I-device I-device I-device O B-location I-location I-location I-location I-location I-location I-location I-location O O O 
+O O O O O B-device I-device I-device I-device O B-location I-location I-location B-command O O O 
 O O B-command B-device O O O 
-O O O O B-location I-location I-location I-location I-location I-location O O B-device I-device O 
+O O O O B-location B-command O O B-device I-device O 
 O B-command B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O O B-command O O O B-device I-device O O B-changing_value O 
 B-command O O O O B-device I-device O 
 O O B-command O O O B-device I-device O 
 O O O O O O O O O O B-command B-device O O O 
-O O B-location I-location I-location I-location I-location I-location I-location O O O B-device I-device O O 
+O O B-location I-location B-command O O O B-device I-device O O 
 O B-command O O O B-device I-device O O O B-target_number 
 B-command B-device I-device O 
 O O O O O O B-command O O O B-device I-device I-device O O O 
@@ -6571,7 +6571,7 @@ O O B-command O O O B-device O O O O O
 O O O B-command O O O B-device I-device O B-changing_value O 
 B-device I-device O O O O O B-command I-command O O O 
 O B-device I-device I-device O B-command O O O O O B-changing_value O 
-O O O O O O O O O O O O O O O O 
+B-command O B-device I-device I-device O O O 
 B-command O O O B-device I-device O B-location I-location I-location O 
 B-command O O O B-device O 
 O O B-command O O O B-device I-device O B-location I-location O O B-changing_value 
@@ -6588,13 +6588,13 @@ O O B-command O O O B-device I-device O
 O O O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
 B-device I-device O O O B-command O O O O O 
 O O O O O O B-command O O O B-device I-device I-device 
-B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+B-command O O O B-device I-device O O B-location I-location O 
 O O B-command O O O B-device I-device I-device O B-location I-location O 
 B-command O O O B-device I-device I-device O B-location O B-changing_value O 
 B-command O O O B-device I-device O 
 B-command B-device I-device I-device O 
 O O B-command O O O B-device O 
-O O O O O O O O B-command O O B-device I-device O B-location I-location 
+O O O O O O O B-command O O B-device I-device O B-location I-location 
 O O O B-command O O O B-device I-device O 
 O B-device I-device I-device O O O O O O B-command I-command O O O 
 B-command O O O B-device I-device O 
@@ -6629,7 +6629,7 @@ O O O O O O O O B-command O O O B-device I-device O B-location I-location O
 B-command O O B-device I-device O 
 B-device I-device I-device O B-location I-location I-location I-location O O B-command O O O O O O 
 B-command O O O B-device I-device I-device I-device O B-location O O 
-B-command O O O B-device I-device O O O O O O O O O 
+B-command O O O B-device I-device O B-location I-location I-location I-location O O 
 O O O O B-command O O O B-device I-device O O O O B-location I-location O 
 O O B-command O O O B-device I-device I-device O B-location I-location O O O O O O O 
 O B-command I-command O O O B-device I-device 
@@ -6651,10 +6651,10 @@ O O O O O O B-command B-device I-device I-device O O
 B-command I-command O O B-device I-device I-device O B-location I-location I-location O 
 B-command O O O B-device I-device I-device O O 
 B-command O O O B-device I-device I-device I-device 
-O O O B-command O O O B-device I-device I-device 
+O O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O B-location I-location O O O O 
 B-command I-command O O O B-device I-device O B-time_at I-time_at 
-O O O O O O B-command I-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+O O O O O B-command I-command O O O B-device I-device I-device O B-location I-location I-location O O 
 B-command O O B-device I-device B-changing_value O 
 O O O B-location I-location O B-command O O O B-device O 
 B-command O O O B-device I-device 
@@ -6679,7 +6679,7 @@ O B-command B-device I-device O O O B-target_number O O
 O B-device O B-location I-location I-location O O O O O O O O B-command I-command O O O 
 B-command O O O B-device O O O O O O O O 
 O O O B-command B-device I-device O 
-B-command O B-device I-device I-device I-device I-device 
+B-command O B-device O O O O 
 O O O O O O O O O B-time_at I-time_at I-time_at I-time_at B-command O O O B-device I-device I-device O 
 O O O B-location I-location I-location I-location I-location B-command B-device I-device O O O 
 O B-command O B-device I-device I-device I-device O O O 
@@ -6706,10 +6706,10 @@ B-command O O O B-device I-device O B-changing_value O
 B-command O B-device I-device O O O O 
 O O O O B-command O O O B-device I-device 
 B-command O O O B-device O B-location I-location O 
-O O B-device I-device O B-location I-location I-location I-location I-location I-location I-location O O 
+O O B-device I-device O B-location I-location O B-command O O 
 O B-command O O O B-device I-device O B-location I-location O 
 B-command I-command O B-device I-device O O 
-O O O O O O B-location I-location I-location I-location I-location I-location I-location I-location O B-device I-device O O 
+O O O O O O B-location I-location O B-command O B-device I-device O O 
 O B-location I-location O O O O B-command B-device I-device I-device O O O 
 B-command I-command B-device I-device I-device O O O 
 O O B-time_at I-time_at I-time_at I-time_at O O O O O O O O O B-command O O B-device I-device 
@@ -6719,7 +6719,7 @@ B-command O O O B-device I-device I-device O O
 B-command O O O B-device I-device I-device O B-location I-location 
 O O B-command B-device I-device O O 
 B-command O O O O B-device I-device 
-O O O O O O O O O O O O O O O O O O O O 
+B-command O O O B-device O O B-location O 
 B-command O O O B-device 
 O O O B-command B-device I-device O B-changing_value O 
 O O O O O O B-time_at I-time_at I-time_at I-time_at B-command I-command O O O B-device I-device O B-location I-location I-location I-location I-location 
@@ -6753,7 +6753,7 @@ B-command O O O B-device I-device O
 O O B-command O O O B-device I-device O O O 
 O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 B-command O O O B-device I-device O 
-B-command O O O B-device I-device O B-location I-location I-location 
+B-command O O O B-device I-device O B-location I-location O 
 O O B-command I-command O O O B-device I-device I-device O 
 B-command O O O B-device I-device 
 O B-command O B-device I-device O 
@@ -6764,7 +6764,7 @@ O B-command B-device I-device I-device O B-duration I-duration I-duration I-dura
 O O O O O O O O O O O O O B-command O O O B-device I-device I-device O O O O O 
 O O O B-command O O O B-device O O O O O B-location I-location O 
 O B-command O O O B-device I-device I-device O B-location I-location O 
-O B-command I-command O O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O B-command I-command O O O O B-device I-device O B-location I-location I-location I-location 
 B-command I-command O O O B-device I-device O B-time_at I-time_at 
 O O B-command O O O B-device I-device O B-changing_value O 
 O O B-command O O O B-device I-device O 
@@ -6782,7 +6782,7 @@ O O O B-command B-device I-device O
 B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 O B-command O O O O B-device I-device O O B-changing_value O B-duration I-duration I-duration I-duration 
 O B-device I-device O B-location I-location O O O O O B-command I-command O O O 
-O O O O O O O O O O O O O O O O O O O O O O O O O 
+B-command O O O B-device I-device I-device I-device O O B-location I-location O 
 B-command O O O B-device O O O O O O O 
 B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
@@ -6812,10 +6812,10 @@ O O O O O O B-command B-device I-device I-device O
 B-command O O O B-device O 
 B-command I-command O O O B-device I-device 
 B-command O B-device I-device I-device O O B-location O O B-time_at I-time_at I-time_at I-time_at 
-O O B-command O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+O O B-command O B-device O B-location I-location O O O 
 O O O O O B-command O B-device I-device I-device 
 B-command O O O B-device I-device 
-O O O B-command O O O B-device I-device O O O O O O O O O O 
+O O O B-command O O O B-device I-device O B-location I-location I-location I-location O O 
 O O B-command B-device O B-location I-location O O O 
 B-command O O O B-device I-device I-device O B-target_number I-target_number I-target_number O 
 B-command O O O B-device I-device I-device O B-target_number O 
@@ -6841,7 +6841,7 @@ O O O B-command I-command O O O B-device I-device I-device
 B-command O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
 B-command O O B-device I-device O B-duration I-duration I-duration I-duration O 
 B-command O B-location I-location O O 
-O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-device I-device O 
+O O B-location I-location I-location I-location I-location O B-command I-command O O O B-device I-device O 
 B-command O O O B-device I-device I-device O 
 O O O B-command O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at 
 O B-device I-device I-device O O O O O B-command O O B-target_number O 
@@ -6849,8 +6849,8 @@ O O B-command O O O B-device I-device O O O
 B-command B-device O O O O 
 B-command O O O B-device O 
 B-command O O O O B-device I-device O O B-changing_value O 
-O O B-command O B-device O B-location I-location I-location 
-O O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device O O 
+O O B-command O B-device O B-location I-location O 
+O O O B-command O O O B-device I-device I-device O B-changing_value O O 
 O B-command O O O B-device I-device O 
 O O O O O O B-command O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device 
@@ -6887,11 +6887,11 @@ O O O O O O O B-command O O O B-device O
 B-command O O O B-device O 
 B-command O O O B-device I-device O O O O O 
 O O O O O O B-command O O O B-device O 
-B-command O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device I-device 
+B-command O O B-device I-device O B-location I-location I-location O O O O O 
 B-command O O O O O B-device I-device I-device O B-location I-location O 
 O B-device I-device I-device O B-command O O O O O O O O O O 
 O O O B-time_at I-time_at I-time_at I-time_at O B-command O B-device I-device O O O 
-B-command O O O B-device I-device I-device 
+B-command O O O B-device I-device O 
 O B-device I-device O O O O B-command I-command O O O 
 O O O O B-command O O O B-device O 
 B-command I-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
@@ -6987,7 +6987,7 @@ B-command O O O B-device I-device O
 O O O B-command O O O B-device O B-location I-location O 
 B-command O B-device O O O 
 B-command O O O B-device I-device 
-O B-command O O O B-device I-device O B-changing_value I-changing_value I-changing_value 
+O B-command O O O B-device I-device O B-changing_value O O 
 O O O O O O B-command O B-device I-device I-device O O 
 O B-command I-command O O O B-device I-device O O B-location I-location I-location I-location I-location O O O O O O O 
 B-command O O O B-device I-device I-device O B-changing_value O 
@@ -7002,7 +7002,7 @@ B-command O O O B-device I-device O B-changing_value I-changing_value I-changing
 O O B-command O O O B-device O B-location I-location I-location I-location I-location O 
 B-command I-command O O O B-device I-device O 
 O B-command O O O B-device I-device I-device O B-target_number O 
-B-command O O O B-device I-device I-device I-device 
+B-command O O O B-device I-device I-device O 
 O O B-command I-command O O O B-device O O O O O O O O 
 O B-command O O O B-device I-device O 
 O B-device I-device O O B-location I-location O O O O O O O B-command O O 
@@ -7013,14 +7013,14 @@ O O O O O B-command I-command O B-device I-device
 O O O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O B-location I-location O 
 B-command O O O B-device I-device O O O O O 
 O B-command O B-device I-device O O O O 
-B-command O O B-device I-device O O B-location I-location I-location I-location 
+B-command O O B-device I-device O O B-location O O O 
 B-command O O O B-device I-device O B-location I-location O 
 O O O O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O O 
 O B-time_at I-time_at I-time_at I-time_at O O B-command O O O B-device I-device I-device O 
 B-command B-device I-device I-device O O O O 
 O O O O O O O O B-command O O O B-device I-device I-device O 
 O O B-command O O O B-device I-device O B-location I-location I-location O 
-O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at B-device O O O O O O O 
+O O O B-time_at I-time_at I-time_at I-time_at O O B-command B-device O O O O O O O 
 O B-command O O O B-device I-device O 
 O B-command O O O B-device I-device I-device O B-changing_value O 
 O O O B-command O O O B-device O B-location I-location O 
@@ -7029,13 +7029,13 @@ O B-device I-device O O O O O O O O B-command I-command O O O
 O O B-command O O O B-device I-device O O B-location I-location I-location I-location I-location O O O 
 O O B-command O O O B-device I-device I-device O O 
 O O O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device I-device O 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location O O O O O O O B-command I-command O O O 
+O O O O B-location I-location O B-device I-device O O O O O O O B-command I-command O O O 
 O O B-command O O O B-device I-device O B-location I-location O O O O B-command O B-duration I-duration I-duration I-duration O O O 
 O B-location I-location O O O O O O O B-command O O O B-device I-device O 
 B-device I-device O O B-command O O O B-device I-device O B-target_number O 
 O O B-command I-command O O O B-device I-device O B-location I-location O O O O O O O O 
 O O B-command I-command O O O B-device I-device O O O O O O O O O O 
-O O O B-location I-location I-location I-location O O B-device I-device O B-command O O O B-duration I-duration I-duration I-duration I-duration 
+O O O B-location I-location I-location I-location O O B-device I-device O B-command O O O B-duration I-duration I-duration I-duration O 
 O O O O B-location I-location I-location I-location O O O O B-command O O O B-device I-device 
 O O O B-time_at I-time_at I-time_at I-time_at O O B-command O O O B-device I-device I-device O O B-location I-location O O 
 O O O B-command O O B-device I-device O O O 
@@ -7050,11 +7050,11 @@ B-command O O O B-device I-device
 O O B-command B-device I-device O 
 B-command O O O B-device O B-location I-location O O 
 O O B-command I-command O O O B-device I-device O B-location I-location I-location O 
-O B-device I-device O O O O O O O B-command O O O O O B-duration I-duration I-duration I-duration O O O O 
+O B-device I-device O B-location I-location O B-command O O O O O B-duration I-duration I-duration I-duration O O O O 
 B-command O O O B-device I-device O B-location I-location I-location I-location I-location I-location O 
 B-command I-command O O O B-device I-device O 
 B-command O B-device I-device O O 
-O O B-command O O O B-device I-device I-device I-device I-device 
+O O B-command O O O B-device I-device O O 
 O B-time_at I-time_at I-time_at I-time_at O B-command O O O B-device O B-location I-location I-location I-location I-location O 
 B-device I-device O O B-command O O O 
 B-command B-device I-device I-device O O B-target_number O 
@@ -7079,13 +7079,13 @@ O O B-command O O O B-device I-device O O B-target_number O
 O O B-command O O O B-device I-device 
 O O B-command O O O B-device I-device O B-location I-location I-location I-location I-location O 
 B-command O O O B-device I-device O 
-O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O B-device I-device O O O 
+O B-time_at I-time_at I-time_at I-time_at O O O O O O O B-command I-command O B-device I-device O O O 
 O O O O O B-command O O O B-device I-device O O O 
 O O O B-device I-device O B-location I-location O O O B-command I-command O O O 
 O O B-time_at I-time_at I-time_at I-time_at O O O B-command I-command O B-device I-device O O O 
 O O O O O O O B-command B-device I-device O O O O O O B-command O O O B-device I-device O 
 B-command O O O B-device I-device O O B-time_at I-time_at I-time_at I-time_at O 
-O O B-command O O O B-device I-device I-device I-device I-device I-device I-device I-device I-device I-device O 
+O O B-command O O O B-device I-device O B-location I-location I-location I-location O 
 O O O O O O B-device I-device O O B-command I-command O O O 
 O B-device I-device O O O O O O B-command I-command O O O 
 B-command O O O B-device I-device O B-location I-location O 
@@ -7145,7 +7145,7 @@ O O O O O O O B-command O O O B-device I-device I-device O O B-target_number O O
 O O O O O O B-command O O O B-device I-device O B-location I-location I-location O 
 O O O O O O O O B-command I-command O O O B-device O 
 O O O O O O O O O B-command O O O B-device I-device I-device O 
-O O O O O O O O B-command O O O B-device I-device O B-location I-location I-location I-location 
+O O O O O O O O B-command O O O B-device I-device O B-location I-location O O 
 O O O O O O O B-command O O B-device O B-location I-location I-location O 
 O B-command O O B-device I-device O 
 O O O O O O O O O O B-command O O O B-device O B-location O 
@@ -7179,7 +7179,7 @@ B-command O B-device I-device I-device O O O
 B-command B-device I-device O O 
 O O O O O O O O B-command O B-device I-device I-device O B-location I-location O 
 O O O O O O O O O O B-command O O O B-device I-device O B-time_at I-time_at I-time_at I-time_at O 
-O O O O O O B-command O O O B-device I-device I-device O B-location I-location I-location 
+O O O O O O B-command O O O B-device I-device I-device O B-location I-location O 
 B-command B-device O B-location I-location I-location I-location 
 O O B-command I-command O O O B-device I-device I-device O B-location O 
 B-command I-command O O O O B-device I-device O O O O O 
@@ -7209,7 +7209,7 @@ O O O O B-command O O B-device I-device O B-changing_value
 O O O O O O O O O B-command O O O B-device I-device O B-changing_value O O B-duration I-duration I-duration I-duration O 
 O O B-command O B-device I-device O B-target_number O 
 O O O B-scene I-scene O O O O O O B-location I-location I-location I-location O O 
-O O O O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O B-duration I-duration I-duration I-duration O 
+O O O O O O O O B-location I-location I-location O O O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration O 
 O O O O B-scene I-scene O B-location I-location I-location 
 O O B-scene I-scene I-scene I-scene O O B-location I-location O O 
 O O B-scene I-scene O O B-location I-location I-location I-location 
@@ -7234,32 +7234,32 @@ O O O O O O B-scene I-scene O B-location I-location I-location O O B-duration I-
 O O O O B-scene I-scene O B-location I-location O 
 O O O O O B-time_at I-time_at I-time_at I-time_at O O O O O O O O O O O B-scene I-scene O O B-location I-location O O O 
 O O O B-scene I-scene O B-location I-location O O O O O O O 
-O O O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O B-scene I-scene O 
+O O O O O O O B-location I-location I-location O O O B-duration I-duration I-duration I-duration O O O B-scene I-scene O 
 O O O B-scene I-scene O B-location I-location O O 
 O O O O O O B-scene I-scene O B-location I-location I-location O O 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O B-duration I-duration I-duration I-duration O 
+O O O B-location I-location O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration O 
 B-scene I-scene O B-location I-location I-location I-location O O O 
 O O O O O B-scene I-scene O B-location I-location I-location O O O B-duration I-duration I-duration I-duration O 
-O O O O O O O O O O O O O B-location I-location I-location I-location O 
+O O O O O O B-scene I-scene O B-location I-location I-location I-location O 
 O B-scene I-scene O O O O O O O O B-location I-location O O O 
-O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+O O O O O O B-location I-location O O O B-scene I-scene I-scene O B-duration I-duration I-duration I-duration O 
 O O O O O O O O B-scene I-scene O B-location I-location O O 
 O O O O O B-location I-location I-location O B-scene I-scene 
 O O B-scene I-scene O O O O O O B-location I-location I-location I-location O 
 O O O O O O O B-scene I-scene O O B-location I-location I-location O 
 O O O O B-duration I-duration I-duration I-duration O O O B-scene I-scene O O O B-location I-location 
-O O O O O O O O O O O O O O O O O O O O O O O 
+O O O O O O B-location I-location O O O B-scene I-scene I-scene O 
 O O O O O O O O O B-location I-location I-location O B-duration I-duration I-duration I-duration O O O B-scene I-scene O 
-O O O O O O O O O O O O O O O O O O O O O O 
-O O O O O O O O O O O O O O O O O O O O 
+O O O O O O O O B-location I-location O B-scene I-scene O 
+O O O O O B-scene I-scene O B-location I-location I-location O 
 O O O O O B-location I-location I-location O O O O O O O O O B-scene I-scene I-scene O O 
-O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+O O O O O O B-location I-location O O O O O O O B-scene I-scene I-scene O 
 O O O O O O B-location I-location I-location O O O B-scene I-scene O O O O 
 O O O B-location I-location O O O O O B-scene I-scene I-scene O O 
-O O O O O O O O O O O O O O O O O O O 
+O O O O B-scene I-scene O B-location I-location O O 
 O O O O O O O O O O B-scene I-scene O O O O B-location I-location I-location I-location 
 O O O O O O O O O O B-scene I-scene O O O B-location I-location I-location O 
-O O O O O O O O O O O O O O O O O O O O O O O O O O O O 
+O O O O O O O O O O B-scene I-scene O O O B-location I-location I-location I-location O 
 O O O O B-scene I-scene O B-location I-location I-location O O B-duration I-duration I-duration I-duration O 
 O O O O B-scene I-scene O O B-location I-location O 
 O O O O O O B-scene I-scene O B-location I-location O O 
@@ -7281,7 +7281,7 @@ B-scene I-scene O B-location I-location I-location I-location O O O
 B-time_at I-time_at I-time_at I-time_at O O O O O B-scene I-scene O B-location I-location O O O O 
 O O O B-scene I-scene O O O O B-location I-location I-location O 
 O O B-scene I-scene O B-location I-location I-location I-location O O O 
-O O O O O O O O O O B-location I-location O 
+O O O O B-scene I-scene O B-location I-location O 
 B-duration I-duration I-duration I-duration O O O O B-scene I-scene O B-location I-location O O O 
 O O O B-scene I-scene O B-location I-location O 
 O O B-scene I-scene O B-location I-location O 
@@ -7289,7 +7289,7 @@ O O O O B-scene I-scene O B-location I-location O O
 O O B-scene I-scene O B-location I-location O O O O O O O O 
 O B-scene I-scene I-scene O O O O B-location I-location O O 
 O B-scene I-scene O B-location I-location O O 
-O O O O O O O O O O O O B-location I-location O O O O O O 
+O O O O O B-scene I-scene O O B-location I-location O O O O O O 
 O O O O B-location I-location I-location B-duration I-duration I-duration I-duration O B-scene I-scene 
 O O B-scene I-scene O B-location I-location O O 
 O O O O O O B-scene I-scene O B-location I-location I-location I-location 
@@ -7300,23 +7300,23 @@ B-location I-location O O O O O B-scene I-scene O O O O
 O O O B-location I-location I-location O O O O O O B-scene I-scene 
 B-location I-location I-location I-location O O B-scene I-scene O O O 
 O O O O O O B-scene I-scene O O B-location I-location O 
-O O O O O O B-location I-location I-location O O O O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration I-duration I-duration I-duration I-duration I-duration I-duration 
+O O O O O O B-location I-location I-location O O O O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration O O O O O O 
 O O O B-scene I-scene O B-location I-location O 
 O O B-scene I-scene O O O O B-location I-location I-location O O B-duration I-duration I-duration I-duration O 
 O O O O B-location I-location O B-scene I-scene 
 O O O B-scene I-scene O O B-location I-location O O O 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+O O O B-location I-location O O O O O B-scene I-scene I-scene 
 O O B-scene I-scene O B-location I-location 
 O B-scene I-scene O O B-location I-location O O B-duration I-duration I-duration I-duration O O O O 
 O O O B-scene I-scene O B-location I-location O O 
 O O B-location I-location I-location O O O O O O B-scene I-scene 
-O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+O O B-location I-location O O O B-scene I-scene 
+O O O B-location I-location I-location I-location O O O O O O B-scene I-scene 
+O O O B-location I-location O O O O O O B-scene I-scene 
 O O O O O O O O O O O O O B-scene I-scene O O B-location I-location O O O O B-time_at I-time_at I-time_at I-time_at 
 O O O O O B-scene I-scene O O B-location I-location I-location O O B-duration I-duration I-duration I-duration O O 
 O O O O O O O O O O O B-scene I-scene O B-location I-location I-location O O O O O O O O O O O B-duration I-duration I-duration I-duration 
-O O O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene O O B-duration I-duration I-duration I-duration 
+O O O B-scene I-scene I-scene O B-location I-location I-location O O B-duration I-duration I-duration I-duration 
 O B-duration I-duration I-duration I-duration O O O O O O O O O B-scene I-scene O B-location I-location I-location O O 
 O O O O O B-scene I-scene O O O B-location O O O O O O 
 O B-scene I-scene O O B-location I-location I-location I-location O O O O O O O O 
@@ -7327,7 +7327,7 @@ O O O B-scene I-scene O B-location I-location O O O O
 O O O B-scene I-scene O B-location I-location O O 
 O O B-scene I-scene O B-location I-location O O 
 B-duration I-duration I-duration I-duration O O O B-scene I-scene O B-location I-location I-location 
-O O O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene O 
+O O O B-scene I-scene O O O B-location I-location O 
 O O O O O O O O B-scene I-scene O O O B-location I-location I-location O O 
 O O O B-scene I-scene O O O B-location I-location O 
 O O O B-scene I-scene O B-location I-location I-location O B-duration I-duration I-duration I-duration O O 
@@ -7391,26 +7391,26 @@ B-time_at I-time_at I-time_at I-time_at O O O O O B-location I-location O O O B-
 B-scene I-scene O O O O B-location I-location I-location I-location O O 
 O O O O B-scene I-scene I-scene O O B-location I-location I-location O 
 O O O O B-scene I-scene O O O O O B-location I-location O 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O 
+O O O O B-location I-location O O O O B-scene I-scene O O 
 O O B-scene I-scene I-scene O O O O B-location I-location 
 O O O O B-location I-location O O O B-scene I-scene O O 
 O O O B-scene I-scene O O O O O O B-location I-location 
 O O B-scene I-scene O O B-location I-location I-location I-location O O O 
-O O B-time_at I-time_at O O B-location I-location I-location I-location I-location I-location I-location I-location O 
+O O B-time_at I-time_at O O B-location I-location O B-scene I-scene O 
 O O O B-scene I-scene O B-location I-location I-location O 
-O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O B-scene I-scene O 
+O O B-time_at I-time_at O O B-location I-location O B-scene I-scene O 
 O O O O B-location I-location O O O O B-scene I-scene I-scene 
 O O O O B-location I-location O O O O B-scene I-scene 
-O O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene O O 
+O O B-scene I-scene O B-location I-location O O 
 O O O O B-scene I-scene O B-location I-location I-location O O B-duration I-duration I-duration I-duration 
 O O B-scene I-scene I-scene O O O O B-location I-location 
 O O O O O O O B-scene I-scene O B-location I-location O O 
 O O O O O B-scene I-scene O B-location I-location I-location I-location 
-O O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+O O O O O B-location I-location O O O O B-scene I-scene I-scene 
 O O O O B-location I-location O B-scene I-scene 
 O O B-scene I-scene O B-location I-location O O B-time_at I-time_at 
 O O O O O O B-location I-location B-duration I-duration I-duration I-duration O B-scene I-scene O O O O 
-O O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O 
+O O O O B-location I-location O O O B-scene I-scene O 
 O O B-location I-location O O O O O O O B-scene I-scene I-scene 
 O O O O O O O B-scene I-scene O B-location I-location O O 
 O O O O B-location I-location O O O O B-scene I-scene O 
@@ -7425,39 +7425,39 @@ O O O O B-location I-location O O O O B-scene I-scene O
 O O O B-location I-location O O O O B-scene I-scene O 
 O O O B-scene I-scene O O B-location I-location I-location 
 O O O B-location I-location I-location O O O O O B-scene I-scene 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O B-scene I-scene I-scene 
+O O O B-location I-location O B-duration I-duration I-duration I-duration O O B-scene I-scene I-scene 
 O O O O B-scene I-scene O B-location I-location I-location O B-duration I-duration I-duration I-duration O 
 O O O O B-scene I-scene O B-location I-location I-location O O B-time_at I-time_at I-time_at I-time_at 
 O O O B-scene I-scene O B-location I-location I-location 
-O O O O O O B-location I-location I-location O O B-scene I-scene I-scene O O O O O O O O O O O O O 
+O O O O O O B-location I-location I-location O O B-scene I-scene I-scene O O O B-duration I-duration I-duration I-duration O O O O 
 O O B-scene I-scene O B-location I-location I-location I-location O O 
 O O B-scene I-scene I-scene O O O O O O O B-location I-location I-location O 
 O B-location I-location O O B-scene I-scene O O 
-O O O O O O O O O O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration 
-O O B-scene I-scene O O O O O O O O O O O 
+O O O B-location I-location O O O B-scene I-scene I-scene O O B-duration I-duration I-duration I-duration 
+O O B-scene I-scene O B-location I-location O O O O O 
 O O O O B-scene I-scene O O B-location I-location 
 O O O O O B-location I-location O O O O O O B-scene I-scene 
 O B-location I-location O B-scene I-scene O B-time_at I-time_at 
 O O O O B-location I-location I-location O O O O B-scene I-scene O O B-duration I-duration I-duration I-duration 
-O O O O B-location I-location O O O O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene 
+O O O O B-location I-location O O O O B-scene I-scene O O O O O O 
 O O B-time_at I-time_at O O B-location I-location O B-scene I-scene O 
 O O O O B-location I-location I-location O B-scene I-scene O B-duration I-duration I-duration I-duration O O 
-O O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene O O O 
+O O B-scene I-scene I-scene O O O O B-location I-location O O O 
 O O B-location I-location O O O O O O O O B-scene I-scene O 
 O O O B-scene I-scene O B-location I-location I-location O O B-duration I-duration I-duration I-duration 
 O O O O O B-scene I-scene O B-location 
-O O O B-location I-location O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene 
+O O O B-location I-location O B-scene I-scene O O O O O O O O 
 O O O O O O O O O O B-scene I-scene O B-location I-location O O 
-O O O O B-location I-location I-location O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene 
+O O O O B-location I-location I-location O B-scene I-scene O O O O O O O O O O 
 O O O O O B-location I-location I-location O B-duration I-duration I-duration I-duration O O O B-scene I-scene O O 
-O O O B-location I-location O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene 
+O O O B-location I-location O B-scene I-scene O O O O O O O O 
 O O O B-scene I-scene I-scene O O O B-location I-location O O O 
 O B-time_at I-time_at I-time_at I-time_at O O O O B-location I-location O O O B-scene I-scene O O 
-O O O B-location I-location O B-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene I-scene 
+O O O B-location I-location O B-scene I-scene O O O O O O O O 
 O O O O B-scene I-scene O O B-location I-location I-location 
 O O B-duration I-duration I-duration I-duration O O O B-scene I-scene O B-location I-location I-location 
-O O O O O O B-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at I-time_at O B-location I-location I-location 
-O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O 
+O O O O O O B-time_at I-time_at I-time_at I-time_at O O O O B-scene I-scene O B-location I-location I-location 
+O B-location I-location O B-scene I-scene I-scene O O 
 O O B-time_at I-time_at I-time_at I-time_at O B-location I-location O O B-scene I-scene O O 
 O O B-location I-location O B-scene I-scene 
 O O O B-scene I-scene O B-location I-location O O O 
@@ -7467,7 +7467,7 @@ O O B-scene I-scene I-scene O O O O O B-location I-location O O O
 O O O O O O O O O B-scene I-scene O B-location I-location I-location O O B-duration I-duration I-duration I-duration O 
 O O B-scene I-scene O B-location I-location I-location 
 O O B-scene I-scene I-scene O O B-location I-location I-location O O O 
-O O O B-scene I-scene O B-location I-location I-location I-location I-location I-location I-location 
+O O O B-scene I-scene O B-location I-location O O O O 
 O O B-scene I-scene I-scene O O B-location I-location I-location O O O 
 B-location I-location I-location O O O O O O O B-scene I-scene I-scene O O O O B-duration I-duration I-duration I-duration O O 
 O O B-scene I-scene I-scene O O O B-location I-location 
@@ -7477,12 +7477,12 @@ O O O O O O B-location I-location O O O B-scene I-scene O
 O O B-location I-location O O O O B-scene I-scene I-scene O 
 O O O O O O B-scene I-scene O B-location I-location 
 O O O O B-location I-location O O O O O O O O O B-scene I-scene 
-O O B-duration I-duration I-duration I-duration O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location O O O 
+O O B-duration I-duration I-duration I-duration O O B-location I-location I-location O O B-scene I-scene O O O 
 O O O O O B-location I-location O O O B-scene I-scene I-scene O B-duration I-duration I-duration I-duration 
 O O O B-location I-location I-location I-location O O B-scene I-scene O 
 O O O O O O O O O B-duration I-duration I-duration I-duration O O O B-scene I-scene O O B-location I-location O 
 O O B-scene I-scene I-scene O O O O B-location I-location O O 
-O O O B-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location I-location 
+O O O B-location I-location O O B-scene I-scene O O O O 
 O O B-scene I-scene O O B-location I-location O O 
 O O B-scene I-scene O B-location I-location O B-time_at I-time_at 
 O O O O B-location I-location O B-scene I-scene O 
