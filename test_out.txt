@@ -1,0 +1,1 @@
+<Mở thiết bị> -> anh muốn vào [phòng:B-location] [đọc:I-location] [sách:I-location]

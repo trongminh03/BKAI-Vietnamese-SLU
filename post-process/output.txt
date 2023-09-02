@@ -1,0 +1,1299 @@
+<Đóng thiết bị> -> [đóng:B-command] cho anh cái [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device] với
+<Bật thiết bị> -> [bật:B-command] hộ mình [45%:B-target_number] hiệu năng trong khoảng [23:B-duration] [tiếng:I-duration] [21:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> cái [đèn:B-device] [bếp:I-device] ấy nó hơi tối bạn [tăng:B-command] cho mình lên mức [34%:B-changing_value] nhé
+<Bật thiết bị> -> tối quá em ơi [bật:B-command] giúp anh cái [đèn:B-device] [bếp:I-device] với
+<Giảm âm lượng của thiết bị> -> [giảm:B-command] [ti:B-device] [vi:I-device] cho tôi
+<Tắt thiết bị> -> [tắt:B-command] giúp anh
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device] ở [phòng:B-location] [khách:I-location] nha
+<Đóng thiết bị> -> nắng thế nhỉ [đóng:B-command] cho tôi [màn:B-device] [cuốn:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho mình vào lúc [5:B-time_at] [giờ:I-time_at] [29:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> giúp mình [tắt:B-command] cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] với
+<Mở thiết bị> -> [mở:B-command] hộ mình cái [máy:B-device] [lạnh:I-device] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [28%:B-changing_value] trong [21:B-duration] [tiếng:I-duration] [36:I-duration] [phút:I-duration] nhé
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] [bóng:B-device] [sưởi:I-device] còn [76%:B-target_number] cho mình
+<Bật thiết bị> -> [bật:B-command] giúp mình vào lúc [22:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] nhé không cần sáng quá đâu chỉ cần ở mức [74%:B-target_number] là được rồi
+<Kiểm tra tình trạng thiết bị> -> cái [đèn:B-device] [tranh:I-device] ở [đại:B-location] [sảnh:I-location] nó bị sao ấy nhở [kiểm:B-command] [tra:I-command] hộ anh với
+<Mở thiết bị> -> tôi sẽ về nhà rồi nhớ
+<Giảm âm lượng của thiết bị> -> em ơi [giảm:B-command] giúp anh cái [ti:B-device] [vi:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình cái [đèn:B-device] [bàn:I-device] với
+<Bật thiết bị> -> giúp tôi [bật:B-command] cái [bóng:B-device] [treo:I-device] [tường:I-device] bên cạnh [cầu:B-location] [thang:I-location] [của:I-location] [quân:I-location] lên mức [23%:B-target_number] nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [mành:B-device]
+<Tăng độ sáng của thiết bị> -> cho anh [bóng:B-device] ở [2:B-duration] [phút:I-duration] [sân:B-location] cho cô tản đà
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] [bếp:B-device] ở [phòng:B-location] [bếp:I-location] [mùa:I-location] [xuân:I-location] lên [8:B-changing_value]
+<Bật thiết bị> -> [bật:B-command] cho mình về [23:B-target_number] [độ:I-target_number] [c:I-target_number] nhé vào lúc [5:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> khách tới nhà rồi đi nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] với nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi em [kiểm:B-command] [tra:I-command] giúp anh cái [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device] được không
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [50%:B-changing_value] giúp mình
+<Giảm nhiệt độ của thiết bị> -> bạn có thể [giảm:B-command] giúp mình cái [máy:B-device] [nghe:I-device] [nhạc:I-device] vào lúc [3:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at] được không
+<Đóng thiết bị> -> giúp mình [đóng:B-command] [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho mình cái [đèn:B-device] [rủ:I-device] nhé
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] hộ anh cái [bóng:B-device] [sưởi:I-device] chút nhé
+<Kiểm tra tình trạng thiết bị> -> [42%:B-target_number] vào [4:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> lạnh quá [mở:B-command] cho mình cái [bình:B-device] [nóng:I-device] [lạnh:I-device] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] tầm [37%:B-changing_value] đi trong [5:B-duration] [tiếng:I-duration] [47:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] hôm nay nhớ [tắt:B-command] [đèn:B-device] [sưởi:I-device] em nhớ
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] hộ anh cái [đèn:B-device] [thả:I-device] thêm [6%:B-changing_value] em nhé
+<Mở thiết bị> -> [mở:B-command] cho mình trong vòng [18:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [4:B-target_number] độ nhé
+<Hủy hoạt cảnh> -> tôi không muốn [thư:B-scene] [giãn:I-scene] ở [phòng:B-location] [nghỉ:I-location] nữa
+<Mở thiết bị> -> [mở:B-command] [ti:B-device] [vi:I-device] [bên:I-location] [trái:I-location]
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ anh cái [cửa:B-device] [cuốn:I-device] ở [phòng:B-location] [khách:I-location] nhá
+<Mở thiết bị> -> phòng tối quá [mở:B-command] cho anh cái [van:B-device] [cửa:I-device] [số:I-device] [5:I-device] nhá
+<Kích hoạt cảnh> -> chị vùi mới [đi:B-scene] [tắm:I-scene] ở [phòng:B-location] [vệ:I-location] [sinh:I-location]
+<Tăng độ sáng của thiết bị> -> phòng tối om thế nhỉ [tăng:B-command] cho mình cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] đi
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] [bếp:B-device] đi
+<Hủy hoạt cảnh> -> tôi không [đi:B-scene] [tắm:I-scene] nữa ra khỏi [bóng:B-location] [tắm:I-location] đây
+<Tăng độ sáng của thiết bị> -> anh chuẩn bị xuống cara em [tăng:B-command] giúp anh cái [đèn:B-device] [bếp:I-device] trong đấy lên nhé
+<Đóng thiết bị> -> xíu [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nước đầy thì em [đóng:B-command] [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] nhé
+<Tắt thiết bị> -> trong khoảng [1:B-duration] [tiếng:I-duration] [41:I-duration] [phút:I-duration] nữa em [tắt:B-command] giúp anh nhé
+<Bật thiết bị> -> [bật:B-command] [đèn:B-device] [làm:I-device] [việc:I-device] lên [29%:B-target_number] hộ pháp
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [bóng:B-device] [sưởi:I-device] lên với em ơi
+<Giảm nhiệt độ của thiết bị> -> bạn ơi [giảm:B-command] cho mình cái [đèn:B-device] [sưởi:I-device] đi [84%:B-target_number] nhé
+<Mở thiết bị> -> [mở:B-command] [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] cho tháng em ơi
+<Mở thiết bị> -> [6:B-changing_value] phần [phòng:B-location] [thử:I-location] [việc:I-location] thì phải để đón [nhà:B-location] [vệ:I-location] [sinh:I-location]
+<Đóng thiết bị> -> lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] [đóng:B-command] cho mình cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] với
+<Tăng nhiệt độ của thiết bị> -> bé quá [tăng:B-command] giúp mình cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Tắt thiết bị> -> cái bóng [đèn:B-device] [huỳnh:I-device] [quang:I-device] mở sáng quá [tắt:B-command] đi cho anh cái
+<Tắt thiết bị> -> [tắt:B-command] trong vòng [3:B-duration] [tiếng:I-duration] [76:I-duration] [phút:I-duration] nhá
+<Bật thiết bị> -> [bật:B-command] giúp mình vào lúc [11:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] nhé hãy [bật:B-command] trong số [22:B-duration] [tiếng:I-duration] [45:I-duration] [phút:I-duration]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] độ sáng của cái [đèn:B-device] [tuýp:I-device] lên khoảng [39%:B-changing_value] giúp mình
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [64%:B-changing_value] nhé trong vòng [14:B-duration] [tiếng:I-duration] [12:I-duration] [phút:I-duration]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] chết [đèn:B-device] [trần:I-device] giúp mình nhé
+<Tắt thiết bị> -> quên mất rồi này trợ lý ảo [tắt:B-command] giúp tôi cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân
+<Tăng độ sáng của thiết bị> -> làm ơn hãy [tăng:B-command] [bóng:B-device] [để:I-device] [làm:I-device] trong [ga:B-location] ra lên [66%:B-target_number]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên số [2:B-target_number] bạn nhé
+<Đóng thiết bị> -> chúng ta phải ra ngoài thôi [đóng:B-command] giúp mình cái [lò:B-device] [sưởi:I-device] [số:I-device] [18:I-device]
+<Mở thiết bị> -> [mở:B-command] cho mình cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] với
+<Đóng thiết bị> -> hãy [đóng:B-command] trước [cửa:B-device] [quẩn:I-device] [số:I-device] [19:I-device] và giúp tôi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh xuống [71%:B-changing_value] và vào lúc [15:B-time_at] [giờ:I-time_at] [58:I-time_at] [phút:I-time_at] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] thêm [20%:B-changing_value] cho anh nhé
+<Tăng âm lượng của thiết bị> -> em ơi [tăng:B-command] cho anh cái [bếp:B-device] lên mức [8:B-target_number] nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ tới cái [bóng:B-device] [tuýp:I-device]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [28%:B-changing_value] nhé
+<Hủy hoạt cảnh> -> để chế độ khách [tới:I-scene] nhà trong vòng [5:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] nữa nhé
+<Tắt thiết bị> -> giúp tôi [tắt:B-command] [bóng:B-device] [sưởi:I-device] sau [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration]
+<Kiểm tra tình trạng thiết bị> -> tối ấy nhở em [kiểm:B-command] [tra:I-command] cho anh cái [đèn:B-device] [ốp:I-device] [trần:I-device] nhé
+<Kiểm tra tình trạng thiết bị> -> [57:I-duration] [phút:I-duration] cho anh
+<Kiểm tra tình trạng thiết bị> -> [đèn:B-device] [cổng:I-device] không bật [kiểm:B-command] [tra:I-command] giúp mình với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [78%:B-target_number] nhá
+<Đóng thiết bị> -> [đóng:B-command] hộ mình [lò:B-device] [sưởi:I-device] xuống [18:B-target_number] với
+<Mở thiết bị> -> quên mất [mở:B-command] cho [18:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration] giúp mình nhá
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] cho anh cái [đèn:B-device] [rủ:I-device]
+<Tăng âm lượng của thiết bị> -> bạn ơi [tăng:B-command] hộ mình cái [ti:B-device] [vi:I-device] trong [23:B-duration] [tiếng:I-duration] [56:I-duration] [phút:I-duration] với
+<Tăng độ sáng của thiết bị> -> để quá ơi [tăng:B-command] hộ tôi cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device]
+<Bật thiết bị> -> [bật:B-command] cho mình vào lúc khoảng [9:B-target_number] [rưỡi:I-target_number] được không nhỉ [9:B-time_at] [giờ:I-time_at] [30:I-time_at] [phút:I-time_at] mà thôi [9:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] đi
+<Mở thiết bị> -> trời như này chắc phải tắm nước nóng [mở:B-command] giúp chị cái [máy:B-device] [sưởi:I-device] ở [nhà:B-location] [tắm:I-location] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] với
+<Kiểm tra tình trạng thiết bị> -> chiếc [máy:B-device] [mát:I-device] [xa:I-device] ở [phòng:B-location] [chung:I-location] có vấn đề rồi hãy [kiểm:B-command] [tra:I-command] nó cho anh nhé
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] hộ anh cái [bóng:B-device] [sợi:I-device] [đốt:I-device] đi [16%:B-changing_value] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [11%:B-changing_value] thôi nhá ở trong [sân:B-location] [số:I-location] [7:I-location]
+<Tăng độ sáng của thiết bị> -> làm hơn hãy [tăng:B-command] cái [đèn:B-device] [compact:I-device] lên [15%:B-target_number] trong khoảng [18:B-duration] [tiếng:I-duration] [27:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> [mở:B-command] giúp chị cái [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device]
+<Giảm độ sáng của thiết bị> -> em [giảm:B-command] xuống [17%:B-changing_value] cho anh nhé [giảm:B-command] [1:B-changing_value] lúc [8:B-time_at] [giờ:I-time_at] [52:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] [tủ:B-device] [lạnh:I-device] giúp chị với chị quên mất rồi
+<Mở thiết bị> -> khách tới nhà rồi [mở:B-command] [chế:B-device] độ lên trong vòng [5:B-duration] [tiếng:I-duration] [26:I-duration] [phút:I-duration]
+<Giảm mức độ của thiết bị> -> em ơi [giảm:B-command] [quạt:B-device] [trần:I-device] ở [nhà:B-location] [vệ:I-location] [sinh:I-location] xuống [4:B-target_number]
+<Kiểm tra tình trạng thiết bị> -> [máy:B-device] [sưởi:I-device] bị làm sao ấy nhỉ [kiểm:B-command] [tra:I-command] giúp anh với
+<Tắt thiết bị> -> [tắt:B-command] cái [máy:B-device] [chơi:I-device] [game:I-device] đi
+<Tắt thiết bị> -> [tắt:B-command] cho chị cái [điện:B-device] cái
+<Kích hoạt cảnh> -> tôi định rủ bạn [tiệc:B-scene] [tùng:I-scene] mà bạn quá
+<Kích hoạt cảnh> -> ờ sáng rồi bật chế độ [đi:B-scene] [ngủ:I-scene] đi nhá
+<Tăng mức độ của thiết bị> -> [tăng:B-command] độ sáng đến [51%:B-changing_value] giúp mình nhé
+<Kích hoạt cảnh> -> [lãng:B-scene] [mạn:I-scene] tưới đi em
+<Mở thiết bị> -> [mở:B-command] ở trong [phòng:B-location] [đọc:I-location] [của:I-location] [khôi:I-location] giúp anh nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] thêm [35%:B-changing_value] nữa giúp anh nhé
+<Bật thiết bị> -> em ơi [bật:B-command] chỗ anh cái [bóng:B-device] [đứng:I-device]
+<Bật thiết bị> -> [bật:B-command] vào lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] và trong khoảng [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> anh muốn ngủ quá [tắt:B-command] cái [đèn:B-device] [hắt:I-device] [tường:I-device] giúp anh nhá
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] cho anh cái [đèn:B-device] [tròn:I-device] ở trong [nhà:B-location] [xe:I-location] [của:I-location] [huy:I-location] với
+<Tắt thiết bị> -> em [tắt:B-command] cho anh cái [đèn:B-device] [ốp:I-device] [trần:I-device] trong [1:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] nhé anh không dùng nữa
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho mình cái [bóng:B-device] [để:I-device] [bàn:I-device] với
+<Tăng mức độ của thiết bị> -> thế [tăng:B-command] giúp mình lên [92%:B-target_number] nhá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [45%:B-changing_value] cho anh
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] cho anh cái [máy:B-device] [lạnh:I-device] 1 chút
+<Giảm độ sáng của thiết bị> -> cái ở [phòng:B-location] [xem:I-location] [phim:I-location] [của:I-location] [hân:I-location] ấy bạn [giảm:B-command] bớt [34%:B-changing_value] nhé
+<Bật thiết bị> -> [bật:B-command] [đèn:B-device] [bếp:I-device] lên
+<Tăng độ sáng của thiết bị> -> tối quá [tăng:B-command] [đèn:B-device] [bếp:I-device] lên [34%:B-changing_value] giúp mình nhé
+<Mở thiết bị> -> tối quá [mở:B-command] giúp mình cái [rèm:B-device] lên
+<Kích hoạt cảnh> -> ở trong [phòng:B-location] [sách:I-location] [thư:B-scene] [giãn:I-scene] ga luôn á
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức sáng sao cho ở mức [36%:B-changing_value]
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] hộ mình cái [máy:B-device] [sưởi:I-device] được không
+<Mở thiết bị> -> trời nóng quá hãy [mở:B-command] [máy:B-device] [lạnh:I-device] lên giúp anh
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] giúp chị cái [bóng:B-device] [hắt:I-device] xuống [4%:B-target_number] nhé
+<Đóng thiết bị> -> trời nắng quá em ơi [đóng:B-command] cho anh cái [màn:B-device] [cuốn:I-device] nhé
+<Giảm độ sáng của thiết bị> -> vào lúc [8:B-time_at] [giờ:I-time_at] [52:I-time_at] [phút:I-time_at] [giảm:B-command] xuống còn [17%:B-target_number] giúp tôi
+<Mở thiết bị> -> trong [8:B-duration] [tiếng:I-duration] [6:I-duration] [phút:I-duration] em nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giúp anh cái [bóng:B-device] [ốp:I-device] [trần:I-device] lên [99%:B-changing_value] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] [điện:B-device] ngoài [vườn:B-location] cho anh nhé
+<Kích hoạt cảnh> -> tôi sẽ [ra:B-scene] [ngoài:I-scene] trong [phòng:B-location] [6:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> [tắt:B-command] cho bạn cái [đèn:B-device] [hắt:I-device] với
+<Giảm mức độ của thiết bị> -> ồn quá em [giảm:B-command] cho anh cái [quạt:B-device] [thông:I-device] [gió:I-device] với
+<Tăng độ sáng của thiết bị> -> hãy [tăng:B-command] [bóng:B-device] [huỳnh:I-device] [quang:I-device] lên [21%:B-target_number] lúc [5:B-time_at] [giờ:I-time_at] [14:I-time_at] [phút:I-time_at] trong vòng [10:B-duration] [tiếng:I-duration] [32:I-duration] [phút:I-duration]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giúp mình cái bóng [đèn:B-device] [lan:I-device] với
+<Kiểm tra tình trạng thiết bị> -> cái [bóng:B-device] [compact:I-device] ở [phòng:B-location] [tập:I-location] [gym:I-location] ý em em [kiểm:B-command] [tra:I-command] lại thiết bị với anh với khoảng [19:B-time_at] [giờ:I-time_at] [43:I-time_at] [phút:I-time_at] em ạ
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của [hang:B-location] đi nó đâu rồi ấy nhở
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] giúp anh cái [bếp:B-device] lên mức [2:B-changing_value] về nhá
+<Kích hoạt cảnh> -> tôi muốn bật tình yêu [lãng:B-scene] [mạn:I-scene]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [đèn:B-device] [huỳnh:I-device] [quang:I-device] ở [huyên:B-location]
+<Mở thiết bị> -> a lô em ơi [mở:B-command] giúp anh can mắt [máy:B-device] này nhé với
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [145%:B-target_number] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình vào lúc [5:B-time_at] [giờ:I-time_at] [29:I-time_at] [phút:I-time_at] với
+<Kích hoạt cảnh> -> tôi sẽ [ra:B-scene] [ngoài:I-scene] trong [4:B-duration] [tiếng:I-duration] [15:I-duration] [phút:I-duration]
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [đèn:B-device] [sưởi:I-device] số [3:B-target_number] lên với
+<Bật thiết bị> -> em ơi [bật:B-command] cho anh cái [bếp:B-device]
+<Bật thiết bị> -> [bật:B-command] hộ mình cái [bóng:B-device] [hắt:I-device]
+<Tăng nhiệt độ của thiết bị> -> [tăng:B-command] [máy:B-device] [lạnh:I-device] cho anh đi nổi hết ra gà rồi
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] vào [9:B-time_at] [giờ:I-time_at] [42:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cái [đèn:B-device] [bếp:I-device] xuống còn [38%:B-changing_value] lúc [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] giúp chị
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [bóng:B-device] [compact:I-device] [số:I-device] [8:B-target_number] giúp anh nhé em nhé
+<Tắt thiết bị> -> [tắt:B-command] trong vòng [2:B-duration] [tiếng:I-duration] [26:I-duration] [phút:I-duration] nhá
+<Mở thiết bị> -> hãy [mở:B-command] giúp mình lúc [13:B-time_at] [giờ:I-time_at] [9:I-time_at] [phút:I-time_at] vào trong [14:B-duration] [tiếng:I-duration] [42:I-duration] [phút:I-duration] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh cái độ sáng của đèn trong [phòng:B-location] [xem:I-location] [phim:I-location] ngủ hân với nhé [giảm:B-command] đi khoảng [34%:B-changing_value]
+<Hủy hoạt cảnh> -> tôi không muốn [đi:B-scene] [tắm:I-scene] ở [phòng:B-location] [vệ:I-location] [sinh:I-location]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh trong vòng [14:B-duration] [tiếng:I-duration] [13:I-duration] [phút:I-duration] ở mức [83%:B-target_number] nhé
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] cho an cái [đèn:B-device] [rủ:I-device] lên [92%:B-target_number] nhá
+<Tăng mức độ của thiết bị> -> à [tăng:B-command] lên [64:B-target_number] [độ:I-target_number] cho chị vào lúc [0:B-time_at] [giờ:I-time_at] [10:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> [tắt:B-command] cái [camera:B-device] [của:I-device] [huy:I-location] cho mình với
+<Kích hoạt cảnh> -> tôi sẽ [ra:B-scene] [ngoài:I-scene] trong [4:B-duration] [tiếng:I-duration] [15:I-duration] [phút:I-duration]
+<Tăng độ sáng của thiết bị> -> tỉnh quá [tăng:B-command] cho cái [đèn:B-device] [ốp:I-device] [trần:I-device] [số:I-device] [5:I-device] đi
+<Mở thiết bị> -> [mở:B-command] trong [18:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration] cho anh
+<Bật thiết bị> -> nó đang ở trong [phòng:B-location] [giặt:I-location] [ủi:I-location] ấy hãy [bật:B-command] lên mức [16%:B-target_number] giúp mình nhé
+<Bật thiết bị> -> trần tối rồi cậu [bật:B-command] theo tường cái [bóng:B-device] [hắt:I-device] nhá
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ anh cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh cái [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [21%:B-changing_value] lúc [5:B-time_at] [giờ:I-time_at] [14:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> [23:B-target_number] [độ:I-target_number] [c:I-target_number] vào [bật:B-command] lúc [5:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] cho anh nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [12%:B-changing_value] trong [11:B-duration] [tiếng:I-duration] bạn [53:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> em ơi tối quá hãy [tăng:B-command] giúp anh cái [đèn:B-device] [treo:I-device] [tường:I-device] lên với
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [máy:B-device] [pha:I-device] [cafe:I-device] xuống rồi đi với
+<Kiểm tra tình trạng thiết bị> -> cái [đèn:B-device] [ốp:I-device] [trần:I-device] bị hỏng rồi [kiểm:B-command] [tra:I-command] giúp mình đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [2:B-changing_value] bạn
+<Bật thiết bị> -> trợ lí ảo [bật:B-command] bóng [đèn:B-device] [huỳnh:I-device] [quang:I-device] lên
+<Kích hoạt cảnh> -> này sẽ đi [ra:B-scene] [khỏi:I-scene] [phòng:I-scene] trong vòng [2:B-duration] [tiếng:I-duration] [17:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giúp mình [14%:B-target_number] trong vòng [3:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] nhé
+<Kích hoạt cảnh> -> em ơi cho anh [thư:B-scene] [giãn:I-scene] trong [phòng:B-location] [sách:I-location] đi
+<Tăng âm lượng của thiết bị> -> em ơi [tăng:B-command] giúp anh cái [bếp:B-device] lên k2
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giùm tôi [đèn:B-device] [treo:I-device] [tường:I-device] lên [76%:B-target_number] được không
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] hộ anh cái [bóng:B-device] [trụ:I-device] [cổng:I-device] ở [phòng:B-location] [khách:I-location]
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] [đèn:B-device] [trần:I-device] xuống [17%:B-changing_value]
+<Giảm độ sáng của thiết bị> -> ở [phòng:B-location] [xem:I-location] [phim:I-location] đi em [giảm:B-command] giúp anh xuống [4%:B-changing_value] em ạ chói quá
+<Bật thiết bị> -> [bật:B-command] cho tôi cái [bóng:B-device] [sợi:I-device] [đốt:I-device] ở [đầu:B-location] [hè:I-location]
+<Mở thiết bị> -> em ơi [mở:B-command] giúp chị cái [ti:B-device] [vi:I-device] ngủ quân với
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] anh [trái:B-device] [tim:I-device] đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho anh thêm [30:B-changing_value] độ đi
+<Bật thiết bị> -> [bật:B-command] cho mình ở [phòng:B-location] [ngủ:I-location] của y nhé
+<Đóng thiết bị> -> hãy [đóng:B-command] [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] lại
+<Đóng thiết bị> -> chiều nay tôi có việc bận bạn [đóng:B-command] giúp tôi cái [van:B-device] [nước:I-device] nhé
+<Hủy hoạt cảnh> -> tôi không cần ở [riêng:B-scene] [tư:I-scene] nữa đâu nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ anh cái [bếp:B-device] nhé
+<Mở thiết bị> -> em ơi lát nữa [mở:B-command] cho anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] lên nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] độ sáng của [đèn:B-device] [treo:I-device] [tường:I-device] lên
+<Kiểm tra tình trạng thiết bị> -> gần [22:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at] thì bạn [kiểm:B-command] [tra:I-command]
+<Mở thiết bị> -> lát nữa [6:B-time_at] [giờ:I-time_at] [8:I-time_at] [phút:I-time_at] thì [mở:B-command] giúp anh cái [máy:B-device] [sưởi:I-device] lên em ơi
+<Tắt thiết bị> -> quá [cửa:B-device] lại nhá đi ra ngoài thế
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp anh [điện:B-device] ở trong [vườn:B-location] nhá
+<Bật thiết bị> -> nhà mình quá [bật:B-command] [máy:B-device] [hút:I-device] [bụi:I-device] giúp chị
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [33%:B-changing_value] em ạ
+<Kích hoạt cảnh> -> tôi cần không gian [riêng:B-scene] [tư:I-scene] tôi sẽ trời khỏi đây
+<Kiểm tra tình trạng thiết bị> -> cậu ơi [kiểm:B-command] [tra:I-command] [đèn:B-device] [ốp:I-device] [trần:I-device] giúp mình nhé
+<Kiểm tra tình trạng thiết bị> -> hình như đèn bị hư rồi anh [kiểm:B-command] [tra:I-command] cái [đèn:B-device] [sợi:I-device] [đốt:I-device] hộ em
+<Tăng mức độ của thiết bị> -> em ơi em [tăng:B-command] cái [rao:B-device] ở [phòng:B-location] [thay:I-location] [đột:I-location] [số:I-location] [2:I-location] giúp chị với
+<Bật thiết bị> -> [bật:B-command] cho mình lên [45%:B-target_number] nhé trong khoảng [23:B-duration] [tiếng:I-duration] [21:I-duration] [phút:I-duration] tối bây giờ
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống giúp tôi về mức [39%:B-target_number] nhé
+<Đóng thiết bị> -> phòng đã ấm lên rồi [đóng:B-command] [lò:B-device] [sưởi:I-device] cho anh
+<Bật thiết bị> -> khoảng [10:B-time_at] [giờ:I-time_at] [39:I-time_at] [phút:I-time_at] thì [bật:B-command] cho chị cái [máy:B-device] [hút:I-device] [mùi:I-device] ở trong [phòng:B-location] [chung:I-location] [của:I-location] [em:I-location] [bé:I-location]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống còn khoảng [65%:B-target_number] nhá
+<Giảm mức độ của thiết bị> -> [giảm:B-command] cho tôi cái [quạt:B-device] về mức [3:B-changing_value] với
+<Giảm nhiệt độ của thiết bị> -> lạnh quá [giảm:B-command] cái [bóng:B-device] [sưởi:I-device] đi [76%:B-target_number] nhé
+<Mở thiết bị> -> [mở:B-command] cho mình ở [hầm:B-location] [rượu:I-location] [mùa:I-location] [xuân:I-location] trong khoảng [11:B-duration] [tiếng:I-duration] [44:I-duration] [phút:I-duration] nha
+<Tăng độ sáng của thiết bị> -> tối rồi em [tăng:B-command] cho anh cái [đèn:B-device] [rủ:I-device] được không
+<Bật thiết bị> -> tối quá [bật:B-command] giúp tôi cái [bóng:B-device] [bình:I-device] [quân:I-device]
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [bóng:B-device] [sợi:I-device] [đốt:I-device] nhá
+<Giảm mức độ của thiết bị> -> này [giảm:B-command] cho mình cái [quạt:B-device] [số:I-device] [5:I-device] cái
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] cho mình cái [đèn:B-device] [thả:I-device] xuống [6%:B-changing_value] với
+<Giảm độ sáng của thiết bị> -> em đợi đến lúc [8:B-time_at] [giờ:I-time_at] [52:I-time_at] [phút:I-time_at] hãng làm nhé với cả [giảm:B-command] xuống [17%:B-changing_value] thôi
+<Bật thiết bị> -> bạn ơi [bật:B-command] giúp mình cái [bóng:B-device] [ngủ:I-device] lúc [3:B-time_at] [giờ:I-time_at] [10:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> [tắt:B-command] trong vòng [24:B-duration] [tỉnh:I-duration] đúng [2:I-duration] [phút:I-duration] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống còn tầm [8%:B-target_number] cho mình
+<Tăng độ sáng của thiết bị> -> này nhà thông minh [tăng:B-command] cho mình [đèn:B-device] [rủ:I-device]
+<Mở thiết bị> -> cậu ơi [mở:B-command] hộ tớ cái [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device] với
+<Bật thiết bị> -> [bật:B-command] giúp mình cái [laptop:B-device] với
+<Giảm mức độ của thiết bị> -> bạn ơi [giảm:B-command] [quạt:B-device] [số:I-device] [5:I-device] đi bút ngủ
+<Giảm độ sáng của thiết bị> -> lúc [0:B-time_at] [giờ:I-time_at] [34:I-time_at] [phút:I-time_at] [giảm:B-command] [24%:B-changing_value] nhé
+<Bật thiết bị> -> [bật:B-command] giúp tôi cái [đèn:B-device] [làm:I-device] [việc:I-device] lên mức [29%:B-target_number]
+<Tắt thiết bị> -> [tắt:B-command] cái [đèn:B-device] [hăn:I-device] giúp chị cái
+<Mở thiết bị> -> em ơi trong nhà tối quá [mở:B-command] giúp anh cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] ra với
+<Mở thiết bị> -> [mở:B-command] cho tôi cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] với
+<Tắt thiết bị> -> cậu ơi lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] [thắt:B-command] cho mình cái đáng sưởi đi
+<Bật thiết bị> -> tôi chuẩn bị làm việc rồi [bật:B-command] cho tôi cái [máy:B-device] [tính:I-device] lên nhé
+<Mở thiết bị> -> anh muốn [mở:B-command] trong cái [phim:B-device] xong rồi
+<Đóng thiết bị> -> [đóng:B-command] cho mình cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] với
+<Tắt thiết bị> -> em [tắt:B-command] giúp mình cái [bóng:B-device] [để:I-device] [bàn:I-device] ở [nhà:B-location] [để:I-location] [xe:I-location] [cầu:I-location] [duy:I-location] nhé duy nó quên mất ấy
+<Hủy hoạt cảnh> -> tôi dùng xong cái [phòng:B-location] [nghỉ:I-location] rồi tôi không muốn [thư:B-scene] [giãn:I-scene] nữa
+<Đóng thiết bị> -> [đóng:B-command] giúp mình ở [phòng:B-location] [tập:I-location] [gym:I-location] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi [3:B-changing_value] mức nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [hắt:I-device] [tường:I-device] lên lên [51%:B-changing_value] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái trả cái [máy:B-device] [mát:I-device] [xa:I-device]
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [bóng:B-device] [âm:I-device] [trần:I-device] đi nhé anh nghĩ nó không cần mở đâu
+<Tắt thiết bị> -> mùi gì khát ấy [tắt:B-command] [bếp:B-device]
+<Tắt thiết bị> -> cháu ơi [tắt:B-command] giúp chú cái [đèn:B-device] [hắt:I-device] [trần:I-device] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [29%:B-changing_value] thôi nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cái [bóng:B-device] [đứng:I-device] ở [3n:B-location] [công:I-location] [số:I-location] [3:I-location] còn bật không
+<Mở thiết bị> -> em [cầm:B-command] trong [22:B-target_number]
+<Tắt thiết bị> -> [tắt:B-command] [bóng:B-device] [sưởi:I-device] trong [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration]
+<Kiểm tra tình trạng thiết bị> -> ở [nhà:B-location] [giữ:I-location] [đồ:I-location] [trường:I-location] [sa:I-location] hãy [kiểm:B-command] [tra:I-command] lúc [19:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at] nhé
+<Kiểm tra tình trạng thiết bị> -> chiếc [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] hiện đang không hoạt động hãy [kiểm:B-command] [tra:I-command] giúp tôi nhé
+<Đóng thiết bị> -> [đóng:B-command] [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at]
+<Kiểm tra tình trạng thiết bị> -> cái đèn hôm nay bị làm sao ấy [kiểm:B-command] [tra:I-command] cho anh cái [đèn:B-device] [trần:I-device] với
+<Tắt thiết bị> -> em ơi [tắt:B-command] [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] ở [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] giúp chị nhá
+<Đóng thiết bị> -> trợ lý ơi [đóng:B-command] hộ mình cái [lò:B-device] [nướng:I-device] vào nhớ
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] hộ tôi cái [đèn:B-device] [học:I-device] với
+<Tăng độ sáng của thiết bị> -> cậu có thể giúp tôi [tăng:B-command] cái [bóng:B-device] [tuýp:I-device] ở [cầu:B-location] [thang:I-location] [hành:B-location] [lang:I-location] lên [41%:B-target_number] trong khoảng [7:B-duration] [tiếng:I-duration] [25:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> em ơi [tắt:B-command] anh cái [đèn:B-device] [ngủ:I-device]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [78%:B-target_number] giúp mình
+<Đóng thiết bị> -> [đóng:B-command] hộ tôi cái [lò:B-device] [sưởi:I-device] [số:I-device] [18:I-device]
+<Đóng thiết bị> -> anh ơi [đóng:B-command] cho em cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] với
+<Bật thiết bị> -> [bật:B-command] giúp anh [97%:B-target_number] độ sáng trong vòng [16:B-duration] [tiếng:I-duration] [46:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> có thể [tăng:B-command] cho anh cái [đèn:B-device] [compact:I-device] [số:I-device] [4:I-device] được không cảm ơn em
+<Tắt thiết bị> -> em [tắt:B-command] cho anh [17:B-duration] [tiếng:I-duration] [30:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] giúp mình cái [máy:B-device] [fax:I-device] này hình như bị hỏng nồi hay sao ý
+<Tăng độ sáng của thiết bị> -> nắng quá nóng [màn:B-device] [cửa:I-device] cho mình đi
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [máy:B-device] [chơi:I-device] [game:I-device] của [long:I-location] với
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giùm mình cái [máy:B-device] [hút:I-device] [ẩm:I-device] lên nhé trời nùn quá
+<Kích hoạt cảnh> -> em ơi hôm nay khách tới nhà nhá chắc là tầm [17:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at]
+<Giảm âm lượng của thiết bị> -> đột ngột [giảm:B-command] mà [fax:B-device] xuống [38%:B-changing_value] nha
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh đi [3:B-changing_value] nhé [giảm:B-command] trong [12:B-duration] [tiếng:I-duration] [57:I-duration] [phút:I-duration] đi
+<Đóng thiết bị> -> [đóng:B-command] cho chị cái [cửa:B-device] [cuốn:I-device] ở ngoài [cổng:B-location] [9h:I-location] nhé
+<Hủy hoạt cảnh> -> mình sẽ không [đi:B-scene] [tắm:I-scene] ở trong [phòng:B-location] [vệ:I-location] [sinh:I-location] đâu
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [máy:B-device] [pha:I-device] [cafe:I-device] xuống [10:B-target_number] đi nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ tôi cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] với
+<Mở thiết bị> -> [mở:B-command] cho mình cái [ti:B-device] [vi:I-device] [bên:I-location] [trái:I-location]
+<Tắt thiết bị> -> [tắt:B-command] giúp mình cái [camera:B-device] cậu huy
+<Tắt thiết bị> -> chuẩn bị ra ngoài [tắt:B-command] cho mình cái [bóng:B-device] [sưởi:I-device] nhé
+<Đóng thiết bị> -> em ơi trời nắng quá [đóng:B-command] hộ anh cái [màn:B-device] [cửa:I-device] với nhé
+<Mở thiết bị> -> [mở:B-command] giúp anh vào lúc [6:B-time_at] [giờ:I-time_at] [8:I-time_at] [phút:I-time_at] em nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho tôi [bóng:B-device] [hắt:I-device] ở [phòng:B-location] [xem:I-location] [phim:I-location] xuống [4%:B-changing_value]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] độ sáng của cái [đèn:B-device] [treo:I-device] [tường:I-device] lên khoảng [76%:B-target_number] giúp chị
+<Đóng thiết bị> -> [đóng:B-command] cho tôi cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] trong anh tàn với
+<Bật thiết bị> -> [bật:B-command] cho mình vào [4:B-time_at] [giờ:I-time_at] [30:I-time_at] [phút:I-time_at] bạn nhé
+<Mở thiết bị> -> vào [18:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at] tôi về ngày nhá
+<Kiểm tra tình trạng thiết bị> -> hình như cái [đèn:B-device] [trần:I-device] có vấn đề [kiểm:B-command] [tra:I-command] cho chị nhớ
+<Bật thiết bị> -> bạn ơi [bật:B-command] giúp mình cái [bóng:B-device] [sợi:I-device] [đốt:I-device] ở [đầu:B-location] [hè:I-location] với
+<Đóng thiết bị> -> em ơi [đóng:B-command] giùm anh cái [lò:B-device] [sưởi:I-device] số [18:B-target_number] với
+<Tắt thiết bị> -> em ơi nãy chị quên mất [tắt:B-command] giúp chị cái [máy:B-device] [in:I-device] với nhé
+<Hủy hoạt cảnh> -> tôi muốn trợ công nên không cần không gian [chú:B-scene] [giãn:I-scene] nữa
+<Mở thiết bị> -> mệt mỏi quá em [mở:B-command] hộ chị cái [máy:B-device] [mát:I-device] [xa:I-device] nhé
+<Tắt thiết bị> -> trợ lý ơi [tắt:B-command] cho anh cái [van:B-device] [nước:I-device] [số:I-device] [1:I-device] nhé thật trang rồi đấy
+<Tăng nhiệt độ của thiết bị> -> cái [máy:B-device] [nghe:I-device] [nhạc:I-device] bé quá em [tăng:B-command] âm lượng lên cho anh với
+<Mở thiết bị> -> em ơi em giúp anh [mở:B-command] cái [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] vào lúc [8:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [đèn:B-device] [hắt:I-device] ở [làng:B-location] [hè:I-location] [sau:I-location] đi
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho tôi cái [đèn:B-device] [hắt:I-device] [tường:I-device]
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] cho mình [bóng:B-device] [sợi:I-device] [đốt:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của khang hỏng rồi hay sao ấy [kiểm:B-command] [tra:I-command] đi bạn
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [đèn:B-device] [tranh:I-device] [số:I-device] [7:I-device] xuống đi khoảng [92%:B-target_number] thôi
+<Kiểm tra tình trạng thiết bị> -> hình như cái [đèn:B-device] [trần:I-device] ở trong [phòng:B-location] [bếp:I-location] bị hỏng rồi bạn [kiểm:B-command] [tra:I-command] cho mình với
+<Mở thiết bị> -> bạn [mở:B-command] cho tớ cái [điều:B-device] [hòa:I-device] trong [phòng:B-location] [chơi:I-location] [game:I-location] lên nhé
+<Tăng nhiệt độ của thiết bị> -> âm lượng về ngoài [tăng:B-command] giúp tôi cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Đóng thiết bị> -> tôi cần ra ngoài nhớ [đóng:B-command] cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> bạn [bật:B-command] cho mình trong [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> chán quá hãy [mở:B-command] [ti:B-device] [vi:I-device] [của:I-device] [cuốn:I-device] lên giúp mình
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [24%:B-changing_value] cho mình vào lúc [0:B-time_at] [giờ:I-time_at] [34:I-time_at] [phút:I-time_at]
+<Đóng thiết bị> -> đến [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] thì [đóng:B-command] cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] cho anh được không
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp tôi cái [bóng:B-device] [đứng:I-device] nhé
+<Bật thiết bị> -> [bật:B-command] cho mình cái [laptop:B-device] với mình cần làm việc
+<Bật thiết bị> -> em [bật:B-command] cho anh cái [máy:B-device] [rửa:I-device] [bát:I-device] xuống [11:B-target_number] vào lúc [4:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> [mở:B-command] [camera:B-device] lên cho mình với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh xuống mức [65%:B-target_number]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống cho anh để còn [35%:B-changing_value] thôi trong vòng [7:B-duration] [tiếng:I-duration] [18:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> [tắt:B-command] cái [máy:B-device] [in:I-device] trong [phòng:B-location] [đọc:I-location] giúp anh nhớ mở cười to quá
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức làm [8%:B-target_number]
+<Tăng mức độ của thiết bị> -> mình muốn [tăng:B-command] lên [42%:B-changing_value] vào lúc [4:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [77%:B-target_number] nhé
+<Bật thiết bị> -> bạn ơi [bật:B-command] cho mình cái [bóng:B-device] [hắt:I-device]
+<Kích hoạt cảnh> -> em ơi chị chuẩn bị [đi:B-scene] [tắm:I-scene] ở [phòng:B-location] [vệ:I-location] [sinh:I-location] nhé
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] cho mình cái [lò:B-device] [sưởi:I-device] số [18:B-target_number] với
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [bóng:B-device] [sưởi:I-device] trong khoảng [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho anh cái [đèn:B-device] [âm:I-device] [trần:I-device] lên thêm [35%:B-changing_value] đi em
+<Tăng độ sáng của thiết bị> -> cậu ơi cái [đèn:B-device] [ngủ:I-device] trong [17:B-duration] [tiếng:I-duration] [30:I-duration] [phút:I-duration] giúp mình nhé
+<Bật thiết bị> -> trợ lý ơi [bật:B-command] hộ mình cái [lappop:B-device] với
+<Tăng độ sáng của thiết bị> -> em ơi em có thể giúp anh [tăng:B-command] lên [78%:B-changing_value] cái [đèn:B-device] [sợi:I-device] [đốt:I-device] được không
+<Mở thiết bị> -> em ơi [mở:B-command] hộ anh cái [máy:B-device] [sưởi:I-device] được không
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [24%:B-changing_value] cho anh lúc [0:B-time_at] [giờ:I-time_at] [34:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] hộ mình cái [van:B-device] [nước:I-device] [số:I-device] [1:I-device] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp tôi cái [bóng:B-device] ở trong [phòng:B-location] [thờ:I-location] [77%:B-target_number]
+<Bật thiết bị> -> [bật:B-command] [máy:B-device] [fax:I-device] của [hần:I-location] ở [phòng:B-location] [sách:I-location] giúp anh
+<Giảm nhiệt độ của thiết bị> -> làm ơn hãy [giảm:B-command] [đèn:B-device] [sưởi:I-device] xuống [84%:B-target_number]
+<Mở thiết bị> -> nó ở [sảnh:B-location] ấy [mở:B-command] cho anh [11:B-duration] [tiếng:I-duration] [16:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh vào [17:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> em ơi tí nữa [tắt:B-command] cho anh cái [máy:B-device] [chơi:I-device] [game:I-device] của [long:I-location] với nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ anh cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] vào
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [38%:B-changing_value] nhé
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device]
+<Tăng độ sáng của thiết bị> -> trợ lý ơi [tăng:B-command] giúp mình cái [bóng:B-device] [tuýp:I-device] lên [78%:B-target_number] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình [92%:B-target_number]
+<Kiểm tra tình trạng thiết bị> -> tôi đau lưng quá hãy [kiểm:B-command] [tra:I-command] cho tôi [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device]
+<Bật thiết bị> -> [bật:B-command] ở mức [23%:B-target_number] nhé
+<Mở thiết bị> -> [mở:B-command] [cửa:B-device]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [13%:B-target_number] nhé [tăng:B-command] giúp anh tới [13:B-time_at] [giờ:I-time_at] [9:I-time_at] [phút:I-time_at] đến cho khoảng [14:B-duration] [tiếng:I-duration] [42:I-duration] [phút:I-duration]
+<Bật thiết bị> -> cậu ơi mình cần đi tắm [bật:B-command] cho mình cái [bình:B-device] [nóng:I-device] [lạnh:I-device] lên với
+<Tăng độ sáng của thiết bị> -> bạn ơi [tăng:B-command] giúp mình cái [đèn:B-device] [compact:I-device] [số:I-device] [14:I-device] ở [sân:B-location] [sau:I-location] lên nhé
+<Hủy hoạt cảnh> -> lúc [912:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at] đi
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] cho anh cái [đèn:B-device] [treo:I-device] [tường:I-device] lên [16%:B-changing_value] vào lúc [14:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] nhá
+<Hủy hoạt cảnh> -> u ơi kiểm tra cho anh xem [nhà:B-location] [tắm:I-location] có ai không đánh [đi:B-scene] [tắm:I-scene] với
+<Bật thiết bị> -> lạnh quá [bật:B-command] [đèn:B-device] [sưởi:I-device] lên [45%:B-target_number] cho mình đi
+<Kích hoạt cảnh> -> a lô anh chuẩn bị ra ngoài khoảng [5:B-duration] [tiếng:I-duration] [57:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [camera:B-device] [của:I-device] [huy:I-location] nhá
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [quạt:B-device] lên mức [2:B-changing_value] giúp tôi
+<Mở thiết bị> -> khi nào đến [8:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] em [mở:B-command] cho anh cái [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] nhé
+<Tăng độ sáng của thiết bị> -> tí nữa mình học bài thì bạn [tăng:B-command] cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] lên mức [96%:B-target_number] hộ mình nhé
+<Mở thiết bị> -> bạn ơi [mở:B-command] cho mình cái [máy:B-device] [sưởi:I-device] với
+<Hủy hoạt cảnh> -> tôi không muốn dùng cái [tiền:B-location] [sảnh:I-location] nữa không cần [thư:B-scene] [giãn:I-scene] đâu
+<Tăng độ sáng của thiết bị> -> làm ơn hãy [tăng:B-command] [đèn:B-device] [hắt:I-device] [tường:I-device] lên [51%:B-changing_value]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [44%:B-changing_value] vào lúc [10:B-time_at] [giờ:I-time_at] [23:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [9%:B-changing_value] thôi nhé
+<Kiểm tra tình trạng thiết bị> -> ô sao không bật được nhỉ [kiểm:B-command] [tra:I-command] giúp mình cái [đèn:B-device] [ốp:I-device] [trần:I-device] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [51%:B-changing_value] đi
+<Đóng thiết bị> -> lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] thì [đóng:B-command] cho anh
+<Đóng thiết bị> -> bạn [đóng:B-command] hộ mình cái [lò:B-device] [sưởi:I-device] xuống [18:B-target_number] vào với
+<Bật thiết bị> -> em ơi chị muốn nghe nhạc [bật:B-command] hộ chị cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [bóng:B-device] ở [phòng:B-location] [thờ:I-location] xuống còn [17%:B-changing_value] giúp tôi
+<Bật thiết bị> -> [bật:B-command] cho mình cái [máy:B-device] [faxcủa:I-device] [hâm:I-device] ở trong [phòng:B-location] [sách:I-location] bắtýn
+<Mở thiết bị> -> [mở:B-command] [máy:B-device] [nghe:I-device] [nhạc:I-device] đi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [76%:B-target_number] là đủ âm rồi nhé
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [điện:B-device]
+<Bật thiết bị> -> cậu ơi [bật:B-command] cho mình cái [bóng:B-device] [sợi:I-device] [đốt:I-device] ở [đầu:B-location] [hè:I-location] nhá
+<Mở thiết bị> -> [mở:B-command] cho tôi cái [mành:B-device] ở bên trong [phòng:B-location] [học:I-location] với
+<Hủy hoạt cảnh> -> không cần [riêng:B-scene] [tư:I-scene] gì nữa đâu
+<Bật thiết bị> -> giúp mình [bật:B-command] cái [vòi:B-device] [tưới:I-device] với
+<Mở thiết bị> -> [mở:B-command] cho anh [camera:B-device] [số:I-device] [8:I-device] với
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] hộ mình cái [đè:B-device] [sưởi:I-device] cho anh tại mức [84%:B-target_number] nhé
+<Đóng thiết bị> -> [đóng:B-command] cho tôi cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] vào lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] được không
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình cái [đèn:B-device] [trần:I-device] với
+<Tắt thiết bị> -> cái [van:B-device] [nước:I-device] số [1:I-device] bị chà rồi bạn [tắt:B-command] giúp tôi nó nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống giúp anh [58%:B-changing_value] em nhé hãy để nó trong vòng [5:B-duration] [tiếng:I-duration] [31:I-duration] [phút:I-duration]
+<Bật thiết bị> -> [bật:B-command] khoảng [23%:B-target_number] nhé
+<Đóng thiết bị> -> [cửa:B-device] [cuốn:I-device] nước mở kìa [đóng:B-command] vào giúp mình với
+<Tăng nhiệt độ của thiết bị> -> [lò:B-device] [sưởi:I-device] lên [3:B-changing_value] [độ:I-changing_value] [c:I-changing_value] giúp tôi
+<Kích hoạt cảnh> -> hôm nay chị sẽ về [nhà:I-scene] lúc [18:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> em [mở:B-command] hộ anh cái [ti:B-device] [vi:I-device] [của:I-location] [quân:I-location] lên
+<Kích hoạt cảnh> -> a lô anh chuẩn bị về nhà trong [3:B-duration] [tiếng:I-duration] [11:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] giùm mình cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của [khang:B-location] với
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [laptop:B-device] lên với
+<Kiểm tra tình trạng thiết bị> -> cậu ơi [kiểm:B-command] [tra:I-command] [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] giúp mình nhé
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [máy:B-device] [giặt:I-device] nhá ở trong [phòng:B-location] [9h:I-location] ý [bật:B-command] khoảng 1 lúc nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [96:B-changing_value] phần và bắt đầu từ lúc [20:B-time_at] [giờ:I-time_at] [45:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device] với nhé
+<Mở thiết bị> -> em [mở:B-command] cho anh cái [camera:B-device] [số:I-device] [8:I-device] lên nhé
+<Hủy hoạt cảnh> -> cho anh chế độ [tiệc:B-scene] [tùng:I-scene] ngay bây giờ nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên đến [2:B-changing_value] em nhé
+<Mở thiết bị> -> [mở:B-command] cho tôi [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device]
+<Kiểm tra tình trạng thiết bị> -> lúc [19:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at] bạn [kiểm:B-command] [tra:I-command] cái ở [nhà:B-location] [giữ:I-location] [đồ:I-location] [trường:I-location] [sa:I-location] nhé
+<Kích hoạt cảnh> -> tôi sẽ [đi:B-scene] [ngủ:I-scene] ngay bây giờ đây
+<Giảm độ sáng của thiết bị> -> sáng quá hãy [giảm:B-command] giúp anh cái [đèn:B-device] [trần:I-device] xuống đi em ơi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống gần [61%:B-changing_value] và để đó trong [16:B-duration] [tiếng:I-duration] [40:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> [tắt:B-command] vào lúc [19:B-time_at] [giờ:I-time_at] [43:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [4:B-target_number] cho anh nhé
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] [đèn:B-device] [sưởi:I-device] hộ mình nóng quá
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [71%:B-target_number] nhá trong [26:B-duration] [phút:I-duration] thôi
+<Đóng thiết bị> -> [đóng:B-command] cho mình cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] với
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] cho mình [bóng:B-device] [sợi:I-device] [đốt:I-device] xuống [16%:B-changing_value] nhé
+<Giảm mức độ của thiết bị> -> tự dưng lạnh quá [giảm:B-command] cho mình cái [quạt:B-device] đi
+<Đóng thiết bị> -> [đóng:B-command] cho mình cái [rèm:B-device] trong [phòng:B-location] [tắm:I-location] với
+<Kích hoạt cảnh> -> anh đang cần [đi:B-scene] [tắm:I-scene]
+<Đóng thiết bị> -> tầm [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] thì [đóng:B-command] cho chị cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device]
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [camera:B-device] [số:I-device] [8:I-device] ra với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống số [4:B-target_number] nhé em
+<Bật thiết bị> -> mình muốn uống cafe [bật:B-command] [máy:B-device] [pha:I-device] [cafe:I-device] cho mình
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [quạt:B-device] [hút:I-device] [mùi:I-device] với
+<Bật thiết bị> -> [bật:B-command] cho tôi [đèn:B-device] [ốp:I-device] [tường:I-device] ở [phòng:B-location] [giặt:I-location]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] ít thôi đến [13%:B-target_number] vào được
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] hộ anh [bóng:B-device] [sợi:I-device] [đốt:I-device] đi [16%:B-changing_value] nhé
+<Mở thiết bị> -> [mở:B-command] trong [2:B-duration] [tiếng:I-duration] [50:I-duration] [phút:I-duration] em ơi
+<Bật thiết bị> -> chắn thế nhỉ em ơi [bật:B-command] giúp anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] lên
+<Mở thiết bị> -> tôi đi trắc tầm [2:B-duration] [tiếng:I-duration] [14:I-duration] [phút:I-duration]
+<Giảm mức độ của thiết bị> -> hãy [giảm:B-command] cho tôi [quạt:B-device] [số:I-device] [5:I-device] xuống [4:B-target_number] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống còn [29%:B-target_number] thôi [giảm:B-command] vào lúc [12:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] và trong khoảng thời gian là [16:B-duration] [tiếng:I-duration] [28:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> em ơi thế anh đi ngủ [tắt:B-command] cho anh cái [đèn:B-device] [trần:I-device] lúc mình [1:B-time_at] [giờ:I-time_at] [47:I-time_at] [phút:I-time_at] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho mình cái [đèn:B-device] [rủ:I-device] với
+<Bật thiết bị> -> [bật:B-command] cho mình ở [nhà:B-location] [tắm:I-location] nhé
+<Mở thiết bị> -> ê trợ lý [mở:B-command] cái [ti:B-device] [vi:I-device] [bên:I-location] [trái:I-location] đấy
+<Tắt thiết bị> -> khó chịu quá [tắt:B-command] giúp anh cái [máy:B-device] [hút:I-device] [ẩm:I-device] nhé em ơi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cái [bóng:B-device] [sợi:I-device] [đốt:I-device] đi [16%:B-changing_value] lúc [23:B-time_at] [giờ:I-time_at] [5:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi tầm [35%:B-changing_value] bạn nhé [giảm:B-command] trong [13:B-duration] [tiếng:I-duration] [34:I-duration] [phút:I-duration]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [87%:B-target_number] trong vòng [22:B-duration] [tiếng:I-duration] [55:I-duration] [phút:I-duration]
+<Mở thiết bị> -> địa điểm [mở:B-command] ra ở [phòng:B-location] [đợi:I-location] nhé
+<Mở thiết bị> -> bạn ơi [mở:B-command] hộ mình [camera:B-device] [số:I-device] [8:I-device] với
+<Kích hoạt cảnh> -> bây giờ tôi sẽ [ra:B-scene] [ngoài:I-scene] trong khoảng [6:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration]
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [máy:B-device] [sưởi:I-device]
+<Mở thiết bị> -> xem cái gì bây giờ nhỉ [mở:B-command] cái [ti:B-device] [vi:I-device] [bên:I-location] [trái:I-location] giúp anh ấy em ơi
+<Tăng mức độ của thiết bị> -> này trợ lý ảo [tăng:B-command] cho mình cái [quạt:B-device] [trần:I-device] đi
+<Bật thiết bị> -> [bật:B-command] cho anh cái [bếp:B-device] lên với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] đèn [bóng:B-device] [đóng:B-command]
+<Bật thiết bị> -> [bật:B-command] lên [97%:B-target_number] cho anh [bật:B-command] trong khoảng [16:B-duration] [tiếng:I-duration] [46:I-duration] [phút:I-duration]
+<Bật thiết bị> -> tối quá [bật:B-command] cho tôi cái [đèn:B-device] [sưởi:I-device] số [3:B-target_number] đi
+<Mở thiết bị> -> trợ lý ơi [mở:B-command] giúp chị cái [điều:B-device] [hòa:I-device] đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [78%:B-target_number] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device]
+<Bật thiết bị> -> trợ lý [bật:B-command] cho tôi cái [bóng:B-device] [hắt:I-device]
+<Giảm âm lượng của thiết bị> -> [ti:B-device] [vi:I-device] hơi sáng [giảm:B-command] cho mình độ sáng xuống nhé
+<Hủy hoạt cảnh> -> [tiệc:B-scene] [tùng:I-scene] xong rồi em nhé
+<Bật thiết bị> -> em muốn [bật:B-command] vào lúc [4:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của [khang:I-location]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [65%:B-target_number] cho mình thôi
+<Giảm độ sáng của thiết bị> -> trợ lí ảo ơi [giảm:B-command] giúp mình cái [đèn:B-device] [tranh:I-device] [số:I-device] [7:I-device] xuống với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình xuống [35%:B-changing_value] vào trong [7:B-duration] [tiếng:I-duration] [18:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [máy:B-device] [sưởi:I-device] đang không hoạt động bạn [kiểm:B-command] [tra:I-command] cho mình nhé
+<Hủy hoạt cảnh> -> không còn [tiệc:B-scene] [tùng:I-scene] ở [tầng:B-location] [thượng:I-location] nữa đâu nhé
+<Giảm mức độ của thiết bị> -> [giảm:B-command] [xướng:B-device] bắt [4%:B-changing_value] đi nha
+<Bật thiết bị> -> bạn ơi [bật:B-command] cho mình cái [đèn:B-device] [buýt:I-device] với
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] trong [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] nhá
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] cái [bóng:B-device] [sưởi:I-device] xuống [76%:B-target_number] hộ tôi với nóng quá
+<Giảm mức độ của thiết bị> -> này bạn [giảm:B-command] cho mình cái [quạt:B-device] [hút:I-device] [mùi:I-device] xuống mức [4:B-target_number] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [31%:B-changing_value] nhé lúc [11:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giúp mình cái [camera:B-device] [của:I-device] [huy:I-location] với
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] vào lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at]
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] giúp anh [đèn:B-device] [rủ:I-device] ở [hiên:B-location] [sau:I-location] [tăng:B-command] cho anh [10%:B-changing_value] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] thêm [78%:B-changing_value] nhé trời đang hơi tối
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hơi với
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [ti:B-device] [vi:I-device] [của:I-device] [quân:I-location] với
+<Giảm độ sáng của thiết bị> -> vào lúc [18:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] [giảm:B-command] giúp tôi cái [đèn:B-device] [hắt:I-device] xuống mức [22%:B-target_number]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [huỳnh:I-device] [quang:I-device] lên [96%:B-target_number] giúp mình
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] lên trong này tối quá
+<Kích hoạt cảnh> -> em ơi chị định dù bạn gái lên [sân:B-location] [thượng:I-location] [lãng:B-scene] [mạn:I-scene] với nhau lúc [16:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> [mở:B-command] giúp mình cái [mành:B-device] nhé
+<Bật thiết bị> -> [bật:B-command] cho anh ở trong [phòng:B-location] [khách:I-location] [của:I-location] [ông:I-location] [bà:I-location] em nhé [bật:B-command] cho anh lúc [11:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] đi
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] cho anh cái [đèn:B-device] [rủ:I-device] lên [92%:B-target_number]
+<Kích hoạt cảnh> -> tôi sẽ về nhà lúc [18:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đến [39%:B-changing_value] nhé
+<Kích hoạt cảnh> -> 1 lát nữa khách tới nhà đi [nhà:I-scene] trong vòng [5:B-duration] [tiếng:I-duration] [26:I-duration] [phút:I-duration]
+<Kích hoạt cảnh> -> bạn ơi mình cần sự [riêng:B-scene] [tư:I-scene] trong [phòng:B-location] [làm:I-location] [việc:I-location] trong vào lúc [2:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> mình không dùng [máy:B-device] [bếp:I-device] nữa [giảm:B-command] độ sáng giúp mình với
+<Hủy hoạt cảnh> -> hủy chế độ [đi:B-scene] [tắm:I-scene] ở trong [phòng:B-location] [vệ:I-location] [sinh:I-location] nhá
+<Tắt thiết bị> -> lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] trời đỡ lạnh ấy nhớ [tắt:B-command] cho anh cái [đèn:B-device] [sưởi:I-device] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] hộ anh ngay cái [bóng:B-device] [âm:I-device] [trần:I-device] nhé hình như bị hỏng rồi hay sao ấy
+<Tăng độ sáng của thiết bị> -> ok em [tăng:B-command] cái [bóng:B-device] [tròn:I-device] thêm [9%:B-changing_value] giúp anh
+<Giảm mức độ của thiết bị> -> [giảm:B-command] hộ chị cái [quạt:B-device] [trần:I-device] với
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ anh ngay cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] nhé
+<Tăng độ sáng của thiết bị> -> bạn ơi [tăng:B-command] giúp mình cái [đèn:B-device] [hắt:I-device] ở mức [8%:B-target_number]
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [đèn:B-device] [hắt:I-device] [trần:I-device] đi nhé
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] giúp anh cái [đèn:B-device] [trần:I-device] xuống [17%:B-changing_value] lúc [8:B-time_at] [giờ:I-time_at] [52:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> em ơi [bật:B-command] giúp chị cái [bóng:B-device] [đứng:I-device] lên nhé
+<Giảm mức độ của thiết bị> -> này trợ lý tuyệt vời hãy [giảm:B-command] giúp tôi [máy:B-device] [hút:I-device] [ẩm:I-device] xuống
+<Hủy hoạt cảnh> -> mọi người đã đến rồi tôi không cần sự [riêng:B-scene] [tư:I-scene] nữa đâu nhé
+<Tăng mức độ của thiết bị> -> trợ lý ơi [tăng:B-command] giúp mình cái [quạt:B-device] với à quên mất lên mức [2:B-changing_value] nhá
+<Đóng thiết bị> -> [đóng:B-command] hộ anh cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device]
+<Tăng độ sáng của thiết bị> -> bóng [đèn:B-device] [bà:I-device] đang mở quá hãy [tăng:B-command] nó lên cho tôi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [21%:B-target_number] từ lúc [5:B-time_at] [giờ:I-time_at] [14:I-time_at] [phút:I-time_at] em nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] đi anh mở cửa là độ sáng rồi
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] hộ tôi cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của kha
+<Tắt thiết bị> -> [tắt:B-command] ngay cái [máy:B-device] [chơi:I-device] [game:I-device] của [long:I-location] đi cho tôitrời nhiều quá rồi đấy
+<Bật thiết bị> -> [bật:B-command] giúp mình cái [đèn:B-device] [âm:I-device] [trần:I-device] với
+<Tắt thiết bị> -> [tắt:B-command] hộ mình cái [bóng:B-device] [sưởi:I-device] đi với nóng quá
+<Đóng thiết bị> -> [đóng:B-command] ơi ơi cái xuống xuống với
+<Tăng mức độ của thiết bị> -> lúc đó thì mình muốn [tăng:B-command] ở ngoài ở bên [cầu:B-location] [thang:I-location] bạn [tăng:B-command] lên [2:B-changing_value] mức nha
+<Tắt thiết bị> -> trợ lí ảo ơi [tắt:B-command] giúp mình cái [bóng:B-device] [tròn:I-device] với mọi người đi đâu hết rồi
+<Đóng thiết bị> -> [đóng:B-command] [rèm:B-device] ở trong [phòng:B-location] [9h:I-location]
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] cho mình cái [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device] với
+<Tắt thiết bị> -> [tắt:B-command] cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] hộ mình với hơi sáng
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi cho anh [45%:B-changing_value] nhé
+<Tăng độ sáng của thiết bị> -> có vẻ tối nhỉ [tăng:B-command] giúp anh cái [đèn:B-device] [bếp:I-device] ở [gara:B-location] lên với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên ở mức [16%:B-changing_value] trong thời gian [15:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at]
+<Đóng thiết bị> -> [đóng:B-command] giúp anh là tính tới nhé em ở [nhà:B-location] [bếp:I-location] [số:I-location] [8:I-location] lấy
+<Tăng độ sáng của thiết bị> -> bạn ơi ra [sân:B-location] [sau:I-location] [tăng:B-command] cái [đèn:B-device] [compact:I-device] xuống [14:B-target_number] lên [75%:B-target_number] nhé
+<Kích hoạt cảnh> -> em bật điện [nhà:B-location] [vệ:I-location] [sinh:I-location] lên để anh [đi:B-scene] [tắm:I-scene] nhé
+<Mở thiết bị> -> [mở:B-command] lúc [5:B-time_at] [giờ:I-time_at] [42:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> em ơi hãy chuẩn bị ra ngoài đây
+<Kiểm tra tình trạng thiết bị> -> sao lạnh thế nhỉ anh nhớ anh mở [máy:B-device] [sưởi:I-device] mà em [kiểm:B-command] [tra:I-command] lại giúp anh với
+<Mở thiết bị> -> tầm lúc nữ thắng [mở:B-command] đi khoảng [9:B-time_at] [giờ:I-time_at] [24:I-time_at] [phút:I-time_at] nhé em [mở:B-command] cho chị trong khoảng [9:B-duration] [tiếng:I-duration] [7:I-duration] [phút:I-duration]
+<Bật thiết bị> -> đói quá [bật:B-command] cái [bếp:B-device] lên nha
+<Tăng mức độ của thiết bị> -> mình muốn [tăng:B-command] trong khoảng [18:B-duration] [tiếng:I-duration] [27:I-duration] [phút:I-duration] và nhớ để ở mức độ khoảng [15%:B-target_number] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] thêm [39%:B-changing_value] nhé
+<Mở thiết bị> -> em ơi [mở:B-command] [máy:B-device] [nghe:I-device] [nhạc:I-device] [điện:I-device] giúp anh với
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] hộ mình cái [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device]
+<Mở thiết bị> -> em ơi [mở:B-command] giúp chị cái [điều:B-device] [hòa:I-device] với nóng quá
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] độ sáng của cái [đèn:B-device] [chùm:I-device] lên [62%:B-target_number] giúp mình
+<Tăng mức độ của thiết bị> -> [tăng:B-command] tầm [42%:B-changing_value] nhé
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] bớt [33%:B-changing_value] nhé
+<Kiểm tra tình trạng thiết bị> -> ông ơi [kiểm:B-command] [tra:I-command] cho tôi [bóng:B-device] [ngủ:I-device] với
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [sưởi:I-device] với
+<Tăng độ sáng của thiết bị> -> em ơi em [tăng:B-command] cho anh cái [bóng:B-device] [compact:I-device] [số:I-device] [8:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp tôi cái [đèn:B-device] [treo:I-device] [tường:I-device] ở [c:B-location] còn bật không nhé
+<Kích hoạt cảnh> -> tôi muốn [đi:B-scene] [ngủ:I-scene] ở [phòng:B-location] [làm:I-location] [việc:I-location]
+<Mở thiết bị> -> nó bị mời bạn gái về muốn tạo trước tình huống lãm bạn [máy:B-device] [tính:I-device] [code:I-device] không
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh [8%:B-target_number] em nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [54%:B-changing_value] vào lúc [10:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] khoảng [59%:B-target_number]
+<Tắt thiết bị> -> [tắt:B-command] giùm tôi cái [bóng:B-device] [sưởi:I-device]
+<Tắt thiết bị> -> [tắt:B-command] [bóng:B-device] giúp mình với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [hắt:I-device] lên [8%:B-target_number] cho mình
+<Tăng độ sáng của thiết bị> -> cái [đèn:B-device] [cây:I-device] ở ngoài [hành:B-location] [lang:I-location] ý [tăng:B-command] lên [72%:B-target_number] nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] hộ phải ngay nhá lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] sáng
+<Tăng nhiệt độ của thiết bị> -> mạnh quá lúc quay [sưởi:I-device] lên
+<Tắt thiết bị> -> [tắt:B-command] giúp mình cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân
+<Kích hoạt cảnh> -> chuẩn bị cái [phòng:B-location] [nghỉ:I-location] [ngơi:I-location] đi anh muốn [thư:B-scene] [giãn:I-scene] trong [2:B-duration] [tiếng:I-duration] [32:I-duration] [phút:I-duration]
+<Bật thiết bị> -> em [bật:B-command] cho anh vào lúc [4:B-time_at] [giờ:I-time_at] [30:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> [phòng:B-location] [tần:I-location] [mùi:I-location] gì ý [bật:B-command] giúp tôi cái [máy:B-device] [hút:I-device] [mùi:I-device] nhé
+<Tắt thiết bị> -> này em ơi [tắt:B-command] cái [máy:B-device] [fax:I-device] trong [phòng:B-location] [làm:I-location] [việc:I-location] giúp anh với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [đèn:B-device] [cây:I-device] [6%:B-changing_value] vào lúc [13:B-time_at] [giờ:I-time_at] [24:I-time_at] [phút:I-time_at] trong vòng [11:B-duration] [tiếng:I-duration] [57:I-duration] [phút:I-duration]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [76%:B-target_number] lúc [14:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] cho anh
+<Tăng độ sáng của thiết bị> -> cái [đèn:B-device] [compact:I-device] cho [14:B-target_number] ở [sân:B-location] [sau:I-location] ý [tăng:B-command] giúp tôi với
+<Kiểm tra tình trạng thiết bị> -> em ơi lúc [9:B-time_at] [giờ:I-time_at] [42:I-time_at] [phút:I-time_at] em [kiểm:B-command] [tra:I-command] [điện:B-device] giúp chị nhé
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] giúp mình đến [28%:B-changing_value] nhé vào lúc [14:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> [mở:B-command] ngay cho anh cái [camera:B-device] [số:I-device] [8:I-device]
+<Tắt thiết bị> -> em ơi [tắt:B-command] hộ anh cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] nhé ở [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] ý
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [loa:B-device] ở trong [phòng:B-location] [đọc:I-location] của tôi với
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [mát:I-device] [xa:I-device] với nhá
+<Đóng thiết bị> -> [đóng:B-command] giúp mình cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] với
+<Mở thiết bị> -> đón cái [van:B-device] [nước:I-device] ở [phòng:B-location] [tắm:I-location] [xông:I-location] [hơi:I-location] đi nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [treo:I-device] [tường:I-device] lên cho anh đi [phòng:B-location] [hơi:I-location] thì anh sáng
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] hộ mình cái [lò:B-device] [sưởi:I-device] xuống ngày [8:B-target_number] và với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho tôi cái [đèn:B-device] [ốp:I-device] [trần:I-device] lên nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên khoảng [78%:B-target_number] em nhé
+<Mở thiết bị> -> à [mở:B-command] giúp anh ở [phòng:B-location] [tắm:I-location] [xông:I-location] [hơi:I-location] [bên:I-location] [phải:I-location] em nhé
+<Giảm mức độ của thiết bị> -> em ơi [giảm:B-command] giúp anh [quạt:B-device] [số:I-device] [5:I-device] đi [4:B-target_number] nhé
+<Mở thiết bị> -> bạn [mở:B-command] cho mình cái [máy:B-device] [hút:I-device] [bụi:I-device] vào lúc [9:B-time_at] [giờ:I-time_at] [2:I-time_at] [đê:I-time_at] [phút:I-time_at] trong khoảng [9:B-duration] [tiếng:I-duration] [7:I-duration] [phút:I-duration] đi
+<Đóng thiết bị> -> [đóng:B-command] [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> trợ lý ơi [mở:B-command] cho anh cái [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên lên số [3:B-target_number] vào lúc [23:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> chị có việc đi ra ngoài nên là em [tắt:B-command] [đèn:B-device] [sưởi:I-device] lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] giúp chị nhá
+<Tăng độ sáng của thiết bị> -> bạn ơi [tăng:B-command] cho mình [đèn:B-device] [bếp:I-device] lên [34%:B-target_number] với
+<Bật thiết bị> -> tí [bật:B-command] cho anh cái [máy:B-device] [rửa:I-device] [bát:I-device] [số:I-device] [11:I-device] nhé lúc [4:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at]
+<Tăng độ sáng của thiết bị> -> bạn có thể [tăng:B-command] giúp mình cái [đèn:B-device] [huỳnh:I-device] [quan:I-device] được không
+<Tắt thiết bị> -> [tắt:B-command] hết toàn bộ [bóng:B-device] [sưởi:I-device] cho mình trong vòng [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] nhé
+<Đóng thiết bị> -> [đóng:B-command] vào lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [thảm:I-time_at] của con
+<Đóng thiết bị> -> [đóng:B-command] giúp mình ở [nhà:B-location] [bếp:I-location] [số:I-location] [8:I-location]
+<Mở thiết bị> -> em [mở:B-command] cho anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] lên nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình [64%:B-changing_value] trong vòng [14:B-duration] [tiếng:I-duration] [12:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> bạn ơi [giật:B-command] giúp mình cái [đèn:B-device] [compact:I-device] ở trên [gác:B-location] [sướt:I-location] xuống [33%:B-changing_value]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho anh khoảng [31%:B-changing_value] nhé vào lúc [11:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> [tắt:B-command] hộ anh cái [đèn:B-device] [sưởi:I-device] lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> [mở:B-command] lúc [8:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giùm tôi cái [bếp:B-device] nhá
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình cái [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] với
+<Kích hoạt cảnh> -> lúc [17:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at] cho anh chế độ khách tới nhà biết chưa
+<Tăng độ sáng của thiết bị> -> em [tăng:B-command] cho anh cái [đèn:B-device] [âm:I-device] [trần:I-device]
+<Bật thiết bị> -> con đáo [bật:B-command] cho tao [9:B-duration] [tiếng:I-duration] [34:I-duration] [phút:I-duration] rồi bây giờ
+<Bật thiết bị> -> [bật:B-command] giúp mình lúc [11:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] [bật:B-command] trong [phòng:B-location] [tiếng:I-location] [45:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [rửa:I-device] [bát:I-device] ở trong [bếp:B-location] với
+<Bật thiết bị> -> bạn [bật:B-command] giúp mình lúc [9:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> em [tăng:B-command] giúp mình lên [15%:B-target_number] trong suốt [18:B-duration] [tiếng:I-duration] [21:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> [mở:B-command] cho mình cái [radio:B-device] ở trong [phòng:B-location] [cuối:I-location] với nghe nhạc tí như thế nào
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [26%:B-changing_value] về trong [17:B-duration] [tiếng:I-duration] [30:I-duration] [phút:I-duration] bạn nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp mình xuống mức [29%:B-target_number] vào lúc [12:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] và trong khoảng [16:B-duration] [tiếng:I-duration] [28:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> trời tối quá [bật:B-command] cái [đèn:B-device] [trụ:I-device] [cổng:I-device] đi
+<Bật thiết bị> -> em ơi lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] [bật:B-command] là muốn giúp chị nhá
+<Tăng độ sáng của thiết bị> -> [đèn:B-device] [rủ:I-device] ở [hiên:B-location] [sâu:I-location] vào [tăng:B-command] [10%:B-changing_value] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] ở [đầu:B-location] [hè:I-location] ấy em khoảng [89%:B-changing_value] em nhé
+<Bật thiết bị> -> mùi quá [bật:B-command] cái [quạt:B-device] [hút:I-device] [mùi:I-device] đi em
+<Đóng thiết bị> -> nắng quá [đóng:B-command] cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] vào cho mình đi nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [71%:B-target_number] em nhá
+<Mở thiết bị> -> [mở:B-command] cho mình lúc [13:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] độ sáng thêm [36%:B-changing_value] giúp tôi
+<Kích hoạt cảnh> -> mọi người tổ chức [tịch:B-scene] [tùng:I-scene] ở ngoài [sân:B-location] [bé:I-location] ơi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [2:B-changing_value] trong [4:B-duration] [tiếng:I-duration] [3:I-duration] [phút:I-duration]
+<Mở thiết bị> -> [mở:B-command] [ti:B-device] [vi:I-device] [bên:I-location] [trái:I-location] lên
+<Giảm mức độ của thiết bị> -> [giảm:B-command] cái [quạt:B-device] [trần:I-device] trong [nhà:B-location] [vệ:I-location] [sinh:I-location] xuống mức [4:B-target_number] giúp anh với nhé
+<Tắt thiết bị> -> em ơi sao tối rồi mà chưa [tắt:B-command] cho anh cái [bóng:B-device] [sân:I-device] thế
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] hộ mình cái [đèn:B-device] [hắt:I-device] với
+<Đóng thiết bị> -> không [đóng:B-command] lúc [15:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nhé
+<Tăng độ sáng của thiết bị> -> bạn lên [4%:B-target_number] trong [3:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] em nhé
+<Tắt thiết bị> -> [tắt:B-command] cho anh vào lúc [14:B-time_at] [giờ:I-time_at] [55:I-time_at] [phút:I-time_at] nhé
+<Kích hoạt cảnh> -> tôi chuẩn bị về [nhà:I-scene] trong [4:B-duration] [tiếng:I-duration] [7:I-duration] [phút:I-duration] nữa nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giúp mình cái [đèn:B-device] [ốp:I-device] [trần:I-device] ở riêng sau với
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [laptop:B-device] với
+<Bật thiết bị> -> lạnh quá [bật:B-command] giúp tôi cái [đèn:B-device] [sưởi:I-device] với
+<Tăng mức độ của thiết bị> -> ở [phòng:B-location] [vệ:I-location] [sinh:I-location] [hoàng:I-location] [hôn:I-location] nhé [tăng:B-command] hộ anh lên [82:B-target_number] [độ:I-target_number] [c:I-target_number]
+<Mở thiết bị> -> [mở:B-command] cho mình cái [ti:B-device] [vi:I-device] [của:I-device] [quân:I-location] với
+<Giảm mức độ của thiết bị> -> tôi cảm thấy hơi lạnh hãy [giảm:B-command] chiếc [quạt:B-device] [số:I-device] [5:I-device] xuống giúp tôi
+<Bật thiết bị> -> trợ lí ảo ơi [bật:B-command] giúp tôi cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Tăng mức độ của thiết bị> -> bạn [tăng:B-command] giúp mình cái [vòi:B-device] [hoa:I-device] [sen:I-device] ở [phòng:B-location] [xông:I-location] [hơi:I-location] [bên:I-location] [trái:I-location] với
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] cho tôi cái [máy:B-device] [nghe:I-device] [nhạc:I-device] lúc [3:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> vào lúc [5:B-time_at] [giờ:I-time_at] [16:I-time_at] [phút:I-time_at] [giảm:B-command] xuống [29%:B-target_number] cho tôi nhé
+<Bật thiết bị> -> tối quá [bật:B-command] giúp mình cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] lên với
+<Mở thiết bị> -> [mở:B-command] cho tôi cái [máy:B-device] [mát:I-device] [xa:I-device]
+<Tăng độ sáng của thiết bị> -> mình đang bận nên là bạn lại [tăng:B-command] cái [bóng:B-device] [để:I-device] [bàn:I-device] hộ mình với
+<Bật thiết bị> -> [bật:B-command] hộ mình cái [laptop:B-device] lên đi
+<Bật thiết bị> -> bạn gì ơi [bật:B-command] cho mình cái [van:B-device] [tưới:I-device] đi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi [13%:B-changing_value] trong [21:B-duration] [tiếng:I-duration] [315:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ mình cái [bóng:B-device] [sân:I-device] nhé
+<Tăng mức độ của thiết bị> -> trời hơi nóng [tăng:B-command] hộ chị cái [quạt:B-device] nhé
+<Tăng mức độ của thiết bị> -> tôi muốn [tăng:B-command] đến [21%:B-target_number] và tại lúc [5:B-time_at] [giờ:I-time_at] [14:I-time_at] [phút:I-time_at] trong khoảng [10:B-duration] [tiếng:I-duration] [32:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [camera:B-device] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [36%:B-changing_value] nhé
+<Tắt thiết bị> -> bạn [tắt:B-command] [bóng:B-device] [sợi:I-device] [đốt:I-device] đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] giúp mình lên [51%:B-changing_value] nhé
+<Tắt thiết bị> -> lúc [2:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] thì bạn [tắt:B-command] nhé
+<Tắt thiết bị> -> [tắt:B-command] giúp mình cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân đi
+<Tăng nhiệt độ của thiết bị> -> [máy:B-device] [lạnh:I-device] đang 3o nhiêu độ ngoài nóng thế [tăng:B-command] giúp chị với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] ngoài [hiên:B-location] nhanh lên tăng gấp
+<Kiểm tra tình trạng thiết bị> -> em [kiểm:B-command] [tra:I-command] giúp chị ở [nhà:B-location] [vệ:I-location] [sinh:I-location] của đạt nhé
+<Kiểm tra tình trạng thiết bị> -> trợ lý ơi [kiểm:B-command] [tra:I-command] ngay giúp anh cái [lò:B-device] [nướng:I-device]
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] giúp mình cái [bếp:B-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] lại cái [bóng:B-device] [làm:I-device] [việc:I-device] đi
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] [đèn:B-device] [huỳnh:I-device] [quang:I-device] trước hiên giúp chị với
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [bóng:B-device] [thả:I-device] với
+<Mở thiết bị> -> trong vòng [7:B-duration] [tiếng:I-duration] [18:I-duration] [phút:I-duration] giúp tôi
+<Bật thiết bị> -> [bật:B-command] cho anh cái [đèn:B-device] [sưởi:I-device] [số:I-device] [3:I-device] trong [phòng:B-location] [giặt:I-location] [ủi:I-location] nhá
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [đèn:B-device] [ốp:I-device] [trần:I-device] trong [1:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] còn [47%:B-target_number] vào trong [21:B-duration] [tiếng:I-duration] [14:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> [bật:B-command] cho anh vào lúc [14:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> quân nghiện game quá bạn [tắt:B-command] giúp mình cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] trong [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho cháu lên [83%:B-target_number] trong [14:B-duration] [tiếng:I-duration] [13:I-duration] [phút:I-duration] nhé
+<Kích hoạt cảnh> -> anh vào [nhà:B-location] [vệ:I-location] [sinh:I-location] 1 chút có khách thì đó anh [đi:B-scene] [tắm:I-scene] nhé
+<Bật thiết bị> -> [bật:B-command] giúp tôi cái [đèn:B-device] [cổng:I-device] vào lúc [22:B-time_at] [giờ:I-time_at] [33:I-time_at] [phút:I-time_at]
+<Bật thiết bị> -> [bật:B-command] cái [bếp:B-device] lên hộ mình với
+<Tăng độ sáng của thiết bị> -> cho anh
+<Mở thiết bị> -> em ơi [mở:B-command] [la:B-device] ở [phòng:B-location] [đọc:I-location] [của:I-location] [khôi:I-location] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] cho mình cái [đèn:B-device] [trần:I-device] vào [11:B-time_at] [giờ:I-time_at] [47:I-time_at] [phút:I-time_at] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] ra cho mình [nóng:B-device]
+<Bật thiết bị> -> bạn ơi [bật:B-command] cho mình cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] lên nhé
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [đèn:B-device] [sưởi:I-device] đến [45%:B-target_number] nhé em
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] hộ chị cái [đèn:B-device] [ốp:I-device] [trần:I-device] [số:I-device] [5:I-device] lên nhé
+<Mở thiết bị> -> [mở:B-command] giùm anh cái [cửa:B-device]
+<Mở thiết bị> -> em xem số [4:B-time_at] [giờ:I-time_at] xuống [23%:B-target_number]
+<Kích hoạt cảnh> -> tôi sẽ về nhà trong vòng [4:B-duration] [tiếng:I-duration] [7:I-duration] [phút:I-duration] nữa
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [bến:B-location] [số:I-location] [2:I-location] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình lúc [22:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at]
+<Giảm mức độ của thiết bị> -> lạnh quá [giảm:B-command] giúp anh cái [quạt:B-device] [trần:I-device] trong [nhà:B-location] [hộ:I-location] [sinh:I-location] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình đi [50%:B-changing_value] nhé
+<Bật thiết bị> -> em ơi hộ anh nhá [bật:B-command] giúp anh cái [laptop:B-device] với
+<Đóng thiết bị> -> [đóng:B-command] hộ tôi [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device]
+<Đóng thiết bị> -> làm ơn hãy [đóng:B-command] [lò:B-device] [sưởi:I-device] trong [phòng:B-location] [bếp:I-location] lúc [5:B-time_at] [giờ:I-time_at] [45:I-time_at] [phút:I-time_at]
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] giúp anh cái [máy:B-device] [tính:I-device] [địa:I-device] [bàn:I-device] của [khang:B-location]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến mức [39%:B-changing_value] thôi nhé
+<Bật thiết bị> -> anh đang hơi mệt em có thể [bật:B-command] cho anh cái [máy:B-device] [mát:I-device] [xa:I-device] được không
+<Mở thiết bị> -> trời nóng thế nhỉ [mở:B-command] giúp anh cái [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] với
+<Giảm âm lượng của thiết bị> -> em ơi [giảm:B-command] cho anh cái [ti:B-device] [vi:I-device] với
+<Đóng thiết bị> -> tôi cần ra ngoài nhớ [đóng:B-command] giúp tôi cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] lúc [1018:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> buồn quá em ơi [mở:B-command] giúp anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] không với
+<Hủy hoạt cảnh> -> mình không muốn [đi:B-scene] [tắm:I-scene] nữa
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [6%:B-changing_value] trong [11:B-duration] [tiếng:I-duration] [57:I-duration] [phút:I-duration] nhé
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] giùm mình [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device]
+<Tắt thiết bị> -> [tắt:B-command] cho em cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân
+<Giảm độ sáng của thiết bị> -> giúp mình [giảm:B-command] cái [bóng:B-device] [trụ:I-device] [cổng:I-device] đi [71%:B-changing_value] lúc [15:B-time_at] [giờ:I-time_at] [58:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> tôi đang xem phim [đóng:B-command] giúp tôi cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device]
+<Tắt thiết bị> -> [tắt:B-command] lúc [16:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at] em nhé
+<Mở thiết bị> -> em [mở:B-command] cho anh cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giúp mình cái [đèn:B-device] [ốp:I-device] [trần:I-device] trong [1:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [75%:B-target_number] cho tôi nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [97%:B-target_number] nhá
+<Tắt thiết bị> -> [tắt:B-command] cho anh sao [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ anh cái [máy:B-device] [pha:I-device] [cafe:I-device] [số:I-device] [10:I-device] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình cái [bóng:B-device] [chùm:I-device] xuống [85%:B-target_number]
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho chị cái [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device]
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] cho mình cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device]
+<Tăng mức độ của thiết bị> -> trời ơi nóng quá hãy [tăng:B-command] giúp mình cái [quạt:B-device] [trần:I-device] lên
+<Đóng thiết bị> -> mày chuẩn bị đi tắm [đóng:B-command] cho mình cái [rèm:B-device] đi
+<Mở thiết bị> -> [mở:B-command] cho anh vào [9:B-time_at] [giờ:I-time_at] [24:I-time_at] [phút:I-time_at] và trong [9:B-duration] [tiếng:I-duration] [7:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] lúc [11:B-time_at] [giờ:I-time_at] [22:I-time_at] [phút:I-time_at] em nhé
+<Kiểm tra tình trạng thiết bị> -> trong [4:B-duration] [tiếng:I-duration] [15:I-duration] [phút:I-duration] nữa mình sẽ ra ngoài hãy [chuẩn:B-command] bị [phòng:B-location] cho tôi
+<Kiểm tra tình trạng thiết bị> -> [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của khang bị hỏng rồi [kiểm:B-command] [tra:I-command] giúp chị nhé
+<Đóng thiết bị> -> nghe giúp mình này [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] cần được [đóng:B-command] lại lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] thêm [3%:B-target_number] nữa nhé
+<Giảm độ sáng của thiết bị> -> chói quá [giảm:B-command] bớt cái [bóng:B-device] [để:I-device] [bàn:I-device] hộ anh [53%:B-changing_value] đi được không
+<Hủy hoạt cảnh> -> mình sử dụng [phòng:B-location] [vệ:I-location] [sinh:I-location] để [đi:B-scene] [tắm:I-scene] xong rồi nhé không cần phải làm gì nữa đâu
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] giúp anh cái [đèn:B-device] [ngủ:I-device] lên [92%:B-target_number]
+<Tắt thiết bị> -> em ơi chị thấy hơi phí điện [tắt:B-command] hộ chị cái [đèn:B-device] [treo:I-device] [tường:I-device] nhé
+<Đóng thiết bị> -> [đóng:B-command] cho tôi cái [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device]
+<Tắt thiết bị> -> tôi chuẩn bị ra ngoài công việc [tắt:B-command] cho tố [đèn:B-device] [ốp:I-device] [trần:I-device] nhé
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] hộ mình cái [đèn:B-device] [bếp:I-device] với
+<Kích hoạt cảnh> -> anh sắp về nhà trong [3:B-duration] [tiếng:I-duration] [41:I-duration] [phút:I-duration] nhé
+<Kích hoạt cảnh> -> mình làm xong việc rồi mình sẽ về [nhà:I-scene] vào lúc [18:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [89%:B-changing_value] em nhé
+<Bật thiết bị> -> [phòng:B-location] [thờ:I-location] tối quá cậu [bật:B-command] giúp tôi cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] được không
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [15%:B-target_number] nhé
+<Đóng thiết bị> -> nếu [đóng:B-command] ở [phòng:B-location] [vệ:I-location] [sinh:I-location] [số:I-location] [9:I-location] nhé
+<Bật thiết bị> -> bạn có thể [bật:B-command] hộ mình cái [bóng:B-device] [sưởi:I-device] được không
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình đi khoảng [45%:B-changing_value] nhé
+<Đóng thiết bị> -> [đóng:B-command] cho mình cái [lò:B-device] [vi:I-device] [sóng:I-device] vào lúc [15:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] bạn nhé
+<Tăng độ sáng của thiết bị> -> hãy [tăng:B-command] [đèn:B-device] [rủ:I-device] ở [hiên:B-location] [sau:I-location] thêm [10%:B-changing_value] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] cái [đèn:B-device] [ốp:I-device] [trần:I-device] hộ mình với
+<Kích hoạt cảnh> -> em ơi chị chuẩn bị [đi:B-scene] [tắm:I-scene] ở [nhà:B-location] [vệ:I-location] [sinh:I-location] nhé
+<Hủy hoạt cảnh> -> bật [đi:B-scene] [tắm:I-scene] xong rồi
+<Bật thiết bị> -> [bật:B-command] giúp mình cái [bóng:B-device] [sưởi:I-device] lên nhé
+<Tăng độ sáng của thiết bị> -> em ơi
+<Bật thiết bị> -> [bật:B-command] cho mình cái [laptop:B-device] nha
+<Tắt thiết bị> -> bạn có thể [tắt:B-command] hộ mình cái [đèn:B-device] [sưởi:I-device] được không
+<Kích hoạt cảnh> -> mình sẽ đi ra ngoài 1 chút trong vòng [4:B-duration] [tiếng:I-duration] [15:I-duration] [phút:I-duration] nữa nha
+<Kiểm tra tình trạng thiết bị> -> em này [kiểm:B-command] [tra:I-command] cho chị cái [bóng:B-device] [tròn:I-device] lúc [11:B-time_at] [giờ:I-time_at] [15:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> [bật:B-command] lúc [19:B-time_at] [giờ:I-time_at] [32:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> [bật:B-command] giúp tôi lúc [19:B-time_at] [giờ:I-time_at] [32:I-time_at] [phút:I-time_at]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lúc [14:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] nhé lên [76%:B-target_number]
+<Tăng mức độ của thiết bị> -> hãy [tăng:B-command] [quạt:B-device] lên mức [2:B-changing_value]
+<Mở thiết bị> -> [mở:B-command] [mành:B-device] [cuốn:I-device] ở trên [4:B-target_number] chúng tôi
+<Tăng mức độ của thiết bị> -> quạt hồn quá ném cái [quạt:B-device] giúp anh
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [33%:B-changing_value] cho mình nhé
+<Giảm âm lượng của thiết bị> -> [giảm:B-command] âm lượng cái [ti:B-device] [vi:I-device] bé lại nhanh
+<Mở thiết bị> -> này trợ lý ảo [mở:B-command] giúp mình cái [ti:B-device] [vi:I-device] [của:I-location] [quân:I-location] đi
+<Đóng thiết bị> -> em [đóng:B-command] giúp anh vào lúc [5:B-time_at] [giờ:I-time_at] [45:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> [đóng:B-command] giúp anh cái [màn:B-device] [cuốn:I-device]
+<Tăng âm lượng của thiết bị> -> em ơi [tăng:B-command] âm lượng [ti:B-device] [vi:I-device] lên cho anh đi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp mình xuống [83%:B-target_number] nhé
+<Tắt thiết bị> -> [tắt:B-command] lúc [19:B-time_at] [giờ:I-time_at] [43:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> bạn ơi [bật:B-command] hộ mình cái [đèn:B-device] [ngủ:I-device] lên [74%:B-target_number] nhé
+<Tăng độ sáng của thiết bị> -> tối quá [tăng:B-command] thêm cái [bóng:B-device] [để:I-device] [bàn:I-device] [99%:B-changing_value] nhé
+<Mở thiết bị> -> ở [phòng:B-location] [giặt:I-location] [là:I-location] [bên:I-location] [trái:I-location] [mở:B-command] giúp tôi cái [loa:B-device] vào lúc [10:B-time_at] [giờ:I-time_at] [19:I-time_at] [phút:I-time_at]
+<Bật thiết bị> -> [bật:B-command] cái [máy:B-device] [hút:I-device] [mùi:I-device] ở [hầm:B-location] [rượu:I-location] đi mùi quá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [47%:B-target_number] trong [21:B-duration] [tiếng:I-duration] [14:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [hắt:I-device] ở [hè:B-location] [sau:I-location] [42%:B-changing_value] ở lúc [4:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> [tắt:B-command] khoảng [10:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> em ơi muốn hồng ai 1 tí hãy [bật:B-command] cho anh cái [đèn:B-device] [bếp:I-device] lên với
+<Tăng độ sáng của thiết bị> -> ngoài [đồ:B-location] á nhá [tăng:B-command] [89%:B-target_number] cho mình
+<Đóng thiết bị> -> em ơi [đóng:B-command] [cửa:B-device] [phòng:B-location] [vệ:I-location] [sinh:I-location] rồi đi anh đang đi tắm
+<Giảm độ sáng của thiết bị> -> cái [đèn:B-device] [cổng:I-device] sáng quá [giảm:B-command] cho mình đi [2%:B-changing_value] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [quạt:B-device] lên cho anh nóng thế
+<Bật thiết bị> -> [bật:B-command] cho tôi cái [máy:B-device] [rửa:I-device] [bát:I-device] ở trong [bếp:B-location]
+<Tắt thiết bị> -> [tắt:B-command] [đèn:B-device] [treo:I-device] [thường:I-device] hộ anh đi em ơi muộn rồi
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [đèn:B-device] [hắt:I-device]
+<Tăng mức độ của thiết bị> -> [41%:B-changing_value] anh muốn [tăng:B-command] [41%:B-changing_value] nhé
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] cho tôi cái [rèm:B-device]
+<Tắt thiết bị> -> [tắt:B-command] cho anh trong vòng [1:B-duration] [tiếng:I-duration] [41:I-duration] [phút:I-duration] em ơi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [33%:B-changing_value] 1 giống [51%:B-changing_value]
+<Giảm độ sáng của thiết bị> -> [3o:B-changing_value] giờ cháu ngủ tầm [12:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] thì cô [giảm:B-command] nhé [giảm:B-command] cho cháu xuống [29%:B-target_number]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cùng số [3:B-target_number] thôi em ạ
+<Mở thiết bị> -> sáng rồi [mở:B-command] [màn:B-device] [cửa:I-device] [số:I-device] [18:I-device] hộ mình với
+<Tắt thiết bị> -> cậu ơi mình không còn học nữa [tắt:B-command] cho mình cái [bóng:B-device] [huỳnh:I-device] [quang:I-device]
+<Đóng thiết bị> -> tầm [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] bạn [đóng:B-command] cho mình cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] nhé
+<Mở thiết bị> -> [mở:B-command] vào lúc [13:B-time_at] [giờ:I-time_at] [43:I-time_at] [phút:I-time_at] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] ở [nhà:B-location] [giữ:I-location] [đồ:I-location] [trường:B-location] [sa:I-location] vào [19:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at]
+<Bật thiết bị> -> [bật:B-command] cho mình cái [bếp:B-device] lên với
+<Tăng mức độ của thiết bị> -> nóng quá bạn [tăng:B-command] cái [quạt:B-device] lên giúp mình với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [đèn:B-device] [hắt:I-device] lên [8%:B-target_number] cho anh
+<Giảm mức độ của thiết bị> -> [giảm:B-command] giúp chị cái [quạt:B-device] xuống còn mức [3:B-changing_value] thôi
+<Bật thiết bị> -> lạnh quá [bật:B-command] [bóng:B-device] [sưởi:I-device] giúp tôi đi
+<Tắt thiết bị> -> [tắt:B-command] cho mình [đèn:B-device] [sưởi:I-device] vào lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> mỏi quá [mở:B-command] [máy:B-device] [mát:I-device] [xa:I-device] đi em
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho [tứ:B-device] lên [3%:B-target_number] thôi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [87%:B-target_number] trong vòng hay [2:B-duration] [tiếng:I-duration] [55:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp anh ở [phòng:B-location] [chung:I-location] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh xuống còn [73%:B-target_number] em nhé
+<Tắt thiết bị> -> cái [đèn:B-device] [tường:I-device] ở dưới [nhà:B-location] [tình:I-location] [yêu:I-location] đang bật hay sao ấy em [tắt:B-command] đi
+<Kiểm tra tình trạng thiết bị> -> hãy [kiểm:B-command] [tra:I-command] cho tôi cái [đèn:B-device]
+<Đóng thiết bị> -> [đóng:B-command] cái [mành:B-device] [cuốn:I-device] xuống giùm tôi với
+<Kích hoạt cảnh> -> tôi muốn [thư:B-scene] [giãn:I-scene]
+<Tăng độ sáng của thiết bị> -> hãy [tăng:B-command] giúp tôi cái [bóng:B-device] [để:I-device] [bàn:I-device] ở [warae:B-location] chế
+<Mở thiết bị> -> [mở:B-command] cho chị vào [6:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [đèn:B-device] [tranh:I-device] [số:I-device] [7:I-device] đi [92%:B-changing_value] cho mình nhé
+<Hủy hoạt cảnh> -> tôi không muốn [đi:B-scene] [ngủ:I-scene] nữa
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [bóng:B-device] [compact:I-device] [số:I-device] [8:I-device] lên đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] hảm thêm [89%:B-changing_value] cho mình
+<Giảm độ sáng của thiết bị> -> đau đầu quá [giảm:B-command] cái [máy:B-device] [nhạc:I-device] đi hộ tôi với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên cho tôi [99%:B-changing_value]
+<Tắt thiết bị> -> đợi đến [2:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] thì hãy [tắt:B-command] em ạ
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [29%:B-changing_value] giúp chị nhé
+<Tăng âm lượng của thiết bị> -> em ơi [tăng:B-command] hộ anh cái [bếp:B-device] lên nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] hộ anh lại cái [bóng:B-device] [trụ:I-device] [cổng:I-device] ở ngoài [phòng:B-location] [khách:I-location] nhé hình như bị hỏng rồi hay sao ấy
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] vào lúc [11:B-time_at] [giờ:I-time_at] [15:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> [tắt:B-command] đi nhé nó cũng đã chạy trong khoảng [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] rồi
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] hộ tôi cái [ti:B-device] [vi:I-device] trong vòng [23:B-duration] [tiếng:I-duration] [56:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> [tắt:B-command] lúc [21:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at] cho mình nhá
+<Tắt thiết bị> -> [tắt:B-command] giúp tôi cái [hát:B-device] then đâu
+<Bật thiết bị> -> hãy [bật:B-command] giúp tôi cái [đèn:B-device] [thả:I-device] ở [phòng:B-location] [giặt:I-location] [là:I-location] [số:I-location] [5:I-location] nhé
+<Bật thiết bị> -> khoảng [22:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] chị mà ngủ quên thì [bật:B-command] [đèn:B-device] [ngủ:I-device] hộ chị nha
+<Mở thiết bị> -> bạn ơi [mở:B-command] cho mình cái [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [35%:B-changing_value] em nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] độ sáng của [đèn:B-device] [tranh:I-device] [số:I-device] [7:I-device] đi [92%:B-changing_value] nhé
+<Tắt thiết bị> -> em ơi nước bị tràn kia [tắt:B-command] cho anh cái [van:B-device] [nước:I-device] [số:I-device] [1:I-device] đi
+<Giảm độ sáng của thiết bị> -> ở trong [phòng:B-location] [giặt:I-location] ở [của:B-location] [nhi:I-location] nhé và [giảm:B-command] cho anh xuống [65%:B-target_number]
+<Mở thiết bị> -> [mở:B-command] [máy:B-device] [nghe:I-device] [nhạc:I-device]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] hộ anh thêm [14%:B-changing_value] trong suốt [3:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] em nhé
+<Giảm độ sáng của thiết bị> -> bạn nhớ [giảm:B-command] cho mình lúc [5:B-time_at] [giờ:I-time_at] [16:I-time_at] [phút:I-time_at] nhé mình muốn [giảm:B-command] xuống [29%:B-target_number]
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [bóng:B-device] [treo:I-device] [tường:I-device] xuống [16:B-target_number] nhé
+<Tắt thiết bị> -> lúc này chờ cần bật [đèn:B-device] [tranh:I-device] ở [tiền:B-location] [sảnh:I-location] đâu hãy [tắt:B-command] đó giúp anh nhé
+<Giảm độ sáng của thiết bị> -> chói quá em ơi [giảm:B-command] [bóng:B-device] [làm:I-device] [việc:I-device] [8%:B-changing_value] nhé
+<Bật thiết bị> -> lúc [15:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at] [bật:B-command] cho anh cái [đèn:B-device] [sưởi:I-device] [số:I-device] [3:B-target_number] với
+<Đóng thiết bị> -> làm ơn hãy [đóng:B-command] [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình [95%:B-changing_value] trong [2:B-duration] [tiếng:I-duration] [42:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> [mở:B-command] trong [7:B-duration] [tiếng:I-duration] [12:I-duration] [phút:I-duration] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho mình vào lúc [17:B-time_at] [giờ:I-time_at] [46:I-time_at] [phút:I-time_at]
+<Kiểm tra tình trạng thiết bị> -> tối quá hãy [kiểm:B-command] [tra:I-command] chiếc [đèn:B-device] [hắt:I-device] [tường:I-device] giúp tôi
+<Tắt thiết bị> -> cậu ơi cậu chói quá [tắt:B-command] hộ tới cái [đèn:B-device] [hắt:I-device] với
+<Hủy hoạt cảnh> -> không [thư:B-scene] [giãn:I-scene] an hộ mình nên em nhé
+<Tắt thiết bị> -> [tắt:B-command] [đèn:B-device] [kinh:I-device] [quang:I-device]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp anh cái [đèn:B-device] [ốp:I-device] [trần:I-device] với em ơi
+<Bật thiết bị> -> [bật:B-command] giúp anh trong [4:B-duration] [giờ:I-duration] [21:I-duration] [phút:I-duration] nhé cảm ơn em sản
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình xuống còn [85%:B-target_number] nhé
+<Giảm âm lượng của thiết bị> -> [giảm:B-command] [radio:B-device] xuống mức [65%:B-target_number] cho anh em nhé
+<Giảm độ sáng của thiết bị> -> mình muốn [giảm:B-command] xuống [64%:B-target_number] so với ạ và trong khoảng thời gian vào [14:B-duration] [tiếng:I-duration] [12:I-duration] [phút:I-duration]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] hộ chị xuống [38%:B-changing_value] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [17%:B-changing_value] từ lúc [8:B-time_at] [giờ:I-time_at] [52:I-time_at] [phút:I-time_at] em nhé
+<Bật thiết bị> -> [bật:B-command] vào lúc [22:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at] trước
+<Tắt thiết bị> -> [tắt:B-command] hộ anh cái [đèn:B-device] [treo:I-device] [tường:I-device] với
+<Tăng nhiệt độ của thiết bị> -> [tăng:B-command] giúp bác cái [máy:B-device] [lạnh:I-device] với
+<Bật thiết bị> -> [bật:B-command] cho anh cái [bếp:B-device] cái anh nấu phát nào
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho mình vào lúc [15:B-time_at] [giờ:I-time_at] [16:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> hãy [giảm:B-command] [đèn:B-device] [trần:I-device] giúp tôi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [máy:B-device] [hút:I-device] [ẩm:I-device]
+<Kiểm tra tình trạng thiết bị> -> em ơi em [kiểm:B-command] [tra:I-command] cho chị cái [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] đi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp anh cái [bóng:B-device] [chùm:I-device] ở [phòng:B-location] [thay:I-location] [đổi:I-location] [số:I-location] [4:I-location] [giảm:B-command] xuống [45%:B-changing_value]
+<Tắt thiết bị> -> [tắt:B-command] giúp mình vào [22:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] nhé
+<Giảm mức độ của thiết bị> -> em ơi cái [quạt:B-device] [số:I-device] [5:I-device] [giảm:B-command] cho anh xuống còn [4:B-target_number] thôi nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [cửa:B-device] [cuốn:I-device] ở [phòng:B-location] [9h:I-location] với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp anh cái [đèn:B-device] [tuýp:I-device] ở ngoài kia với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] lúc [21:B-time_at] [giờ:I-time_at] [57:I-time_at] [phút:I-time_at] cho mình nhé
+<Giảm mức độ của thiết bị> -> lạnh quá [giảm:B-command] cho anh cái [quạt:B-device] [sống:I-device] [số:I-device] [3:B-target_number] nhé
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] xuống [59%:B-target_number] nhé
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] em nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống còn [29%:B-target_number] luôn nhé
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] xuống [4%:B-changing_value] ở [nhà:B-location] [xe:I-location] [của:I-location] [huy:I-location] nhé
+<Đóng thiết bị> -> anh quên mất rồi [đóng:B-command] giùm anh cái [van:B-device] [nước:I-device] với
+<Tăng độ sáng của thiết bị> -> phòng hơi tối [tăng:B-command] độ sáng [đèn:B-device] [hắt:I-device] lên cho anh nhá [tăng:B-command] khoảng [8%:B-target_number] nhé
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] cái [bóng:B-device] [sưởi:I-device] xuống [76%:B-target_number] giúp anh với nhé
+<Mở thiết bị> -> buồn quá [mở:B-command] cho mình cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Tắt thiết bị> -> [tắt:B-command] trong khoảng [3:B-duration] [tiếng:I-duration] [16:I-duration] [phút:I-duration]
+<Tăng mức độ của thiết bị> -> tí nữa lúc [14:B-time_at] [giờ:I-time_at] [4:I-time_at] [phút:I-time_at] bạn [tăng:B-command] cho mình đến [76%:B-target_number] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [4%:B-changing_value] đi mình muốn đi ngủ
+<Kiểm tra tình trạng thiết bị> -> bạn [kiểm:B-command] [tra:I-command] giúp mình nhé
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] giúp mình cái [đèn:B-device] [trần:I-device] với
+<Bật thiết bị> -> em [bật:B-command] cho anh lúc [14:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] hộ anh nhé
+<Mở thiết bị> -> [mở:B-command] cho anh trong vòng [8:B-duration] [tiếng:I-duration] [6:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [màn:B-device] [cửa:I-device] [số:I-device] [18:I-device] với em ơi trời tối quá
+<Tắt thiết bị> -> nay [tắt:B-command] [đèn:B-device] [ngủ:I-device] cho tôi được không
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp anh lúc [15:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] em nhé
+<Kiểm tra tình trạng thiết bị> -> này trợ lý tí hãy [kiểm:B-command] [tra:I-command] cho tôi cái [đèn:B-device] [hãn:I-device] [tường:I-device] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh xuống [22%:B-changing_value] và vào lúc [18:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> này trợ lý [đóng:B-command] giúp tôi cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] nhé
+<Giảm độ sáng của thiết bị> -> chị đang bật nên [giảm:B-command] hộ chị cái [đèn:B-device] [bếp:I-device]
+<Bật thiết bị> -> bạn có thể [bật:B-command] cái [bóng:B-device] [trụ:I-device] [cổng:I-device] được không
+<Tắt thiết bị> -> [tắt:B-command] giúp mình cái [đèn:B-device] [trầm:I-device] vào lúc [11:B-time_at] [giờ:I-time_at] [47:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [35%:B-changing_value] nhé trong tầm [13:B-duration] [tiếng:I-duration] [34:I-duration] [phút:I-duration]
+<Kích hoạt cảnh> -> tôi chuẩn bị [đi:B-scene] [tắm:I-scene] bạn hãy chuẩn bị nước ở [phòng:B-location] [vệ:I-location] [sinh:I-location] nhé
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] cho mình cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] nhá
+<Tăng âm lượng của thiết bị> -> em ơi chị phải ninh sườn [tăng:B-command] giúp chị cái [bếp:B-device] lên mức số [8:B-target_number] với
+<Đóng thiết bị> -> [đóng:B-command] [màn:B-device] [cuốn:I-device] [số:B-device] [hoa:I-device] cho mình với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho tế độ sáng của cái [đèn:B-device] [hắt:I-device] [hè:B-location] [sau:I-location] nhé
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] [ti:B-device] [vi:I-device] lên trong [23:B-duration] [tiếng:I-duration] [56:I-duration] [phút:I-duration] cho tôi nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [4:B-target_number] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho chị lên lúc [3:B-target_number] vào lúc [23:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] nhé
+<Mở thiết bị> -> [mở:B-command] hộ anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Tăng độ sáng của thiết bị> -> tối quá [tăng:B-command] [đèn:B-device] [treo:I-device] [tường:I-device] lên [76%:B-target_number] đi
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] giúp mình cái [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device] với
+<Mở thiết bị> -> [mở:B-command] cái [camera:B-device] [số:I-device] [8:I-device] lên em nhá
+<Mở thiết bị> -> à [mở:B-command] ở [phòng:B-location] [xông:I-location] [hơi:I-location] [bên:I-location] [trái:I-location] em nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] cho mình [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] với
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] hộ mình cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] ở [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] đi với
+<Đóng thiết bị> -> bạn trợ lý ảo ơi [đóng:B-command] giúp mình cái [van:B-device] [nước:I-device] ở trong [nhà:B-location] [tắm:I-location] nhá mình quên mất
+<Đóng thiết bị> -> làm ơn hãy [đóng:B-command] [lò:B-device] [sưởi:I-device] [số:I-device] [18:I-device]
+<Tắt thiết bị> -> hãy [tắt:B-command] giúp tôi cái [bóng:B-device] [để:I-device] [bàn:I-device] ở trong [nhà:B-location] [để:I-location] [xe:I-location] [của:I-location] [duy:I-location] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi [28%:B-changing_value] bạn nhá [giảm:B-command] trong [21:B-duration] [tiếng:I-duration] [36:I-duration] [phút:I-duration]
+<Mở thiết bị> -> [mở:B-command] cho anh cái [loa:B-device] trong [phòng:B-location] [đọc:I-location] của tôi cái
+<Đóng thiết bị> -> [đóng:B-command] cái ở [nhà:B-location] [tắm:I-location] nhá
+<Đóng thiết bị> -> em ơi giúp anh [đóng:B-command] cái [lò:B-device] [nướng:I-device] này nhé
+<Hủy hoạt cảnh> -> lạnh quá tôi không muốn [đi:B-scene] [tắm:I-scene]
+<Tăng mức độ của thiết bị> -> ở [vòi:B-device] [hoa:I-device] [sen:I-device] nữa anh đi tắm đi
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] cái [đèn:B-device] [compact:I-device] ở [gác:B-location] [xép:I-location] xuống hộ mình với
+<Tắt thiết bị> -> [tắt:B-command] trong [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] nhé
+<Giảm độ sáng của thiết bị> -> chị muốn [giảm:B-command] trong vòng [21:B-duration] [tiếng:I-duration] [36:I-duration] [phút:I-duration] nha [giảm:B-command] đến [28%:B-changing_value]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh [2%:B-changing_value] nhé
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [mành:B-device] [cuốn:I-device] ở [tầng:B-location] [thượng:I-location] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp mình [33%:B-changing_value] nhé
+<Đóng thiết bị> -> [đóng:B-command] cho anh cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] nhá
+<Tắt thiết bị> -> [tắt:B-command] [camera:B-device] của [huy:I-device] đi cho tôi
+<Bật thiết bị> -> em [bật:B-command] hộ anh ở mức [97%:B-target_number] trong vòng [16:B-duration] [tiếng:I-duration] [46:I-duration] [phút:I-duration] nhé
+<Đóng thiết bị> -> bạn hỗ trợ ơi [đóng:B-command] giúp mình [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [bếp:I-device] lên [34%:B-changing_value] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho mình cái [bóng:B-device] [để:I-device] [bàn:I-device] trong [gara:B-location] với [tăng:B-command] lên [66%:B-target_number] cho mình nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] giúp anh khoảng [35%:B-changing_value] nhé
+<Bật thiết bị> -> tối quá [bật:B-command] cho mình cái [bóng:B-device] [hắt:I-device] với nhé
+<Hủy hoạt cảnh> -> bỏ cho anh cái không khí [lãng:B-scene] bạn ấy đi nhé
+<Tăng độ sáng của thiết bị> -> tiếng [máy:B-device] [en:I-device] [nhạc:I-device] vỏ quá [tăng:B-command] lên giúp chị nhá
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] vào [9:B-time_at] [giờ:I-time_at] [42:I-time_at] [phút:I-time_at] bạn nhé
+<Hủy hoạt cảnh> -> tôi cần sự [riêng:B-scene] [tư:I-scene] bạn đừng làm phiên tôi
+<Bật thiết bị> -> [bật:B-command] hộ cái [laptop:B-device] cái
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [35%:B-changing_value] vào trong thời gian [13:B-duration] [tiếng:I-duration] [34:I-duration] [phút:I-duration] được không em
+<Tăng mức độ của thiết bị> -> em [tăng:B-command] cho anh lên [88%:B-target_number] nhé
+<Bật thiết bị> -> [bật:B-command] lúc [9:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> thế em ơi tí nữa [đóng:B-command] cái [van:B-device] [nước:I-device] vào nhé
+<Mở thiết bị> -> trợ lý ơi nhớ tí nữa [8:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] thì [mở:B-command] cái [quạt:B-device] [trần:I-device] [số:I-device] [11:I-device] nhé
+<Mở thiết bị> -> em [mở:B-command] hộ anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] nhé
+<Mở thiết bị> -> bạn ơi [mở:B-command] hộ mình cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device]
+<Mở thiết bị> -> anh muốn vào [phòng:B-location] [sách:I-location] [đọc:I-location] [sách:I-location] cho giã 1 chút
+<Kiểm tra tình trạng thiết bị> -> bạn ơi [kiểm:B-command] [tra:I-command] cái [đèn:B-device] [sợi:I-device] [đốt:I-device] cho mình với
+<Mở thiết bị> -> trần nhà sao đại sử làm ơn [mở:B-command] giúp con cái [tin:B-device] trái
+<Bật thiết bị> -> [bật:B-command] vào lúc [19:B-time_at] [giờ:I-time_at] [32:I-time_at] [phút:I-time_at]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho mình cái [đèn:B-device] [trần:I-device]
+<Bật thiết bị> -> nhớ là [bật:B-command] cái [đèn:B-device] ở [hiên:B-location] nhé
+<Tắt thiết bị> -> [tắt:B-command] cho tôi cái [đèn:B-device] [treo:I-device] [tường:I-device] với
+<Mở thiết bị> -> [mở:B-command] cho mình cái [máy:B-device] [hút:I-device] [ẩm:I-device] ở [hầm:B-location] [rượu:I-location] [mùa:I-location] [xuân:I-location] trong [11:B-duration] [tiếng:I-duration] [44:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> hãy [bật:B-command] cho tôi cái [bóng:B-device] [chùm:I-device] lên
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [27%:B-changing_value] trong [6:B-duration] [tiếng:I-duration] [25:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> hình như có ai ở bên ngoài [mở:B-command] cho anh cái [camera:B-device] [số:I-device] [8:I-device] lên nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho anh đến [41%:B-target_number] trong [7:B-duration] [tiếng:I-duration] [25:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> [mở:B-command] lúc [8:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at]
+<Đóng thiết bị> -> bạn [đóng:B-command] hộ mình cái [lò:B-device] [sưởi:I-device] trong [phòng:B-location] [bếp:I-location] đi với
+<Mở thiết bị> -> [mở:B-command] cho chị cái [ti:B-device] [vi:I-device] [của:I-device] [quân:I-location] lên
+<Tăng nhiệt độ của thiết bị> -> [tăng:B-command] cho anh cái [máy:B-device] [lạnh:I-device] lên nhá
+<Tắt thiết bị> -> em ơi [tắt:B-command] [van:B-device] [nước:I-device] [số:I-device] [1:I-device] đi
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] thêm [2:B-changing_value] [nước:B-device] vào lúc [4:B-time_at] [giờ:I-time_at] [54:I-time_at] [phút:I-time_at] nhá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [40%:B-changing_value] vào lúc [22:B-time_at] [giờ:I-time_at] [34:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> [mở:B-command] cho chị cái [ti:B-device] [vi:I-device] [của:I-location] [quân:I-location]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [39%:B-changing_value] thôi nhé
+<Bật thiết bị> -> [bật:B-command] lên mức [74%:B-target_number] cho anh nhé
+<Đóng thiết bị> -> chói quá [đóng:B-command] [màn:B-device] [cửa:I-device] đi em
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [11%:B-target_number] nhé ở [sân:B-location] [số:I-location] [7:I-location] lúc [17:B-time_at] [giờ:I-time_at] [15:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [đèn:B-device] [sưởi:I-device] giúp đỡ đớt tốn điện ngay
+<Kích hoạt cảnh> -> tôi sẽ [ra:B-scene] [ngoài:I-scene] trong [2:B-duration] [tiếng:I-duration] [47:I-duration] [phút:I-duration] hãy chuẩn bị [phòng:B-location] cho đến lúc đó
+<Bật thiết bị> -> em ơi [bật:B-command] giúp anh cái [đèn:B-device] [sưởi:I-device] [số:I-device] [3:B-target_number] ở trong [phòng:B-location] [giặt:I-location] [ủi:I-location] lên đi nào
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] cho anh cái [đèn:B-device] [trụ:I-device] [cổng:I-device] ở [sân:B-location] [số:I-location] [7:I-location] với nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] giúp anh lên [6:B-changing_value] độ nhé [6:B-changing_value] tư độ c trong [0:B-duration] [giờ:I-duration] [10:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] hộ anh cái [đèn:B-device] [compact:I-device] [số:I-device] [14:I-device] cái
+<Đóng thiết bị> -> nóng quá [đóng:B-command] cho anh cái [lò:B-device] [sưởi:I-device] số [18:B-target_number] với
+<Mở thiết bị> -> [mở:B-command] trong vòng [8:B-duration] [tiếng:I-duration] [6:I-duration] [phút:I-duration] thôi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [24%:B-changing_value] giúp anh lúc [0:B-time_at] [giờ:I-time_at] [34:I-time_at] [phút:I-time_at]
+<Giảm độ sáng của thiết bị> -> bạn [giảm:B-command] cho mình cái [đèn:B-device] [hắt:I-device] với
+<Giảm nhiệt độ của thiết bị> -> em ơi [giảm:B-command] hộ anh cái [máy:B-device] [lạnh:I-device] trong [phòng:B-location] [giặt:I-location] với
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [camera:B-device] [số:I-device] [8:I-device] với
+<Tắt thiết bị> -> lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] [tắt:B-command] cho mình cái [đèn:B-device] [sưởi:I-device] nhé
+<Mở thiết bị> -> này trợ lý ảo [mở:B-command] giúp mình cái [camera:B-device] [số:I-device] [8:I-device] đi
+<Đóng thiết bị> -> bạn ơi vào lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] bạn [đóng:B-command] hộ mình cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] nha
+<Mở thiết bị> -> bạn ơi [mở:B-command] giúp mình cái [máy:B-device] [em:I-device] [nhạc:I-device] với
+<Mở thiết bị> -> khách tới nhà thì em ơi [mở:B-command] [cửa:B-device]
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device]
+<Mở thiết bị> -> mình muốn [mở:B-command] [phòng:B-location] [giặt:I-location] [của:I-location] [hân:I-location]
+<Mở thiết bị> -> [mở:B-command] cho tôi cái [máy:B-device] [giặt:I-device] nhé vào lúc [6:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at]
+<Đóng thiết bị> -> [đóng:B-command] [lò:B-device] [vi:I-device] [sóng:I-device] ở [phòng:B-location] [bếp:I-location]
+<Tắt thiết bị> -> chị ơi [tắt:B-command] hộ em cái [đèn:B-device] [hắt:I-device] với
+<Giảm mức độ của thiết bị> -> lạnh quá đi mất em [giảm:B-command] cái [quạt:B-device] cho anh xuống mức [3:B-target_number] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [4%:B-changing_value] nhá [cổng:B-location]
+<Kiểm tra tình trạng thiết bị> -> cái [đèn:B-device] [trần:I-device] làm sao ấy [kiểm:B-command] [tra:I-command] giúp tôi cái [đèn:B-device] [trần:I-device]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [đèn:B-device] [treo:I-device] [tường:I-device] lên [76%:B-target_number] cho anh
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] với
+<Giảm mức độ của thiết bị> -> bạn ơi bạn [giảm:B-command] cho mình cái [quạt:B-device] [trần:I-device] ở trong [nhà:B-location] [vệ:I-location] [sinh:I-location] xuống 1 tí nhé
+<Đóng thiết bị> -> [đóng:B-command] giúp mình cái [lò:B-device] [sưởi:I-device] [số:I-device] [18:I-device]
+<Tắt thiết bị> -> mình dùng xong rồi bạn [tắt:B-command] cho mình cái [máy:B-device] [pha:I-device] [cafe:I-device] [số:I-device] [10:I-device] đi
+<Mở thiết bị> -> nóng quá em ơi [mở:B-command] giúp anh cái [điều:B-device] [hòa:I-device] [số:I-device] [11:I-device] với
+<Giảm nhiệt độ của thiết bị> -> [giảm:B-command] cho tôi cái [máy:B-device] [lạnh:I-device] ở [phòng:B-location] [giặt:I-location]
+<Đóng thiết bị> -> [đóng:B-command] giúp tôi [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device] nhé
+<Đóng thiết bị> -> [đóng:B-command] bây giờ luôn đi [6:B-time_at] [giờ:I-time_at] [13:I-time_at] [phút:I-time_at]
+<Kích hoạt cảnh> -> em ơi nhớ [9:B-time_at] [giờ:I-time_at] [53:I-time_at] [phút:I-time_at] khách tới nhà nhé
+<Tắt thiết bị> -> em ơi cái [máy:B-device] [pha:I-device] [cafe:I-device] ở trong [hoạt:B-location] [sinh:I-location] [hoạt:I-location] [chung:I-location] với [tắt:B-command] giúp anh nhá
+<Mở thiết bị> -> [mở:B-command] giúp chị cái [quạt:B-device] [trần:I-device] xuống [21:B-target_number]
+<Tắt thiết bị> -> tôi quên chưa [tắt:B-command] cái [bóng:B-device] [để:I-device] [bàn:I-device] ở [nhà:B-location] [đệ:I-location] [của:I-location] [duy:I-location] rồi bạn [tắt:B-command] đi cho tôi với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho mình cái khoảng [99%:B-changing_value] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình đi [34%:B-changing_value] nhé
+<Tắt thiết bị> -> mình có việc phải ra ngoài bạn [tắt:B-command] [điện:B-device] giúp mình nhé
+<Mở thiết bị> -> tầm [6:B-time_at] [giờ:I-time_at] [8:I-time_at] [phút:I-time_at] thì [mở:B-command] cho mình cái [máy:B-device] [sưởi:I-device] nha bạn
+<Kích hoạt cảnh> -> mình sẽ [ra:B-scene] [ngoài:I-scene] trong [4:B-duration] [tiếng:I-duration] [15:I-duration] [phút:I-duration]
+<Tăng độ sáng của thiết bị> -> hãy giúp anh [tăng:B-command] cái [đèn:B-device] [compact:I-device] [số:I-device] [14:I-device] nhé
+<Hủy hoạt cảnh> -> thôi xong rồi không cần [lãng:B-scene] [mạn:I-scene] nữa đâu em
+<Bật thiết bị> -> phái hải đây cậu có thể [bật:B-command] giúp tớ trong khoảng [111:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] được không
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ anh cái [lò:B-device] [sưởi:I-device] số [18:B-target_number] với không ai dùng nữa rồi
+<Tắt thiết bị> -> em ơi [tắt:B-command] cái [bóng:B-device] [sợi:I-device] [đốt:I-device] đi cho anh nhá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [4%:B-changing_value] em nhé
+<Tăng âm lượng của thiết bị> -> [tăng:B-command] âm thanh [radio:B-device] [31%:B-changing_value] giúp mình không cái
+<Tăng âm lượng của thiết bị> -> trợ lí ảo hãy [tăng:B-command] giúp tôi cái [radio:B-device] ở [phòng:B-location] [thay:I-location] [đồ:I-location] [số:I-location] [2:I-location] lên giúp tôi nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình cái [bóng:B-device] [hắt:I-device] nhé bạn
+<Đóng thiết bị> -> [đóng:B-command] cái [rèm:B-device] trong [phòng:B-location] [tắm:I-location] giúp mình với
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] cho mình [bóng:B-device] [âm:I-device] [trần:I-device] xuống [39%:B-changing_value] đi
+<Tắt thiết bị> -> [tắt:B-command] cho mình cái [bóng:B-device] đi nhé
+<Bật thiết bị> -> ông ơi [bật:B-command] giúp tôi cái [bếp:B-device] với
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [bóng:B-device] [sưởi:I-device] với nóng quá rồi
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] giúp mình cái [đèn:B-device] [bếp:I-device] lên [34%:B-changing_value] nhé
+<Tăng độ sáng của thiết bị> -> cậu ơi [tăng:B-command] [đèn:B-device] [ốp:I-device] [trần:I-device] lên [18%:B-changing_value] ở [hiên:B-location] [sau:I-location] giúp mình nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [71%:B-changing_value] trong khoảng [26:B-duration] [phút:I-duration] nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [màn:B-device] [cuốn:I-device] [số:I-device] [2:I-device] nhé
+<Kiểm tra tình trạng thiết bị> -> chị muốn [kiểm:B-command] [tra:I-command] vào [5:B-time_at] [giờ:I-time_at] [29:I-time_at] [phút:I-time_at] nhá
+<Đóng thiết bị> -> bạn thân ơi [đóng:B-command] giúp mình [lò:B-device] [sưởi:I-device] số [18:B-target_number] với
+<Giảm độ sáng của thiết bị> -> em [giảm:B-command] hộ chị xuống [38%:B-changing_value] tầm [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at]
+<Bật thiết bị> -> [bật:B-command] cái đèn ở [phòng:B-location] [giặt:I-location] [là:I-location] [số:I-location] [5:I-location]
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho [53:B-changing_value] [6%:B-changing_value] nhé
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] hộ anh cái [bóng:B-device] [làm:I-device] [việc:I-device] nhé
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [quạt:B-device] [trần:I-device] với em với
+<Tăng mức độ của thiết bị> -> bạn ơi [tăng:B-command] [quạt:B-device] lên giúp mình nhé
+<Giảm độ sáng của thiết bị> -> cậu ơi [giảm:B-command] [đèn:B-device] [compact:I-device] ở [hè:B-location] giúp mình với
+<Tắt thiết bị> -> trong vòng [3:B-duration] [tiếng:I-duration] [37:I-duration] [phút:I-duration] nữa
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho anh lên mức [15%:B-target_number] trong vòng [18:B-duration] [tiếng:I-duration] [27:I-duration] [phút:I-duration] nhé
+<Giảm độ sáng của thiết bị> -> hãy [giảm:B-command] cho anh cái [đèn:B-device] [rủ:I-device] ở trên [sân:B-location] [thượng:I-location] xuống còn [29%:B-target_number] nhé
+<Tắt thiết bị> -> hãy [tắt:B-command] cái [máy:B-device] [chơi:I-device] [game:I-device] cho tôi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [36%:B-changing_value] nhé
+<Mở thiết bị> -> bạn ơi [mở:B-command] cái [màn:B-device] [cửa:I-device] [số:I-device] [18:I-device] trong [phòng:B-location] giúp mình với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] ở [cầu:B-location] [thang:I-location] nha mức [tăng:B-command] là [41%:B-changing_value]
+<Tăng mức độ của thiết bị> -> hãy [tăng:B-command] cho anh lên [15%:B-target_number] trong [18:B-duration] [tiếng:I-duration] [27:I-duration] [phút:I-duration]
+<Giảm nhiệt độ của thiết bị> -> hình như hơi nóng quá nhỉ trợ lý ơi [giảm:B-command] cho chị cái [đèn:B-device] [sưởi:I-device] với
+<Tắt thiết bị> -> em ơi [tắt:B-command] [bóng:B-device] [để:I-device] [bàn:I-device] ở [nhà:B-location] [để:I-location] [xe:I-location] [của:I-location] [duy:I-location] nhé
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh cái [bóng:B-device] [treo:I-device] [tường:I-device] [số:I-device] [16:I-device] với
+<Tắt thiết bị> -> [tắt:B-command] lúc [23:B-time_at] [giờ:I-time_at] [6:I-time_at] [phút:I-time_at] cho mình
+<Tăng độ sáng của thiết bị> -> nhà mình có 1 loại [đèn:B-device] [chùm:I-device] thôi [tăng:B-command] lên mức [62%:B-target_number] nhá
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [bóng:B-device] [để:I-device] [bàn:I-device] lên giúp anh với em ơi
+<Tắt thiết bị> -> [máy:B-device] [rửa:I-device] [bát:I-device] ở trong [bếp:B-location] chị muốn [tắt:B-command] nó vào lúc [14:B-time_at] [giờ:I-time_at] [55:I-time_at] [phút:I-time_at]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [92%:B-target_number] đi
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [88%:B-target_number]
+<Bật thiết bị> -> em ơi [bật:B-command] hộ anh cái [đèn:B-device] [sưởi:I-device] số [3:B-target_number] trong [phòng:B-location] [giặt:I-location] [ủi:I-location] với
+<Tắt thiết bị> -> [tắt:B-command] cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] hộ mình với buồn ngủ quá
+<Giảm mức độ của thiết bị> -> em ơi [giảm:B-command] hộ anh cái [máy:B-device] [nghe:I-device] giạt đi
+<Đóng thiết bị> -> [đóng:B-command] hộ mình cái [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] giúp mình [lò:B-device] [sưởi:I-device] vào lúc [15:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [13%:B-target_number] nha
+<Bật thiết bị> -> [bật:B-command] ở mức [23%:B-target_number]
+<Đóng thiết bị> -> lát nữa [đóng:B-command] cho anh cái [vòi:B-device] [nước:I-device] xuống [5:B-target_number] lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] em nhé
+<Mở thiết bị> -> bạn ơi [mở:B-command] cho mình cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] với
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] giúp anh độ sáng cái [đèn:B-device] [hộp:I-device] [trần:I-device] [sống:I-location] [nâng:B-command] lên
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [92%:B-target_number] thôi trợ lý ảm nhé
+<Kích hoạt cảnh> -> a lô anh vào [nhà:B-location] [vệ:I-location] [sinh:I-location] chút nó [đi:B-scene] [tắm:I-scene] nhé
+<Giảm độ sáng của thiết bị> -> em ơi anh thấy cái đèn hơi sáng ý em [giảm:B-command] giúp anh cái [đèn:B-device] [hắt:I-device] xuống với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] hộ anh cái [đèn:B-device] [sợi:I-device] [đốt:I-device] lên với
+<Giảm độ sáng của thiết bị> -> chói mắt quá [giảm:B-command] cho chị xuống còn [61%:B-changing_value] trong vòng [16:B-duration] [tiếng:I-duration] [40:I-duration] [phút:I-duration] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh xuống [53%:B-changing_value] nhé ở trong vòng [22:B-duration] [tiếng:I-duration] [52:I-duration] [phút:I-duration] em nhá
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [ti:B-device] [vi:I-device] [của:I-device] [quân:I-location] để xem chỗ
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] [đèn:B-device] [tròn:I-device] [88%:B-changing_value]
+<Bật thiết bị> -> cái con nghi ở lạnh thế mà không [bật:B-command] [bóng:B-device] [sưởi:I-device] lên nha
+<Bật thiết bị> -> em [bật:B-command] liên tục trong [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] giúp mình nhé
+<Bật thiết bị> -> bạn ơi [bật:B-command] hộ mình [bóng:B-device] [sợi:I-device] [đốt:I-device] với tối quá
+<Mở thiết bị> -> [mở:B-command] giúp
+<Tắt thiết bị> -> [tắt:B-command] [bóng:B-device] [tuýp:I-device] cho tôi
+<Bật thiết bị> -> [bật:B-command] giúp anh cái [đèn:B-device] [tranh:I-device]
+<Kích hoạt cảnh> -> tôi sẽ về nhà vào lúc [18:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at]
+<Bật thiết bị> -> [bật:B-command] hộ mình cái [đèn:B-device] ở [sân:B-location] [trước:I-location] cho đỡ tối với
+<Tắt thiết bị> -> hãy [tắt:B-command] cho tôi cái [máy:B-device] [pha:I-device] [cafe:I-device] trong [phòng:B-location] [sinh:I-location] [hoạt:I-location] [chung:I-location]
+<Hủy hoạt cảnh> -> [12:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at] mọi người rời khỏi [phòng:B-location] [học:I-location] rồi không cần riêng tôi đi đâu
+<Giảm âm lượng của thiết bị> -> [giảm:B-command] âm lượng của [ti:B-device] [vi:I-device]
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] cho anh cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] lên [96%:B-target_number] nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [quạt:B-device] [treo:I-device] [tường:I-device]
+<Giảm độ sáng của thiết bị> -> em ơi ngủ [giảm:B-command] ngay cho anh cái [đèn:B-device] [tay:I-device] [số:I-device] [7:I-device] nha trợ lý [giảm:B-command] xuống [92%:B-target_number]
+<Tăng mức độ của thiết bị> -> tối quá [tăng:B-command] giúp tôi đến [62%:B-target_number] nha
+<Kiểm tra tình trạng thiết bị> -> em [kiểm:B-command] [tra:I-command] giúp chị vào lúc [11:B-time_at] [giờ:I-time_at] [13:I-time_at] [phút:I-time_at] với
+<Kích hoạt cảnh> -> em ơi tối nay chuẩn bị cho chị 1 cái [phòng:B-location] [giặt:I-location] [lãng:B-scene] [mạn:I-scene] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] giúp anh cái [bóng:B-device] [âm:I-device] [trần:I-device] với tại sao nó lại không sáng nhỉ
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] hi [73%:B-target_number] cho anh nhé
+<Mở thiết bị> -> thế nữa anh ra ngoài khoảng [6:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> em [bật:B-command] hộ anh cái [bóng:B-device] [huỳnh:I-device] [quang:I-device] trong [phòng:B-location] [thờ:I-location] với nhớ để ở mức [3%:B-target_number] thôi em nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [40%:B-changing_value] nhé
+<Tắt thiết bị> -> [tắt:B-command] cho anh cái [đèn:B-device] [treo:I-device] [tường:I-device] cái
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi cho mình [47%:B-target_number] trong [21:B-duration] [tiếng:I-duration] [14:I-duration] [phút:I-duration] nhé
+<Bật thiết bị> -> sao phòng tối vậy [bật:B-command] cho anh cái [đèn:B-device] [âm:I-device] [trần:I-device] với
+<Bật thiết bị> -> này trợ lý ảo [bật:B-command] giúp tôi cái [bóng:B-device] [hắt:I-device] lên với
+<Đóng thiết bị> -> [đóng:B-command] giúp anh cái [cửa:B-device] cùng trong [19:B-target_number] với
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] giúp anh cái [đèn:B-device] [học:I-device]
+<Tắt thiết bị> -> [tắt:B-command] giúp tôi cái [máy:B-device] [fax:I-device] với
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [bóng:B-device] [ốp:I-device] [trần:I-device] sau [1:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] nhá
+<Đóng thiết bị> -> trợ lý ơi [đóng:B-command] [lò:B-device] [sưởi:I-device] xuống [28:B-target_number]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống còn [65%:B-target_number] cho anh nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [đèn:B-device] [rủ:I-device] tại [sân:B-location] [thượng:I-location] còn [29%:B-target_number] giúp tôi với
+<Tắt thiết bị> -> xin chào bạn với lòng [tắt:B-command] [đèn:B-device] [treo:I-device] [tường:I-device] giúp mình nhé
+<Đóng thiết bị> -> này trợ lý ảo [đóng:B-command] giúp mình cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] lên
+<Tắt thiết bị> -> lát nữa đến [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] thì [tắt:B-command] cái [đèn:B-device] [sưởi:I-device] giúp anh nhá
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [40%:B-changing_value] trong [7:B-duration] [tiếng:I-duration] [25:I-duration] [phút:I-duration] em nhé
+<Mở thiết bị> -> [mở:B-command] giùm mình cái [vòi:B-device] [hoa:I-device] [sen:I-device] lên được không
+<Mở thiết bị> -> trong vòng [3:B-duration] [tiếng:I-duration] [11:I-duration] [phút:I-duration] nữa tôi xem về nhà
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cái [máy:B-device] [hút:I-device] [ẩm:I-device] với
+<Tăng mức độ của thiết bị> -> nóng quá bạn [tăng:B-command] cái [quạt:B-device] lên mức [2:B-changing_value] hộ mình với
+<Tăng mức độ của thiết bị> -> em ơi [tăng:B-command] cho anh cái [quạt:B-device] [trần:I-device] lên mức [2:B-target_number] nhé
+<Kiểm tra tình trạng thiết bị> -> em ơi em [kiểm:B-command] [tra:I-command] giúp anh cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của khan nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống mức [38%:B-changing_value] vào lúc [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] hộ anh nhé
+<Bật thiết bị> -> trợ lí ảo [bật:B-command] [máy:B-device] [fax:I-device]
+<Tăng mức độ của thiết bị> -> bạn ơi [tăng:B-command] [quạt:B-device] [trần:I-device] hộ mình
+<Tắt thiết bị> -> trợ lý ơi [tắt:B-command] hộ cái [bóng:B-device] [sợi:I-device] [đốt:I-device]
+<Đóng thiết bị> -> [đóng:B-command] cho tôi [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device]
+<Bật thiết bị> -> chị ơi [bật:B-command] cho em cái [đèn:B-device] [bếp:I-device]
+<Tăng độ sáng của thiết bị> -> trời tối quá [tăng:B-command] hộ mình cái [đèn:B-device] [treo:I-device] [tường:I-device] lên với
+<Tắt thiết bị> -> cửa điện quá [tắt:B-command] cho tôi [bóng:B-device] [sợi:I-device] [đốt:I-device] đi
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [máy:B-device] [sưởi:I-device] [phòng:B-location] [giặt:I-location] [hà:I-location] [của:I-location] [hân:I-location] với vào lúc [6:B-time_at] [giờ:I-time_at] [8:I-time_at] [phút:I-time_at] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh cái [bóng:B-device] [làm:I-device] [việc:I-device] ở trong [phòng:B-location] [thu:I-location] với
+<Mở thiết bị> -> [mở:B-command] [loa:B-device] giúp mình nhé
+<Mở thiết bị> -> [mở:B-command] [ti:B-device] [vi:I-device] của [quân:I-location]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [38%:B-changing_value] vào lúc [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at]
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [van:B-device] [nước:I-device] [số:I-device] [1:I-device] với
+<Tắt thiết bị> -> [tắt:B-command] vào lúc [16:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at] bạn nhé
+<Giảm mức độ của thiết bị> -> bạn ơi [giảm:B-command] [quạt:B-device] [trần:I-device] xuống số [4:B-target_number] giúp mình nhé
+<Đóng thiết bị> -> [đóng:B-command] [van:B-device] [nước:I-device] em ơi
+<Kiểm tra tình trạng thiết bị> -> bạn [kiểm:B-command] [tra:I-command] cho mình [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device] với
+<Bật thiết bị> -> à quên [bật:B-command] ở cái [cầu:B-location] [thang:I-location] [của:I-location] [quân:I-location] ấy
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [đèn:B-device] [tranh:I-device] [số:I-device] [7:I-device] xuống còn [92%:B-target_number] giúp tôi với
+<Giảm độ sáng của thiết bị> -> em ơi [giảm:B-command] giúp anh cái [bóng:B-device] [hắt:I-device] xuống với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] đến [83%:B-target_number] nhé vào lúc [4:B-time_at] [giờ:I-time_at] [12:I-time_at] [phút:I-time_at] vào trong khoảng [4:B-duration] [tiếng:I-duration] [13:I-duration] [phút:I-duration]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] hoảng [39%:B-changing_value] nhá
+<Mở thiết bị> -> bạn ơi [mở:B-command] giùm mình cái [quạt:B-device] [tần:I-device] [số:I-device] [11:B-target_number] với
+<Giảm độ sáng của thiết bị> -> em ơi cái [bóng:B-device] [sân:I-device] đang bị sáng quá [giảm:B-command] cho anh đi nhé
+<Tắt thiết bị> -> bạn [tắt:B-command] giúp mình cái [váy:B-device] [nước:I-device] xuống 1 với
+<Tăng mức độ của thiết bị> -> bạn [tăng:B-command] cho mình ở mức [3%:B-target_number] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh cái [đèn:B-device] [led:I-device] với
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [đèn:B-device] [compact:I-device] xuống [14:B-target_number] ở [sân:B-location] [sau:I-location] lên [75%:B-changing_value] giúp anh nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [lò:B-device] [sưởi:I-device] số [18:B-target_number] với trời lạnh đi
+<Tăng nhiệt độ của thiết bị> -> làm ơn hãy [tăng:B-command] nhiệt độ của [máy:B-device] [lạnh:I-device] lên
+<Giảm độ sáng của thiết bị> -> bạn ơi [giảm:B-command] cái [bóng:B-device] [điều:I-device] [bàn:I-device] giúp mình với
+<Giảm độ sáng của thiết bị> -> đúng rồi em [giảm:B-command] xuống [47%:B-target_number] vào để trong an số tiến [14:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> chết rồi em ơi [tắt:B-command] giúp anh cái [bếp:B-device] với
+<Tắt thiết bị> -> à ờ [tắt:B-command] giúp anh trong vòng [10:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] hộ mình cái [quạt:B-device] [hút:I-device] [mùi:I-device] với nhiều khói quá
+<Mở thiết bị> -> giúp anh [mở:B-command] [ti:B-device] [vi:I-device] của [quân:I-location] với
+<Tắt thiết bị> -> [tắt:B-command] cho tôi cái [đèn:B-device] [sưởi:I-device] lúc [10:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at]
+<Mở thiết bị> -> em ơi [mở:B-command] [tiền:B-device] [tùng:I-device] đi
+<Tăng nhiệt độ của thiết bị> -> anh ơi [tăng:B-command] cho em cái [bình:B-device] [nóng:I-device] [lạnh:I-device] lên [64:B-target_number] [độ:I-target_number]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] độ sáng của [bóng:B-device] [tròn:I-device] xuống [4%:B-changing_value] giúp tôi
+<Tăng độ sáng của thiết bị> -> a lô nhiều [hoa:B-device] [cửa:I-device] nhé thay sắp ra ngoài khoảng [2:B-duration] [tiếng:I-duration] [41:I-duration] [phút:I-duration] đấy
+<Tắt thiết bị> -> [tắt:B-command] hộ tôi cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân với
+<Đóng thiết bị> -> em ơi [đóng:B-command] hộ cái [rèm:B-device] [cửa:I-device] với
+<Giảm độ sáng của thiết bị> -> em ơi trời sáng rồi [giảm:B-command] cho anh cái [đèn:B-device] [rủ:I-device] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] khoảng [78%:B-target_number] cho anh nhá
+<Mở thiết bị> -> hình như có tiếng động gì đó hãy [mở:B-command] [camera:B-device] [số:I-device] [8:I-device]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] giúp tôi độ sáng của [bóng:B-device] [tuýp:I-device] ở trong [vườn:B-location] nhá
+<Giảm mức độ của thiết bị> -> [giảm:B-command] giúp anh cái [quạt:B-device] [số:I-device] [5:I-device] xuống mức [4:B-target_number] thôi nhé
+<Đóng thiết bị> -> bạn ơi hẹn giờ [đóng:B-command] giúp mình [vòi:B-device] [nước:I-device] [số:I-device] [5:I-device] vào [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nhé
+<Tăng mức độ của thiết bị> -> em [tăng:B-command] lên mức [41%:B-target_number] trong [7:B-duration] [tiếng:I-duration] [25:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> chị ơi trời đang mập mờ tối rồi chị [tăng:B-command] hộ em cái [đèn:B-device] [rủ:I-device] nhé
+<Tăng mức độ của thiết bị> -> trong phòng hơi nóng hãy [tăng:B-command] [quạt:B-device] [trần:I-device] lên nước số [2:B-target_number] cho anh
+<Mở thiết bị> -> [mở:B-command] giúp tôi cái [camera:B-device] [số:I-device] [8:I-device] với
+<Bật thiết bị> -> [bật:B-command] anh cái [laptop:B-device] cái
+<Tăng độ sáng của thiết bị> -> cái [đèn:B-device] [bàn:I-device] trong thế [viện:B-location] em nhé [tăng:B-command] giúp anh lên và [6%:B-changing_value] thôi
+<Bật thiết bị> -> [bật:B-command] trong khoảng [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] cho anh
+<Tắt thiết bị> -> em [tắt:B-command] liên tục trong [10:B-duration] [tiếng:I-duration] [33:I-duration] [phút:I-duration] giúp mình nhé
+<Tắt thiết bị> -> mở ở trong vòng [8:B-duration] [tiếng:I-duration] [6:I-duration] [phút:I-duration] sau đó [tắt:B-command] cho tôi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đi khoảng [45%:B-changing_value] ở [phòng:B-location] [thay:I-location] [đồ:I-location] [số:I-location] [4:I-location] em nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] giúp anh lên [8%:B-target_number] thôi em nhé
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [đèn:B-device] [cổng:I-device] đi với chớ nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] giúp anh cái [đèn:B-device] [treo:I-device] [tường:I-device] với
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [cửa:B-device] [của:I-device] [số:I-device] [19:I-device] với nhá
+<Bật thiết bị> -> em ơi [bật:B-command] cho anh cái [của:B-device] [hân:I-device]
+<Đóng thiết bị> -> [đóng:B-command] cho mình cái [van:B-device] [nước:I-device] [nhà:B-location] [tắm:I-location]
+<Giảm độ sáng của thiết bị> -> bắt đầu từ [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] [giảm:B-command] chiếc [đèn:B-device] [bếp:I-device] xuống [38%:B-changing_value] nhé
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [điều:B-device] [hòa:I-device] [số:I-device] [11:I-device] với
+<Tắt thiết bị> -> vào lúc [13:B-time_at] [giờ:I-time_at] [59:I-time_at] [phút:I-time_at] nhá [tắt:B-command] đi
+<Giảm nhiệt độ của thiết bị> -> nóng quá [giảm:B-command] ngay cái [bóng:B-device] [sưởi:I-device] xuống [76%:B-target_number] cho anh
+<Kiểm tra tình trạng thiết bị> -> vừa có trận động đất xảy ra hãy [kiểm:B-command] [tra:I-command] cho tôi cái [đèn:B-device] [ốp:I-device] [trần:I-device] với
+<Hủy hoạt cảnh> -> tôi không muốn [đi:B-scene] [tắm:I-scene] ở [phòng:B-location] [vệ:I-location] [sinh:I-location]
+<Tắt thiết bị> -> [hủy:B-command] lúc [16:B-time_at] [giờ:I-time_at] [31:I-time_at] [phút:I-time_at] đi nhé
+<Tắt thiết bị> -> [tắt:B-command] ngay cho anh cái [máy:B-device] [chơi:I-device] [game:I-device] của [long:I-location]
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] [đèn:B-device] [compact:I-device] đi em
+<Bật thiết bị> -> giúp tôi [bật:B-command] cái [tủ:B-device] [lạnh:I-device] ở dưới [tầng:B-location] [hầm:I-location] với
+<Mở thiết bị> -> tôi muốn [mở:B-command] trong [18:B-duration] [tiếng:I-duration] [22:I-duration] [phút:I-duration]
+<Bật thiết bị> -> [bật:B-command] cho chị vào [22:B-time_at] [giờ:I-time_at] [27:I-time_at] [phút:I-time_at] em nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] mức [4:B-changing_value] thôi nhé
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] giúp anh cái [bóng:B-device] [compact:I-device] [số:I-device] [8:I-device] lên đi
+<Giảm mức độ của thiết bị> -> lạnh quá em ơi [giảm:B-command] giúp anh cái [quạt:B-device] [treo:I-device] [tường:I-device] với
+<Giảm độ sáng của thiết bị> -> làm ơn [giảm:B-command] xuống còn [76%:B-target_number]
+<Mở thiết bị> -> bạn ơi [mở:B-command] cho mình cái [máy:B-device] [hút:I-device] [bụi:I-device] với
+<Tăng độ sáng của thiết bị> -> giúp tôi [tăng:B-command] cái [đèn:B-device] [ốp:I-device] [trần:I-device] [số:I-device] [5:I-device]
+<Đóng thiết bị> -> [đóng:B-command] lúc [18:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] hộ mình nhé
+<Mở thiết bị> -> [mở:B-command] cho tôi cái [màn:B-device] [cuốn:I-device]
+<Tăng độ sáng của thiết bị> -> anh nghĩ [tăng:B-command] [88%:B-target_number] là hợp lý em nhé
+<Tăng mức độ của thiết bị> -> vân lạnh em ạ em [tăng:B-command] lên hẳn [30:B-changing_value] [độ:I-changing_value] [c:I-changing_value] giúp anh
+<Tăng độ sáng của thiết bị> -> bạn ơi [tăng:B-command] cái [bóng:B-device] [thả:I-device] lên [36%:B-target_number] giúp mình với
+<Giảm độ sáng của thiết bị> -> khoảng [18:B-time_at] [giờ:I-time_at] [48:I-time_at] [phút:I-time_at] [giảm:B-command] cho chị cái [đèn:B-device] [hắt:I-device] xuống còn [22%:B-target_number]
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] hộ mình cái [cửa:B-device] [cuốn:I-device] [số:I-device] [19:I-device] nhé
+<Kích hoạt cảnh> -> sẽ có khách [tới:B-scene] [nhà:I-scene] trong vòng [5:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] đấy nhé
+<Tắt thiết bị> -> bạn ơi có thể [tắt:B-command] [máy:B-device] [pha:I-device] [cafe:I-device] xuống [10:B-target_number] được không
+<Tăng độ sáng của thiết bị> -> em ơi [tăng:B-command] [đèn:B-device] [rủ:I-device] giúp anh với
+<Giảm độ sáng của thiết bị> -> phải [giảm:B-command] xuống [36%:B-changing_value] đi
+<Đóng thiết bị> -> [đóng:B-command] lúc [15:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at] nhé
+<Bật thiết bị> -> [bật:B-command] trong lòng [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] nhé
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cho anh khoảng [6%:B-changing_value] trong vòng [2:B-duration] [tiếng:I-duration] [56:I-duration] [phút:I-duration] nhé
+<Mở thiết bị> -> em [mở:B-command] vào lúc [10:B-time_at] [giờ:I-time_at] [19:I-time_at] [phút:I-time_at] động hộ anh nhé
+<Mở thiết bị> -> [mở:B-command] giúp anh [điều:B-device] [hòa:I-device] ở [phòng:B-location] [tiếp:I-location] [đón:I-location]
+<Bật thiết bị> -> [bật:B-command] cho mình lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] trong [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] cho mình cái [máy:B-device] [chơi:I-device] [game:I-device] của [long:I-location]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] mạnh cho anh cái [vòi:B-device] [hoa:I-device] [sen:I-device] lên với nước yếu quá
+<Bật thiết bị> -> lạnh quá [bấm:B-command] giúp anh cái [đèn:B-device] [sưởi:I-device] [số:I-device] [3:I-device] ở [phòng:B-location] [giặt:I-location] [ủi:I-location] nhé
+<Tắt thiết bị> -> em ơi em [tắt:B-command] giúp anh cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] nhá
+<Giảm nhiệt độ của thiết bị> -> ồn quá em ơi [giảm:B-command] cho anh cái [máy:B-device] [nghe:I-device] [nhạc:I-device] với
+<Tắt thiết bị> -> hơi sáng ấy [tắt:B-command] cho anh cái [đèn:B-device] lên quang đi
+<Tắt thiết bị> -> [tắt:B-command] cho anh cái [đèn:B-device] [tường:I-device] ở [nhà:B-location] [xe:I-location] [tình:I-location] [yêu:I-location] đi
+<Kích hoạt cảnh> -> tôi đang đi [ra:B-scene] [khỏi:I-scene] [phòng:I-scene]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên mức [2:B-changing_value] và lúc [4:B-time_at] [giờ:I-time_at] [54:I-time_at] [phút:I-time_at] em nhé
+<Đóng thiết bị> -> [đóng:B-command] cho mình [màn:B-device] [cửa:I-device] [số:I-device] [10:I-device] bạn nhé
+<Tăng mức độ của thiết bị> -> giờ mình đang ở [phòng:B-location] [vệ:I-location] [sinh:I-location] [hoạt:I-location] [hoàng:I-location] hôn bạn [tăng:B-command] đến [82:B-target_number] [độ:I-target_number] cho mình
+<Đóng thiết bị> -> vào lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] hãy tìm vào trong bếp vào [đóng:B-command] cho tôi [lò:B-device] [vi:I-device] [sóng:I-device] [số:I-device] [2:I-device]
+<Tăng độ sáng của thiết bị> -> bạn ơi [tăng:B-command] cho mình cái [đèn:B-device] [rủ:I-device] lên mức [92%:B-target_number] với
+<Kiểm tra tình trạng thiết bị> -> [kiểm:B-command] [tra:I-command] cho anh cái [đèn:B-device] [trần:I-device] với
+<Mở thiết bị> -> [mở:B-command] [rèm:B-device] đi mình tính đi ngủ nhé
+<Mở thiết bị> -> em ơi [mở:B-command] giúp anh cái [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device] đi
+<Tắt thiết bị> -> [tắt:B-command] cái [bóng:B-device] [âm:I-device] [trần:I-device] ở [hiên:B-location] [trước:I-location] hộ tôi
+<Mở thiết bị> -> [mở:B-command] giúp anh cái [màn:B-device] [cửa:I-device] [số:I-device] [18:I-device] trong [phòng:B-location]
+<Giảm độ sáng của thiết bị> -> lúc [1:B-time_at] [giờ:I-time_at] [51:I-time_at] [phút:I-time_at] bạn [giảm:B-command] xuống [38%:B-changing_value] giúp mình nhé
+<Kiểm tra tình trạng thiết bị> -> có phải [đèn:B-device] [thả:I-device] bị gì không nhỉ [kiểm:B-command] [tra:I-command] giúp anh với nhé
+<Kích hoạt cảnh> -> chị muốn [đi:B-scene] [ngủ:I-scene] trong [bóng:B-device] giúp chị nhá
+<Kiểm tra tình trạng thiết bị> -> em ơi [kiểm:B-command] [tra:I-command] cho anh cái [máy:B-device] [mát:I-device] [xa:I-device] [số:I-device] [8:I-device]
+<Kiểm tra tình trạng thiết bị> -> nhớ [kiểm:B-command] [tra:I-command] vào lúc [17:B-time_at] [giờ:I-time_at] giúp mình nhé
+<Kiểm tra tình trạng thiết bị> -> [đèn:B-device] [cổng:I-device] phòng em [kiểm:B-command] [tra:I-command] giúp mình cái [đèn:B-device] [cổng:I-device] nhé
+<Bật thiết bị> -> [bật:B-command] lúc [5:B-time_at] [giờ:I-time_at] [40:I-time_at] [phút:I-time_at] nhiệt độ [23:B-target_number] [độ:I-target_number] [c:I-target_number] nhé
+<Mở thiết bị> -> em ơi cho anh cho anh á nha đi
+<Giảm mức độ của thiết bị> -> ở lạnh thế [giảm:B-command] cho mình cái [quạt:B-device] [số:I-device] [5:I-device] nhé
+<Giảm nhiệt độ của thiết bị> -> em ơi [giảm:B-command] anh cái [máy:B-device] [lạnh:I-device] ở [phòng:B-location] [giặt:I-location] với
+<Tăng âm lượng của thiết bị> -> em ơi giúp anh [tăng:B-command] cái [ti:B-device] [vi:I-device] lên với
+<Bật thiết bị> -> [bật:B-command] giúp mình cái [màn:B-device] [comconovivới:I-device]
+<Kích hoạt cảnh> -> em ơi khách tới [nhà:I-scene] trong vòng [5:B-duration] [tiếng:I-duration] [39:I-duration] [phút:I-duration] nha
+<Đóng thiết bị> -> [đóng:B-command] cái [van:B-device] nữa lại giúp mình được không
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] khoảng [84%:B-target_number] em nhé
+<Bật thiết bị> -> [bật:B-command] [bóng:B-device] [tuýp:I-device] hộ mình
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [16%:B-changing_value] em nhé
+<Tắt thiết bị> -> em ơi [tắt:B-command] hộ anh ngay cái [đèn:B-device] [treo:I-device] [tường:I-device] nhé
+<Mở thiết bị> -> anh có muốn ở ra ra bạn này quá
+<Tăng nhiệt độ của thiết bị> -> em ơi [tăng:B-command] hộ anh cái [máy:B-device] [lạnh:I-device] lên với nóng quá
+<Đóng thiết bị> -> bạn ơi [đóng:B-command] giúp mình cái [vòi:B-device] [tưới:I-device] nhá
+<Giảm mức độ của thiết bị> -> [giảm:B-command] cho tôi [quạt:B-device] [số:I-device] [5:I-device] xuống [4:B-target_number]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình ở trong [phòng:B-location] [giặt:I-location] [ủi:I-location] [của:I-location] [nhi:I-location] về mức [65%:B-target_number] nhé
+<Tắt thiết bị> -> [tắt:B-command] giúp mình lúc [14:B-time_at] [giờ:I-time_at] [55:I-time_at] [phút:I-time_at] nhé hãy [tắt:B-command] trong vòng [2:B-duration] [tiếng:I-duration] [26:I-duration] [phút:I-duration] nữa
+<Giảm độ sáng của thiết bị> -> sáng quá [giảm:B-command] [đèn:B-device] [huỳnh:I-device] [quang:I-device] xuống [92%:B-changing_value] giúp tôi
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [45%:B-changing_value] hộ tôi nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho mình lên [64:B-target_number] [độ:I-target_number] vào [0:B-time_at] [giờ:I-time_at] [10:I-time_at] [phút:I-time_at] nhé
+<Đóng thiết bị> -> em ơi [đóng:B-command] cho anh cái [lò:B-device] [vi:I-device] [sóng:I-device] ở [phòng:B-location] [bếp:I-location] với
+<Giảm độ sáng của thiết bị> -> ơi chói [giảm:B-command] cái [đèn:B-device] [huỳnh:I-device] [quang:I-device] xuống [92%:B-changing_value] cho anh
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [64%:B-changing_value] trong [14:B-duration] [tiếng:I-duration] [12:I-duration] [phút:I-duration] nhé
+<Hủy hoạt cảnh> -> em không muốn [riêng:B-scene] [tư:I-scene] nữa
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giúp tôi cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device]
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] xuống [76%:B-target_number] em nhé
+<Đóng thiết bị> -> bạn ơi vào lúc [18:B-time_at] [giờ:I-time_at] [28:I-time_at] [phút:I-time_at] bạn [đóng:B-command] cho mình cái [van:B-device] [nước:I-device] nha
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] lên [10%:B-changing_value] nhé
+<Tắt thiết bị> -> nhớ [tắt:B-command] vào lúc [16:B-time_at] [giờ:I-time_at] [21:I-time_at] [phút:I-time_at] đấy
+<Đóng thiết bị> -> này em ơi [đóng:B-command] cho anh cái [vòi:B-device] [nước:I-device] [số:I-device] [5:B-target_number] nhá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình cái [bóng:B-device] [để:I-device] [bàn:I-device]
+<Đóng thiết bị> -> [lò:B-device] [sưởi:I-device] số [18:I-device] đang nóng quá thì phải [đóng:B-command] giùm mình với
+<Kích hoạt cảnh> -> tôi muốn [thư:B-scene] [giãn:I-scene]
+<Bật thiết bị> -> [bật:B-command] từ [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] nhá trong tầm [7:B-duration] [tiếng:I-duration] [51:I-duration] [phút:I-duration]
+<Giảm mức độ của thiết bị> -> bạn ơi [giảm:B-command] giúp mình cái [quạt:B-device] xuống số [3:B-target_number] nhé
+<Tắt thiết bị> -> [tắt:B-command] hộ anh cái [bóng:B-device] [huỳnh:I-device] [quan:I-device]
+<Tắt thiết bị> -> [tắt:B-command] giúp mình cái [máy:B-device] [3:I-device] [cawexốnvới:I-device]
+<Mở thiết bị> -> bình minh rồi hãy [mở:B-command] cho tôi [cửa:B-device] [cuốn:I-device] [số:I-device] [14:I-device]
+<Kiểm tra tình trạng thiết bị> -> hãy [kiểm:B-command] [tra:I-command] cho tôi cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của khang nhớ là cái [máy:B-device] [tính:I-device] [để:I-device] [bàn:I-device] của khang
+<Tắt thiết bị> -> [tắt:B-command] cái ở [phòng:B-location] [chơi:I-location] [game:I-location] [của:I-location] [quân:I-location] ế
+<Giảm mức độ của thiết bị> -> bạn ơi [giảm:B-command] [quạt:B-device] về mức [3:B-changing_value] giùm mình với
+<Đóng thiết bị> -> [đóng:B-command] cho tôi vào [nước:B-device] [số:I-device] [5:I-location] lúc [16:B-time_at] [giờ:I-time_at] [38:I-time_at] [phút:I-time_at]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] [88%:B-changing_value] nhé
+<Giảm độ sáng của thiết bị> -> sáng quá bạn ơi [giảm:B-command] giúp mình cái [đèn:B-device] [cây:I-device] với
+<Tăng nhiệt độ của thiết bị> -> bạn ơi [học:B-command] giúp mình cái [máy:B-device] [lạnh:I-device] nhé
+<Kích hoạt cảnh> -> tôi sẽ [ra:B-scene] [ngoài:I-scene] trong [5:B-duration] [tiếng:I-duration] [57:I-duration] [phút:I-duration] nữa nhé
+<Mở thiết bị> -> mày mùi quá [mở:B-command] cho anh cái [quạt:B-device] [hút:I-device] [mùi:I-device] lên nhé
+<Tăng độ sáng của thiết bị> -> giúp tôi [tăng:B-command] cái [đèn:B-device] [kỳ:I-device] [quang:I-device] lên mức chuyến [6%:B-changing_value]
+<Tắt thiết bị> -> [tắt:B-command] giúp anh cái [máy:B-device] [hút:I-device] [bụi:I-device] ở trong [phòng:B-location] [họp:I-location] với nhé
+<Giảm độ sáng của thiết bị> -> em ơi trời sáng quá [giảm:B-command] cho anh cái [bóng:B-device] [để:I-device] [bàn:I-device] xuống đi [53%:B-changing_value] với
+<Tăng mức độ của thiết bị> -> trợ lý trợ lý [tăng:B-command] [quạt:B-device] [thông:I-device] [quạt:I-device] [tăng:B-command] lên
+<Giảm nhiệt độ của thiết bị> -> trời ấm rồi [giảm:B-command] cho mình cái [đèn:B-device] [sưởi:I-device] xuống đi
+<Tắt thiết bị> -> em ơi [tắt:B-command] cho anh cái [đèn:B-device] [treo:I-device] [tường:I-device] với
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên [2:B-changing_value] nhé trong [18:B-duration] [tiếng:I-duration] [54:I-duration] [phút:I-duration]
+<Tắt thiết bị> -> [tắt:B-command] hộ mình vào lúc [19:B-time_at] [giờ:I-time_at] [43:I-time_at] [phút:I-time_at] nhé
+<Tắt thiết bị> -> bạn ơi [tắt:B-command] giúp tôi cái [máy:B-device] [tính:I-device] [xách:I-device] [tay:I-device] của hân
+<Bật thiết bị> -> [bật:B-command] cho mình lúc [16:B-time_at] [giờ:I-time_at] [3:I-time_at] [phút:I-time_at] bạn nhé
+<Giảm độ sáng của thiết bị> -> tôi cần [giảm:B-command] [đèn:B-device] [trần:I-device] xuống 1 chút
+<Kiểm tra tình trạng thiết bị> -> em [kiểm:B-command] [tra:I-command] hộ anh cái [đèn:B-device] [tranh:I-device] ở [đại:B-location] [sảnh:I-location] em nhé
+<Tắt thiết bị> -> [tắt:B-command] cho anh cái [đèn:B-device] [hắt:I-device] [trần:I-device] nhá
+<Mở thiết bị> -> bạn ơi [mở:B-command] hộ mình cái [máy:B-device] hết nhạt với
+<Mở thiết bị> -> [mở:B-command] hộ cái [màn:B-device] [cửa:I-device] [số:I-device] [5:I-device] cho nó thoáng với
+<Tắt thiết bị> -> em ơi [tắt:B-command] hộ chị cái [đèn:B-device] [ốp:I-device] [trần:I-device] nhá
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] đến [35%:B-changing_value] bạn nhé
+<Tắt thiết bị> -> lúc [14:B-time_at] [giờ:I-time_at] [55:I-time_at] [phút:I-time_at] em nhé à đúng rồi [tắt:B-command] trong vòng [2:B-duration] [tiếng:I-duration] [26:I-duration] [phút:I-duration] đi
+<Tăng độ sáng của thiết bị> -> [tăng:B-command] cái [đèn:B-device] [ốp:I-device] [trần:I-device] [số:I-device] [5:I-device] lên nhá
+<Hủy hoạt cảnh> -> không [tiệc:B-scene] [tùng:I-scene] gì nữa hết
+<Mở thiết bị> -> em ơi [mở:B-command] cho anh cái [cửa:B-device] [cường:I-device] [số:I-device] [14:I-device] với
+<Bật thiết bị> -> [bật:B-command] cho tôi cái [đèn:B-device] [ốp:I-device] [tường:I-device] nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho anh đi [8%:B-target_number] nha
+<Tắt thiết bị> -> em [tắt:B-command] cho anh cái [đèn:B-device] [trần:I-device] đi nhé [tắt:B-command] lúc [11:B-time_at] [giờ:I-time_at] [47:I-time_at] [phút:I-time_at]
+<Tăng độ sáng của thiết bị> -> tối quá [tăng:B-command] sáng cho mình cái [bóng:B-device] [để:I-device] [bàn:I-device] với
+<Bật thiết bị> -> [bật:B-command] [máy:B-device] [fax:I-device] của hân ở [phòng:B-location] [sách:I-location]
+<Đóng thiết bị> -> [đóng:B-command] hộ anh cái kia với
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] [bóng:B-device] [tuýp:I-device] đi [tăng:B-command] [8%:B-changing_value] trong [5:B-duration] [tiếng:I-duration] [31:I-duration] [phút:I-duration]
+<Kiểm tra tình trạng thiết bị> -> ở trong [phòng:B-location] [tiếp:I-location] [đón:I-location] có cái [máy:B-device] [pha:I-device] [cafe:I-device] đang bị trục trặc [kiểm:B-command] [tra:I-command] giúp anh với
+<Hủy hoạt cảnh> -> tôi không muốn [lãng:B-scene] [mạn:I-scene]
+<Bật thiết bị> -> hãy giúp mình [bật:B-command] cái [máy:B-device] [pas:I-device] [của:I-device] [hân:I-device] ở [phòng:B-location] [đọc:I-location] [sách:I-location] nhé
+<Tăng mức độ của thiết bị> -> [tăng:B-command] cho anh [26%:B-changing_value] trong vòng [17:B-duration] [tiếng:I-duration] [3:I-duration] [ông:I-duration] [phút:I-duration] thôi bây giờ em nhé
+<Bật thiết bị> -> bạn ơi [bật:B-command] hộ mình cái [đèn:B-device] [sưởi:I-device] với
+<Tăng mức độ của thiết bị> -> hãy [tăng:B-command] lên khoảng [31%:B-changing_value]
+<Tăng mức độ của thiết bị> -> [tăng:B-command] lên khoảng [12%:B-changing_value] trong khoảng [11:B-duration] [tiếng:I-duration] [53:I-duration] [phút:I-duration] bạn nhé
+<Giảm độ sáng của thiết bị> -> [giảm:B-command] cho mình về mức [59%:B-target_number] nhé
+<Mở thiết bị> -> em ơi tí anh ra loài khoảng lên tiếng [11:I-duration] [phút:I-duration] nhé
+<Đóng thiết bị> -> [đóng:B-command] vào lúc [18:B-time_at] [giờ:I-time_at] [7:I-time_at] [phút:I-time_at] cho bạn

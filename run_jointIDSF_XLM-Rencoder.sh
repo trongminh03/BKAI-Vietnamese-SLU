@@ -5,13 +5,13 @@ export lr=3e-5
 export c=0.25
 export s=10
 echo "${lr}"
-export MODEL_DIR=JointIDSF_XLM-Rencoder
+export MODEL_DIR=JointIDSF_XLM-Rencoder_SLU_full
 export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s
 echo "${MODEL_DIR}"
 python3 main.py --token_level syllable-level \
                   --model_type xlmr \
                   --model_dir $MODEL_DIR \
-                  --data_dir slu_data \
+                  --data_dir slu_data_1 \
                   --seed $s \
                   --do_train \
                   --do_eval \
@@ -26,5 +26,5 @@ python3 main.py --token_level syllable-level \
                   --embedding_type soft \
                   --intent_loss_coef $c \
                   --pretrained \
-                  --pretrained_path JointBERT-CRF_XLM-Rencoder/4e-5/0.45/10 \
+                  --pretrained_path JointBERT-CRF_XLM-Rencoder_SLU_full/4e-5/0.45/10 \
                   --learning_rate $lr
