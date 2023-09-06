@@ -1,4 +1,7 @@
 __pycache__
 .DS_Store
 JointIDSF_XLM-Rencoder_SLU/
-post-process/
+JointIDSF_XLM-Rencoder_SLU_full/
+test.txt
+test_out.txt
+run.txt
