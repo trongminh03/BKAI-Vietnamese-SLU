@@ -1,3 +1,6 @@
 [submodule "kenlm"]
 	path = kenlm
 	url = https://github.com/kpu/kenlm.git
+[submodule "SLU-ASR"]
+	path = SLU-ASR
+	url = https://github.com/vipghn2003/SLU-ASR.git
