@@ -1,6 +1,6 @@
 import json
 # Read the JSONL file
-with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_file:
+with open('./augmented_data.jsonl', 'r', encoding='utf-8') as jsonl_file:
     intents = []
     sentences = []
     for line in jsonl_file:
@@ -12,11 +12,11 @@ with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_
         sentences.append(sentence)
 
 # Write intents to the label file
-with open('data-process/label', 'w', encoding='utf-8') as label_file:
+with open('./augmented_label', 'w', encoding='utf-8') as label_file:
     for intent in intents:
         label_file.write(intent + '\n')
         
-with open('data-process/seq.in', 'w', encoding='utf-8') as in_file:
+with open('./augmented_seq.in', 'w', encoding='utf-8') as in_file:
     for seq in sentences:
         modified_seq = seq.replace(',', ' ')
         modified_seq = modified_seq.replace(']', ' ] ')
