@@ -42,7 +42,7 @@ def split_train_test():
     # test_data = data_pairs[split_point_2:]
     train_data = data_pairs + augmented_data_pairs[:3120] 
     dev_data = augmented_data_pairs[3120: 5120]
-    test_data = data_pairs[5120:]
+    test_data = augmented_data_pairs[5120:]
 
     train_sentenes, train_annotations, train_labels = zip(*train_data)
     test_sentenes, test_annotations, test_labels = zip(*test_data)
