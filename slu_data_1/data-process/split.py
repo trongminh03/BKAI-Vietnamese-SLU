@@ -40,9 +40,9 @@ def split_train_test():
     # train_data = data_pairs[:split_point_1]
     # dev_data = data_pairs[split_point_1:split_point_2]
     # test_data = data_pairs[split_point_2:]
-    train_data = data_pairs + augmented_data_pairs[:3120] 
-    dev_data = augmented_data_pairs[3120: 5120]
-    test_data = augmented_data_pairs[5120:]
+    train_data = data_pairs + augmented_data_pairs[:-4000] 
+    dev_data = augmented_data_pairs[-4000: -2000]
+    test_data = augmented_data_pairs[-2000:]
 
     train_sentenes, train_annotations, train_labels = zip(*train_data)
     test_sentenes, test_annotations, test_labels = zip(*test_data)
