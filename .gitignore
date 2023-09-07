@@ -2,6 +2,7 @@ __pycache__
 .DS_Store
 JointIDSF_XLM-Rencoder_SLU/
 JointIDSF_XLM-Rencoder_SLU_full/
+JointIDSF_PhoBERTencoder_SLU_full/
 test.txt
 test_out.txt
 run.txt

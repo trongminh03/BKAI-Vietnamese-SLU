@@ -29,12 +29,12 @@ def label_tokens(text):
 
 # Read data from the JSONL file
 data = []
-with open('./augmented_data.jsonl', 'r', encoding='utf-8') as jsonl_file:
+with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_file:
     for line in jsonl_file:
         entry = json.loads(line)
         data.append(entry)
 
-with open('./augmented_seq.out', 'w', encoding='utf-8') as output_file:
+with open('data-process/seq.out', 'w', encoding='utf-8') as output_file:
     for entry in data:
         sentence_annotation = entry['sentence_annotation']
         modified_seq = sentence_annotation.replace(',', ' ')
