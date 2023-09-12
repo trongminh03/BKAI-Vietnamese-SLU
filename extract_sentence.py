@@ -1,5 +1,5 @@
 # Define the input and output file paths
-input_file_path = "transcript_add_c.txt"
+input_file_path = "transcript_new_1.txt"
 output_file_path = "input.txt"
 
 # Create a list to store the extracted text

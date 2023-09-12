@@ -29,7 +29,7 @@ def label_tokens(text):
 
 # Read data from the JSONL file
 data = []
-with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_file:
+with open('data-process/train_08.jsonl', 'r', encoding='utf-8') as jsonl_file:
     for line in jsonl_file:
         entry = json.loads(line)
         data.append(entry)

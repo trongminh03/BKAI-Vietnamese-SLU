@@ -24,9 +24,9 @@ def process_line(line, filename):
    
     return {"intent": intent, "entities": processed_entities, "file":filename}
 
-input_filename = "output.txt"
+input_filename = "uppercase.txt"
 output_filename = "predictions.jsonl"
-wav_urls_filename = "../transcript_add_c.txt"
+wav_urls_filename = "../transcript_new_1.txt"
 
 filenames=[]
 with open(wav_urls_filename, 'r') as wav_urls_file:

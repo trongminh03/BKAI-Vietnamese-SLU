@@ -3,6 +3,9 @@ __pycache__
 JointIDSF_XLM-Rencoder_SLU/
 JointIDSF_XLM-Rencoder_SLU_full/
 JointIDSF_PhoBERTencoder_SLU_full/
+JointIDSF_PhoBERTencoder_SLU_dropout_01_train09/
+JointIDSF_PhoBERTencoder_SLU_dropout_03_train08/
+JointIDSF_PhoBERTencoder_SLU_dropout_03_train09/ 
 test.txt
 test_out.txt
 run.txt

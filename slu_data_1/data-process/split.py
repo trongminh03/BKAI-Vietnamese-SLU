@@ -1,7 +1,7 @@
 import json
 import random
 
-input_file_path = 'data-process/train_processed.jsonl'
+input_file_path = 'data-process/train_08.jsonl'
 output_sentence_path = 'data-process/seq.in'
 output_annotation_path = 'data-process/seq.out'
 output_label_path = 'data-process/label'

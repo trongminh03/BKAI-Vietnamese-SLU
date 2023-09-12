@@ -1,6 +1,6 @@
 import json
 # Read the JSONL file
-with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_file:
+with open('data-process/train_08.jsonl', 'r', encoding='utf-8') as jsonl_file:
     intents = []
     sentences = []
     for line in jsonl_file:
