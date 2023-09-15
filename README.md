@@ -60,8 +60,8 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         - The LM model will be stored in `your_ngram.binary`
 - You can use our ASR model and a LM model checkpoints through this link:
-    - ASR model : https://drive.google.com/drive/folders/1PUOZtKDbpebvtsKV-9Xo8W68yQapW3xU?usp=sharing
-    - LM model : https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link
+    - [ASR model](https://drive.google.com/drive/folders/1PUOZtKDbpebvtsKV-9Xo8W68yQapW3xU?usp=sharing)
+    - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link)
 
 ### Inference
 ```
