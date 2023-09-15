@@ -95,7 +95,7 @@ bash inference.sh data/public_test/ saved/ASR/checkpoints/best_model.tar your_3g
         ```
 
 ### Inference
-- Here is model checkpoints link in case you want to make inference without training the models from scratch: https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link
+- Here is [model checkpoints link](https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link) in case you want to make inference without training the models from scratch
 - Then run this command for inference:
 ```
  bash inference_JointIDSF.sh [Path to output transcript of ASR module] [Path to model checkpoints]
