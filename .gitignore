@@ -19,3 +19,8 @@ data/
 slu_data/train_09.jsonl
 predictions.jsonl 
 Submission.zip
+input.txt 
+output.txt
+transcript_add_c.txt 
+transcript_new_1.txt
+transcript.txt
