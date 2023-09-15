@@ -24,7 +24,7 @@
 ```
 python3 predict.py  --input_file <Path to transcript file> \
                     --output_file <Output file name> \
-                    --model_dir <Model checkpoints name>
+                    --model_dir <Model checkpoints>
 ```
 where the input file is a raw text file (one utterance per line).
 
@@ -32,18 +32,18 @@ where the input file is a raw text file (one utterance per line).
 ```
 python3 predict.py  --input_file SLU-ASR/transcript.txt \
                     --output_file output.txt \
-                    --model_dir JointIDSF_PhoBERTencoder_SLU
+                    --model_dir JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100
 ```
 - To get the final output, run this the post processing file:
 ```
 python post_process.py -i [Path to output.txt file] \
                        -t [Path to transcript.txt file] \
-                       -o [predictions.jsonl file] \
+                       -o [predictions.jsonl file] 
 ```
 - Example: 
 ```
 python post_process.py -i output.txt \
                        -t SLU-ASR/transcript.txt \
-                       -o predictions.jsonl \
+                       -o predictions.jsonl 
 ```
 Then the final output will be automatically zipped as `Submission.zip`.
