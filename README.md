@@ -36,14 +36,14 @@ python3 predict.py  --input_file SLU-ASR/transcript.txt \
 ```
 - To get the final output, run this the post processing file:
 ```
-python post_process.py -i [Path to output.txt file] 
-                       -t [Path to transcript.txt file] 
-                       -o [predictions.jsonl file]
+python post_process.py -i [Path to output.txt file] \
+                       -t [Path to transcript.txt file] \
+                       -o [predictions.jsonl file] \
 ```
 - Example: 
 ```
-python post_process.py -i output.txt 
-                       -t SLU-ASR/transcript.txt
-                       -o predictions.jsonl
+python post_process.py -i output.txt \
+                       -t SLU-ASR/transcript.txt \
+                       -o predictions.jsonl \
 ```
 Then the final output will be automatically zipped as `Submission.zip`.
