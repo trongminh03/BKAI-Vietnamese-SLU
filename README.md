@@ -28,7 +28,7 @@ python extract_sentence.py -i [Path to transcript.txt file]
 ```
 - Example: 
 ```
-python extract_sentence.py -i SLU-ASR/transcript.txt 
+python extract_sentence.py -i SLU-ASR/process_trans_file.txt
                            -o sentence.txt
 ```
 
@@ -55,7 +55,7 @@ python post_process.py -i [Path to output.txt file] \
 - Example: 
 ```
 python post_process.py -i output.txt \
-                       -t SLU-ASR/transcript.txt \
+                       -t SLU-ASR/process_trans_file.txt \
                        -o predictions.jsonl 
 ```
 Then the final output will be automatically zipped as `Submission.zip`.
