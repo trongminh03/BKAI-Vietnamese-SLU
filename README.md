@@ -34,7 +34,7 @@ python extract_sentence.py -i SLU-ASR/transcript.txt
 
 - Run following command to use model checkpoint:
 ```
-python3 predict.py  --input_file <Path to transcript file> \
+python3 predict.py  --input_file <Path to sentence.txt file> \
                     --output_file <Output file name> \
                     --model_dir <Model checkpoints>
 ```
