@@ -28,7 +28,9 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         cd SLU-ASR
         ```
-    2. Prepare your dataset
+    2. Generate data (optional):
+        - You can use our generated data by placing [this](https://drive.google.com/drive/u/1/folders/1cvYEmfY8UNJX2bXlD4cbk-8icvZCwN6k?usp=sharing&fbclid=IwAR2kjwPt1pAwNR0fsEUtkY0A73xpKMf1ZreuyQ5ET-KvX7xbchnedZ426c0&pli=1) in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) 
+    3. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
             bash prepare_train_data.sh [Path to wav data directory] [Path to jsonline train file]
@@ -38,19 +40,28 @@ docker run -it --name docker_slu --gpus all --rm slu
             bash prepare_train_data.sh SLU_data/train_data/Train/  SLU_data/train.jsonl
             ```
         - The processed data will be store in `txt_data/process_train.txt`
-    3. Run
+    4. Run
         - Start training from scratch:
             ```cmd
             python train.py -c config.toml
             ```
         - Change the number of workers, epochs, batch size, vv in `config.toml`
-        
-- To train LM model:
-    1. Go to kenlm folder:
+
+- To train LM model: 
+    1. Go to the root folder of the repo. Train the LM model by:
         ```
-        cd kenlm
+        bash train_lm.sh [Path to origin jsonline train file]
         ```
-    2. 
+        - Example:
+        ```
+        bash train_lm.sh data/train.jsonl
+
+        Note: Dont use the generated `train_and_aug.jsonl file` here.
+        ```
+        - The LM model will be stored in `your_ngram.binary`
+- You can use our ASR model and a LM model checkpoints through this link:
+    - ASR model : https://drive.google.com/drive/folders/1PUOZtKDbpebvtsKV-9Xo8W68yQapW3xU?usp=sharing
+    - LM model : https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link
 
 ### Inference
 ```
