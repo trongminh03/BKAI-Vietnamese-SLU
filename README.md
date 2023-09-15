@@ -20,6 +20,18 @@
 ### Inference
 - Here is model checkpoints link in case you want to make inference without training the models from scratch: https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link
 
+
+- Run command below to extract sentence in transcript file: 
+```
+python extract_sentence.py -i [Path to transcript.txt file] 
+                           -o [Output file name]
+```
+- Example: 
+```
+python extract_sentence.py -i SLU-ASR/transcript.txt 
+                           -o sentence.txt
+```
+
 - Run following command to use model checkpoint:
 ```
 python3 predict.py  --input_file <Path to transcript file> \
@@ -30,7 +42,7 @@ where the input file is a raw text file (one utterance per line).
 
 - Example: 
 ```
-python3 predict.py  --input_file SLU-ASR/transcript.txt \
+python3 predict.py  --input_file sentence.txt \
                     --output_file output.txt \
                     --model_dir JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100
 ```
