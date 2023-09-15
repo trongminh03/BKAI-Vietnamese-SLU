@@ -6,6 +6,16 @@ JointIDSF_PhoBERTencoder_SLU_full/
 JointIDSF_PhoBERTencoder_SLU_dropout_01_train09/
 JointIDSF_PhoBERTencoder_SLU_dropout_03_train08/
 JointIDSF_PhoBERTencoder_SLU_dropout_03_train09/ 
+JointIDSF_PhoBERTencoder_SLU_dropout_02_loss_025_train09/
+JointIDSF_PhoBERTencoder_SLU_dropout_02_train09/
 test.txt
 test_out.txt
 run.txt
+input.txt
+post-process/
+run_jointBERT-CRF_XLM-Rencoder.sh
+run_jointIDSF_XLM-Rencoder.sh
+data/
+slu_data/train_09.jsonl
+predictions.jsonl 
+Submission.zip

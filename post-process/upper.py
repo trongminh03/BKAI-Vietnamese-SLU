@@ -1,26 +1,23 @@
-# Function to capitalize only the first character within angle brackets
-def capitalize_first_within_angle_brackets(line):
-    result = []
-    inside_brackets = False
-    for char in line:
-        if char == '<':
-            inside_brackets = True
-            result.append(char)
-        elif inside_brackets: 
-            result.append(char.upper())
-            inside_brackets = False
-        else:
-            result.append(char)
-    return ''.join(result)
+# Define the input and output file paths
+input_file_path = 'output.txt'
+output_file_path = 'uppercase.txt'
 
-# Input and output file names
-input_file = 'output.txt'
-output_file = 'uppercase.txt'
+# Read the content of the input file
+with open(input_file_path, 'r', encoding='utf-8') as input_file:
+    content = input_file.read()
 
-# Read input file, process lines, and write to output file
-with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
-    for line in infile:
-        processed_line = capitalize_first_within_angle_brackets(line)
-        outfile.write(processed_line)
+# Function to uppercase the first character within angle brackets
+def upper_first_char(match):
+    return match.group(1) + match.group(2)[0].upper() + match.group(2)[1:] + match.group(3)
 
-print("Conversion completed. Output saved to", output_file)
+
+# Use regular expressions to find and replace within angle brackets
+import re
+pattern = r'(<)([^>]*)(>)'
+content = re.sub(pattern, upper_first_char, content)
+
+# Write the modified content to the output file
+with open(output_file_path, 'w', encoding='utf-8') as output_file:
+    output_file.write(content)
+
+print("Text with first character within angle brackets converted to uppercase.")

@@ -27,29 +27,31 @@ def label_tokens(text):
     
     return labels
 
-# Read data from the JSONL file
-data = []
-with open('data-process/train_processed.jsonl', 'r', encoding='utf-8') as jsonl_file:
-    for line in jsonl_file:
-        entry = json.loads(line)
-        data.append(entry)
+if __name__ == '__main__':
+    train_file_path = 'slu_data/data-process/train_processed.jsonl'
+    # Read data from the JSONL file
+    data = []
+    with open(train_file_path, 'r', encoding='utf-8') as jsonl_file:
+        for line in jsonl_file:
+            entry = json.loads(line)
+            data.append(entry)
 
-with open('data-process/seq.out', 'w', encoding='utf-8') as output_file:
-    for entry in data:
-        sentence_annotation = entry['sentence_annotation']
-        modified_seq = sentence_annotation.replace(',', ' ')
-        modified_seq = modified_seq.replace(']', ' ] ')
-        modified_seq = modified_seq.replace('[', ' [')
-        modified_seq = modified_seq.replace('\'',' ')
-        modified_seq = modified_seq.replace('.',' ')
-        modified_seq = modified_seq.replace('?', ' ')
-        modified_seq = modified_seq.replace('!',' ')
-        modified_seq = modified_seq.replace('/',' ')
-        labels = label_tokens(modified_seq)
-        
-        for label in labels:
-            output_file.write(f"{label} ")
-        output_file.write('\n')   
+    with open('slu_data/data-process/seq.out', 'w', encoding='utf-8') as output_file:
+        for entry in data:
+            sentence_annotation = entry['sentence_annotation']
+            modified_seq = sentence_annotation.replace(',', ' ')
+            modified_seq = modified_seq.replace(']', ' ] ')
+            modified_seq = modified_seq.replace('[', ' [ ')
+            modified_seq = modified_seq.replace('\'',' ')
+            modified_seq = modified_seq.replace('.',' ')
+            modified_seq = modified_seq.replace('?', ' ')
+            modified_seq = modified_seq.replace('!',' ')
+            modified_seq = modified_seq.replace('/',' ')
+            labels = label_tokens(modified_seq)
+            
+            for label in labels:
+                output_file.write(f"{label} ")
+            output_file.write('\n')   
 
-         
-print("Label sequences generated and saved to 'seq.out'")
+            
+    print("Label sequences generated and saved to 'seq.out'")
