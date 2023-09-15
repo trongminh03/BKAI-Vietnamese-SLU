@@ -28,7 +28,7 @@ def label_tokens(text):
     return labels
 
 if __name__ == '__main__':
-    train_file_path = 'slu_data/data-process/train_processed.jsonl'
+    train_file_path = 'slu_data_1/data-process/train_processed.jsonl'
     # Read data from the JSONL file
     data = []
     with open(train_file_path, 'r', encoding='utf-8') as jsonl_file:
@@ -36,7 +36,7 @@ if __name__ == '__main__':
             entry = json.loads(line)
             data.append(entry)
 
-    with open('slu_data/data-process/seq.out', 'w', encoding='utf-8') as output_file:
+    with open('slu_data_1/data-process/seq.out', 'w', encoding='utf-8') as output_file:
         for entry in data:
             sentence_annotation = entry['sentence_annotation']
             modified_seq = sentence_annotation.replace(',', ' ')

@@ -7,7 +7,7 @@ if __name__ == '__main__':
     args.add_argument('-j', '--train_file', type=str, required = True,help='Path to train.jsonl file')
     args = args.parse_args()
     input_file_path = args.train_file
-    output_file_path = 'slu_data/data-process/train_processed.jsonl'
+    output_file_path = 'slu_data_1/data-process/train_processed.jsonl'
 
     # Open the input and output files
     with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w', encoding='utf-8') as output_file:

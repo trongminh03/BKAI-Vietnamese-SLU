@@ -5,7 +5,7 @@ export lr=4e-5
 export c=0.15
 export s=100
 echo "${lr}"
-export MODEL_DIR=JointIDSF_PhoBERTencoder_SLU_dropout_03_train08
+export MODEL_DIR=JointIDSF_PhoBERTencoder_SLU
 export MODEL_DIR=$MODEL_DIR"/"$lr"/"$c"/"$s
 echo "${MODEL_DIR}"
 python3 main.py --token_level syllable-level \
@@ -26,5 +26,5 @@ python3 main.py --token_level syllable-level \
                   --embedding_type soft \
                   --intent_loss_coef $c \
                   --pretrained \
-                  --pretrained_path JointBERT-CRF_PhoBERTencoder_SLU_dropout_03_train08/3e-5/0.6/100 \
+                  --pretrained_path JointBERT-CRF_PhoBERTencoder_SLU/3e-5/0.6/100 \
                   --learning_rate $lr
