@@ -1,0 +1,16 @@
+UNK
+bật thiết bị
+giảm mức độ của thiết bị
+giảm nhiệt độ của thiết bị
+giảm âm lượng của thiết bị
+giảm độ sáng của thiết bị
+hủy hoạt cảnh
+kiểm tra tình trạng thiết bị
+kích hoạt cảnh
+mở thiết bị
+tăng mức độ của thiết bị
+tăng nhiệt độ của thiết bị
+tăng âm lượng của thiết bị
+tăng độ sáng của thiết bị
+tắt thiết bị
+đóng thiết bị
