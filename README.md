@@ -38,15 +38,13 @@ docker run -it --name docker_slu --gpus all --rm slu
                 
                 python3 augmented_data.py \
                 --input_folder [Path to wav data directory] \
-                --input_jsonlfile [Path to jsonline train file] \
-                --output_folder [Path where to save generated data]
+                --input_jsonlfile [Path to jsonline train file] 
         - Example:
                 
                 python3 augmented_data.py \
                 --input_folder /data/train_data/Train \
-                --input_jsonlfile /data/train.jsonl \
-                --output_folder /data/train_data/Train
-                
+                --input_jsonlfile /data/train.jsonl
+        - The Generated wav data will be stored at the same folder with the input folder.
     3. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
