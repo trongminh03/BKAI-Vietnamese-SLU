@@ -60,7 +60,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         Note: Dont use the generated `train_and_aug.jsonl file` here.
         ```
         - The LM model will be stored in `your_ngram.binary`
-- You can use our ASR model and a LM model checkpoints through this link:
+- You can use our ASR model which trained on both generated data and original data and a LM model checkpoints through this link:
     - [ASR model](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
         ```
         gdown 1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD
