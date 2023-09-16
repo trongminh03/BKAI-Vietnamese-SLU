@@ -23,7 +23,16 @@ docker run -it --name docker_slu --gpus all --rm slu
         cd SLU-ASR
         ```
     2. Generate data (optional):
-        - You can use our generated data by placing [this](https://drive.google.com/file/d/14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg/view?usp=drive_link) in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) 
+        - You can use our generated wav data by download and unzip [this](https://drive.google.com/file/d/14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg/view?usp=drive_link) and put it in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing):
+        - You can use gdown to download the file.
+            - Generated wav data: 
+                ```
+                gdown 14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg
+                ```
+            - train_and_aug.jsonl file: 
+                ```
+                gdown 1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv
+                ```
     3. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
@@ -52,8 +61,14 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         - The LM model will be stored in `your_ngram.binary`
 - You can use our ASR model and a LM model checkpoints through this link:
-    - [ASR model](https://drive.google.com/drive/folders/1PUOZtKDbpebvtsKV-9Xo8W68yQapW3xU?usp=sharing)
+    - [ASR model](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
+        ```
+        gdown 1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD
+        ```
     - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link)
+        ```
+        gdown 1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg
+        ```
 ### Inference
 ```
 bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path to LM model]
@@ -61,7 +76,7 @@ bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path t
     
 - Example:
 ```
-bash inference.sh /data/public_test/ saved/ASR/checkpoints/best_model.tar your_3gram.binary
+bash inference.sh /data/public_test/ best_model.tar your_3gram.binary
 ```
 - Then the final transcript be in `process_trans_file.txt`
 ## Text Intent and Slot Filling module
