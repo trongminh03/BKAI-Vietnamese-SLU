@@ -16,11 +16,11 @@ post-process/
 run_jointBERT-CRF_XLM-Rencoder.sh
 run_jointIDSF_XLM-Rencoder.sh
 data/
-slu_data/train_09.jsonl
-slu_data/data-process/train_08.jsonl
-slu_data/data-process/label 
-slu_data/data-process/seq.in 
-slu_data/data-process/seq.out
+slu_data_1/train_09.jsonl
+slu_data_1/data-process/train_08.jsonl
+slu_data_1/data-process/label 
+slu_data_1/data-process/seq.in 
+slu_data_1/data-process/seq.out
 predictions.jsonl 
 Submission.zip
 input.txt 
