@@ -5,6 +5,10 @@
      - Text Intent and Slot Filling module.
 - Output of `Speech to Text module` will be feed in `Text Intent and Slot Filling module` to get the final prediction.
 - P/s: Your device must have Docker and GPU. You should run it on Docker.
+- You first need to clone the repo including its submodules:
+    ```
+    git clone --recurse-submodules https://github.com/trongminh03/BKAI-Vietnamese-SLU.git
+    ```
 ## Docker
 - Build image by this command:
 ```
@@ -23,6 +27,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         cd SLU-ASR
         ```
     2. Generate data (optional):
+        - Be careful if you mount your data folder inside docker. 
         - You can use our generated wav data by download and unzip [this](https://drive.google.com/file/d/14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg/view?usp=drive_link) and put it in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing):
         - You can use gdown to download the file.
             - Generated wav data: 
@@ -110,6 +115,9 @@ bash inference.sh /data/public_test/ best_model.tar your_3gram.binary
         ```
 ### Inference
 - Here is [model checkpoints link](https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link) in case you want to make inference without training the models from scratch
+```
+gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
+```
 - Then run this command for inference:
 ```
  bash inference_JointIDSF.sh [Path to output transcript of ASR module] [Path to model checkpoints] [saved name]
