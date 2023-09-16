@@ -23,7 +23,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         cd SLU-ASR
         ```
     2. Generate data (optional):
-        - You can use our generated data by placing [this](https://drive.google.com/drive/u/1/folders/1cvYEmfY8UNJX2bXlD4cbk-8icvZCwN6k?usp=sharing&fbclid=IwAR2kjwPt1pAwNR0fsEUtkY0A73xpKMf1ZreuyQ5ET-KvX7xbchnedZ426c0&pli=1) in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) 
+        - You can use our generated data by placing [this](https://drive.google.com/file/d/14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg/view?usp=drive_link) in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) 
     3. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
@@ -31,13 +31,13 @@ docker run -it --name docker_slu --gpus all --rm slu
             ```
         - Example :
             ```cmd
-            bash prepare_train_data.sh SLU_data/train_data/Train/  SLU_data/train.jsonl
+            bash prepare_train_data.sh /data/train_data/Train/ /data/train.jsonl
             ```
         - The processed data will be store in `txt_data/process_train.txt`
     4. Run
         - Start training from scratch:
             ```cmd
-            python train.py -c config.toml
+            python3 train.py -c config.toml
             ```
         - Change the number of workers, epochs, batch size, vv in `config.toml`
 - To train LM model: 
@@ -47,7 +47,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         - Example:
         ```
-        bash train_lm.sh data/train.jsonl
+        bash train_lm.sh /data/train.jsonl
         Note: Dont use the generated `train_and_aug.jsonl file` here.
         ```
         - The LM model will be stored in `your_ngram.binary`
@@ -61,7 +61,7 @@ bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path t
     
 - Example:
 ```
-bash inference.sh data/public_test/ saved/ASR/checkpoints/best_model.tar your_3gram.binary
+bash inference.sh /data/public_test/ saved/ASR/checkpoints/best_model.tar your_3gram.binary
 ```
 - Then the final transcript be in `process_trans_file.txt`
 ## Text Intent and Slot Filling module
@@ -73,7 +73,7 @@ bash inference.sh data/public_test/ saved/ASR/checkpoints/best_model.tar your_3g
         ```
     - Example :
         ```cmd
-        python3 slu_data_1/data_process.py -j data/train.jsonl
+        python3 slu_data_1/data_process.py -j /data/train.jsonl
         ```
     The processed data will be stored in `slu_data_1/syllable-level`
 2. Run 
@@ -85,10 +85,10 @@ bash inference.sh data/public_test/ saved/ASR/checkpoints/best_model.tar your_3g
 - Here is [model checkpoints link](https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link) in case you want to make inference without training the models from scratch
 - Then run this command for inference:
 ```
- bash inference_JointIDSF.sh [Path to output transcript of ASR module] [Path to model checkpoints]
+ bash inference_JointIDSF.sh [Path to output transcript of ASR module] [Path to model checkpoints] [saved name]
 ```
 - Example:
 ```
-bash inference_JointIDSF.sh SLU-ASR/process_trans_file.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100
+bash inference_JointIDSF.sh SLU-ASR/process_trans_file.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
 ```
 - Then the final output will be automatically zipped as `Submission.zip`.
