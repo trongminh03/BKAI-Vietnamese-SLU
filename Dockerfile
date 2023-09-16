@@ -75,7 +75,9 @@ RUN --mount=type=cache,target=/root/.cache \
 RUN --mount=type=cache,target=/root/.cache \
     pip install protobuf==3.20.* \ 
     && pip install jiwer \
-    && pip install https://github.com/kpu/kenlm/archive/master.zip
+    && pip install https://github.com/kpu/kenlm/archive/master.zip \
+    && pip install torch-audiomentations \
+    && pip install gdown
 
 
 # download pretrain weight
