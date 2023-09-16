@@ -64,7 +64,7 @@ bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path t
 bash inference.sh data/public_test/ saved/ASR/checkpoints/best_model.tar your_3gram.binary
 ```
 - Then the final transcript be in `process_trans_file.txt`
-## Text Intent and Slot Filling moudule
+## Text Intent and Slot Filling module
 ### Training 
 1. Prepare your data
     - Run the following command to pre-process train.jsonl and prepare data for training:
