@@ -76,16 +76,15 @@ RUN --mount=type=cache,target=/root/.cache \
     pip install protobuf==3.20.* \ 
     && pip install jiwer \
     && pip install https://github.com/kpu/kenlm/archive/master.zip \
-    && pip install torch-audiomentations \
-    && pip install gdown
+    && pip install torch-audiomentations 
 
 
 # download pretrain weight
-# RUN --mount=type=cache,target=/root/.cache \
-#     pip install gdown && \
-#     cd /SLU && \
-#     gdown --folder 1CK__VZzxKA9ZZFbl0frFYyL3dFxEm83_ && \
-#     gdown --folder 1HVt09CDAyoSaEdzC7J38VH_ksE4SgO_J
+RUN --mount=type=cache,target=/root/.cache \
+    pip install gdown && \
+    cd /SLU/SLU-ASR && \
+    # gdown --folder 1CK__VZzxKA9ZZFbl0frFYyL3dFxEm83_ && \
+    gdown --folder 1HVt09CDAyoSaEdzC7J38VH_ksE4SgO_J
 
 # set up kenlm
 RUN --mount=type=cache,target=/root/.cache \
