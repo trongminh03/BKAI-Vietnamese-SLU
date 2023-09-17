@@ -87,6 +87,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         gdown 1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg
         ```
 ### Inference
+- First, go to SLU-ASR folder then run
 ```
 bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path to LM model]
 ```
@@ -126,4 +127,16 @@ gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
 ```
 bash inference_JointIDSF.sh SLU-ASR/process_trans_file.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
 ```
-- Then the final output will be automatically zipped as `Submission.zip`.
+
+### Ensemble
+- For higher accuracy we apply simple ensemble method.
+- First you run the inference twice with different model checkpoints.
+- Then run
+```
+python3 ensemble.py --intent_predicts [Path to first predictions] --slot_predicts [Path to second predictions] 
+```
+- The output will be stored in `ensemble_predict.jsonl`
+- Example:
+```
+python3 ensemble.py --intent_predicts predictions1.jsonl --slot_predicts predictions2.jsonl
+```
