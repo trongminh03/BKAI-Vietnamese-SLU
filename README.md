@@ -26,31 +26,59 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         cd SLU-ASR
         ```
-    2. Generate data (optional):
+    2. Generate data and Denoise data(optional):
         - Be careful if you mount your data folder inside docker. 
-        - You can use our generated wav data by download and unzip [this](https://drive.google.com/file/d/14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg/view?usp=drive_link) and put it in the same folder as origin data and use the new [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing):
+        - The generated data and denoised data will be store in the same as the origin train data folder.
+        - Download our generated data and denoised data by running:
+        ```
+        bash download_data.sh [Path to your origin train data folder]
+        ```
+        - Download [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) and [train_and_denoise.jsonl file](https://drive.google.com/file/d/1229wpKuDhiLa8CQkwk-PI5T920c1zKjP/view?usp=sharing)
         - You can use gdown to download the file.
-            - Generated wav data: 
-                ```
-                gdown 14F7XIRYTLqVzYr8nygXWPDTUazgzzhlg
-                ```
             - train_and_aug.jsonl file: 
                 ```
                 gdown 1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv
                 ```
-        - Or generate wav file by running this code but still use the provided train_and_aug.jsonl file
+            - train_and_denoise.jsonl file:
+                ```
+                gdown 1229wpKuDhiLa8CQkwk-PI5T920c1zKjP
+                ```
+        - Or generate wav file by yourself using this command and use the provided train_and_aug.jsonl file
 
-                
                 python3 augmented_data.py \
                 --input_folder [Path to wav data directory] \
                 --input_jsonlfile [Path to jsonline train file] 
+
         - Example:
                 
                 python3 augmented_data.py \
                 --input_folder /data/train_data/Train \
                 --input_jsonlfile /data/train.jsonl
-        - The Generated wav data will be stored at the same folder with the input folder.
-    3. Prepare your dataset
+        - denoise data by yourself using this command and use the provided train_and_denoise.jsonl file
+        ```
+        cd CleanUNet
+        python3 denoise_simple.py -c configs/DNS-large-high.json --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl -i [Path to wav data directory] -o [output folder]
+        ```
+        - Example:
+        ```
+        python3 denoise_simple.py -c configs/DNS-large-high.json --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl -i /data/train_data/Train/ -o /data/train_data/Train/
+        ```
+        - After that the data folders should look like :
+         ```bash
+        data
+        └──train_data
+            ├── 64b420ff8e16f5f56e45a2b7.wav
+            ├── 64b420118e16f55e6945a2a5.wav
+            ├── ...
+            ├── 648f0583bd5f017127bbb7cbBandStopFilter.wav
+            ├── ...
+            ├── 64b420ff8e16f5f56e45a2b7_denoised.wav
+            ├── 64b420118e16f55e6945a2a5_denoised.wav
+            ├── ...
+        
+        ```
+        - This results in 2 differents model checkpoint using 2 differents dataset. We will ensemble it in Inference part.
+    4. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
             bash prepare_train_data.sh [Path to wav data directory] [Path to jsonline train file]
@@ -60,12 +88,13 @@ docker run -it --name docker_slu --gpus all --rm slu
             bash prepare_train_data.sh /data/train_data/Train/ /data/train.jsonl
             ```
         - The processed data will be store in `txt_data/process_train.txt`
-    4. Run
+    5. Run
         - Start training from scratch:
             ```cmd
             python3 train.py -c config.toml
             ```
         - Change the number of workers, epochs, batch size, vv in `config.toml`
+        - The model will be stored in `saved/ASR/checkpoints/best_model.tar`. If you train more than one model, the newer checkpoints will replace the older. 
 - To train LM model: 
     1. Go to the root folder of the repo. Train the LM model by:
         ```
@@ -77,10 +106,14 @@ docker run -it --name docker_slu --gpus all --rm slu
         Note: Dont use the generated `train_and_aug.jsonl file` here.
         ```
         - The LM model will be stored in `your_ngram.binary`
-- You can use our ASR model which trained on both generated data and original data and a LM model checkpoints through this link:
-    - [ASR model](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
+- You can use our ASR model checkpoints and a LM model checkpoints through this link:
+    - [ASR model trained on orginal and generated data](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
         ```
         gdown 1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD
+        ```
+    - [ASR model trained on orginal and denoised data](https://drive.google.com/drive/folders/1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue?usp=drive_link)
+        ```
+        gdown --folder 1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue
         ```
     - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link)
         ```
@@ -89,14 +122,20 @@ docker run -it --name docker_slu --gpus all --rm slu
 ### Inference
 - First, go to SLU-ASR folder then run
 ```
-bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path to LM model]
+bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path to LM model] [save name]
 ```
     
 - Example:
 ```
-bash inference.sh /data/public_test/ best_model.tar your_3gram.binary
+bash inference.sh /data/public_test/ best_model.tar your_3gram.binary process_trans_file.txt
 ```
-- Then the final transcript be in `process_trans_file.txt`
+- To ensemble two ASR prediction run
+```
+python3 ASR_ensemble.py -main [First txt ASR output] -sup [Second txt ASR output] -lm [Path to lm model]
+```
+- Output will be store in `ensemble_trans.txt`
+- To reproduce our resutls, you set the First txt ASR output to the output of ASR model trained on **orginal and denoised data** and Second txt ASR output to  the output of ASR model trained on **orginal and generated data**.
+
 ## Text Intent and Slot Filling module
 ### Training 
 1. Prepare your data
@@ -125,7 +164,7 @@ gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
 ```
 - Example:
 ```
-bash inference_JointIDSF.sh SLU-ASR/process_trans_file.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
+bash inference_JointIDSF.sh SLU-ASR/ensemble_trans.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
 ```
 
 ### Ensemble

@@ -40,10 +40,9 @@ RUN --mount=type=cache,target=/root/.cache \
 ENV PYENV_ROOT /root/.pyenv
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH
 
-# RUN --mount=type=cache,target=/root/.cache \
-#     apt-get update -y \
-#     && apt-get install -y python3.9 python3.9-dev \
-#     && update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1 
+RUN --mount=type=cache,target=/root/.cache \
+    apt-get update -y \
+    && apt-get install -y unzip
 
 # RUN --mount=type=cache,target=/root/.cache \
 #     apt-get update -y \
@@ -84,7 +83,10 @@ RUN --mount=type=cache,target=/root/.cache \
     pip install gdown && \
     cd /SLU/SLU-ASR && \
     # gdown --folder 1CK__VZzxKA9ZZFbl0frFYyL3dFxEm83_ && \
-    gdown --folder 1HVt09CDAyoSaEdzC7J38VH_ksE4SgO_J
+    gdown --folder 1HVt09CDAyoSaEdzC7J38VH_ksE4SgO_J &&\
+    cd CleanUNet &&\ 
+    gdown --folder 1JGcqtyJ0QMzj9IbxL3NDBQrjqbINiYwh
+
 
 # set up kenlm
 RUN --mount=type=cache,target=/root/.cache \
