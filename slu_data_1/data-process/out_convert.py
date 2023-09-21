@@ -1,5 +1,7 @@
 import re
 import json
+import argparse 
+import constants
 
 def label_tokens(text):
     labels = []
@@ -27,8 +29,7 @@ def label_tokens(text):
     
     return labels
 
-if __name__ == '__main__':
-    train_file_path = 'slu_data_1/data-process/train_processed.jsonl'
+def out_converter(train_file_path, annotation_path): 
     # Read data from the JSONL file
     data = []
     with open(train_file_path, 'r', encoding='utf-8') as jsonl_file:
@@ -36,7 +37,7 @@ if __name__ == '__main__':
             entry = json.loads(line)
             data.append(entry)
 
-    with open('slu_data_1/data-process/seq.out', 'w', encoding='utf-8') as output_file:
+    with open(annotation_path, 'w', encoding='utf-8') as output_file:
         for entry in data:
             sentence_annotation = entry['sentence_annotation']
             modified_seq = sentence_annotation.replace(',', ' ')
@@ -51,7 +52,15 @@ if __name__ == '__main__':
             
             for label in labels:
                 output_file.write(f"{label} ")
-            output_file.write('\n')   
+            output_file.write('\n')  
 
-            
+if __name__ == '__main__':
+    args = argparse.ArgumentParser()
+    args.add_argument("--augment_data", action="store_true", help="Enable my augmented data")
+    args = args.parse_args()
+
+    out_converter(constants.TRAIN_FILE_PATH, constants.ANNOTATION_PATH) 
+    if args.augment_data: 
+        out_converter(constants.AUGMENTED_TRAIN_FILE_PATH, constants.AUGMENTED_ANNOTATION_PATH)
+    
     print("Label sequences generated and saved to 'seq.out'")
