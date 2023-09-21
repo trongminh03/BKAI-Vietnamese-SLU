@@ -83,7 +83,7 @@ docker run -it --name docker_slu --gpus all --rm slu
             ├── ...
         
         ```
-        - This results in 2 differents dataset with 2 different jsonl files. We will ensemble it in Inference part.
+        - This results in 2 differents dataset with 2 different jsonl files -> 2 different checkpoints. We will ensemble it in Inference part.
     4. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
@@ -181,6 +181,7 @@ bash inference_JointIDSF.sh SLU-ASR/ensemble_trans.txt JointIDSF_PhoBERTencoder_
 ```
 python3 ensemble.py --intent_predicts [Path to first predictions] --slot_predicts [Path to second predictions] 
 ```
+- To reproduce our results, pass the intent_predicts argument the output of `JointIDSF_PhoBERTencoder_SLU_loss_0.5_dropout_0.15_hidden_180_train_09` checkpoint and slot_predicts the other checkpoint.
 - The output will be stored in `ensemble_predict.jsonl`
 - Example:
 ```
