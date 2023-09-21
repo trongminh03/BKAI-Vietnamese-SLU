@@ -21,10 +21,15 @@ slu_data_1/data-process/train_08.jsonl
 slu_data_1/data-process/label 
 slu_data_1/data-process/seq.in 
 slu_data_1/data-process/seq.out
+slu_data_1/data-process/label_augmented
+slu_data_1/data-process/seq_augmented.in 
+slu_data_1/data-process/seq_augmented.out
 predictions.jsonl 
 Submission.zip
 input.txt 
 output.txt
+process_trans_file.txt 
+process_trans_file_new.txt
 transcript_add_c.txt 
 transcript_new_1.txt
 transcript.txt

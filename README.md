@@ -145,13 +145,14 @@ python3 ASR_ensemble.py -main [First txt ASR output] -sup [Second txt ASR output
 ## Text Intent and Slot Filling module
 ### Training 
 1. Prepare your data
-    - Run the following command to pre-process train.jsonl and prepare data for training:
+    - Run the following command to pre-process default train.jsonl file and prepare data for training:
         ```
         python3 slu_data_1/data_process.py -j [Path to train.jsonl file]
         ```
+    - Adding the `--augment_data` flag will include augmented data in the processing
     - Example :
         ```cmd
-        python3 slu_data_1/data_process.py -j /data/train.jsonl
+        python3 slu_data_1/data_process.py -j /data/train.jsonl --augment_data
         ```
     The processed data will be stored in `slu_data_1/syllable-level`
 2. Run 

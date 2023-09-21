@@ -8,6 +8,8 @@ def process_line(line, filename):
     location = None
     parts = line.strip().split(" -> ")
     intent = parts[0][1:-1]  # Remove angle brackets from the intent
+    if (len(parts) == 1):
+        return {"intent": uppercase_first_character(intent), "entities": [], "file":filename}
     entities = re.findall(r'\[(.*?)\]', parts[1])
 
     entity_dict = {}
