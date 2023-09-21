@@ -57,11 +57,17 @@ docker run -it --name docker_slu --gpus all --rm slu
         - denoise data by yourself using this command and use the provided train_and_denoise.jsonl file
         ```
         cd CleanUNet
-        python3 denoise_simple.py -c configs/DNS-large-high.json --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl -i [Path to wav data directory] -o [output folder]
+        python3 denoise_simple.py -c configs/DNS-large-high.json \
+        --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl \
+        -i [Path to wav data directory] \
+        -o [output folder]
         ```
         - Example:
         ```
-        python3 denoise_simple.py -c configs/DNS-large-high.json --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl -i /data/train_data/Train/ -o /data/train_data/Train/
+        python3 denoise_simple.py -c configs/DNS-large-high.json \
+        --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl \
+        -i /data/train_data/Train/ \
+        -o /data/train_data/Train/
         ```
         - After that the data folders should look like :
          ```bash
@@ -77,7 +83,7 @@ docker run -it --name docker_slu --gpus all --rm slu
             ├── ...
         
         ```
-        - This results in 2 differents model checkpoint using 2 differents dataset. We will ensemble it in Inference part.
+        - This results in 2 differents dataset with 2 different jsonl files. We will ensemble it in Inference part.
     4. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
