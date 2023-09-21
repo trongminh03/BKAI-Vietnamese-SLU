@@ -6,9 +6,10 @@ import argparse
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument('-j', '--train_file', type=str, required = True,help='Path to train.jsonl file')
+    args.add_argument('-o', '--output_file', type=str, required = True,help='Path to output file')
     args = args.parse_args()
     input_file_path = args.train_file
-    output_file_path = 'slu_data_1/data-process/train_processed.jsonl'
+    output_file_path = args.output_file
 
     # Open the input and output files
     with open(input_file_path, 'r', encoding='utf-8') as input_file, open(output_file_path, 'w', encoding='utf-8') as output_file:
