@@ -141,6 +141,15 @@ python3 ASR_ensemble.py -main [First txt ASR output] -sup [Second txt ASR output
 ```
 - Output will be store in `ensemble_trans.txt`
 - To reproduce our resutls, you set the First txt ASR output to the output of ASR model trained on **orginal and denoised data** and Second txt ASR output to  the output of ASR model trained on **orginal and generated data**.
+- For the final post-process run:
+```
+python3 final_process.py -j [Path to jsonline train file] -lm [Path to LM model] -p [Path to previous transcript txt file]
+```
+Example:
+```
+python3 final_process.py -j /data/train.jsonl -lm your_3gram.binary -p ensemble_trans.txt
+```
+- Final output of ASR will be store in `final_trans.txt`
 
 ## Text Intent and Slot Filling module
 ### Training 
@@ -171,7 +180,7 @@ gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
 ```
 - Example:
 ```
-bash inference_JointIDSF.sh SLU-ASR/ensemble_trans.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
+bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
 ```
 
 ### Ensemble
