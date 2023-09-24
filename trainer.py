@@ -35,6 +35,7 @@ class Trainer(object):
                 args=args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
+                ignore_mismatched_sizes=True,
             )
         else:
             self.config = self.config_class.from_pretrained(args.model_name_or_path, finetuning_task=args.token_level)
@@ -44,6 +45,7 @@ class Trainer(object):
                 args=args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
+                ignore_mismatched_sizes=True,
             )
         # GPU or CPU
         torch.cuda.set_device(self.args.gpu_id)
@@ -293,6 +295,7 @@ class Trainer(object):
                 args=self.args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
+                ignore_mismatched_sizes=True,
             )
             self.model.to(self.device)
             logger.info("***** Model Loaded *****")
