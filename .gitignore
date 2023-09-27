@@ -10,6 +10,7 @@ JointIDSF_PhoBERTencoder_SLU_dropout_02_loss_025_train09/
 JointIDSF_PhoBERTencoder_SLU_dropout_02_train09/
 JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented/
 JointIDSF_PhoBERTencoder_SLU_loss_0.5_dropout_0.15_hidden_180_train_09/
+JointIDSF_PhoBERTencoder_SLU_loss_0.85_dropout_0.15_hidden_180_train_09/
 test.txt
 test_out.txt
 run.txt
@@ -42,3 +43,4 @@ transcript_new_1.txt
 transcript.txt
 sentence.txt
 predict.sh
+final_trans.txt
