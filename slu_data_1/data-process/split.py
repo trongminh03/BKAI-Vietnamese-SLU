@@ -27,12 +27,15 @@ def split_data(augmented=False):
         augmented_data_pairs = list(zip(augmented_sentences, augmented_annotations, augmented_intents))
         random.shuffle(augmented_data_pairs)
 
-        split_point_1 = int(len(augmented_data_pairs) * 2 / 3)
-        split_point_2 = int(split_point_1 + len(augmented_data_pairs) / 6)
+        # split_point_1 = int(len(augmented_data_pairs) * 2 / 3)
+        # split_point_2 = int(split_point_1 + len(augmented_data_pairs) / 6)
 
-        train_data = data_pairs + augmented_data_pairs[:split_point_1]
-        dev_data = augmented_data_pairs[split_point_1:split_point_2]
-        test_data = augmented_data_pairs[split_point_2:]
+        # train_data = data_pairs + augmented_data_pairs[:split_point_1]
+        # dev_data = augmented_data_pairs[split_point_1:split_point_2]
+        # test_data = augmented_data_pairs[split_point_2:]
+        train_data = data_pairs + augmented_data_pairs[:-2] 
+        dev_data = augmented_data_pairs[-2:-1]
+        test_data = augmented_data_pairs[-1:]
     else:
         random.shuffle(data_pairs)
         train_data = data_pairs[:-2]

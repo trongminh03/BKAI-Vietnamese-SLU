@@ -4,7 +4,11 @@ import random
 
 subjects = ["anh", "tớ", "chị", "mình", "tôi"]
 names = ["minh", "quân", "my", "khang", "hân", "hải", "huy", "thịnh"]
-
+scenes = []
+locations = []
+decision_words = ["ra", "vào", "ra khỏi", "đến"]
+reasons = ["vì vậy", "nên"]
+verbs = ["kích hoạt", "mở", "hủy", "tắt", "bỏ qua"]
 def generate_random_sentence(intent_device_mapping):
     valid_intents = [intent for intent in intent_device_mapping.keys() if "hoạt cảnh" not in intent]
     if not valid_intents:
@@ -166,6 +170,7 @@ def get_entities_order(order, entities_set):
     return entities
 
 
+
     # return s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " " + s8 + " " + s9
 def combineword(order, sentence_augment, command, ending):
     index = 1
@@ -206,6 +211,8 @@ def mapping_data():
     muc_do_devices = set()
     do_dang_devices = set()
     nhiet_do_devices = set()
+    scene_set = set()
+    location_set = set()
     input_file_path = "slu_data_1/data-process/train_processed.jsonl"
     # Open the JSONL file and iterate through its lines
     with open(input_file_path, 'r', encoding='utf-8') as input_file:
@@ -217,13 +224,17 @@ def mapping_data():
             
             # Extract the command as a list
             command = [entity['filler'] for entity in json_data['entities'] if entity['type'] == 'command']
-
+            
 
 
             devices = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'device'}  # Use set comprehension
             scene = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'scene'} 
-
+            location = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'location'} 
+            scene_set.update(scene)
+            location_set.update(location)
             
+    
+
             # Check if the intent is already in the mapping, if not, create a new set
             if intent not in intent_device_mapping:
                     intent_device_mapping[intent] = set()
@@ -256,16 +267,122 @@ def mapping_data():
             intent_device_mapping[intent].update(nhiet_do_devices)
 
     mapping = {intent: list(devices) for intent, devices in intent_device_mapping.items()}
+    scenes.extend(scene_set)
+    locations.extend(location_set)
+    
     return mapping
 
-def generate_sentences(n):
+def combinescene(order):
+    sentence = ""
+    for word in order:
+        if word != "":
+            sentence += word.strip() + " "
+    return sentence.strip()
+
+def generate_scene_sentence():
+    location = random.choice(locations)
+    subject = random.choice(subjects)
+    decision = random.choice(decision_words)
+    scene = random.choice(scenes)
+    verb = random.choice(verbs)
+    scene_verb = random.choice(["chuẩn bị ", " "]) + scene
+    scene_config = random.choice(["hoạt cảnh ", "một chút ", "một chút sự ", "một chút không khí ", "chế độ ", ""]) + scene
+    time_at = ""
+    duration = ""
+    time_at_prefix = ""
+    duration_prefix = ""
+    duration_postfix = ""
+    # Add "thêm time at" or "thêm duration" randomly
+    if random.random() < 0.5:
+        if random.random() < 0.5:
+            time_at_prefix = random.choice(["khoảng ", "vào lúc ", "vào tầm "])
+            time_at = generate_random_time_at()
+        else:
+            duration_prefix = random.choice(["trong khoảng ", "trong vòng ", "trong "])
+            duration = generate_random_duration()
+            duration_postfix = random.choice([" nữa", ""])
+    ending = random.choice(["với ", ""]) + random.choice(['nhé', 'nhá', 'nha', 'nhớ', ""])
+    intent = ""
+
+    # Generate other components based on your plan
+    main_sentence = generate_main_sentence(subject, verb, scene_config, "cảnh " + scene, scene)
+    location_word = random.choice(["ở " + location, location, ""])
+
+    order_4 = [time_at_prefix + time_at , duration_prefix + duration + duration_postfix ,main_sentence, location_word, ending]
+
+    order_5 = [subject, decision, location, scene_verb, ending]
+
+    order_6 = [subject, "đang ở " + location, "nhưng mà", subject,  scene_verb, "đây"]
+
+    my_order = random.choice([order_4, order_5, order_6])
+    if decision in my_order:
+        if "ra khỏi" in decision:
+            intent = "hủy hoạt cảnh"
+        else:
+            intent = "kích hoạt cảnh"
+    elif main_sentence in my_order:
+        if "không" in main_sentence or "hủy" in main_sentence or "tắt" in main_sentence or "bỏ qua" in main_sentence:
+            intent = "hủy hoạt cảnh"
+        else:
+            intent = "kích hoạt cảnh"
+    elif "nhưng mà" in my_order:
+        intent = "hủy hoạt cảnh"
+    else:
+        intent = "kích hoạt cảnh"
+    
+    possible_entities = [
+        {"type": "time at", "filler": f"{time_at}"},
+        {"type": "duration", "filler": f"{duration}"},
+        {"type": "scene", "filler": scene},
+        {"type": "location", "filler": location},
+    ]
+    entities = get_entities_order(my_order, possible_entities)
+    generated_sentence = combinescene(my_order)
+
+    sentence_data = {
+        "id": "none",  # You can generate a unique ID here if needed
+        "sentence": generated_sentence,
+        "intent": intent,
+        "sentence_annotation": "sentence_annotation",
+        "entities": entities,
+        "file": "none.wav"  # Replace with the actual file name
+    }
+    return sentence_data
+
+
+
+def generate_main_sentence(subject, verb, scene_config, target_config, scene):
+    # Randomly select a format
+    format_choice = random.choice([1, 2, 3])
+
+    if format_choice == 1:
+        # Format: (S + sẽ/đang + muốn/cần/không muốn/ không cần + V + target_config)
+        main_sentence = f"{subject} {'sẽ' if random.random() < 0.5 else 'đang'} {'muốn' if random.random() < 0.5 else 'cần' if random.random() < 0.5 else 'không muốn' if random.random() < 0.5 else 'không cần'}    {target_config}"
+
+    elif format_choice == 2:
+        # Format: (V + cho + S + scene_config)
+        main_sentence = f"{verb} cho {subject} {scene_config}"
+
+    else:
+        # Format: (S + chuẩn bị + scene)
+        main_sentence = f"{subject} chuẩn bị {scene}"
+
+    return main_sentence
+
+# mapping_data = mapping_data()
+# print(mapping_data)
+def generate_sentences(x, y):
     intent_device_mapping = mapping_data()
     sentences_data = []
-    for _ in range(n):
+    for _ in range(x):
         sentence_data = generate_random_sentence(intent_device_mapping)
         if sentence_data:
             sentences_data.append(sentence_data)
 
+    for _ in range(y):
+        sentence_data = generate_scene_sentence()
+        if sentence_data:
+            sentences_data.append(sentence_data)
     # Save the sentences data to a JSON file
     output_file_path = "slu_data_1/data-process/random_sentences.jsonl"
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
@@ -273,6 +390,8 @@ def generate_sentences(n):
             # Create a separate JSON string for each sentence data and write it to a separate line
             output_file.write(json.dumps(sentence_data, ensure_ascii=False) + '\n')
 
-    print(f"Generated {n} random sentences data and saved to {output_file_path}")
+    print(f"Generated {x + y} random sentences data and saved to {output_file_path}")
 
-generate_sentences(3000)
+
+
+generate_sentences(3000, 300)
