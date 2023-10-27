@@ -9,6 +9,7 @@ from torch.utils.tensorboard import SummaryWriter
 from tqdm.auto import tqdm, trange
 from transformers import AdamW, get_linear_schedule_with_warmup
 from utils import MODEL_CLASSES, compute_metrics, get_intent_labels, get_slot_labels
+from torch_ema import ExponentialMovingAverage
 
 
 logger = logging.getLogger(__name__)
@@ -53,6 +54,8 @@ class Trainer(object):
         print(torch.cuda.current_device())
         self.device = "cuda" if torch.cuda.is_available() and not args.no_cuda else "cpu"
         self.model.to(self.device)
+
+        self.ema = ExponentialMovingAverage(self.model.parameters(), decay=0.995)
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
@@ -100,7 +103,7 @@ class Trainer(object):
         self.model.zero_grad()
 
         train_iterator = trange(int(self.args.num_train_epochs), desc="Epoch")
-        early_stopping = EarlyStopping(patience=self.args.early_stopping, verbose=True)
+        early_stopping = EarlyStopping(patience=self.args.early_stopping, verbose=True, ema=self.ema)
 
         for _ in train_iterator:
             epoch_iterator = tqdm(train_dataloader, desc="Iteration", position=0, leave=True)
@@ -139,6 +142,7 @@ class Trainer(object):
                         print("\nTuning metrics:", self.args.tuning_metric)
                         results = self.evaluate("dev")
                         writer.add_scalar("Loss/validation", results["loss"], _)
+                        writer.add_scalar("Loss/validation", results["EMA_loss"], _)
                         writer.add_scalar("Intent Accuracy/validation", results["intent_acc"], _)
                         writer.add_scalar("Slot F1/validation", results["slot_f1"], _)
                         writer.add_scalar("Mean Intent Slot", results["mean_intent_slot"], _)
@@ -154,6 +158,7 @@ class Trainer(object):
                 if 0 < self.args.max_steps < global_step:
                     epoch_iterator.close()
                     break
+                self.ema.update()
 
             if 0 < self.args.max_steps < global_step or early_stopping.early_stop:
                 train_iterator.close()
@@ -188,6 +193,7 @@ class Trainer(object):
         logger.info("  Num examples = %d", len(dataset))
         logger.info("  Batch size = %d", self.args.eval_batch_size)
         eval_loss = 0.0
+        eval_loss_ema = 0.0
         nb_eval_steps = 0
         intent_preds = None
         slot_preds = None
@@ -208,9 +214,9 @@ class Trainer(object):
                 if self.args.model_type != "distilbert":
                     inputs["token_type_ids"] = batch[2]
                 outputs = self.model(**inputs)
-                tmp_eval_loss, (intent_logits, slot_logits) = outputs[:2]
+                tmp_eval_loss_ema, (intent_logits, slot_logits) = outputs[:2]
 
-                eval_loss += tmp_eval_loss.mean().item()
+                eval_loss += tmp_eval_loss_ema.mean().item()
             nb_eval_steps += 1
 
             # Intent prediction
@@ -244,6 +250,57 @@ class Trainer(object):
 
         eval_loss = eval_loss / nb_eval_steps
         results = {"loss": eval_loss}
+        
+        with self.ema.average_parameters():
+            for batch in tqdm(eval_dataloader, desc="Evaluating"):
+                batch = tuple(t.to(self.device) for t in batch)
+                with torch.no_grad():
+                    inputs = {
+                        "input_ids": batch[0],
+                        "attention_mask": batch[1],
+                        "intent_label_ids": batch[3],
+                        "slot_labels_ids": batch[4],
+                    }
+                    if self.args.model_type != "distilbert":
+                        inputs["token_type_ids"] = batch[2]
+                    outputs = self.model(**inputs)
+                    tmp_eval_loss_ema, (intent_logits, slot_logits) = outputs[:2]
+
+                    eval_loss_ema += tmp_eval_loss_ema.mean().item()
+                nb_eval_steps += 1
+
+                # Intent prediction
+                if intent_preds is None:
+                    intent_preds = intent_logits.detach().cpu().numpy()
+                    out_intent_label_ids = inputs["intent_label_ids"].detach().cpu().numpy()
+                else:
+                    intent_preds = np.append(intent_preds, intent_logits.detach().cpu().numpy(), axis=0)
+                    out_intent_label_ids = np.append(
+                        out_intent_label_ids, inputs["intent_label_ids"].detach().cpu().numpy(), axis=0
+                    )
+
+                # Slot prediction
+                if slot_preds is None:
+                    if self.args.use_crf:
+                        # decode() in `torchcrf` returns list with best index directly
+                        slot_preds = np.array(self.model.crf.decode(slot_logits))
+                    else:
+                        slot_preds = slot_logits.detach().cpu().numpy()
+
+                    out_slot_labels_ids = inputs["slot_labels_ids"].detach().cpu().numpy()
+                else:
+                    if self.args.use_crf:
+                        slot_preds = np.append(slot_preds, np.array(self.model.crf.decode(slot_logits)), axis=0)
+                    else:
+                        slot_preds = np.append(slot_preds, slot_logits.detach().cpu().numpy(), axis=0)
+
+                    out_slot_labels_ids = np.append(
+                        out_slot_labels_ids, inputs["slot_labels_ids"].detach().cpu().numpy(), axis=0
+                    )
+
+            eval_loss_ema = eval_loss_ema / nb_eval_steps
+            results["EMA_loss"] = eval_loss_ema
+            
 
         # Intent result
         intent_preds = np.argmax(intent_preds, axis=1)
@@ -295,7 +352,6 @@ class Trainer(object):
                 args=self.args,
                 intent_label_lst=self.intent_label_lst,
                 slot_label_lst=self.slot_label_lst,
-                ignore_mismatched_sizes=True,
             )
             self.model.to(self.device)
             logger.info("***** Model Loaded *****")

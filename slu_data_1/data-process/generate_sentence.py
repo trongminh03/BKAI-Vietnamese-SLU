@@ -221,19 +221,13 @@ def mapping_data():
             # Extract the intent and devices from the current line
             intent = json_data['intent']
             sentence = json_data['sentence']
-            
             # Extract the command as a list
             command = [entity['filler'] for entity in json_data['entities'] if entity['type'] == 'command']
-            
-
-
             devices = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'device'}  # Use set comprehension
             scene = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'scene'} 
             location = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'location'} 
             scene_set.update(scene)
             location_set.update(location)
-            
-    
 
             # Check if the intent is already in the mapping, if not, create a new set
             if intent not in intent_device_mapping:
@@ -269,7 +263,7 @@ def mapping_data():
     mapping = {intent: list(devices) for intent, devices in intent_device_mapping.items()}
     scenes.extend(scene_set)
     locations.extend(location_set)
-    
+    print(scene)
     return mapping
 
 def combinescene(order):
@@ -301,18 +295,18 @@ def generate_scene_sentence():
             duration_prefix = random.choice(["trong khoảng ", "trong vòng ", "trong "])
             duration = generate_random_duration()
             duration_postfix = random.choice([" nữa", ""])
-    ending = random.choice(["với ", ""]) + random.choice(['nhé', 'nhá', 'nha', 'nhớ', ""])
+    ending = random.choice(['nhé', 'nhá', 'nha', 'nhớ', ""])
     intent = ""
 
     # Generate other components based on your plan
-    main_sentence = generate_main_sentence(subject, verb, scene_config, "cảnh " + scene, scene)
+    main_sentence = generate_main_sentence(subject, verb, scene_config, random.choice(["cảnh ", ""]) + scene, scene)
     location_word = random.choice(["ở " + location, location, ""])
 
     order_4 = [time_at_prefix + time_at , duration_prefix + duration + duration_postfix ,main_sentence, location_word, ending]
 
-    order_5 = [subject, decision, location, scene_verb, ending]
+    order_5 = [subject, decision, location, "để", scene_verb, ending]
 
-    order_6 = [subject, "đang ở " + location, "nhưng mà", subject,  scene_verb, "đây"]
+    order_6 = [subject, "đang ở " + location, "nhưng mà", subject,  scene_verb, ending]
 
     my_order = random.choice([order_4, order_5, order_6])
     if decision in my_order:
@@ -338,7 +332,8 @@ def generate_scene_sentence():
     ]
     entities = get_entities_order(my_order, possible_entities)
     generated_sentence = combinescene(my_order)
-
+    if "không cần" in generated_sentence or "không muốn" in generated_sentence:
+        generated_sentence.replace("với", "nữa")
     sentence_data = {
         "id": "none",  # You can generate a unique ID here if needed
         "sentence": generated_sentence,
@@ -357,7 +352,7 @@ def generate_main_sentence(subject, verb, scene_config, target_config, scene):
 
     if format_choice == 1:
         # Format: (S + sẽ/đang + muốn/cần/không muốn/ không cần + V + target_config)
-        main_sentence = f"{subject} {'sẽ' if random.random() < 0.5 else 'đang'} {'muốn' if random.random() < 0.5 else 'cần' if random.random() < 0.5 else 'không muốn' if random.random() < 0.5 else 'không cần'}    {target_config}"
+        main_sentence = f"{subject} {'sẽ' if random.random() < 0.5 else 'đang'} {'muốn' if random.random() < 0.5 else 'cần' if random.random() < 0.5 else 'không muốn' if random.random() < 0.5 else 'không cần'} {target_config}"
 
     elif format_choice == 2:
         # Format: (V + cho + S + scene_config)

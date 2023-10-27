@@ -129,6 +129,7 @@ def convert_input_file_to_tensor_dataset(
 def predict(pred_config):
     # load model and args
     args = get_args(pred_config)
+    print("args:", args)
     device = get_device(pred_config)
     model = load_model(pred_config, args, device)
     logger.info(args)
@@ -164,6 +165,9 @@ def predict(pred_config):
             outputs = model(**inputs)
             _, (intent_logits, slot_logits) = outputs[:2]
 
+            print("intent logits:", intent_logits, "shape:", intent_logits.shape)
+            print("slot logits:", slot_logits, "shape:", slot_logits.shape)
+
             # Intent Prediction
             if intent_preds is None:
                 intent_preds = intent_logits.detach().cpu().numpy()
@@ -184,19 +188,27 @@ def predict(pred_config):
                 else:
                     slot_preds = np.append(slot_preds, slot_logits.detach().cpu().numpy(), axis=0)
                 all_slot_label_mask = np.append(all_slot_label_mask, batch[3].detach().cpu().numpy(), axis=0)
+            print("slot preds", slot_preds)
 
-    intent_preds = np.argmax(intent_preds, axis=1)
+    # print("intent preds:", intent_preds) 
+    # print("slot preds:", slot_preds)
+    print("all slot label mask:", all_slot_label_mask)
+    intent_preds = np.argmax(intent_preds, axis=1)  
+    print("Intent preds:", intent_preds, "shape:", intent_preds.shape) 
 
     if not args.use_crf:
         slot_preds = np.argmax(slot_preds, axis=2)
 
     slot_label_map = {i: label for i, label in enumerate(slot_label_lst)}
+    print("slot label map:", slot_label_map)
     slot_preds_list = [[] for _ in range(slot_preds.shape[0])]
 
     for i in range(slot_preds.shape[0]):
         for j in range(slot_preds.shape[1]):
             if all_slot_label_mask[i, j] != pad_token_label_id:
                 slot_preds_list[i].append(slot_label_map[slot_preds[i][j]])
+
+    # print("slot preds list:", slot_preds_list)
 
     # Write to output file
     with open(pred_config.output_file, "w", encoding="utf-8") as f:
@@ -224,4 +236,5 @@ if __name__ == "__main__":
     parser.add_argument("--no_cuda", action="store_true", help="Avoid using CUDA when available")
 
     pred_config = parser.parse_args()
+    print("pred config:", pred_config)
     predict(pred_config)
