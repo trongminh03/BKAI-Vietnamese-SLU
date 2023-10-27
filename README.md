@@ -172,7 +172,7 @@ python3 final_process.py -j /data/train.jsonl -lm your_3gram.binary -p ensemble_
 ### Inference
 - Here is [model checkpoints link](https://drive.google.com/drive/folders/1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f?usp=drive_link) in case you want to make inference without training the models from scratch
 ```
-gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
+gdown --folder 1eCSHBAp1uD31dsgup5as-gQd2K_2rHuN
 ```
 - Then run this command for inference:
 ```
