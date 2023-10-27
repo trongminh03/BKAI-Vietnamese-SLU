@@ -184,15 +184,9 @@ bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU
 ```
 
 ### Ensemble
-- For higher accuracy we apply simple ensemble method.
-- First you run the inference twice with different model checkpoints.
+- For higher accuracy we apply confidence score ensemble method.
+- Edit ``` model_list.txt ``` file which includes multiple model names that you want to ensemble. 
 - Then run:
 ```
-python3 ensemble.py --intent_predicts [Path to first predictions] --slot_predicts [Path to second predictions] 
-```
-- To reproduce our results, pass the `intent_predicts` argument the output of `JointIDSF_PhoBERTencoder_SLU_loss_0.85_dropout_0.15_hidden_180_train_09` checkpoint and `slot_predicts` the other checkpoint.
-- The output will be stored in `ensemble_predict.jsonl`
-- Example:
-```
-python3 ensemble.py --intent_predicts predictions1.jsonl --slot_predicts predictions2.jsonl
+bash inference_ensemble.sh 
 ```
