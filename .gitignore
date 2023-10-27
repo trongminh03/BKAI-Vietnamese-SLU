@@ -16,6 +16,7 @@ JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented_newest_step+s/
 JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented_scene_new_best_model/
 JointIDSF_PhoBERTencoder_SLU_dropout_0.15_hidden_180_augment_newest/
 JointIDSF_PhoBERTencoder_SLU_dropout_0.15_loss2_0.25_hidden_180_augment_newest/
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_loss1_0.7_augmented_newest/
 test.txt
 test_out.txt
 run.txt
