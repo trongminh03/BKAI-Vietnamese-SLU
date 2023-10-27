@@ -183,7 +183,7 @@ gdown --folder 1tZ-508QnyfQEh1_xzkoVjwkSkW38I04f
 bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU/4e5/0.15/100 predictions.jsonl 
 ```
 
-### Ensemble
+### Ensemble model inference
 - For higher accuracy we apply confidence score ensemble method.
 - Edit ``` model_list.txt ``` file which includes multiple model names that you want to ensemble. 
 - Then run:
