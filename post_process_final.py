@@ -20,7 +20,7 @@ def process_line(line, filename):
     last_entity = ""
     for entity in entities:
         loading_entity = "[" + entity + "]"
-        if "device" in last_entity and "B-device" in loading_entity:
+        if "device" in last_entity and "B-device" in loading_entity and  current_entity["filler"].split(" ")[0] not in entity :
             mix = last_entity + " " + loading_entity
             if mix in parts[1]:
                 print(parts[1])
@@ -34,7 +34,7 @@ def process_line(line, filename):
 
                 if entity_type_parts[0] == "B":
                     if current_entity != {}:
-                        # print(current_entity)
+                        # print(current_entity)       
                         processed_entities.append(current_entity)
                         current_entity = {}
                         entity_filler = ""
@@ -58,10 +58,6 @@ def process_line(line, filename):
    
     # processed_entities = [{"type": key.replace('_', ' '), "filler": " ".join(value)} for key, value in entity_dict.items()]
     # processed_entities = entity_dict
-    if "kiểm tra" not in intent and "hoạt cảnh" not in intent:
-        for entity in processed_entities:
-            if entity["type"] == "command":
-                entity["filler"] = intent.split()[0].lower()
 
     for entity in processed_entities:
         if entity["type"] == "device":
@@ -69,6 +65,10 @@ def process_line(line, filename):
         if entity["type"] == "location":
             location = entity["filler"]
             locations = location.split()
+        if entity["type"] == "command" and "cho" in entity["filler"]:
+            processed_entities.remove(entity)
+        if entity["type"] == "command" and "làm" in entity["filler"]:
+            processed_entities.remove(entity)
     if (device):
         if (device.split()[-1] == "của"):
             if (location): 
