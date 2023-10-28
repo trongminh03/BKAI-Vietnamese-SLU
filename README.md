@@ -33,15 +33,15 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         bash download_data.sh [Path to your origin train data folder]
         ```
-        - Download [train_and_aug.jsonl file](https://drive.google.com/file/d/1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv/view?usp=sharing) and [train_and_denoise.jsonl file](https://drive.google.com/file/d/1229wpKuDhiLa8CQkwk-PI5T920c1zKjP/view?usp=sharing)
+        - Download [newaug_newdenoise.jsonl](https://drive.google.com/file/d/1iL-P17ULBWN58Up-AjeArjoJWhalTLZa/view?usp=drive_link) and [newaug_newdenoise2.jsonl](https://drive.google.com/file/d/12H05uTpWwqv632o6hM-Qy_wBJYsBnbPL/view?usp=drive_link):
         - You can use `gdown` to download the file.
-            - `train_and_aug.jsonl` file: 
+            - `newaug_newdenoise.jsonl` file: 
                 ```
-                gdown 1Zkuuc4P74sVI1wpHMUw5PlBzpVdX95Rv
+                gdown 1iL-P17ULBWN58Up-AjeArjoJWhalTLZa
                 ```
-            - `train_and_denoise.jsonl` file:
+            - `newaug_newdenoise2.jsonl` file:
                 ```
-                gdown 1229wpKuDhiLa8CQkwk-PI5T920c1zKjP
+                gdown 12H05uTpWwqv632o6hM-Qy_wBJYsBnbPL
                 ```
         - Or generate wav file by yourself using this command and use the provided `train_and_aug.jsonl` file
 
@@ -78,8 +78,10 @@ docker run -it --name docker_slu --gpus all --rm slu
             ├── ...
             ├── 648f0583bd5f017127bbb7cbBandStopFilter.wav
             ├── ...
-            ├── 64b420ff8e16f5f56e45a2b7_denoised.wav
-            ├── 64b420118e16f55e6945a2a5_denoised.wav
+            ├── 64b420ff8e16f5f56e45a2b7cleantrain.wav
+            ├── 64b420118e16f55e6945a2a5cleantrain.wav
+            ├── ...
+            ├── 64a18594883d155a21f23f651-17367-A-102.wav
             ├── ...
         
         ```
@@ -113,17 +115,13 @@ docker run -it --name docker_slu --gpus all --rm slu
         **Note:** Dont use the generated `train_and_aug.jsonl file` here.
         - The LM model will be stored in `your_ngram.binary`
 - You can use our ASR model checkpoints and a LM model checkpoints through this link:
-    - [ASR model trained on original, augmented and denoised data](https://drive.google.com/file/d/1AmNOW1kDhAFzelhAjacO1a7dX9Y_DZoo/view?usp=sharing)
+    - [ASR model trained on newaug_newdenoise](https://drive.google.com/file/d/1AmNOW1kDhAFzelhAjacO1a7dX9Y_DZoo/view?usp=sharing)
         ```
         gdown 1AmNOW1kDhAFzelhAjacO1a7dX9Y_DZoo
-        ``` 
-    - [ASR model trained on orginal and generated data](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
         ```
-        gdown 1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD
+    - [ASR model trained on newaug_newdenoise2](https://drive.google.com/file/d/1hUzwcBd-jfC-Vl9Ndlg_ULB-5Jyht6o3/view?usp=drive_link)
         ```
-    - [ASR model trained on orginal and denoised data](https://drive.google.com/drive/folders/1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue?usp=drive_link)
-        ```
-        gdown --folder 1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue
+        gdown 1hUzwcBd-jfC-Vl9Ndlg_ULB-5Jyht6o3
         ```
     - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link)
         ```
