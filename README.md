@@ -173,7 +173,7 @@ bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU
 
 ### Ensemble model inference
 - For higher accuracy we apply confidence score ensemble method.
-- Edit ``` model_list.txt ``` file which includes multiple model names that you want to ensemble. 
+- Edit ``` model_list.txt ``` file which includes multiple model names and weights that you want to ensemble. 
 - Then run:
 ```
 bash inference_ensemble.sh 
