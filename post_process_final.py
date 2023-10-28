@@ -69,6 +69,12 @@ def process_line(line, filename):
             processed_entities.remove(entity)
         if entity["type"] == "command" and "làm" in entity["filler"]:
             processed_entities.remove(entity)
+    
+        if entity["type"] == "command" and entity["filler"] in ['đóng', 'sập', 'khép', 'khóa']:
+            intent = "đóng thiết bị"
+        if entity["type"] == "command" and entity["filler"] == "tăng":
+            intent = intent.replace("giảm", "tăng")
+            
     if (device):
         if (device.split()[-1] == "của"):
             if (location): 
