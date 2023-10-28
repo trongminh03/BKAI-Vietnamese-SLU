@@ -113,47 +113,29 @@ docker run -it --name docker_slu --gpus all --rm slu
         **Note:** Dont use the generated `train_and_aug.jsonl file` here.
         - The LM model will be stored in `your_ngram.binary`
 - You can use our ASR model checkpoints and a LM model checkpoints through this link:
-    - [ASR model trained on original, augmented and denoised data](https://drive.google.com/file/d/1AmNOW1kDhAFzelhAjacO1a7dX9Y_DZoo/view?usp=sharing)
+    - [First ASR model](https://drive.google.com/drive/folders/1eXHr0Q4RvhQTIghBY3gL3Lm2CoH3zbgf?usp=drive_link)
         ```
-        gdown 1AmNOW1kDhAFzelhAjacO1a7dX9Y_DZoo
+        gdown --folder 1eXHr0Q4RvhQTIghBY3gL3Lm2CoH3zbgf
         ``` 
-    - [ASR model trained on orginal and generated data](https://drive.google.com/file/d/1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD/view?usp=sharing)
+    - [Second ASR model](https://drive.google.com/drive/folders/1MxVEICeosjMbAbn27tdI9Oy8zL89Jb9q?usp=drive_link)
         ```
-        gdown 1eUL7IgpPcofJeuLjf231cvBo2BSzRHJD
+        gdown --folder 1MxVEICeosjMbAbn27tdI9Oy8zL89Jb9q
         ```
-    - [ASR model trained on orginal and denoised data](https://drive.google.com/drive/folders/1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue?usp=drive_link)
+    - [LM model](https://drive.google.com/file/d/1xEtlT71ay_ubCT7NgbdwtkZHCqlR7N87/view?usp=drive_link)
         ```
-        gdown --folder 1r5Huc3dViw1XVuZbFeWJYKH_yFcydPue
-        ```
-    - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=drive_link)
-        ```
-        gdown 1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg
+        gdown 1xEtlT71ay_ubCT7NgbdwtkZHCqlR7N87
         ```
 ### Inference
 - First, go to SLU-ASR folder then run
 ```
-bash inference.sh [Path to your wav test file lists] [Path to model.tar] [Path to LM model] [save name]
+bash inference_ensemble.sh  [Path to your wav test file lists] [Path to model list to ensemble] [Path to LM model] [save_path]
 ```
     
 - Example:
 ```
-bash inference.sh /data/public_test/ best_model.tar your_3gram.binary process_trans_file.txt
+bash inference_ensemble.sh /data/public_test/ model_list.txt add_gen_3gram.binary process_trans_file.txt
 ```
-- To ensemble two ASR prediction run:
-```
-python3 ASR_ensemble.py -main [First txt ASR output] -sup [Second txt ASR output] -lm [Path to lm model]
-```
-- Output will be stored in `ensemble_trans.txt`
-- To reproduce our results, you set the First txt ASR output to the output of ASR model trained on **orginal and denoised data** and Second txt ASR output to  the output of ASR model trained on **orginal and generated data**.
-- For the final post-process run:
-```
-python3 final_process.py -j [Path to jsonline train file] -lm [Path to LM model] -p [Path to previous transcript txt file]
-```
-Example:
-```
-python3 final_process.py -j /data/train.jsonl -lm your_3gram.binary -p ensemble_trans.txt
-```
-- Final output of ASR will be stored in `final_trans.txt`
+- Set the path to your model in `model_list.txt`. 
 
 ## Text Intent and Slot Filling module
 ### Training 
