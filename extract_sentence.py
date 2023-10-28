@@ -44,15 +44,17 @@ if __name__ == '__main__':
             #     line = ' '.join(new_line)
             line = line.replace(" trăm ", "")
             line = line.replace(" chếch ", " check ")
-            line = line.replace(" giờ dưới ", " giờ rưỡi ")
-            line = re.sub(r'(\d+)\s+dưới', r'\1 rưỡi', line)
             # line.replace(" giờ dưới ", " giờ rưỡi ")
-            
-
+            line = line.replace("1 chút", "một chút")
+            line = line.replace("1 giữ", "1 rưỡi")
+            line = line.replace("giờ dưới", "giờ rưỡi")
+            # line = line.replace("khởi đóng","khởi động")
+            line = re.sub(r'(\d+)\s+dưới', r'\1 rưỡi', line)
             # Split the line based on space and take the last part as the extracted text
             # decreasing = False
             parts = line.strip().split(" ")
             text = " ".join(parts[1:])
+            
             # matches = re.findall(pattern, text)
             # for word in decrease_words:
             #     if word in text:
