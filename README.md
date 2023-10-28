@@ -119,9 +119,9 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         gdown --folder 1eXHr0Q4RvhQTIghBY3gL3Lm2CoH3zbgf
         ``` 
-    - [Second ASR model](https://drive.google.com/drive/folders/1MxVEICeosjMbAbn27tdI9Oy8zL89Jb9q?usp=drive_link)
+    - [Second ASR model](https://drive.google.com/drive/folders/1SE3kA912bTMZohwb04iZ6dn_RHl94yoL?usp=sharing)
         ```
-        gdown --folder 1MxVEICeosjMbAbn27tdI9Oy8zL89Jb9q
+        gdown --folder 1SE3kA912bTMZohwb04iZ6dn_RHl94yoL
         ```
     - [LM model](https://drive.google.com/file/d/164Yneq40bePRlBq9c2mlvxCfTluv9Ss2/view?usp=drive_link)
         ```
