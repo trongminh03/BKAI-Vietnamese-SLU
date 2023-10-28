@@ -43,32 +43,6 @@ docker run -it --name docker_slu --gpus all --rm slu
                 ```
                 gdown 12H05uTpWwqv632o6hM-Qy_wBJYsBnbPL
                 ```
-        - Or generate wav file by yourself using this command and use the provided `train_and_aug.jsonl` file
-
-                python3 augmented_data.py \
-                --input_folder [Path to wav data directory] \
-                --input_jsonlfile [Path to jsonline train file] 
-
-        - Example:
-                
-                python3 augmented_data.py \
-                --input_folder /data/train_data/Train \
-                --input_jsonlfile /data/train.jsonl
-        - denoise data by yourself using this command and use the provided `train_and_denoise.jsonl` file
-        ```
-        cd CleanUNet
-        python3 denoise_simple.py -c configs/DNS-large-high.json \
-        --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl \
-        -i [Path to wav data directory] \
-        -o [output folder]
-        ```
-        - Example:
-        ```
-        python3 denoise_simple.py -c configs/DNS-large-high.json \
-        --ckpt_pat DNS-large-high/checkpoint/pretrained.pkl \
-        -i /data/train_data/Train/ \
-        -o /data/train_data/Train/
-        ```
         - After that the data folders should look like :
          ```bash
         data
@@ -86,6 +60,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         
         ```
         - This results in 2 differents dataset with 2 different jsonl files which then produces 2 different checkpoints. We will ensemble it in Inference part.
+        - To augment and denoise data, we use [this](https://github.com/karolpiczak/ESC-50) and [this](https://github.com/facebookresearch/denoiser) repo.
     4. Prepare your dataset
         - To put your dataset in correct format and process it run: 
             ```
@@ -137,7 +112,7 @@ bash inference_ensemble.sh  [Path to your wav test file lists] [Path to model li
 ```
 bash inference_ensemble.sh /data/public_test/ model_list.txt add_gen_3gram.binary process_trans_file.txt
 ```
-- Set the path to your model in `model_list.txt`. 
+- Set the path to your models you want to ensemble in `SLU-ASR/model_list.txt`. To reproduce the result, keep the weight which ís a float number after the path and set the path to your actual path.
 
 ## Text Intent and Slot Filling module
 ### Training 
@@ -178,3 +153,4 @@ bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU
 ```
 bash inference_ensemble.sh 
 ```
+- To reproduce the result, keep the weight and set the path to your actual path.
