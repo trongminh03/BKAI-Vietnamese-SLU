@@ -98,9 +98,9 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
         gdown --folder 1SE3kA912bTMZohwb04iZ6dn_RHl94yoL
         ```
-    - [LM model](https://drive.google.com/file/d/164Yneq40bePRlBq9c2mlvxCfTluv9Ss2/view?usp=drive_link)
+    - [LM model](https://drive.google.com/file/d/1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg/view?usp=sharing)
         ```
-        gdown 164Yneq40bePRlBq9c2mlvxCfTluv9Ss2
+        gdown 1XdQ0O-zyKEE8Z_glH9NZuj-Sj8v3jhkg
         ```
 ### Inference
 - First, go to SLU-ASR folder then run
