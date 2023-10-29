@@ -7,6 +7,7 @@ import zipfile
 possible_confusion_words = ["à", "à mà thôi", "à thôi", "à nhầm", "nhầm", "à đâu", "à quên"]
 def process_line(line, filename):
     device = None
+    sentence = get_sentence(line)
     location = None
     parts = line.strip().split(" -> ")
     intent = parts[0][1:-1]  # Remove angle brackets from the intent
@@ -69,12 +70,20 @@ def process_line(line, filename):
             processed_entities.remove(entity)
         if entity["type"] == "command" and "làm" in entity["filler"]:
             processed_entities.remove(entity)
-    
         if entity["type"] == "command" and entity["filler"] in ['đóng', 'sập', 'khép', 'khóa']:
             intent = "đóng thiết bị"
         if entity["type"] == "command" and entity["filler"] == "tăng":
             intent = intent.replace("giảm", "tăng")
-            
+        if entity["type"] == "command" and entity["filler"] == "mở":
+            intent = "mở thiết bị"
+        if entity["type"] == "command" and entity["filler"] == "dùng":
+            entity["filler"] = "dừng"
+            intent = "tắt thiết bị"
+
+    if len([entity for entity in processed_entities if entity['type'] == 'command']) == 0 :
+        if 'hoạt động' in sentence:
+            intent = 'kiểm tra tình trạng thiết bị'
+
     if (device):
         if (device.split()[-1] == "của"):
             if (location): 
@@ -120,13 +129,32 @@ def format(jsonl_line):
             device = entity['filler']
         if "%" in entity['filler']:
             have_percentage = True
-        if "độ" in entity['filler']:
+        if re.match(pattern, entity['filler']):
             have_degree = True
     if (have_percentage and device == ""):
         jsonl_line['intent'] = intent.replace("mức độ", "độ sáng").replace("âm lượng", "độ sáng").replace("nhiệt độ", "độ sáng")
     if (have_degree and device == ""):
         jsonl_line['intent'] = intent.replace("độ sáng", "nhiệt độ").replace("âm lượng", "nhiệt độ").replace("mức độ", "nhiệt độ")
     return jsonl_line
+
+def get_sentence(txt):
+    input_tokens = txt.split()
+
+    # Initialize an empty list to store the generated output
+    output_tokens = []
+
+    # Loop through the input tokens
+    for token in input_tokens:
+        if token.startswith("[") and token.endswith("]"):
+            # Extract the content inside square brackets
+            content = token[1:-1]
+            output_tokens.append(content)
+        else:
+            output_tokens.append(token)
+
+    # Join the output tokens to form the final output text
+    generated_output = " ".join(output_tokens)
+    return generated_output
 
 def cut_entity(jsonl_line):
     # return jsonl_line

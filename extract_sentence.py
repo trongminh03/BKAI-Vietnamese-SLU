@@ -4,6 +4,26 @@ import re
 # input_file_path = "transcript_new_1.txt"
 # output_file_path = "input.txt"
 
+def replace_number(line: str):
+    units = ['mức', 'độ', '%']
+    if line.find('hạ') != -1 or line.find('giảm') != -1 or line.find('xuống') == -1:
+        return line
+    words = line.split()
+    for i in range(len(words)):
+        if words[i] == 'xuống':
+            if i < len(words) - 1:
+                if words[i + 1].find(units[2]) != -1:
+                    return line
+                else:
+                    if words[i + 1].isdigit():
+                        if i + 2 < len(words):
+                            if words[i + 2] not in units:
+                                words[i] = 'số'
+                        else:
+                            words[i] = 'số'
+    return ' '.join(words)
+
+
 if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument('-i', '--input_path', type=str, required = True,help='Path to transcript.txt file')
@@ -16,39 +36,18 @@ if __name__ == '__main__':
     # Create a list to store the extracted text
     extracted_text = []
     # decrease_words = ['giảm', 'hạ']
-
-    # pattern = r'xuống\s+(\d+)'
-
-    # Open the input file for reading
     with open(input_file_path, "r", encoding="utf-8") as input_file:
         for line in input_file:
-            # if "khách tớ nhà" in line: 
-            #     line = line.replace("khách tớ nhà", "khách tới nhà")
-            # if " hà " in line: 
-            #     line = line.replace(" hà ", " hạ ") 
-            # if line.split()[0] == "hà":
-            #     line[0:2] = "hạ" 
-            # if "chính" in line: 
-            #     line = line.replace("chính", "chỉnh") 
-            # if "máy tính của" in line: 
-            #     new_line = line.split()
-            #     i = new_line.index("của")
-            #     if new_line[i - 1] == "tính": 
-            #         new_line[i + 1] = "khang"
-            #     line = ' '.join(new_line)
-            # if "máy tính để bàn của" in line: 
-            #     new_line = line.split()
-            #     i = new_line.index("của")
-            #     if new_line[i - 1] == "bàn":
-            #         new_line[i + 1] = "khang"
-            #     line = ' '.join(new_line)
-            line = line.replace(" trăm ", "")
+            line = line.replace(" trăm ", "").replace("\n", "")
             line = line.replace(" chếch ", " check ")
             # line.replace(" giờ dưới ", " giờ rưỡi ")
             line = line.replace("1 chút", "một chút")
-            line = line.replace("1 giữ", "1 rưỡi")
             line = line.replace("giờ dưới", "giờ rưỡi")
-            # line = line.replace("khởi đóng","khởi động")
+            line = line.replace("về nhạc", "về nhà")
+            line = line.replace("máy tính đèn bàn", "máy tính để bàn")
+            line = line.replace("nưng", "nâng") 
+            line = line.replace("lưng", "nâng")
+            line = replace_number(line)
             line = re.sub(r'(\d+)\s+dưới', r'\1 rưỡi', line)
             # Split the line based on space and take the last part as the extracted text
             # decreasing = False
@@ -70,3 +69,4 @@ if __name__ == '__main__':
             output_file.write(text + "\n")
 
     print("Extraction and saving complete.")
+

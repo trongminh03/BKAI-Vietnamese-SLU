@@ -53,7 +53,7 @@ class EarlyStopping:
                     f"{args.tuning_metric} increased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ..."
                 )
         model.save_pretrained(args.model_dir)
-        torch.save(args, os.path.join(args.model_dir, "training_args.bin"))
+        torch.save(args, os.path.join(args.model_dir, "training_args.bin")) 
         self.val_loss_min = val_loss
 
     def save_checkpoint_ema(self, val_loss, model, args):
