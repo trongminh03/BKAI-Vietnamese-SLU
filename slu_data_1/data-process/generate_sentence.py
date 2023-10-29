@@ -2,22 +2,12 @@ import json
 import random
 import copy
 random.seed(2910)
-subjects = ["anh", "tớ", "chị", "mình", "tôi", "ông"]
-names = ["minh", "quân", "my", "khang", "hân", "hải", "huy", "thịnh", "phát"]
+subjects = ["anh", "tớ", "chị", "mình", "tôi"]
+names = ["quân", "long", "hân", "huy", "duy", "vy", "đạt", "nhi", "ông", "bà", "linh", "my", "khôi"]
+decision_words = ["ra", "vào", "ra khỏi", "đến"]
 scenes = []
 locations = []
-decision_words = ["ra", "vào", "ra khỏi", "đến"]
-reasons = ["vì vậy", "nên"]
-verbs = ["kích hoạt", "mở", "hủy", "tắt", "bỏ qua"]
-possible_scene = ['về nhà', 'khách tới nhà', 'ra ngoài']
-synonym = [['hạ', 'giảm', 'cho nhỏ', 'điều chỉnh', 'chỉnh'],
-['tăng', 'nâng', 'cho to', 'điều chỉnh', 'chỉnh'],
-['ngắt', 'tắt','dừng'],
-['khởi động', 'bật', 'chạy', 'quay'],
-['mở', 'kéo', 'vặn'],
-['đóng', 'kéo', 'sập', 'khép', 'khóa', 'vặn'],
-['kiểm tra', 'check']
-]
+verbs = ["kích hoạt", "mở", "hủy"]
 
 def generate_random_sentence(intent_device_mapping):
     valid_intents = [intent for intent in intent_device_mapping.keys() if "hoạt cảnh" not in intent]
@@ -36,12 +26,6 @@ def generate_random_sentence(intent_device_mapping):
         command = "kiểm tra"
     else:
         command = random_intent.split()[0]
-    
-    for syn in synonym:
-        if command in syn:
-            print(command, syn)
-            command = random.choice(syn)
-            break
     s2 = command
     # print(s2)
     # Choose a random device fit with the intent
@@ -63,7 +47,6 @@ def generate_random_sentence(intent_device_mapping):
     changing_value = ""
     duration = ""
     time_at = ""
-    location = ""
         # s5 = f" {'hộ' if random.random() < 0.5 else 'cho'} {subject}" 
     sentence_augment = random.choice( ["", random.choice(  ["hộ " + random.choice([subject, ""]), "cho " + subject, "giúp " + subject])])
 
@@ -78,10 +61,7 @@ def generate_random_sentence(intent_device_mapping):
             # create changing value
             partition_augment = random.choice(["lên ", ""]) + random.choice(["thêm ", ""]) + random.choice(["tầm ", "khoảng "])
             if "nhiệt độ" in random_intent:
-                if random.randint(1, 100) > 10:
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
-                else: 
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + "%"])
+                changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
             elif "mức độ" in random_intent:
                 changing_value = random.choice(["", str(random.randint(1, 10)) + random.choice([" mức", ""])])
                 partition_augment.replace("tầm", "").replace("khoảng","")
@@ -91,12 +71,9 @@ def generate_random_sentence(intent_device_mapping):
                 partition_augment = ""
         else:
             # create target number
-            partition_augment = random.choice(["lên ", ""]) + random.choice(["đến " , "tới ", "thành "]) + random.choice(["tầm ", "khoảng "])
+            partition_augment = random.choice(["lên ", ""]) + random.choice(["đến " , "tới "]) + random.choice(["tầm ", "khoảng "])
             if "nhiệt độ" in random_intent:
-                if random.randint(1, 100) > 10:
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
-                else: 
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + "%"])
+                target_number = random.choice(["", str(str(random.randint(1, 100))) + " độ c"])
             elif "mức độ" in random_intent:
                 target_number = random.choice(["", random.choice(["mức ", ""]) + str(random.randint(1, 10))])
                 partition_augment.replace("tầm", "").replace("khoảng","")
@@ -104,8 +81,6 @@ def generate_random_sentence(intent_device_mapping):
                 target_number = random.choice(["", str(str(random.randint(1, 100))) + "%"])
             if target_number == "":
                 partition_augment = ""
-        if "chỉnh" in command and "lên" not in partition_augment:
-            partition_augment = "lên " + partition_augment
 
     elif "giảm" in random_intent:
 
@@ -114,10 +89,7 @@ def generate_random_sentence(intent_device_mapping):
             # create changing value
             partition_augment = random.choice(["xuống ", ""]) + random.choice(["bớt ", ""]) + random.choice(["tầm ", "khoảng "])
             if "nhiệt độ" in random_intent:
-                if random.randint(1, 100) > 10:
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
-                else: 
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + "%"])
+                changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
             elif "mức độ" in random_intent:
                 changing_value = random.choice(["", str(random.randint(1, 10)) + random.choice([" mức", ""])])
                 partition_augment.replace("tầm", "").replace("khoảng","")
@@ -127,12 +99,9 @@ def generate_random_sentence(intent_device_mapping):
                 partition_augment = ""
         else:
             # create target number
-            partition_augment = random.choice(["xuống ", ""]) + random.choice(["đến " , "tới ", "còn ", "thành "]) + random.choice(["tầm ", "khoảng "])
+            partition_augment = random.choice(["xuống ", ""]) + random.choice(["đến " , "tới ", "còn "]) + random.choice(["tầm ", "khoảng "])
             if "nhiệt độ" in random_intent:
-                if random.randint(1, 100) > 10:
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + " độ c"])
-                else: 
-                    changing_value = random.choice(["", str(random.randint(1, 100)) + "%"])
+                target_number = random.choice(["", str(random.randint(1, 100)) + " độ c"])
             elif "mức độ" in random_intent:
                 target_number = random.choice(["", random.choice(["mức ", ""]) + str(random.randint(1, 10))])
                 partition_augment.replace("tầm", "").replace("khoảng","")
@@ -140,30 +109,10 @@ def generate_random_sentence(intent_device_mapping):
                 target_number = random.choice(["", str(random.randint(1, 100)) + "%"])
             if target_number == "":
                 partition_augment = ""
-        if "chỉnh" in command and "lên" not in partition_augment:
-            partition_augment = "xuống " + partition_augment
-
-    elif "mở" in random_intent:
-        if "kéo" in command:
-            partition_augment = random.choice(["lên", "ra"])
-            while ("màn" not in device or "cửa" not in device):
-                device = random.choice(devices)
-        if "vặn" in command:
-            partition_augment = random.choice(["ra"])
-
-    elif "đóng" in random_intent:
-        if "kéo" in command:
-            partition_augment = "xuống"
-            while ("màn" not in device or "cửa" not in device):
-                device = random.choice(devices)
-        if "vặn" in command:
-            partition_augment = random.choice(["vào", "xuống"]) 
-
 
     time_at_prefix = ""
     duration_prefix = ""
     duration_postfix = ""
-    location_prefix = ""
     # Add "thêm time at" or "thêm duration" randomly
     if random.random() < 0.5:
         if random.random() < 0.5:
@@ -175,18 +124,13 @@ def generate_random_sentence(intent_device_mapping):
             duration_postfix = random.choice([" nữa", ""])
     ending = random.choice(["với ", ""]) + random.choice(['nhé', 'nhá', 'nha', 'nhớ', ""])
 
-    if random.random() < 0.5:
-        location_prefix = random.choice(["ở ", ""]) + random.choice(["trong ", "tại ", ""])
-        if location_prefix == "":
-            location_prefix = "ở "
-        location = random.choice(locations)
-    order_1 = [command, device_augment + random_device,location_prefix + location ,partition_augment, target_number, changing_value, time_at_prefix + time_at,  duration_prefix + duration + duration_postfix, ending]
+    order_1 = [command, device_augment + random_device, partition_augment, target_number, changing_value, time_at_prefix + time_at,  duration_prefix + duration + duration_postfix, ending]
     if changing_value == "" and target_number =="" and time_at == "" and duration =="": 
         order_2 = [command, device_augment + random_device, ending]
     else :
-        order_2 = [command, device_augment + random_device,location_prefix + location , ending, command, partition_augment, target_number, changing_value, time_at_prefix + time_at, duration_prefix + duration + duration_postfix]
+        order_2 = [command, device_augment + random_device, ending, command, partition_augment, target_number, changing_value, time_at_prefix + time_at, duration_prefix + duration + duration_postfix]
     
-    order_3 = [time_at_prefix + time_at , duration_prefix + duration + duration_postfix , command, device_augment + random_device,location_prefix + location , partition_augment, target_number, changing_value, ending]
+    order_3 = [time_at_prefix + time_at , duration_prefix + duration + duration_postfix , command, device_augment + random_device, partition_augment, target_number, changing_value, ending]
     
     my_order = random.choice([order_1, order_2, order_3])
 
@@ -197,7 +141,6 @@ def generate_random_sentence(intent_device_mapping):
         {"type": "device", "filler": f"{device}"},
         {"type": "time at", "filler": f"{time_at}"},
         {"type": "duration", "filler": f"{duration}"},
-        {"type": "location", "filler": f"{location}"},
         {"type": "changing value", "filler": changing_value.replace("mức", "").strip()},
         {"type": "target number", "filler": target_number.replace("mức", "").strip()},
     ]
@@ -217,21 +160,13 @@ def generate_random_sentence(intent_device_mapping):
     return sentence_data
 
 def get_entities_order(order, entities_set):
-    entities_set_copy = copy.deepcopy(entities_set)
     entities = []
     for keyword in order:
         if keyword != "":
-            for entity in entities_set_copy:
-                if entity["type"] in ["changing value","target number"] and entity["filler"]==keyword and entity["filler"] != "": 
-                    number_entity = {"type": entity["type"], "filler": entity["filler"].replace("mức", " ").strip()}    
-                    entities.append(number_entity)
-                    entities_set_copy.remove(entity)
-                    break
-                elif entity["filler"] in keyword and entity["filler"] != "" :
+            for entity in entities_set:
+                if entity["filler"] in keyword and entity["filler"] != "":
                     # if entity not in entities: 
                     entities.append(entity)
-                    entities_set_copy.remove(entity)
-                    break
     return entities
 
 
@@ -252,12 +187,9 @@ def generate_random_time_at():
     # Generate a random hour (between 0 and 23) and a random minute (between 0 and 59)
     hour = random.randint(0, 23)
     minute = random.randint(0, 59)
-    if random.random() < 0.5:
-        minute = "kém " + str(minute)    
     # Format the hour and minute as a time string
     time_at = f"{hour} giờ {minute} phút"
-    if random.random() < 0.3:
-        time_at = str(hour) + random.choice([" rưỡi", " giờ rưỡi"])
+
     return time_at.strip()
 
 
@@ -265,8 +197,6 @@ def generate_random_duration():
     # Generate a random hour (between 0 and 23) and a random minute (between 0 and 59)
     hour = random.randint(0, 23)
     minute = random.randint(0, 59)
-    if random.random() < 0.3:
-        minute = "rưỡi"
     # Format the hour and minute as a time string
     if hour == 0: 
         time_at = f"{minute} phút"
@@ -283,9 +213,7 @@ def mapping_data():
     nhiet_do_devices = set()
     scene_set = set()
     location_set = set()
-    nhiet_do_devices.add("bếp")
     input_file_path = "slu_data_1/data-process/train_processed.jsonl"
-    # input_file_path = "train_20230909.jsonl"
     # Open the JSONL file and iterate through its lines
     with open(input_file_path, 'r', encoding='utf-8') as input_file:
         for line in input_file:
@@ -296,15 +224,14 @@ def mapping_data():
             # Extract the command as a list
             command = [entity['filler'] for entity in json_data['entities'] if entity['type'] == 'command']
             devices = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'device'}  # Use set comprehension
-            scene = {entity['filler'].replace("chế độ ", "").replace("cần ", "") for entity in json_data['entities'] if entity['type'] == 'scene'} 
-            # scene = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'scene'} 
+            scene = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'scene'} 
             location = {entity['filler'] for entity in json_data['entities'] if entity['type'] == 'location'} 
             scene_set.update(scene)
             location_set.update(location)
 
             # Check if the intent is already in the mapping, if not, create a new set
             if intent not in intent_device_mapping:
-                intent_device_mapping[intent] = set()
+                    intent_device_mapping[intent] = set()
             # Check if the intent contains "âm lượng"
             if "âm lượng" in intent:
                 # Add the devices to the separate set for "âm lượng"
@@ -318,7 +245,6 @@ def mapping_data():
             else:
                 # Add the devices to the set for the current intent
                 intent_device_mapping[intent].update(devices)  # Use update to merge sets
-    
                 
     # Save the extracted text to a text file
 
@@ -333,21 +259,11 @@ def mapping_data():
             intent_device_mapping[intent].update(do_dang_devices)
         if "nhiệt độ" in intent:
             intent_device_mapping[intent].update(nhiet_do_devices)
-        
-    # Sort the devices within each intent
-    for intent in intent_device_mapping:
-        intent_device_mapping[intent] = sorted(intent_device_mapping[intent])
 
-    # Sort the scenes and locations
-    sorted_scenes = sorted(scene_set)
-    sorted_locations = sorted(location_set)
-
-    mapping = intent_device_mapping
-    scenes.extend(sorted_scenes)
-    scenes.extend(possible_scene)
-    locations.extend(sorted_locations)
-    
-    print(scenes)
+    mapping = {intent: list(devices) for intent, devices in intent_device_mapping.items()}
+    scenes.extend(scene_set)
+    locations.extend(location_set)
+    print(scene)
     return mapping
 
 def combinescene(order):
@@ -363,17 +279,8 @@ def generate_scene_sentence():
     decision = random.choice(decision_words)
     scene = random.choice(scenes)
     verb = random.choice(verbs)
-    movement_scenes = []
-    for s in scenes:
-        if "đi" in s or "ra" in s:
-            movement_scenes.append(s)
-    
     scene_verb = random.choice(["chuẩn bị ", " "]) + scene
     scene_config = random.choice(["hoạt cảnh ", "một chút ", "một chút sự ", "một chút không khí ", "chế độ ", ""]) + scene
-    if "khách" in scene:
-        scene_config = random.choice(["hoạt cảnh ", "chế độ ", ""]) + scene
-    if scene in movement_scenes:
-        scene_config = random.choice(["hoạt cảnh ", "chế độ ", ""]) + scene
     time_at = ""
     duration = ""
     time_at_prefix = ""
@@ -393,13 +300,13 @@ def generate_scene_sentence():
 
     # Generate other components based on your plan
     main_sentence = generate_main_sentence(subject, verb, scene_config, random.choice(["cảnh ", ""]) + scene, scene)
-    location_word = random.choice(["ở " + location, "trong " + location, ""])
+    location_word = random.choice(["ở " + location, location, ""])
 
     order_4 = [time_at_prefix + time_at , duration_prefix + duration + duration_postfix ,main_sentence, location_word, ending]
 
     order_5 = [subject, decision, location, "để", scene_verb, ending]
 
-    order_6 = [subject, "đang ở " + location, "nhưng mà", subject,  random.choice(["chuẩn bị ", " "]) + random.choice(movement_scenes), ending]
+    order_6 = [subject, "đang ở " + location, "nhưng mà", subject,  scene_verb, ending]
 
     my_order = random.choice([order_4, order_5, order_6])
     if decision in my_order:
@@ -442,11 +349,10 @@ def generate_scene_sentence():
 def generate_main_sentence(subject, verb, scene_config, target_config, scene):
     # Randomly select a format
     format_choice = random.choice([1, 2, 3])
-    demand_word = random.choice(["muốn", "cần", "không muốn", "không cần"])
-    
+
     if format_choice == 1:
         # Format: (S + sẽ/đang + muốn/cần/không muốn/ không cần + V + target_config)
-        main_sentence = f"{subject} {demand_word} {target_config}"
+        main_sentence = f"{subject} {'sẽ' if random.random() < 0.5 else 'đang'} {'muốn' if random.random() < 0.5 else 'cần' if random.random() < 0.5 else 'không muốn' if random.random() < 0.5 else 'không cần'} {target_config}"
 
     elif format_choice == 2:
         # Format: (V + cho + S + scene_config)
@@ -454,17 +360,14 @@ def generate_main_sentence(subject, verb, scene_config, target_config, scene):
 
     else:
         # Format: (S + chuẩn bị + scene)
-        if 'khách' in scene:
-            main_sentence = f"{subject} chuẩn bị có {scene}"
-        else:
-            main_sentence = f"{subject} chuẩn bị {scene}"
+        main_sentence = f"{subject} chuẩn bị {scene}"
+
     return main_sentence
 
 # mapping_data = mapping_data()
 # print(mapping_data)
 def generate_sentences(x, y):
     intent_device_mapping = mapping_data()
-    print(intent_device_mapping)
     sentences_data = []
     for _ in range(x):
         sentence_data = generate_random_sentence(intent_device_mapping)
@@ -477,7 +380,6 @@ def generate_sentences(x, y):
             sentences_data.append(sentence_data)
     # Save the sentences data to a JSON file
     output_file_path = "slu_data_1/data-process/random_sentences.jsonl"
-    # output_file_path = "random_sentences.jsonl"
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for sentence_data in sentences_data:
             # Create a separate JSON string for each sentence data and write it to a separate line
@@ -487,5 +389,5 @@ def generate_sentences(x, y):
 
 
 
+generate_sentences(3000, 300)
 
-generate_sentences(4000, 300)

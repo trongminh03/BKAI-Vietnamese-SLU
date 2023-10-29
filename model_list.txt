@@ -1,5 +1,5 @@
-JointIDSF_PhoBERTencoder_SLU_dropout_0.15_newest_final/4e-5/0.15/100 0.1
-JointIDSF_PhoBERTencoder_SLU_dropout_0.15_new_final/4e-5/0.15/100 0.5
-JointIDSF_PhoBERTencoder_SLU_dropout_0.15_hidden_180_newest_final/4e-5/0.15/100 0.1
-JointIDSF_PhoBERTencoder_SLU_dropout_0.15_newest_final_2/4e-5/0.15/100 0.1
-JointIDSF_PhoBERTencoder_SLU_dropout_0.2_newest_final/4e-5/0.15/100 0.2
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented_scene_new_best_model/4e-5/0.15/100 0.3
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_loss2_0.25_hidden_180_augment_newest/4e-5/0.25/100 0.2
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_hidden_180_augment_newest/4e-5/0.15/100 0.2
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented_newest_step+s/4e-5/0.15/10 0.2
+JointIDSF_PhoBERTencoder_SLU_dropout_0.15_loss1_0.7_augmented_newest/4e-5/0.15/100 0.1

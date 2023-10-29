@@ -4,10 +4,8 @@ import argparse
 import zipfile
 
 
-possible_confusion_words = ["à", "à mà thôi", "à thôi", "à nhầm", "nhầm", "à đâu", "à quên"]
 def process_line(line, filename):
     device = None
-    sentence = get_sentence(line)
     location = None
     parts = line.strip().split(" -> ")
     intent = parts[0][1:-1]  # Remove angle brackets from the intent
@@ -16,12 +14,13 @@ def process_line(line, filename):
     entities = re.findall(r'\[(.*?)\]', parts[1])
     # print(entities)
     processed_entities = []
+    sentence = get_sentence(line)
     current_entity = {}
     entity_filler = ""
     last_entity = ""
     for entity in entities:
         loading_entity = "[" + entity + "]"
-        if "device" in last_entity and "B-device" in loading_entity and  current_entity["filler"].split(" ")[0] not in entity :
+        if "device" in last_entity and "B-device" in loading_entity:
             mix = last_entity + " " + loading_entity
             if mix in parts[1]:
                 print(parts[1])
@@ -35,7 +34,7 @@ def process_line(line, filename):
 
                 if entity_type_parts[0] == "B":
                     if current_entity != {}:
-                        # print(current_entity)       
+                        # print(current_entity)
                         processed_entities.append(current_entity)
                         current_entity = {}
                         entity_filler = ""
@@ -59,6 +58,10 @@ def process_line(line, filename):
    
     # processed_entities = [{"type": key.replace('_', ' '), "filler": " ".join(value)} for key, value in entity_dict.items()]
     # processed_entities = entity_dict
+    if "kiểm tra" not in intent and "hoạt cảnh" not in intent:
+        for entity in processed_entities:
+            if entity["type"] == "command":
+                entity["filler"] = intent.split()[0].lower()
 
     for entity in processed_entities:
         if entity["type"] == "device":
@@ -66,24 +69,10 @@ def process_line(line, filename):
         if entity["type"] == "location":
             location = entity["filler"]
             locations = location.split()
-        if entity["type"] == "command" and "cho" in entity["filler"]:
-            processed_entities.remove(entity)
-        if entity["type"] == "command" and "làm" in entity["filler"]:
-            processed_entities.remove(entity)
-        if entity["type"] == "command" and entity["filler"] in ['đóng', 'sập', 'khép', 'khóa']:
-            intent = "đóng thiết bị"
-        if entity["type"] == "command" and entity["filler"] == "tăng":
-            intent = intent.replace("giảm", "tăng")
-        if entity["type"] == "command" and entity["filler"] == "mở":
-            intent = "mở thiết bị"
-        if entity["type"] == "command" and entity["filler"] == "dùng":
-            entity["filler"] = "dừng"
-            intent = "tắt thiết bị"
-
+        
     if len([entity for entity in processed_entities if entity['type'] == 'command']) == 0 :
         if 'hoạt động' in sentence:
             intent = 'kiểm tra tình trạng thiết bị'
-
     if (device):
         if (device.split()[-1] == "của"):
             if (location): 
@@ -118,25 +107,6 @@ def uppercase_first_character(input):
     upper_first_character = first_character.upper()
     return upper_first_character + input[1:]
 
-def format(jsonl_line):
-    intent = jsonl_line['intent']
-    device = ""
-    pattern = r'(\d+)(\s+)độ.*'
-    have_percentage = False
-    have_degree = False
-    for entity in jsonl_line['entities']:
-        if entity['type'] == 'device':
-            device = entity['filler']
-        if "%" in entity['filler']:
-            have_percentage = True
-        if re.match(pattern, entity['filler']):
-            have_degree = True
-    if (have_percentage and device == ""):
-        jsonl_line['intent'] = intent.replace("mức độ", "độ sáng").replace("âm lượng", "độ sáng").replace("nhiệt độ", "độ sáng")
-    if (have_degree and device == ""):
-        jsonl_line['intent'] = intent.replace("độ sáng", "nhiệt độ").replace("âm lượng", "nhiệt độ").replace("mức độ", "nhiệt độ")
-    return jsonl_line
-
 def get_sentence(txt):
     input_tokens = txt.split()
 
@@ -155,6 +125,25 @@ def get_sentence(txt):
     # Join the output tokens to form the final output text
     generated_output = " ".join(output_tokens)
     return generated_output
+
+def format(jsonl_line):
+    intent = jsonl_line['intent']
+    device = ""
+    pattern = r'(\d+)(\s+)độ.*'
+    have_percentage = False
+    have_degree = False
+    for entity in jsonl_line['entities']:
+        if entity['type'] == 'device':
+            device = entity['filler']
+        if "%" in entity['filler']:
+            have_percentage = True
+        if "độ" in entity['filler']:
+            have_degree = True
+    if (have_percentage and device == ""):
+        jsonl_line['intent'] = intent.replace("mức độ", "độ sáng").replace("âm lượng", "độ sáng").replace("nhiệt độ", "độ sáng")
+    if (have_degree and device == ""):
+        jsonl_line['intent'] = intent.replace("độ sáng", "nhiệt độ").replace("âm lượng", "nhiệt độ").replace("mức độ", "nhiệt độ")
+    return jsonl_line
 
 def cut_entity(jsonl_line):
     # return jsonl_line

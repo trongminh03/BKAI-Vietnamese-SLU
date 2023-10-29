@@ -40,13 +40,10 @@ if __name__ == '__main__':
         for line in input_file:
             line = line.replace(" trăm ", "").replace("\n", "")
             line = line.replace(" chếch ", " check ")
-            # line.replace(" giờ dưới ", " giờ rưỡi ")
             line = line.replace("1 chút", "một chút")
             line = line.replace("giờ dưới", "giờ rưỡi")
             line = line.replace("về nhạc", "về nhà")
             line = line.replace("máy tính đèn bàn", "máy tính để bàn")
-            line = line.replace("nưng", "nâng") 
-            line = line.replace("lưng", "nâng")
             line = replace_number(line)
             line = re.sub(r'(\d+)\s+dưới', r'\1 rưỡi', line)
             # Split the line based on space and take the last part as the extracted text
