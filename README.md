@@ -1,4 +1,4 @@
-# BKAI Vietnamese SLU
+# SoICT Hackathon 2023: Vietnamese Spoken Language Understanding Challenge
 ## Overview
 - This repository contains 2 modules:
      - Speech to Text module.
@@ -154,3 +154,9 @@ bash inference_JointIDSF.sh SLU-ASR/final_trans.txt JointIDSF_PhoBERTencoder_SLU
 bash inference_ensemble.sh 
 ```
 - To reproduce the result, keep the weight and set the path to your actual path.
+
+### Technical report
+https://www.overleaf.com/project/650b05c5c9e4867104e1aedd
+
+### Presentation slide: 
+https://docs.google.com/presentation/d/177N4RaGl3ClBxHGwqgNPutTGzbPfNe-l/edit#slide=id.p1

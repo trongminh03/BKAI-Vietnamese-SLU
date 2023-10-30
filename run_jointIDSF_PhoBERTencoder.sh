@@ -20,11 +20,11 @@ python3 main.py --token_level syllable-level \
                   --num_train_epochs 50 \
                   --tuning_metric mean_intent_slot \
                   --use_intent_context_attention \
-                  --attention_embedding_size 180 \
+                  --attention_embedding_size 200 \
                   --use_crf \
                   --gpu_id 0 \
                   --embedding_type soft \
                   --intent_loss_coef $c \
                   --pretrained \
-                  --pretrained_path JointIDSF_PhoBERTencoder_SLU_dropout_0.15_augmented/3e-5/0.6/100 \
+                  --pretrained_path JointIDSF_PhoBERTencoderr_SLU_dropout_0.15_augmented/3e-5/0.6/100 \
                   --learning_rate $lr
