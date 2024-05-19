@@ -28,7 +28,7 @@ docker run -it --name docker_slu --gpus all --rm slu
         ```
     2. Generate data and Denoise data(optional):
         - Be careful if you mount your data folder inside docker. 
-        - The generated data and denoised data will be stored in the same as the origin train data folder.
+        - The generated data and denoised data will be stored in the same folder as the origin train data folder.
         - Download our generated data and denoised data by running:
         ```
         bash download_data.sh [Path to your origin train data folder]
